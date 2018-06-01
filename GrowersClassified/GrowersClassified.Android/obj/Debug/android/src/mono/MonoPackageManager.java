@@ -108,7 +108,6 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "GrowersClassified.Android.dll" comes first in this list. */
 		"GrowersClassified.Android.dll",
 		"FormsViewGroup.dll",
-		"Microsoft.Data.Sqlite.dll",
 		"Mono.Cecil.dll",
 		"Mono.Cecil.Mdb.dll",
 		"Mono.Cecil.Pdb.dll",

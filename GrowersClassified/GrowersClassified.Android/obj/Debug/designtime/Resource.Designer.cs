@@ -2369,6 +2369,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0
 			public static int house = 0;
 			
+			// aapt resource value: 0
+			public static int icon = 0;
+			
 			// aapt resource value: 2131296340
 			public static int ic_audiotrack_dark = 2131296340;
 			
@@ -4051,6 +4054,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0
 			public static int AppCompatDialogStyle = 0;
+			
+			// aapt resource value: 0
+			public static int AppTheme = 0;
 			
 			// aapt resource value: 2132148231
 			public static int Base_AlertDialog_AppCompat = 2132148231;
