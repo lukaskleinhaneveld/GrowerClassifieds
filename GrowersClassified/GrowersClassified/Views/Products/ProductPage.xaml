@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrowersClassified.Views.Products.ProductPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Label Text="All products will be shown here in a list"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="StartAndExpand"
+                   Margin="0,20,0,0"/>
+            <ScrollView HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Vertical" Padding="10,5,10,0">
+                    <Label Text="Pending Items" TextColor="Red">
+                    </Label>
+                    <ListView x:Name="ProductList">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Padding="10,10" Orientation="Horizontal">
+                                        <Label Text="{ Binding Product_Author }" HorizontalOptions="StartAndExpand">
+                                        </Label>
+                                        <Label Text="{ Binding Product_Title }" HorizontalOptions="StartAndExpand">
+                                        </Label>
+                                        <Label Text="{ Binding Product_Description }" HorizontalOptions="StartAndExpand">
+                                        </Label>
+                                        <Label Text="{ Binding Product_Make }" HorizontalOptions="StartAndExpand">
+                                        </Label>
+                                        <Label Text="{ Binding Product_Model }" HorizontalOptions="StartAndExpand">
+                                        </Label>
+                                        <Label Text="{ Binding Product_Year }" HorizontalOptions="StartAndExpand">
+                                        </Label>
+                                        <Label Text="{ Binding Product_Price }" HorizontalOptions="StartAndExpand">
+                                        </Label>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

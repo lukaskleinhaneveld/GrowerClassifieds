@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrowersClassified.Views.Menu.MasterDetail"
+             xmlns:detail="clr-namespace:GrowersClassified"
+             xmlns:master="clr-namespace:GrowersClassified.Views.Menu"
+             Title="">
+    <MasterDetailPage.Master>
+        <master:MasterPage x:Name="masterpage"/>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <detail:Index/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrowersClassified.Views.Products.CreateProduct">
+    <ContentPage.Content>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Enlist Product"
+                       FontSize="Large"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="0,20,0,20"/>
+            <ScrollView>
+                <StackLayout>
+                    <Entry Placeholder="Title..."
+                           Text="{Binding Product_Title}"
+                           WidthRequest="300"
+                           HorizontalOptions="Center"
+                           VerticalOptions="StartAndExpand"/>
+
+                    <Entry Placeholder="Description..."
+                           Text="{Binding Product_Description}"
+                           WidthRequest="300"
+                           HorizontalOptions="Center"
+                           VerticalOptions="StartAndExpand"/>
+                    
+                    <Entry Placeholder="Model..."
+                           Text="{Binding Product_Model}"
+                           WidthRequest="300"
+                           HorizontalOptions="Center"
+                           VerticalOptions="StartAndExpand"/>
+                    
+                    <Entry Placeholder="Make..."
+                           Text="{Binding Product_Make}"
+                           WidthRequest="300"
+                           HorizontalOptions="Center"
+                           VerticalOptions="StartAndExpand"/>
+                    
+                    <Entry Placeholder="Year..."
+                           Text="{Binding Product_Year}"
+                           WidthRequest="300"
+                           HorizontalOptions="Center"
+                           VerticalOptions="StartAndExpand"/>
+
+                    <Entry Placeholder="Price..."
+                           Text="{Binding Product_Price}"
+                           WidthRequest="300"
+                           HorizontalOptions="Center"
+                           VerticalOptions="StartAndExpand"/>
+
+                    <Button Text="Submit" 
+                            HorizontalOptions="Center" 
+                            FontSize="Medium"
+                            WidthRequest="250" 
+                            HeightRequest="60"  
+                            TextColor="Black" 
+                            BackgroundColor="#BDD73C"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
