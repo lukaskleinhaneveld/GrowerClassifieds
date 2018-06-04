@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1.0.0" android:versionName="1.0.0" package="com.companyname.GrowersClassified" android:installLocation="internalOnly">
-	<uses-sdk android:minSdkVersion="20" android:targetSdkVersion="27" />
-	<application android:label="Grower Classifieds" android:icon="@drawable/grower_classifieds_mobile"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.companyname.GrowersClassified" android:installLocation="internalOnly" android:versionName="1">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27" />
+	<application android:label="Grower Classifieds"></application>
 </manifest>
