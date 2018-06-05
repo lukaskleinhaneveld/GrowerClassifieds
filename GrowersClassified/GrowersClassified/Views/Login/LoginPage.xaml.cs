@@ -20,10 +20,16 @@ namespace GrowersClassified.Views.Login
             InitializeComponent();
         }
 
-        public void LoginProcessClicked()
+        public void LoginProcess_Clicked()
         {
             string Name = Entry_Name.Text;
             string Pass = Entry_Pass.Text;
+        }
+
+        private async void RegisterPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+            await Navigation.PushAsync(new RegisterPage());
         }
 
     }

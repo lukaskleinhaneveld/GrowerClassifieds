@@ -2,36 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Views.Login.LoginPage"
-             x:Name="LoginPage_XName">
+             x:Name="Login">
     <StackLayout x:Name="container">
         <StackLayout x:Name="LoginForm" Padding="40, 20, 40, 0">
             <StackLayout x:Name="Header" Padding="0,0,0,20">
-                <Label Text="Login Page"
-                           VerticalOptions="CenterAndExpand" 
-                           HorizontalOptions="CenterAndExpand" 
-                           FontSize="40"/>
+                <Label Text="Login"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" 
+                       FontSize="40"/>
             </StackLayout>
-            <Label Text="Login here!"
-                       FontSize="Default"
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center"/>
 
             <Entry x:Name="Entry_Name"
-                       Placeholder="Username"/>
+                   Placeholder="Username"/>
 
             <Entry x:Name="Entry_Pass"
-                       Placeholder="Password"
-                       IsPassword="True"/>
+                   Placeholder="Password"
+                   IsPassword="True"/>
 
             <Button Text="Login"
-                        HorizontalOptions="Center" 
-                        FontSize="Medium" 
-                        WidthRequest="250" 
-                        HeightRequest="60"  
-                        TextColor="Black" 
-                        VerticalOptions="End"
-                        BackgroundColor="#BDD73C"
-                        Clicked="LoginProcessClicked"/>
+                    HorizontalOptions="Center" 
+                    FontSize="Medium"
+                    WidthRequest="250" 
+                    HeightRequest="60"  
+                    TextColor="Black" 
+                    VerticalOptions="End"
+                    BackgroundColor="#BDD73C"
+                    Clicked="LoginProcess_Clicked"/>
+
+            <Button Text="Don't have an account? Create one here."
+                    Opacity="0.5"
+                    Clicked="RegisterPage_Clicked"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    VerticalOptions="StartAndExpand"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

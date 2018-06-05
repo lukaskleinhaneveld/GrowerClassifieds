@@ -4,7 +4,7 @@
              x:Class="GrowersClassified.Views.Menu.MasterDetail"
              xmlns:detail="clr-namespace:GrowersClassified"
              xmlns:master="clr-namespace:GrowersClassified.Views.Menu"
-             Title="">
+             Title="MainPage">
     <MasterDetailPage.Master>
         <master:MasterPage x:Name="masterpage"/>
     </MasterDetailPage.Master>

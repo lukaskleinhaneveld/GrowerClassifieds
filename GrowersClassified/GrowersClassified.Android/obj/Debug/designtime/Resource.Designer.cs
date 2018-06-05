@@ -26,6 +26,207 @@ namespace GrowersClassified.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::MonoDroidToolkit.Resource.Attribute.circleColor = global::GrowersClassified.Droid.Resource.Attribute.circleColor;
+			global::MonoDroidToolkit.Resource.Attribute.circularProgressBarStyle = global::GrowersClassified.Droid.Resource.Attribute.circularProgressBarStyle;
+			global::MonoDroidToolkit.Resource.Attribute.circular_gravity = global::GrowersClassified.Droid.Resource.Attribute.circular_gravity;
+			global::MonoDroidToolkit.Resource.Attribute.circular_indeterminate = global::GrowersClassified.Droid.Resource.Attribute.circular_indeterminate;
+			global::MonoDroidToolkit.Resource.Attribute.circular_indeterminate_interval = global::GrowersClassified.Droid.Resource.Attribute.circular_indeterminate_interval;
+			global::MonoDroidToolkit.Resource.Attribute.circular_marker_progress = global::GrowersClassified.Droid.Resource.Attribute.circular_marker_progress;
+			global::MonoDroidToolkit.Resource.Attribute.circular_progress = global::GrowersClassified.Droid.Resource.Attribute.circular_progress;
+			global::MonoDroidToolkit.Resource.Attribute.circular_progress_background_color = global::GrowersClassified.Droid.Resource.Attribute.circular_progress_background_color;
+			global::MonoDroidToolkit.Resource.Attribute.circular_progress_color = global::GrowersClassified.Droid.Resource.Attribute.circular_progress_color;
+			global::MonoDroidToolkit.Resource.Attribute.circular_stroke_width = global::GrowersClassified.Droid.Resource.Attribute.circular_stroke_width;
+			global::MonoDroidToolkit.Resource.Attribute.font = global::GrowersClassified.Droid.Resource.Attribute.font;
+			global::MonoDroidToolkit.Resource.Attribute.fontProviderAuthority = global::GrowersClassified.Droid.Resource.Attribute.fontProviderAuthority;
+			global::MonoDroidToolkit.Resource.Attribute.fontProviderCerts = global::GrowersClassified.Droid.Resource.Attribute.fontProviderCerts;
+			global::MonoDroidToolkit.Resource.Attribute.fontProviderFetchStrategy = global::GrowersClassified.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::MonoDroidToolkit.Resource.Attribute.fontProviderFetchTimeout = global::GrowersClassified.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::MonoDroidToolkit.Resource.Attribute.fontProviderPackage = global::GrowersClassified.Droid.Resource.Attribute.fontProviderPackage;
+			global::MonoDroidToolkit.Resource.Attribute.fontProviderQuery = global::GrowersClassified.Droid.Resource.Attribute.fontProviderQuery;
+			global::MonoDroidToolkit.Resource.Attribute.fontStyle = global::GrowersClassified.Droid.Resource.Attribute.fontStyle;
+			global::MonoDroidToolkit.Resource.Attribute.fontWeight = global::GrowersClassified.Droid.Resource.Attribute.fontWeight;
+			global::MonoDroidToolkit.Resource.Attribute.indeterminate = global::GrowersClassified.Droid.Resource.Attribute.indeterminate;
+			global::MonoDroidToolkit.Resource.Attribute.indeterminate_interval = global::GrowersClassified.Droid.Resource.Attribute.indeterminate_interval;
+			global::MonoDroidToolkit.Resource.Attribute.innerSize = global::GrowersClassified.Droid.Resource.Attribute.innerSize;
+			global::MonoDroidToolkit.Resource.Attribute.max = global::GrowersClassified.Droid.Resource.Attribute.max;
+			global::MonoDroidToolkit.Resource.Attribute.pinned = global::GrowersClassified.Droid.Resource.Attribute.pinned;
+			global::MonoDroidToolkit.Resource.Attribute.pinnedDrawable = global::GrowersClassified.Droid.Resource.Attribute.pinnedDrawable;
+			global::MonoDroidToolkit.Resource.Attribute.progress = global::GrowersClassified.Droid.Resource.Attribute.progress;
+			global::MonoDroidToolkit.Resource.Attribute.progressButtonStyle = global::GrowersClassified.Droid.Resource.Attribute.progressButtonStyle;
+			global::MonoDroidToolkit.Resource.Attribute.progressColor = global::GrowersClassified.Droid.Resource.Attribute.progressColor;
+			global::MonoDroidToolkit.Resource.Attribute.shadowDrawable = global::GrowersClassified.Droid.Resource.Attribute.shadowDrawable;
+			global::MonoDroidToolkit.Resource.Attribute.unpinnedDrawable = global::GrowersClassified.Droid.Resource.Attribute.unpinnedDrawable;
+			global::MonoDroidToolkit.Resource.Boolean.abc_action_bar_embed_tabs = global::GrowersClassified.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::MonoDroidToolkit.Resource.Color.notification_action_color_filter = global::GrowersClassified.Droid.Resource.Color.notification_action_color_filter;
+			global::MonoDroidToolkit.Resource.Color.notification_icon_bg_color = global::GrowersClassified.Droid.Resource.Color.notification_icon_bg_color;
+			global::MonoDroidToolkit.Resource.Color.progress_default_circle_color = global::GrowersClassified.Droid.Resource.Color.progress_default_circle_color;
+			global::MonoDroidToolkit.Resource.Color.progress_default_progress_color = global::GrowersClassified.Droid.Resource.Color.progress_default_progress_color;
+			global::MonoDroidToolkit.Resource.Color.refractored_background_dark = global::GrowersClassified.Droid.Resource.Color.refractored_background_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_background_holo_dark = global::GrowersClassified.Droid.Resource.Color.refractored_background_holo_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_background_holo_light = global::GrowersClassified.Droid.Resource.Color.refractored_background_holo_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_background_light = global::GrowersClassified.Droid.Resource.Color.refractored_background_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_bright_foreground_dark = global::GrowersClassified.Droid.Resource.Color.refractored_bright_foreground_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_bright_foreground_dark_disabled = global::GrowersClassified.Droid.Resource.Color.refractored_bright_foreground_dark_disabled;
+			global::MonoDroidToolkit.Resource.Color.refractored_bright_foreground_disabled_holo_dark = global::GrowersClassified.Droid.Resource.Color.refractored_bright_foreground_disabled_holo_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_bright_foreground_disabled_holo_light = global::GrowersClassified.Droid.Resource.Color.refractored_bright_foreground_disabled_holo_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_bright_foreground_holo_dark = global::GrowersClassified.Droid.Resource.Color.refractored_bright_foreground_holo_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_bright_foreground_holo_light = global::GrowersClassified.Droid.Resource.Color.refractored_bright_foreground_holo_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_bright_foreground_light = global::GrowersClassified.Droid.Resource.Color.refractored_bright_foreground_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_dim_foreground_disabled_holo_dark = global::GrowersClassified.Droid.Resource.Color.refractored_dim_foreground_disabled_holo_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_dim_foreground_disabled_holo_light = global::GrowersClassified.Droid.Resource.Color.refractored_dim_foreground_disabled_holo_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_dim_foreground_holo_dark = global::GrowersClassified.Droid.Resource.Color.refractored_dim_foreground_holo_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_dim_foreground_holo_light = global::GrowersClassified.Droid.Resource.Color.refractored_dim_foreground_holo_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_highlighted_text_holo_dark = global::GrowersClassified.Droid.Resource.Color.refractored_highlighted_text_holo_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_highlighted_text_holo_light = global::GrowersClassified.Droid.Resource.Color.refractored_highlighted_text_holo_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_hint_foreground_holo_dark = global::GrowersClassified.Droid.Resource.Color.refractored_hint_foreground_holo_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_hint_foreground_holo_light = global::GrowersClassified.Droid.Resource.Color.refractored_hint_foreground_holo_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_blue_bright = global::GrowersClassified.Droid.Resource.Color.refractored_holo_blue_bright;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_blue_dark = global::GrowersClassified.Droid.Resource.Color.refractored_holo_blue_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_blue_light = global::GrowersClassified.Droid.Resource.Color.refractored_holo_blue_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_green_dark = global::GrowersClassified.Droid.Resource.Color.refractored_holo_green_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_green_light = global::GrowersClassified.Droid.Resource.Color.refractored_holo_green_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_orange_dark = global::GrowersClassified.Droid.Resource.Color.refractored_holo_orange_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_orange_light = global::GrowersClassified.Droid.Resource.Color.refractored_holo_orange_light;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_purple = global::GrowersClassified.Droid.Resource.Color.refractored_holo_purple;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_red_dark = global::GrowersClassified.Droid.Resource.Color.refractored_holo_red_dark;
+			global::MonoDroidToolkit.Resource.Color.refractored_holo_red_light = global::GrowersClassified.Droid.Resource.Color.refractored_holo_red_light;
+			global::MonoDroidToolkit.Resource.Color.ripple_material_light = global::GrowersClassified.Droid.Resource.Color.ripple_material_light;
+			global::MonoDroidToolkit.Resource.Color.secondary_text_default_material_light = global::GrowersClassified.Droid.Resource.Color.secondary_text_default_material_light;
+			global::MonoDroidToolkit.Resource.Dimension.compat_button_inset_horizontal_material = global::GrowersClassified.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::MonoDroidToolkit.Resource.Dimension.compat_button_inset_vertical_material = global::GrowersClassified.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::MonoDroidToolkit.Resource.Dimension.compat_button_padding_horizontal_material = global::GrowersClassified.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::MonoDroidToolkit.Resource.Dimension.compat_button_padding_vertical_material = global::GrowersClassified.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::MonoDroidToolkit.Resource.Dimension.compat_control_corner_material = global::GrowersClassified.Droid.Resource.Dimension.compat_control_corner_material;
+			global::MonoDroidToolkit.Resource.Dimension.notification_action_icon_size = global::GrowersClassified.Droid.Resource.Dimension.notification_action_icon_size;
+			global::MonoDroidToolkit.Resource.Dimension.notification_action_text_size = global::GrowersClassified.Droid.Resource.Dimension.notification_action_text_size;
+			global::MonoDroidToolkit.Resource.Dimension.notification_big_circle_margin = global::GrowersClassified.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::MonoDroidToolkit.Resource.Dimension.notification_content_margin_start = global::GrowersClassified.Droid.Resource.Dimension.notification_content_margin_start;
+			global::MonoDroidToolkit.Resource.Dimension.notification_large_icon_height = global::GrowersClassified.Droid.Resource.Dimension.notification_large_icon_height;
+			global::MonoDroidToolkit.Resource.Dimension.notification_large_icon_width = global::GrowersClassified.Droid.Resource.Dimension.notification_large_icon_width;
+			global::MonoDroidToolkit.Resource.Dimension.notification_main_column_padding_top = global::GrowersClassified.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::MonoDroidToolkit.Resource.Dimension.notification_media_narrow_margin = global::GrowersClassified.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::MonoDroidToolkit.Resource.Dimension.notification_right_icon_size = global::GrowersClassified.Droid.Resource.Dimension.notification_right_icon_size;
+			global::MonoDroidToolkit.Resource.Dimension.notification_right_side_padding_top = global::GrowersClassified.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::MonoDroidToolkit.Resource.Dimension.notification_small_icon_background_padding = global::GrowersClassified.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::MonoDroidToolkit.Resource.Dimension.notification_small_icon_size_as_large = global::GrowersClassified.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::MonoDroidToolkit.Resource.Dimension.notification_subtext_size = global::GrowersClassified.Droid.Resource.Dimension.notification_subtext_size;
+			global::MonoDroidToolkit.Resource.Dimension.notification_top_pad = global::GrowersClassified.Droid.Resource.Dimension.notification_top_pad;
+			global::MonoDroidToolkit.Resource.Dimension.notification_top_pad_large_text = global::GrowersClassified.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::MonoDroidToolkit.Resource.Drawable.notification_action_background = global::GrowersClassified.Droid.Resource.Drawable.notification_action_background;
+			global::MonoDroidToolkit.Resource.Drawable.notification_bg = global::GrowersClassified.Droid.Resource.Drawable.notification_bg;
+			global::MonoDroidToolkit.Resource.Drawable.notification_bg_low = global::GrowersClassified.Droid.Resource.Drawable.notification_bg_low;
+			global::MonoDroidToolkit.Resource.Drawable.notification_bg_low_normal = global::GrowersClassified.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::MonoDroidToolkit.Resource.Drawable.notification_bg_low_pressed = global::GrowersClassified.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::MonoDroidToolkit.Resource.Drawable.notification_bg_normal = global::GrowersClassified.Droid.Resource.Drawable.notification_bg_normal;
+			global::MonoDroidToolkit.Resource.Drawable.notification_bg_normal_pressed = global::GrowersClassified.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::MonoDroidToolkit.Resource.Drawable.notification_icon_background = global::GrowersClassified.Droid.Resource.Drawable.notification_icon_background;
+			global::MonoDroidToolkit.Resource.Drawable.notification_template_icon_bg = global::GrowersClassified.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::MonoDroidToolkit.Resource.Drawable.notification_template_icon_low_bg = global::GrowersClassified.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::MonoDroidToolkit.Resource.Drawable.notification_tile_bg = global::GrowersClassified.Droid.Resource.Drawable.notification_tile_bg;
+			global::MonoDroidToolkit.Resource.Drawable.notify_panel_notification_icon_bg = global::GrowersClassified.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::MonoDroidToolkit.Resource.Drawable.pin_progress_pinned = global::GrowersClassified.Droid.Resource.Drawable.pin_progress_pinned;
+			global::MonoDroidToolkit.Resource.Drawable.pin_progress_shadow = global::GrowersClassified.Droid.Resource.Drawable.pin_progress_shadow;
+			global::MonoDroidToolkit.Resource.Drawable.pin_progress_unpinned = global::GrowersClassified.Droid.Resource.Drawable.pin_progress_unpinned;
+			global::MonoDroidToolkit.Resource.Drawable.scrubber_control_normal_holo = global::GrowersClassified.Droid.Resource.Drawable.scrubber_control_normal_holo;
+			global::MonoDroidToolkit.Resource.Drawable.scrubber_control_pressed_holo = global::GrowersClassified.Droid.Resource.Drawable.scrubber_control_pressed_holo;
+			global::MonoDroidToolkit.Resource.Id.action_container = global::GrowersClassified.Droid.Resource.Id.action_container;
+			global::MonoDroidToolkit.Resource.Id.action_divider = global::GrowersClassified.Droid.Resource.Id.action_divider;
+			global::MonoDroidToolkit.Resource.Id.action_image = global::GrowersClassified.Droid.Resource.Id.action_image;
+			global::MonoDroidToolkit.Resource.Id.action_text = global::GrowersClassified.Droid.Resource.Id.action_text;
+			global::MonoDroidToolkit.Resource.Id.actions = global::GrowersClassified.Droid.Resource.Id.actions;
+			global::MonoDroidToolkit.Resource.Id.async = global::GrowersClassified.Droid.Resource.Id.async;
+			global::MonoDroidToolkit.Resource.Id.blocking = global::GrowersClassified.Droid.Resource.Id.blocking;
+			global::MonoDroidToolkit.Resource.Id.bottom = global::GrowersClassified.Droid.Resource.Id.bottom;
+			global::MonoDroidToolkit.Resource.Id.center = global::GrowersClassified.Droid.Resource.Id.center;
+			global::MonoDroidToolkit.Resource.Id.center_horizontal = global::GrowersClassified.Droid.Resource.Id.center_horizontal;
+			global::MonoDroidToolkit.Resource.Id.center_vertical = global::GrowersClassified.Droid.Resource.Id.center_vertical;
+			global::MonoDroidToolkit.Resource.Id.chronometer = global::GrowersClassified.Droid.Resource.Id.chronometer;
+			global::MonoDroidToolkit.Resource.Id.clip = global::GrowersClassified.Droid.Resource.Id.clip;
+			global::MonoDroidToolkit.Resource.Id.clip_horizontal = global::GrowersClassified.Droid.Resource.Id.clip_horizontal;
+			global::MonoDroidToolkit.Resource.Id.clip_vertical = global::GrowersClassified.Droid.Resource.Id.clip_vertical;
+			global::MonoDroidToolkit.Resource.Id.end = global::GrowersClassified.Droid.Resource.Id.end;
+			global::MonoDroidToolkit.Resource.Id.fill = global::GrowersClassified.Droid.Resource.Id.fill;
+			global::MonoDroidToolkit.Resource.Id.fill_horizontal = global::GrowersClassified.Droid.Resource.Id.fill_horizontal;
+			global::MonoDroidToolkit.Resource.Id.fill_vertical = global::GrowersClassified.Droid.Resource.Id.fill_vertical;
+			global::MonoDroidToolkit.Resource.Id.forever = global::GrowersClassified.Droid.Resource.Id.forever;
+			global::MonoDroidToolkit.Resource.Id.icon = global::GrowersClassified.Droid.Resource.Id.icon;
+			global::MonoDroidToolkit.Resource.Id.icon_group = global::GrowersClassified.Droid.Resource.Id.icon_group;
+			global::MonoDroidToolkit.Resource.Id.info = global::GrowersClassified.Droid.Resource.Id.info;
+			global::MonoDroidToolkit.Resource.Id.italic = global::GrowersClassified.Droid.Resource.Id.italic;
+			global::MonoDroidToolkit.Resource.Id.left = global::GrowersClassified.Droid.Resource.Id.left;
+			global::MonoDroidToolkit.Resource.Id.line1 = global::GrowersClassified.Droid.Resource.Id.line1;
+			global::MonoDroidToolkit.Resource.Id.line3 = global::GrowersClassified.Droid.Resource.Id.line3;
+			global::MonoDroidToolkit.Resource.Id.normal = global::GrowersClassified.Droid.Resource.Id.normal;
+			global::MonoDroidToolkit.Resource.Id.notification_background = global::GrowersClassified.Droid.Resource.Id.notification_background;
+			global::MonoDroidToolkit.Resource.Id.notification_main_column = global::GrowersClassified.Droid.Resource.Id.notification_main_column;
+			global::MonoDroidToolkit.Resource.Id.notification_main_column_container = global::GrowersClassified.Droid.Resource.Id.notification_main_column_container;
+			global::MonoDroidToolkit.Resource.Id.right = global::GrowersClassified.Droid.Resource.Id.right;
+			global::MonoDroidToolkit.Resource.Id.right_icon = global::GrowersClassified.Droid.Resource.Id.right_icon;
+			global::MonoDroidToolkit.Resource.Id.right_side = global::GrowersClassified.Droid.Resource.Id.right_side;
+			global::MonoDroidToolkit.Resource.Id.start = global::GrowersClassified.Droid.Resource.Id.start;
+			global::MonoDroidToolkit.Resource.Id.text = global::GrowersClassified.Droid.Resource.Id.text;
+			global::MonoDroidToolkit.Resource.Id.text2 = global::GrowersClassified.Droid.Resource.Id.text2;
+			global::MonoDroidToolkit.Resource.Id.time = global::GrowersClassified.Droid.Resource.Id.time;
+			global::MonoDroidToolkit.Resource.Id.title = global::GrowersClassified.Droid.Resource.Id.title;
+			global::MonoDroidToolkit.Resource.Id.top = global::GrowersClassified.Droid.Resource.Id.top;
+			global::MonoDroidToolkit.Resource.Integer.circular_indeterminent_interval = global::GrowersClassified.Droid.Resource.Integer.circular_indeterminent_interval;
+			global::MonoDroidToolkit.Resource.Integer.progressbutton_indeterminent_interval = global::GrowersClassified.Droid.Resource.Integer.progressbutton_indeterminent_interval;
+			global::MonoDroidToolkit.Resource.Integer.status_bar_notification_info_maxnum = global::GrowersClassified.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::MonoDroidToolkit.Resource.Layout.notification_action = global::GrowersClassified.Droid.Resource.Layout.notification_action;
+			global::MonoDroidToolkit.Resource.Layout.notification_action_tombstone = global::GrowersClassified.Droid.Resource.Layout.notification_action_tombstone;
+			global::MonoDroidToolkit.Resource.Layout.notification_template_custom_big = global::GrowersClassified.Droid.Resource.Layout.notification_template_custom_big;
+			global::MonoDroidToolkit.Resource.Layout.notification_template_icon_group = global::GrowersClassified.Droid.Resource.Layout.notification_template_icon_group;
+			global::MonoDroidToolkit.Resource.Layout.notification_template_part_chronometer = global::GrowersClassified.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::MonoDroidToolkit.Resource.Layout.notification_template_part_time = global::GrowersClassified.Droid.Resource.Layout.notification_template_part_time;
+			global::MonoDroidToolkit.Resource.String.status_bar_notification_info_overflow = global::GrowersClassified.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::MonoDroidToolkit.Resource.Style.CircularProgressBar = global::GrowersClassified.Droid.Resource.Style.CircularProgressBar;
+			global::MonoDroidToolkit.Resource.Style.CircularProgressBarLight = global::GrowersClassified.Droid.Resource.Style.CircularProgressBarLight;
+			global::MonoDroidToolkit.Resource.Style.ProgressButton = global::GrowersClassified.Droid.Resource.Style.ProgressButton;
+			global::MonoDroidToolkit.Resource.Style.ProgressButton_Pin = global::GrowersClassified.Droid.Resource.Style.ProgressButton_Pin;
+			global::MonoDroidToolkit.Resource.Style.TextAppearance_Compat_Notification = global::GrowersClassified.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::MonoDroidToolkit.Resource.Style.TextAppearance_Compat_Notification_Info = global::GrowersClassified.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::MonoDroidToolkit.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::GrowersClassified.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::MonoDroidToolkit.Resource.Style.TextAppearance_Compat_Notification_Time = global::GrowersClassified.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::MonoDroidToolkit.Resource.Style.TextAppearance_Compat_Notification_Title = global::GrowersClassified.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::MonoDroidToolkit.Resource.Style.Widget_Compat_NotificationActionContainer = global::GrowersClassified.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::MonoDroidToolkit.Resource.Style.Widget_Compat_NotificationActionText = global::GrowersClassified.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamily = global::GrowersClassified.Droid.Resource.Styleable.FontFamily;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamily_fontProviderAuthority = global::GrowersClassified.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamily_fontProviderCerts = global::GrowersClassified.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::GrowersClassified.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::GrowersClassified.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamily_fontProviderPackage = global::GrowersClassified.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamily_fontProviderQuery = global::GrowersClassified.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamilyFont = global::GrowersClassified.Droid.Resource.Styleable.FontFamilyFont;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamilyFont_font = global::GrowersClassified.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamilyFont_fontStyle = global::GrowersClassified.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::MonoDroidToolkit.Resource.Styleable.FontFamilyFont_fontWeight = global::GrowersClassified.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_gravity = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_gravity;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate_interval = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate_interval;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_marker_progress = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_marker_progress;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_progress = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_progress;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_progress_background_color = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_progress_background_color;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_progress_color = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_progress_color;
+			global::MonoDroidToolkit.Resource.Styleable.HoloCircularProgressBar_circular_stroke_width = global::GrowersClassified.Droid.Resource.Styleable.HoloCircularProgressBar_circular_stroke_width;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_android_clickable = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_android_clickable;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_android_focusable = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_android_focusable;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_android_selectableItemBackground = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_android_selectableItemBackground;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_circleColor = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_circleColor;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_indeterminate = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_indeterminate;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_indeterminate_interval = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_indeterminate_interval;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_innerSize = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_innerSize;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_max = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_max;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_pinned = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_pinned;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_pinnedDrawable = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_pinnedDrawable;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_progress = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_progress;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_progressColor = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_progressColor;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_shadowDrawable = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_shadowDrawable;
+			global::MonoDroidToolkit.Resource.Styleable.ProgressButton_unpinnedDrawable = global::GrowersClassified.Droid.Resource.Styleable.ProgressButton_unpinnedDrawable;
+			global::MonoDroidToolkit.Resource.Styleable.Theme = global::GrowersClassified.Droid.Resource.Styleable.Theme;
+			global::MonoDroidToolkit.Resource.Styleable.Theme_circularProgressBarStyle = global::GrowersClassified.Droid.Resource.Styleable.Theme_circularProgressBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::GrowersClassified.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -358,6 +559,36 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2130968653
 			public static int checkedTextViewStyle = 2130968653;
 			
+			// aapt resource value: 0
+			public static int circleColor = 0;
+			
+			// aapt resource value: 0
+			public static int circularProgressBarStyle = 0;
+			
+			// aapt resource value: 0
+			public static int circular_gravity = 0;
+			
+			// aapt resource value: 0
+			public static int circular_indeterminate = 0;
+			
+			// aapt resource value: 0
+			public static int circular_indeterminate_interval = 0;
+			
+			// aapt resource value: 0
+			public static int circular_marker_progress = 0;
+			
+			// aapt resource value: 0
+			public static int circular_progress = 0;
+			
+			// aapt resource value: 0
+			public static int circular_progress_background_color = 0;
+			
+			// aapt resource value: 0
+			public static int circular_progress_color = 0;
+			
+			// aapt resource value: 0
+			public static int circular_stroke_width = 0;
+			
 			// aapt resource value: 2130968654
 			public static int closeIcon = 2130968654;
 			
@@ -649,11 +880,20 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2130968744
 			public static int imageButtonStyle = 2130968744;
 			
+			// aapt resource value: 0
+			public static int indeterminate = 0;
+			
 			// aapt resource value: 2130968745
 			public static int indeterminateProgressStyle = 2130968745;
 			
+			// aapt resource value: 0
+			public static int indeterminate_interval = 0;
+			
 			// aapt resource value: 2130968746
 			public static int initialActivityCount = 2130968746;
+			
+			// aapt resource value: 0
+			public static int innerSize = 0;
 			
 			// aapt resource value: 2130968747
 			public static int insetForeground = 2130968747;
@@ -753,6 +993,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 2130968779
 			public static int logoDescription = 2130968779;
+			
+			// aapt resource value: 0
+			public static int max = 0;
 			
 			// aapt resource value: 2130968780
 			public static int maxActionInlineWidth = 2130968780;
@@ -859,6 +1102,12 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2130968801
 			public static int passwordToggleTintMode = 2130968801;
 			
+			// aapt resource value: 0
+			public static int pinned = 0;
+			
+			// aapt resource value: 0
+			public static int pinnedDrawable = 0;
+			
 			// aapt resource value: 2130968802
 			public static int popupMenuStyle = 2130968802;
 			
@@ -874,11 +1123,20 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2130968806
 			public static int pressedTranslationZ = 2130968806;
 			
+			// aapt resource value: 0
+			public static int progress = 0;
+			
 			// aapt resource value: 2130968807
 			public static int progressBarPadding = 2130968807;
 			
 			// aapt resource value: 2130968808
 			public static int progressBarStyle = 2130968808;
+			
+			// aapt resource value: 0
+			public static int progressButtonStyle = 0;
+			
+			// aapt resource value: 0
+			public static int progressColor = 0;
 			
 			// aapt resource value: 2130968809
 			public static int queryBackground = 2130968809;
@@ -927,6 +1185,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 2130968824
 			public static int selectableItemBackgroundBorderless = 2130968824;
+			
+			// aapt resource value: 0
+			public static int shadowDrawable = 0;
 			
 			// aapt resource value: 2130968825
 			public static int showAsAction = 2130968825;
@@ -1185,6 +1446,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 2130968910
 			public static int trackTintMode = 2130968910;
+			
+			// aapt resource value: 0
+			public static int unpinnedDrawable = 0;
 			
 			// aapt resource value: 2130968911
 			public static int useCompatPadding = 2130968911;
@@ -1517,6 +1781,99 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 2131099729
 			public static int primary_text_disabled_material_light = 2131099729;
+			
+			// aapt resource value: 0
+			public static int progress_default_circle_color = 0;
+			
+			// aapt resource value: 0
+			public static int progress_default_progress_color = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_background_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_background_holo_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_background_holo_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_background_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_bright_foreground_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_bright_foreground_dark_disabled = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_bright_foreground_disabled_holo_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_bright_foreground_disabled_holo_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_bright_foreground_holo_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_bright_foreground_holo_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_bright_foreground_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_dim_foreground_disabled_holo_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_dim_foreground_disabled_holo_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_dim_foreground_holo_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_dim_foreground_holo_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_highlighted_text_holo_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_highlighted_text_holo_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_hint_foreground_holo_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_hint_foreground_holo_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_blue_bright = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_blue_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_blue_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_green_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_green_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_orange_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_orange_light = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_purple = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_red_dark = 0;
+			
+			// aapt resource value: 0
+			public static int refractored_holo_red_light = 0;
 			
 			// aapt resource value: 2131099730
 			public static int ripple_material_dark = 2131099730;
@@ -2339,9 +2696,6 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0
 			public static int Background = 0;
 			
-			// aapt resource value: 0
-			public static int defaultBackground = 0;
-			
 			// aapt resource value: 2131296342
 			public static int design_bottom_navigation_item_background = 2131296342;
 			
@@ -3003,6 +3357,21 @@ namespace GrowersClassified.Droid
 			public static int notify_panel_notification_icon_bg = 2131296268;
 			
 			// aapt resource value: 0
+			public static int pin_progress_pinned = 0;
+			
+			// aapt resource value: 0
+			public static int pin_progress_shadow = 0;
+			
+			// aapt resource value: 0
+			public static int pin_progress_unpinned = 0;
+			
+			// aapt resource value: 0
+			public static int scrubber_control_normal_holo = 0;
+			
+			// aapt resource value: 0
+			public static int scrubber_control_pressed_holo = 0;
+			
+			// aapt resource value: 0
 			public static int shoppingbag = 0;
 			
 			// aapt resource value: 2131296361
@@ -3017,6 +3386,22 @@ namespace GrowersClassified.Droid
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Font
+		{
+			
+			// aapt resource value: 0
+			public static int progress_inner_size = 0;
+			
+			static Font()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Font()
 			{
 			}
 		}
@@ -3099,8 +3484,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131492871
 			public static int blocking = 2131492871;
 			
-			// aapt resource value: 2131492890
-			public static int bottom = 2131492890;
+			// aapt resource value: 0
+			public static int bottom = 0;
 			
 			// aapt resource value: 2131492891
 			public static int buttonPanel = 2131492891;
@@ -3108,14 +3493,29 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131492892
 			public static int cancel_action = 2131492892;
 			
-			// aapt resource value: 2131492893
-			public static int center = 2131492893;
+			// aapt resource value: 0
+			public static int center = 0;
+			
+			// aapt resource value: 0
+			public static int center_horizontal = 0;
+			
+			// aapt resource value: 0
+			public static int center_vertical = 0;
 			
 			// aapt resource value: 2131492894
 			public static int checkbox = 2131492894;
 			
 			// aapt resource value: 2131492872
 			public static int chronometer = 2131492872;
+			
+			// aapt resource value: 0
+			public static int clip = 0;
+			
+			// aapt resource value: 0
+			public static int clip_horizontal = 0;
+			
+			// aapt resource value: 0
+			public static int clip_vertical = 0;
 			
 			// aapt resource value: 2131492896
 			public static int container = 2131492896;
@@ -3156,8 +3556,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131492908
 			public static int edit_query = 2131492908;
 			
-			// aapt resource value: 2131492909
-			public static int end = 2131492909;
+			// aapt resource value: 0
+			public static int end = 0;
 			
 			// aapt resource value: 2131492910
 			public static int end_padder = 2131492910;
@@ -3168,8 +3568,14 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131492911
 			public static int expand_activities_button = 2131492911;
 			
-			// aapt resource value: 2131492913
-			public static int fill = 2131492913;
+			// aapt resource value: 0
+			public static int fill = 0;
+			
+			// aapt resource value: 0
+			public static int fill_horizontal = 0;
+			
+			// aapt resource value: 0
+			public static int fill_vertical = 0;
 			
 			// aapt resource value: 2131492914
 			public static int @fixed = 2131492914;
@@ -3204,8 +3610,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131492924
 			public static int largeLabel = 2131492924;
 			
-			// aapt resource value: 2131492925
-			public static int left = 2131492925;
+			// aapt resource value: 0
+			public static int left = 0;
 			
 			// aapt resource value: 2131492878
 			public static int line1 = 2131492878;
@@ -3348,8 +3754,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131492947
 			public static int radio = 2131492947;
 			
-			// aapt resource value: 2131492948
-			public static int right = 2131492948;
+			// aapt resource value: 0
+			public static int right = 0;
 			
 			// aapt resource value: 2131492884
 			public static int right_icon = 2131492884;
@@ -3444,8 +3850,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131492978
 			public static int src_over = 2131492978;
 			
-			// aapt resource value: 2131492979
-			public static int start = 2131492979;
+			// aapt resource value: 0
+			public static int start = 0;
 			
 			// aapt resource value: 2131492980
 			public static int status_bar_latest_event_content = 2131492980;
@@ -3498,8 +3904,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0
 			public static int toolbar = 0;
 			
-			// aapt resource value: 2131492996
-			public static int top = 2131492996;
+			// aapt resource value: 0
+			public static int top = 0;
 			
 			// aapt resource value: 2131492997
 			public static int topPanel = 2131492997;
@@ -3568,6 +3974,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2131558405
 			public static int cancel_button_image_alpha = 2131558405;
 			
+			// aapt resource value: 0
+			public static int circular_indeterminent_interval = 0;
+			
 			// aapt resource value: 2131558406
 			public static int config_tooltipAnimTime = 2131558406;
 			
@@ -3585,6 +3994,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 2131558407
 			public static int mr_controller_volume_group_list_fade_out_duration_ms = 2131558407;
+			
+			// aapt resource value: 0
+			public static int progressbutton_indeterminent_interval = 0;
 			
 			// aapt resource value: 2131558409
 			public static int show_password_duration = 2131558409;
@@ -4560,6 +4972,12 @@ namespace GrowersClassified.Droid
 			public static int CardView_Light = 2132148228;
 			
 			// aapt resource value: 0
+			public static int CircularProgressBar = 0;
+			
+			// aapt resource value: 0
+			public static int CircularProgressBarLight = 0;
+			
+			// aapt resource value: 0
 			public static int MainTheme = 0;
 			
 			// aapt resource value: 0
@@ -4606,6 +5024,12 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 2132148407
 			public static int Platform_Widget_AppCompat_Spinner = 2132148407;
+			
+			// aapt resource value: 0
+			public static int ProgressButton = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_Pin = 0;
 			
 			// aapt resource value: 2132148408
 			public static int RtlOverlay_DialogWindowTitle_AppCompat = 2132148408;
@@ -6466,6 +6890,40 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 2
 			public static int ForegroundLinearLayout_foregroundInsidePadding = 2;
 			
+			public static int[] HoloCircularProgressBar = new int[] {
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0};
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_gravity = 0;
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_indeterminate = 0;
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_indeterminate_interval = 0;
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_marker_progress = 0;
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_progress = 0;
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_progress_background_color = 0;
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_progress_color = 0;
+			
+			// aapt resource value: 0
+			public static int HoloCircularProgressBar_circular_stroke_width = 0;
+			
 			public static int[] LinearLayoutCompat = new int[] {
 					16843046,
 					16843047,
@@ -6769,6 +7227,64 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 2
 			public static int PopupWindow_overlapAnchor = 2;
+			
+			public static int[] ProgressButton = new int[] {
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0};
+			
+			// aapt resource value: 0
+			public static int ProgressButton_android_clickable = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_android_focusable = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_android_selectableItemBackground = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_circleColor = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_indeterminate = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_indeterminate_interval = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_innerSize = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_max = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_pinned = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_pinnedDrawable = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_progress = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_progressColor = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_shadowDrawable = 0;
+			
+			// aapt resource value: 0
+			public static int ProgressButton_unpinnedDrawable = 0;
 			
 			public static int[] RecycleListView = new int[] {
 					2130968790,
@@ -7201,6 +7717,12 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 21
 			public static int TextInputLayout_passwordToggleTintMode = 21;
+			
+			public static int[] Theme = new int[] {
+					0};
+			
+			// aapt resource value: 0
+			public static int Theme_circularProgressBarStyle = 0;
 			
 			public static int[] Toolbar = new int[] {
 					16842927,

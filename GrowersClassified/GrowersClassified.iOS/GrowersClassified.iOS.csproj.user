@@ -4,5 +4,7 @@
     <TargetiOSDevice />
     <SelectedDevice>iPhone 8 Plus iOS 11.3</SelectedDevice>
     <DefaultDevice>iPhone 8 Plus iOS 11.3</DefaultDevice>
+    <DeveloperId />
+    <DevelopmentTeamId />
   </PropertyGroup>
 </Project>

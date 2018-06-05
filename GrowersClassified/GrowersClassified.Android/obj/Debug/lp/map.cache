@@ -3,17 +3,12 @@ Mono.Cecil
 Mono.Cecil.Mdb
 Mono.Cecil.Pdb
 Mono.Cecil.Rocks
+MonoDroidToolkit
 netstandard
 Newtonsoft.Json
 Plugin.CurrentActivity
 Plugin.Media
 Plugin.Permissions
-SQLite-net
-SQLitePCLRaw.batteries_green
-SQLitePCLRaw.batteries_v2
-SQLitePCLRaw.core
-SQLitePCLRaw.lib.e_sqlite3
-SQLitePCLRaw.provider.e_sqlite3
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -48,4 +43,3 @@ System.Security.Cryptography.Primitives
 System.Text.Encoding
 System.Diagnostics.Debug
 System.Reflection.Primitives
-System.Reflection.Extensions

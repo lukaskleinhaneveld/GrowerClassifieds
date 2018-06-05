@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Threading.Tasks;
-using GrowersClassified.Views;
 using GrowersClassified.Views.Menu;
 using System.Threading;
 using System.Data;
@@ -16,7 +15,7 @@ namespace GrowersClassified
 
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Page1());
+            MainPage = new NavigationPage(new MasterDetail());
         }
 
         protected override void OnStart()

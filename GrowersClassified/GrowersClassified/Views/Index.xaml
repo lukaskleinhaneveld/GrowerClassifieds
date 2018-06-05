@@ -20,16 +20,13 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
-                <!--<Image Source="grower_classifieds.png"
+                <Image Source="grower_classifieds.png"
                        Grid.Column="0"
                        Grid.ColumnSpan="2"
                        Grid.Row="0"
-                       VerticalOptions="Center"/>-->
-                <Button Image="grower_classifieds.png"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                        Grid.Row="0"
-                        VerticalOptions="Center"/>
+                       Grid.RowSpan="2"
+                       Margin="20, 0, 0 ,0"
+                       VerticalOptions="Center"/>
 
                 <Button Text="Post"
                         Grid.Column="3"

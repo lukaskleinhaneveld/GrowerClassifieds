@@ -36,6 +36,7 @@ namespace GrowersClassified.Views.Menu
 
         private async void ToSignInPage(object sender, EventArgs e)
         {
+            await Navigation.PopToRootAsync();
             await Navigation.PushAsync(new LoginPage());
         }
     }
