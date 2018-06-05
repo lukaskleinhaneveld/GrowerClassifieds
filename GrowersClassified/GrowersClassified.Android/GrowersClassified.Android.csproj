@@ -130,9 +130,6 @@
     <AndroidResource Include="Resources\drawable\grower_classifieds.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\grower_classifieds_mobile.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\house.png" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +182,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\grower_classifieds_mobile.png" />
   </ItemGroup>
   <Import Project="..\GrowersClassified\GrowersClassified.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
