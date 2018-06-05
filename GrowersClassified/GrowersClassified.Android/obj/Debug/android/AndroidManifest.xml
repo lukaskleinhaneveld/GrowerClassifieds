@@ -7,7 +7,7 @@
   <uses-feature android:name="android.hardware.camera" android:required="false" />
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
   <application android:label="GrowerClassifieds" android:icon="@drawable/grower_classifieds_mobile" android:debuggable="true" android:name="android.app.Application" android:allowBackup="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Tutorial" android:theme="@style/MainTheme" android:name="md5ab7fa1ffb6af8201eca2eb8ae18fe174.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/grower_classifieds_mobile" android:label="GrowerClassifieds" android:theme="@style/MainTheme" android:name="md5ab7fa1ffb6af8201eca2eb8ae18fe174.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using GrowersClassified.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
 
 namespace GrowersClassified.Views.Login
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
         public LoginPage()
@@ -24,6 +22,11 @@ namespace GrowersClassified.Views.Login
         {
             string Name = Entry_Name.Text;
             string Pass = Entry_Pass.Text;
+        }
+        
+        private async void ToRegister_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
         }
     }
 }

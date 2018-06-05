@@ -29,5 +29,7 @@
                     BackgroundColor="#BDD73C"
                     Clicked="LoginProcess_Clicked"/>
         </StackLayout>
+        <Button Text="Register here"
+                Clicked="ToRegister_Clicked"/>
     </StackLayout>
 </ContentPage>
