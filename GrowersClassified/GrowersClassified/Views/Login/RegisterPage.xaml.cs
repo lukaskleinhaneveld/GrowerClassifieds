@@ -9,7 +9,6 @@ using Xamarin.Forms.Xaml;
 
 namespace GrowersClassified.Views.Login
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RegisterPage : ContentPage
 	{
 		public RegisterPage ()
@@ -21,5 +20,11 @@ namespace GrowersClassified.Views.Login
         {
             await Navigation.PushAsync(new LoginPage());
         }
-	}
+
+        public void RegisterProcess_Clicked()
+        {
+            string Name = Entry_Name.Text;
+            string Pass = Entry_Pass.Text;
+        }
+    }
 }

@@ -1,0 +1,4 @@
+netstandard
+System.Runtime
+Xamarin.Android.Cecil
+Xamarin.Android.Cecil.Mdb

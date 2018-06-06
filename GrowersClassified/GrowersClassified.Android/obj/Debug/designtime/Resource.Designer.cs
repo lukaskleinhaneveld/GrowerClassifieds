@@ -31,26 +31,26 @@ namespace GrowersClassified.Droid
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0
-			public static int avatar = 0;
+			// aapt resource value: 0x7F010007
+			public const int avatar = 2130771975;
 			
-			// aapt resource value: 0
-			public static int Background = 0;
+			// aapt resource value: 0x7F010008
+			public const int Background = 2130771976;
 			
-			// aapt resource value: 0
-			public static int grower_classifieds = 0;
+			// aapt resource value: 0x7F010002
+			public const int grower_classifieds = 2130771970;
 			
-			// aapt resource value: 0
-			public static int grower_classifieds_mobile = 0;
+			// aapt resource value: 0x7F010003
+			public const int grower_classifieds_mobile = 2130771971;
 			
-			// aapt resource value: 0
-			public static int house = 0;
+			// aapt resource value: 0x7F010004
+			public const int house = 2130771972;
 			
-			// aapt resource value: 0
-			public static int icon = 0;
+			// aapt resource value: 0x7F010005
+			public const int icon = 2130771973;
 			
-			// aapt resource value: 0
-			public static int shoppingbag = 0;
+			// aapt resource value: 0x7F010006
+			public const int shoppingbag = 2130771974;
 			
 			static Drawable()
 			{
@@ -65,11 +65,11 @@ namespace GrowersClassified.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0
-			public static int sliding_tabs = 0;
+			// aapt resource value: 0x7F020002
+			public const int sliding_tabs = 2130837506;
 			
-			// aapt resource value: 0
-			public static int toolbar = 0;
+			// aapt resource value: 0x7F020003
+			public const int toolbar = 2130837507;
 			
 			static Id()
 			{
@@ -84,11 +84,11 @@ namespace GrowersClassified.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0
-			public static int Tabbar = 0;
+			// aapt resource value: 0x7F030002
+			public const int Tabbar = 2130903042;
 			
-			// aapt resource value: 0
-			public static int Toolbar = 0;
+			// aapt resource value: 0x7F030003
+			public const int Toolbar = 2130903043;
 			
 			static Layout()
 			{
@@ -103,17 +103,17 @@ namespace GrowersClassified.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0
-			public static int AppCompatDialogStyle = 0;
+			// aapt resource value: 0x7F040004
+			public const int AppCompatDialogStyle = 2130968580;
 			
-			// aapt resource value: 0
-			public static int AppTheme = 0;
+			// aapt resource value: 0x7F040005
+			public const int AppTheme = 2130968581;
 			
-			// aapt resource value: 0
-			public static int MainTheme = 0;
+			// aapt resource value: 0x7F040002
+			public const int MainTheme = 2130968578;
 			
-			// aapt resource value: 0
-			public static int MainTheme_Base = 0;
+			// aapt resource value: 0x7F040003
+			public const int MainTheme_Base = 2130968579;
 			
 			static Style()
 			{

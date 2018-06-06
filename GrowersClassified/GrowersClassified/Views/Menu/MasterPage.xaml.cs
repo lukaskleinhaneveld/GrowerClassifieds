@@ -32,7 +32,7 @@ namespace GrowersClassified.Views.Menu
 
         }
 
-        private async void ToSignInPage_Clicked(object sender, EventArgs e)
+        private async void ToLoginPage_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new LoginPage());
         }

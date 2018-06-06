@@ -12,37 +12,37 @@
             <ScrollView>
                 <StackLayout>
                     <Entry Placeholder="Title..."
-                           Text="{Binding Product_Title}"
+                           x:Name="Product_Title"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
                     <Entry Placeholder="Description..."
-                           Text="{Binding Product_Description}"
+                           x:Name="Product_Description"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
                     
                     <Entry Placeholder="Model..."
-                           Text="{Binding Product_Model}"
+                           x:Name="Product_Model"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
                     
                     <Entry Placeholder="Make..."
-                           Text="{Binding Product_Make}"
+                           x:Name="Product_Make"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
                     
                     <Entry Placeholder="Year..."
-                           Text="{Binding Product_Year}"
+                           x:Name="Product_Year"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
                     <Entry Placeholder="Price..."
-                           Text="{Binding Product_Price}"
+                           x:Name="Product_Price"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>

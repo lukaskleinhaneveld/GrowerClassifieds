@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GrowersClassified.Views.Login.LoginPage"
-             x:Name="Login">
+             x:Class="GrowersClassified.Views.Login.LoginPage">
     <StackLayout x:Name="container">
         <StackLayout x:Name="LoginForm" Padding="40, 20, 40, 0">
             <StackLayout x:Name="Header" Padding="0,0,0,20">
@@ -28,8 +27,8 @@
                     VerticalOptions="End"
                     BackgroundColor="#BDD73C"
                     Clicked="LoginProcess_Clicked"/>
-        </StackLayout>
-        <Button Text="Register here"
+            <Button Text="Register here"
                 Clicked="ToRegister_Clicked"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
