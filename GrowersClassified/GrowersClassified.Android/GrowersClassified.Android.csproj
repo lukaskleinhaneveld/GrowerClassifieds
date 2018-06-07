@@ -91,8 +91,14 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.2</Version>
     </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.166-beta</Version>
+    </PackageReference>
     <PackageReference Include="System.Net.Http">
       <Version>4.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>4.0.0.186-beta</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>4.0.1.1-beta</Version>
@@ -103,7 +109,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2" />
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.1.0.530888-pre2</Version>
+      <Version>3.1.0.550168-pre3</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +117,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -185,6 +192,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\grower_classifieds_mobile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\Splash.png" />
   </ItemGroup>
   <Import Project="..\GrowersClassified\GrowersClassified.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Views.Menu.MasterPage"
              NavigationPage.HasNavigationBar="false"
-             Title="GrowersClassified">
+             Title="Menu">
     <ContentPage.Content>
         <StackLayout x:Name="MasterStack" VerticalOptions="FillAndExpand" BackgroundColor="#e8e8e8">
             <StackLayout x:Name="TopStack" VerticalOptions="FillAndExpand">

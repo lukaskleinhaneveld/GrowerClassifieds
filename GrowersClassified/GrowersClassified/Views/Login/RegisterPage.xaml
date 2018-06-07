@@ -2,23 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Views.Login.RegisterPage"
-             x:Name="Register">
-    <StackLayout x:Name="container">
+             Title="Register">
+    <StackLayout x:Name="Container">
         <StackLayout x:Name="RegisterForm" Padding="40, 20, 40, 0">
             <StackLayout x:Name="Header" Padding="0,0,0,20">
                 <Label Text="Register"
-                       VerticalOptions="CenterAndExpand" 
-                       HorizontalOptions="CenterAndExpand" 
-                       FontSize="40"/>
+                   HorizontalOptions="Center"
+                   VerticalOptions="StartAndExpand"
+                   FontSize="40"
+                   TextColor="Black"/>
             </StackLayout>
-
-            <Entry x:Name="Entry_Name"
-                   Placeholder="Username"/>
-
-            <Entry x:Name="Entry_Pass"
-                   Placeholder="Password"
-                   IsPassword="True"/>
-
+            <Entry Placeholder="Username"
+               x:Name="Entry_Name"/>
+            
+            <Entry Placeholder="Password"
+               x:Name="Entry_Pass"
+               IsPassword="True"/>
+            
+            <Entry Placeholder="Confirm Password"
+               x:Name="Entry_ConfirmPass"
+               IsPassword="True"/>
+            
+            <Label x:Name="RegisterMessage"
+                   HorizontalOptions="Center"/>
+            
             <Button Text="Register"
                     HorizontalOptions="Center" 
                     FontSize="Medium"
@@ -26,10 +33,10 @@
                     HeightRequest="60"  
                     TextColor="Black" 
                     VerticalOptions="End"
-                    BackgroundColor="#BDD73C"
-                    Clicked="RegisterProcess_Clicked"/>
+                    BackgroundColor="#BDD73C"/>
+            
+            <Label Text="Already have an account? Login here." HorizontalOptions="Center"/>
+            <Button Text="Login here" Clicked="ToLogin_Clicked"/>
         </StackLayout>
-        <Button Text="Login here"
-                Clicked="ToLogin_Clicked"/>
     </StackLayout>
 </ContentPage>

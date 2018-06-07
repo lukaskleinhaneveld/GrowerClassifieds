@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>GrowersClassified.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>GrowersClassified</AssemblyName>
+    <AssemblyName>Grower Classifieds</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <SccProjectName>SAK</SccProjectName>
@@ -33,7 +33,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignProvision />
     <MtouchSdkVersion>11.4</MtouchSdkVersion>
-    <OptimizePNGs>true</OptimizePNGs>
+    <OptimizePNGs>false</OptimizePNGs>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -58,6 +59,9 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFastDev>false</MtouchFastDev>
+    <OptimizePNGs>false</OptimizePNGs>
+    <CodesignProvision />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -108,6 +112,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.CSharp" />
@@ -130,14 +135,20 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.2</Version>
     </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.166-beta</Version>
+    </PackageReference>
     <PackageReference Include="System.Net.Http">
       <Version>4.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>4.0.0.186-beta</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>4.0.1.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.1.0.530888-pre2</Version>
+      <Version>3.1.0.550168-pre3</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

@@ -134,8 +134,8 @@ Global
 		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|iPhone.Build.0 = Debug|iPhone
-		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhone
+		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhone
 		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|x64.ActiveCfg = Debug|iPhone
 		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Debug|x86.ActiveCfg = Debug|iPhone
 		{8B7E91B1-EA33-4D57-A56E-2FE1140249AF}.Release|Any CPU.ActiveCfg = Release|iPhone
@@ -153,24 +153,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6200023B-4A77-4295-B58C-9D21D8DBBAE4}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://lukaskh.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = GrowersClassified\\GrowersClassified.Android\\GrowersClassified.Android.csproj
-		SccProjectName1 = GrowersClassified/GrowersClassified.Android
-		SccLocalPath1 = GrowersClassified\\GrowersClassified.Android
-		SccProjectUniqueName2 = GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj
-		SccProjectName2 = GrowersClassified/GrowersClassified.iOS
-		SccLocalPath2 = GrowersClassified\\GrowersClassified.iOS
-		SccProjectUniqueName3 = GrowersClassified\\GrowersClassified\\GrowersClassified.projitems
-		SccProjectTopLevelParentUniqueName3 = GrowersClassified\\GrowersClassified\\GrowersClassified.shproj
-		SccProjectName3 = GrowersClassified/GrowersClassified
-		SccLocalPath3 = GrowersClassified\\GrowersClassified
-		SccProjectUniqueName4 = GrowersClassified\\GrowersClassified\\GrowersClassified.shproj
-		SccProjectName4 = GrowersClassified/GrowersClassified
-		SccLocalPath4 = GrowersClassified\\GrowersClassified
 	EndGlobalSection
 EndGlobal
