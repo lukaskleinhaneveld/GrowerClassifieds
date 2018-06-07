@@ -29,7 +29,7 @@ namespace GrowersClassified.Views.Login
                     Password = Entry_Pass.Text
                 };
 
-                if (user.Username == "" || user.Password == "")
+                if (user.Username == null || user.Password == null)
                 {
                     LoginMessage.TextColor = Color.Red;
                     LoginMessage.Text = "Username or password field is empty";
