@@ -1,10 +1,13 @@
+netstandard
+System.Runtime
+Xamarin.Android.Cecil
+Xamarin.Android.Cecil.Mdb
 FormsViewGroup
 Mono.Cecil
 Mono.Cecil.Mdb
 Mono.Cecil.Pdb
 Mono.Cecil.Rocks
 MonoDroidToolkit
-netstandard
 Newtonsoft.Json
 Plugin.Connectivity.Abstractions
 Plugin.Connectivity
@@ -17,12 +20,9 @@ SQLitePCLRaw.batteries_v2
 SQLitePCLRaw.core
 SQLitePCLRaw.lib.e_sqlite3
 SQLitePCLRaw.provider.e_sqlite3
-System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
-Xamarin.Android.Cecil
-Xamarin.Android.Cecil.Mdb
 Xamarin.Android.Support.Animated.Vector.Drawable
 Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat

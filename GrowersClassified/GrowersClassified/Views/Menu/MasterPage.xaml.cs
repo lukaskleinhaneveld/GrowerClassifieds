@@ -15,9 +15,21 @@ namespace GrowersClassified.Views.Menu
     {
         public ListView ListView { get { return listview; } }
         public List<MasterMenuItem> items;
+        public string Displayname = CurrentUser.Displayame;
         public MasterPage()
         {
             InitializeComponent();
+            if (!CurrentUser.IsUserLoggedIn)
+            {
+                BtnLoginProcess.IsVisible = true;
+                LblUserName.IsVisible = false;
+            }
+            else
+            {
+                BtnLoginProcess.IsVisible = false;
+                LblUserName.Text = Displayname;
+                LblUserName.IsVisible = true;
+            }
             SetItems();
         }
 

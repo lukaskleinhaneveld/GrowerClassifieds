@@ -26,7 +26,7 @@ namespace GrowersClassified.Data
             var postData = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("grant_type", grant_type),
-                new KeyValuePair<string, string>("email", user.Username),
+                new KeyValuePair<string, string>("email", user.Email),
                 new KeyValuePair<string, string>("password", user.Password)
             };
             var content = new FormUrlEncodedContent(postData);

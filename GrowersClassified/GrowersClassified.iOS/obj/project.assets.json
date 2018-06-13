@@ -257,7 +257,7 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.550168-pre3": {
+      "Xamarin.Forms/3.1.0.561732-pre4": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -616,7 +616,7 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.550168-pre3": {
+      "Xamarin.Forms/3.1.0.561732-pre4": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -975,7 +975,7 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.550168-pre3": {
+      "Xamarin.Forms/3.1.0.561732-pre4": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -1334,7 +1334,7 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.550168-pre3": {
+      "Xamarin.Forms/3.1.0.561732-pre4": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -2257,6 +2257,7 @@
         "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
         "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
         "lib/MonoAndroid10/Plugin.Connectivity.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll.mdb",
         "lib/MonoAndroid10/Plugin.Connectivity.pdb",
         "lib/MonoAndroid10/Plugin.Connectivity.xml",
         "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
@@ -2277,6 +2278,7 @@
         "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
         "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
         "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.dll.mdb",
         "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
         "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
         "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
@@ -2336,10 +2338,10 @@
         "xam.plugin.media.nuspec"
       ]
     },
-    "Xamarin.Forms/3.1.0.550168-pre3": {
-      "sha512": "Vwe+ppLElZczryww6KI0CIVwjqDUoEgGUOgPCDpib1rE0UHYWCAsGLePo01op9yjEuKTrxK1OjZ0dLQJO1bJjA==",
+    "Xamarin.Forms/3.1.0.561732-pre4": {
+      "sha512": "fHIHUelILuK6Ke2G3Wbc9Ul6D1vGBfOnXPGLBVXTtwmmYOF+rk9NtqhRg4axKQRRhVKV1mgV/p1twJDERAkXWA==",
       "type": "package",
-      "path": "xamarin.forms/3.1.0.550168-pre3",
+      "path": "xamarin.forms/3.1.0.561732-pre4",
       "files": [
         ".signature.p7s",
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
@@ -2369,11 +2371,13 @@
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
@@ -2481,7 +2485,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.1.0.550168-pre3.nupkg.sha512",
+        "xamarin.forms.3.1.0.561732-pre4.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -2506,7 +2510,7 @@
       "System.Net.Http >= 4.3.3",
       "Xam.Plugin.Connectivity >= 4.0.0.186-beta",
       "Xam.Plugin.Media >= 4.0.1.1-beta",
-      "Xamarin.Forms >= 3.1.0.550168-pre3",
+      "Xamarin.Forms >= 3.1.0.561732-pre4",
       "sqlite-net-pcl >= 1.5.166-beta"
     ]
   },
@@ -2569,7 +2573,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.1.0.550168-pre3, )"
+            "version": "[3.1.0.561732-pre4, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

@@ -18,11 +18,12 @@
             <Entry x:Name="Entry_Pass"
                    Placeholder="Password"
                    IsPassword="True"/>
-
+            
             <Label x:Name="LoginMessage"
                    HorizontalOptions="Center"/>
-            
+
             <Button Text="Login"
+                    x:Name="BtnLogin"
                     HorizontalOptions="Center" 
                     FontSize="Medium"
                     WidthRequest="250" 

@@ -12,8 +12,8 @@
                    FontSize="40"
                    TextColor="Black"/>
             </StackLayout>
-            <Entry Placeholder="Username"
-               x:Name="Entry_Name"/>
+            <Entry Placeholder="Display name"
+               x:Name="Entry_Displayname"/>
             
             <Entry Placeholder="Password"
                x:Name="Entry_Pass"

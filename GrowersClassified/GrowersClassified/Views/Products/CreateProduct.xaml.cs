@@ -32,7 +32,7 @@ namespace GrowersClassified.Views.Products
         //        Product_Make = Product_Make.Text,
         //        Product_Year = Product_Year.Text,
         //        Product_Price = Product_Make.Text,
-        //        Product_Author = user.Username;
+        //        Product_Author = user.Displayname;
         //    };
         //}
     }

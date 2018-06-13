@@ -56,8 +56,9 @@
                     <Grid.RowDefinitions>
 
                     </Grid.RowDefinitions>
-
-                    <Label Text="Browese Categories"
+                    <Label x:Name="LblUserName"/>
+                    <!--<Label Text="{Binding Displayname}"
+                           x:Name="Displayname"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"
                            HorizontalOptions="Center"
@@ -67,7 +68,7 @@
                            FontAttributes="Bold"
                            FontSize="20"
                            HeightRequest="150"
-                           WidthRequest="300"/>
+                           WidthRequest="300"/>-->
                     <!--Only initializing height for the label once, the rest will automatically inherit it.-->
 
                     <Image Source="Background.jpg"

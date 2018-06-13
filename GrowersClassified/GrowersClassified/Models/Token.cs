@@ -7,7 +7,8 @@ namespace GrowersClassified.Models
     {
         public int Id { get; set; }
         [JsonProperty("access_token")] public string AccessToken { get; set; }
-        [JsonProperty("username")] public string Username { get; set; }
+        [JsonProperty("email")] public string Email { get; set; }
+        [JsonProperty("displayname")] public string Displayname { get; set; }
         public DateTime ExpireDate { get; set; }
         public double ExpireIn { get; set; }
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.companyname.GrowersClassified" android:installLocation="auto" android:versionName="1">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.GrowersClassified.app" android:installLocation="auto" android:versionName="1">
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -18,12 +18,12 @@
     </activity>
     <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md59628c2715c1bb8febcc7ae8402df0582.ConnectivityChangeBroadcastReceiver" />
     <activity android:configChanges="orientation|screenSize" android:name="md54cd65ac53ae710bff80022afc423e0f3.MediaPickerActivity" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.GrowersClassified.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.GrowersClassified.app.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.GrowersClassified" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.GrowersClassified.app" />
       </intent-filter>
     </receiver>
   </application>
