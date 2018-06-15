@@ -13,8 +13,8 @@
 namespace GrowersClassified.Views.Menu {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified\\View" +
-        "s\\Menu\\MasterDetail.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\zatho\\source\\repos\\GrowerClassifieds\\GrowersClassified\\GrowersClassified" +
+        "\\Views\\Menu\\MasterDetail.xaml")]
     public partial class MasterDetail : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

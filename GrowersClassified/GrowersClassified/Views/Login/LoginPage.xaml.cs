@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using GrowersClassified.Data;
 using GrowersClassified.Models;
-using GrowersClassified.Views.Menu;
+using GrowersClassified.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Newtonsoft.Json;
 
 namespace GrowersClassified.Views.Login
 {
@@ -43,14 +44,24 @@ namespace GrowersClassified.Views.Login
                     dbclear.Droptable();
                     if (result.AccessToken != null)
                     {
-                        //var userDatabase = new UserDatabase();
-                        //userDatabase.AddUser(result);
+                        var userDatabase = new UserDatabase();
+                        userDatabase.AddUser(result);
+
+                        var userdata = userDatabase.GetAllUsers();
+                        var displayname = userdata.First().Displayname;
+                        CurrentUser.Displayame = displayname;
+                        Console.WriteLine("***************************");
+                        Console.WriteLine(displayname);
+                        Console.WriteLine("***************************");
+
+
                         Entry_Email.Text = "";
                         Entry_Pass.Text = "";
                         LoginMessage.Text = "Logged in!";
                         CurrentUser.IsUserLoggedIn = true;
                         CurrentUser.Displayame = result.Displayname;
                         await Navigation.PopToRootAsync();
+
                     }
                     else
                     {
@@ -58,7 +69,6 @@ namespace GrowersClassified.Views.Login
                         LoginMessage.Text = "Invalid login information... please try again!";
 
                     }
-                    dbclear.Droptable();
                 }
             }
             else

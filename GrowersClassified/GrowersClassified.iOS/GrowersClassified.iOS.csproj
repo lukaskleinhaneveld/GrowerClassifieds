@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>GrowersClassified.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Grower Classifieds</AssemblyName>
+    <AssemblyName>GrowerClassifieds</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <SccProjectName>SAK</SccProjectName>

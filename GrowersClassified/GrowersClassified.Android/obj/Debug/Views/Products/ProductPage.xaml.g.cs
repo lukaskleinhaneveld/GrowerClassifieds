@@ -13,8 +13,8 @@
 namespace GrowersClassified.Views.Products {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified\\View" +
-        "s\\Products\\ProductPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\zatho\\source\\repos\\GrowerClassifieds\\GrowersClassified\\GrowersClassified" +
+        "\\Views\\Products\\ProductPage.xaml")]
     public partial class ProductPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

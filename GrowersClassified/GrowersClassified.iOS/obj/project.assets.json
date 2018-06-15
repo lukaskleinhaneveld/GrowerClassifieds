@@ -2515,21 +2515,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lukas\\.nuget\\packages\\": {}
+    "C:\\Users\\zatho\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\zatho\\source\\repos\\GrowerClassifieds\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
       "projectName": "GrowersClassified.iOS",
-      "projectPath": "C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
-      "packagesPath": "C:\\Users\\Lukas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified.iOS\\obj\\",
+      "projectPath": "C:\\Users\\zatho\\source\\repos\\GrowerClassifieds\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
+      "packagesPath": "C:\\Users\\zatho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zatho\\source\\repos\\GrowerClassifieds\\GrowersClassified\\GrowersClassified.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\zatho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
