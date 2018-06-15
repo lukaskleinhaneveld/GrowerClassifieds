@@ -11,11 +11,12 @@ namespace GrowersClassified.Data
         {
             if (CrossConnectivity.Current.IsConnected)
             {
+                // There is an internet connection, so IsConnected = true
                 return true;
             }
             else
             {
-                // write your code if there is no Internet available    
+                // There is no internet connection, so IsConnected = false    
                 return false;
             }
         }

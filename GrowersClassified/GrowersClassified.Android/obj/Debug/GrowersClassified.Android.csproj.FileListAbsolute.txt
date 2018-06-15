@@ -1,3 +1,7 @@
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\GrowersClassified.Android.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\GrowersClassified.Android.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\com.GrowersClassified.app.apk
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\com.GrowersClassified.app-Signed.apk
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.csprojAssemblyReference.cache
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\App.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Index.xaml.g.cs
@@ -8,10 +12,6 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Login\LoginPage.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Login\RegisterPage.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.csproj.CoreCompileInputs.cache
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\GrowersClassified.Android.dll
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\GrowersClassified.Android.pdb
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\com.GrowersClassified.app.apk
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\com.GrowersClassified.app-Signed.apk
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\XamlC.stamp
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.dll
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.pdb

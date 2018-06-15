@@ -14,7 +14,10 @@
             </StackLayout>
             <Entry Placeholder="Display name"
                x:Name="Entry_Displayname"/>
-            
+
+            <Entry Placeholder="Email"
+               x:Name="Entry_Email"/>
+
             <Entry Placeholder="Password"
                x:Name="Entry_Pass"
                IsPassword="True"/>

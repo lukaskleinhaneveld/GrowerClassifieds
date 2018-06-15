@@ -27,6 +27,7 @@
                 </ListView>
             </StackLayout>
             <StackLayout x:Name="BottomStack" VerticalOptions="EndAndExpand" Padding="0,0,0,20">
+                <Button Text="Logout" x:Name="BtnLogoutProcess" FontSize="18" TextColor="Black" BackgroundColor="rgba(194, 196, 198, 1)" Clicked="BtnLogoutProcess_Clicked" Margin="20,0,20,0" VerticalOptions="Center"/>
                 <Label Text="Copyright by Bellpark Horticulture ©2018" HorizontalOptions="Center" FontSize="Small"   TextColor="#888" />
             </StackLayout>
         </StackLayout>

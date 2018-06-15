@@ -56,20 +56,6 @@
                     <Grid.RowDefinitions>
 
                     </Grid.RowDefinitions>
-                    <Label x:Name="LblUserName"/>
-                    <!--<Label Text="{Binding Displayname}"
-                           x:Name="Displayname"
-                           HorizontalTextAlignment="Center"
-                           VerticalTextAlignment="Center"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           TextColor="Black"
-                           Grid.ColumnSpan="4"
-                           FontAttributes="Bold"
-                           FontSize="20"
-                           HeightRequest="150"
-                           WidthRequest="300"/>-->
-                    <!--Only initializing height for the label once, the rest will automatically inherit it.-->
 
                     <Image Source="Background.jpg"
                            Grid.Column="1"

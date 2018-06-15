@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <ManifestDocuments>
-    <ManifestDocument>obj\Debug\lp\24\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\22\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\25\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\27\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\27\jl\manifest\AndroidManifest.xml</ManifestDocument>
@@ -29,9 +29,10 @@
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
-    <Jar>obj\Debug\lp\22\jl\arch-core-common.jar</Jar>
-    <Jar>obj\Debug\lp\23\jl\arch-lifecycle-common.jar</Jar>
-    <Jar>obj\Debug\lp\24\jl\bin\classes.jar</Jar>
+    <Jar>obj\Debug\lp\0\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Debug\lp\20\jl\arch-core-common.jar</Jar>
+    <Jar>obj\Debug\lp\21\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\Debug\lp\22\jl\bin\classes.jar</Jar>
     <Jar>obj\Debug\lp\25\jl\bin\classes.jar</Jar>
     <Jar>obj\Debug\lp\26\jl\support-annotations.jar</Jar>
     <Jar>obj\Debug\lp\27\jl\bin\classes.jar</Jar>
@@ -47,7 +48,6 @@
     <Jar>obj\Debug\lp\37\jl\bin\classes.jar</Jar>
     <Jar>obj\Debug\lp\38\jl\bin\classes.jar</Jar>
     <Jar>obj\Debug\lp\39\jl\bin\classes.jar</Jar>
-    <Jar>obj\Debug\lp\4\jl\formsviewgroup.jar</Jar>
     <Jar>obj\Debug\lp\40\jl\bin\classes.jar</Jar>
   </Jars>
 </Paths>

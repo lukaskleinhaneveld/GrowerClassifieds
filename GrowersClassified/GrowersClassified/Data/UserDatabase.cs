@@ -42,6 +42,13 @@ namespace GrowersClassified.Data
             return "success";
         }
 
+        // Logs the user out by clearing the local database AKA the only user in that table
+        public string LogoutUser()
+        {
+            _conn.DropTable<UserData>();
+            return "success";
+        }
+
         public List<UserData> GetAllUsers()
         {
             return _conn.Query<UserData>("SELECT * FROM UserData");
