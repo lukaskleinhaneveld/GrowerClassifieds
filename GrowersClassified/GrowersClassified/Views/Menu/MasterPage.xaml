@@ -10,7 +10,7 @@
                 <Image Source="grower_classifieds.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="250" HeightRequest="100"/>
                 <Label HeightRequest="5" HorizontalTextAlignment="Center" BackgroundColor="#BDD73C"/>
                 <Button Text="Login" x:Name="BtnLoginProcess" FontSize="18" TextColor="Black" BackgroundColor="#BDD73C" Clicked="ToLoginPage_Clicked" Margin="20,0,20,0" VerticalOptions="Center"/>
-                <Label x:Name="LblUserName" FontSize="18" TextColor="Black" BackgroundColor="#BDD73C" Margin="20,0,20,0" VerticalOptions="Center"/>
+                <Label x:Name="LblUserName" FontSize="18" TextColor="Black" BackgroundColor="#BDD73C" Margin="20,0,20,0" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             </StackLayout>
             <StackLayout x:Name="MidStack" VerticalOptions="CenterAndExpand">
                 <ListView x:Name="listview" SeparatorVisibility="None">

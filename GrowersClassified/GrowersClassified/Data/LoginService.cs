@@ -26,13 +26,11 @@ namespace GrowersClassified.Data
             var postData = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("grant_type", grant_type),
-                new KeyValuePair<string, string>("email", user.Email),
-                new KeyValuePair<string, string>("password", user.Password)
+                new KeyValuePair<string, string>("user_login", user.Username),
+                new KeyValuePair<string, string>("user_password", user.Password)
             };
             var content = new FormUrlEncodedContent(postData);
             var response = await PostResponseLogin<Token>(Constants.UrlLogin, content);
-            var dt = DateTime.Today;
-            response.ExpireDate = dt.AddSeconds(response.ExpireIn);
             return response;
         }
 

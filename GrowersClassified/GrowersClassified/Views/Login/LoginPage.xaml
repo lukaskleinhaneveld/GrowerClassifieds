@@ -12,8 +12,8 @@
                        FontSize="40"/>
             </StackLayout>
 
-            <Entry x:Name="Entry_Email"
-                   Placeholder="Email"/>
+            <Entry x:Name="Entry_Username"
+                   Placeholder="Username"/>
 
             <Entry x:Name="Entry_Pass"
                    Placeholder="Password"

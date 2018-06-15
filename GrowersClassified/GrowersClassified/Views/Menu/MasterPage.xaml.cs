@@ -16,25 +16,33 @@ namespace GrowersClassified.Views.Menu
     {
         public ListView ListView { get { return listview; } }
         public List<MasterMenuItem> items;
-        public string Displayname = CurrentUser.Displayame;
-        var userDatabase = new UserDatabase();
-        var userdata = userDatabase.GetAllUsers();
+        public string CU_Displayname = CurrentUser.Displayname;
         public MasterPage()
         {
             InitializeComponent();
-            if (!CurrentUser.IsUserLoggedIn)
+            var userDatabase = new UserDatabase();
+            var userdata = userDatabase.GetAllUsers();
+            if (userdata.Count < 1)
             {
                 BtnLoginProcess.IsVisible = true;
                 LblUserName.IsVisible = false;
                 BtnLogoutProcess.IsVisible = false;
             }
+            //else 
+            //{
+            //    Console.WriteLine("***************************");
+            //    Console.WriteLine(Displayname);
+            //    Console.WriteLine("***************************");
+            //    BtnLoginProcess.IsVisible = false;
+            //    LblUserName.Text = "Welcome " + Displayname;
+            //    LblUserName.IsVisible = true;
+            //    BtnLogoutProcess.IsVisible = true;
+            //}
             else
             {
-                Console.WriteLine("***************************");
-                Console.WriteLine(Displayname);
-                Console.WriteLine("***************************");
+                var Displayname = userdata.First().Displayname;
                 BtnLoginProcess.IsVisible = false;
-                LblUserName.Text = Displayname;
+                LblUserName.Text = "Welcome " + Displayname;
                 LblUserName.IsVisible = true;
                 BtnLogoutProcess.IsVisible = true;
             }
@@ -57,10 +65,12 @@ namespace GrowersClassified.Views.Menu
             await Navigation.PushAsync(new LoginPage());
         }
 
-        private void BtnLogoutProcess_Clicked(object sender, EventArgs e)
+        private async void BtnLogoutProcess_Clicked(object sender, EventArgs e)
         {
             var userDatabase = new UserDatabase();
-            userDatabase.LogoutUser();
+            var id = userDatabase.GetAllUsers().First().Id;
+            var userdata = userDatabase.DeleteUser(id);
+            Navigation.InsertPageBefore(new Index(), this); await Navigation.PopAsync(true);
         }
     }
 }

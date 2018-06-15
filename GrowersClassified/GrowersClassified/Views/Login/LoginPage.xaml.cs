@@ -26,11 +26,11 @@ namespace GrowersClassified.Views.Login
             {
                 var user = new User
                 {
-                    Email = Entry_Email.Text,
+                    Username = Entry_Username.Text,
                     Password = Entry_Pass.Text
                 };
 
-                if (user.Email == null || user.Password == null)
+                if (user.Username == null || user.Password == null)
                 {
                     LoginMessage.TextColor = Color.Red;
                     LoginMessage.Text = "Email or password field is empty";
@@ -40,6 +40,10 @@ namespace GrowersClassified.Views.Login
                     LoginMessage.TextColor = Color.SpringGreen;
                     LoginMessage.Text = "Logging in! please wait.....";
                     var result = await App.LoginService.Login(user);
+                    Console.WriteLine("************    #RESULT    *************");
+                    Console.WriteLine(result);
+                    Console.WriteLine("At least know I'm here...");
+                    Console.WriteLine("************    /RESULT    *************");
                     var dbclear = new UserDatabase();
                     dbclear.Droptable();
                     if (result.AccessToken != null)
@@ -49,18 +53,15 @@ namespace GrowersClassified.Views.Login
 
                         var userdata = userDatabase.GetAllUsers();
                         var displayname = userdata.First().Displayname;
-                        CurrentUser.Displayame = displayname;
-                        Console.WriteLine("***************************");
-                        Console.WriteLine(displayname);
-                        Console.WriteLine("***************************");
+                        CurrentUser.Displayname = displayname;
 
 
-                        Entry_Email.Text = "";
+                        Entry_Username.Text = "";
                         Entry_Pass.Text = "";
                         LoginMessage.Text = "Logged in!";
                         CurrentUser.IsUserLoggedIn = true;
-                        CurrentUser.Displayame = result.Displayname;
-                        await Navigation.PopToRootAsync();
+                        CurrentUser.Displayname = result.Displayname;
+                        Navigation.InsertPageBefore(new Index(), this); await Navigation.PopAsync(true);
 
                     }
                     else

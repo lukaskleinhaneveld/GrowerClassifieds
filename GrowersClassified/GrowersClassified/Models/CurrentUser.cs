@@ -15,7 +15,7 @@ namespace GrowersClassified.Models
 
 
         private static string _Displayname = "";
-        public static string Displayame
+        public static string Displayname
         {
             get { return _Displayname; }
             set { _Displayname = value; }
