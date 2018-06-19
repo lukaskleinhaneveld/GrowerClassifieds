@@ -6,7 +6,6 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using GrowersClassified;
 
 namespace GrowersClassified.Data
 {
@@ -26,17 +25,21 @@ namespace GrowersClassified.Data
             var postData = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("grant_type", grant_type),
-                new KeyValuePair<string, string>("user_login", user.Username),
-                new KeyValuePair<string, string>("user_password", user.Password)
+                new KeyValuePair<string, string>("username", user.Username),
+                new KeyValuePair<string, string>("password", user.Password)
             };
             var content = new FormUrlEncodedContent(postData);
-            var response = await PostResponseLogin<Token>(Constants.UrlLogin, content);
+            string loginUrl = Constants.BaseUrl + "jwt-auth/v1/token";
+            var response = await PostResponseLogin<Token>(loginUrl, content);
+            Console.WriteLine("Response: " + response);
             return response;
         }
 
         public async Task<T> PostResponseLogin<T>(string weburl, FormUrlEncodedContent content) where T : class
         {
-            var response = await _client.PostAsync(Constants.UrlLogin, content);
+            var loginUrl = Constants.BaseUrl + "jwt-auth/v1/token";
+            Console.WriteLine("Loginurl: " + loginUrl);
+            var response = await _client.PostAsync(loginUrl, content);
             var jsonResult = response.Content.ReadAsStringAsync().Result;
             var responseObject = JsonConvert.DeserializeObject<T>(jsonResult);
             return responseObject;
@@ -49,7 +52,8 @@ namespace GrowersClassified.Data
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AccessToken);
             try
             {
-                var result = await _client.PostAsync(Constants.UrlLogin, new StringContent(jsonstring, Encoding.UTF8, contentType));
+                string loginUrl = Constants.BaseUrl + "jwt-auth/v1/token";
+                var result = await _client.PostAsync(loginUrl, new StringContent(jsonstring, Encoding.UTF8, contentType));
                 if (result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     var jsonresult = result.Content.ReadAsStringAsync().Result;
@@ -100,6 +104,5 @@ namespace GrowersClassified.Data
             }
             return null;
         }
-
     }
 }

@@ -41,8 +41,7 @@ namespace GrowersClassified.Views.Login
                     LoginMessage.Text = "Logging in! please wait.....";
                     var result = await App.LoginService.Login(user);
                     Console.WriteLine("************    #RESULT    *************");
-                    Console.WriteLine(result);
-                    Console.WriteLine("At least know I'm here...");
+                    Console.WriteLine("Access token = " + result.AccessToken);
                     Console.WriteLine("************    /RESULT    *************");
                     var dbclear = new UserDatabase();
                     dbclear.Droptable();

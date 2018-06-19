@@ -15,5 +15,16 @@ namespace GrowersClassified.Models
         public string Product_Year { get; set; }
         public string Product_Price { get; set; }
         //public string ContactInfo { get; set; }
+
+        public Product(string Product_Author, string Product_Title, string Product_Description, string Product_Make, string Product_Model, string Product_Year, string Product_Price)
+        {
+            this.Product_Author = Product_Author;
+            this.Product_Title = Product_Title;
+            this.Product_Description = Product_Description;
+            this.Product_Make = Product_Make;
+            this.Product_Model = Product_Model;
+            this.Product_Year = Product_Year;
+            this.Product_Price = Product_Price;
+        }
     }
 }

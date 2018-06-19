@@ -13,20 +13,35 @@
                    Margin="0,20,0,0"/>
             <ScrollView HorizontalOptions="CenterAndExpand">
                 <StackLayout Orientation="Vertical" Padding="10,5,10,0">
-                    <Label Text="Pending Items" TextColor="Red"/>
-                    <ListView x:Name="ProductList">
+                    <ListView x:Name="ProductList" SeparatorVisibility="None">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <StackLayout Padding="10,10" Orientation="Horizontal">
-                                        <Label Text="{ Binding Product_Author }" HorizontalOptions="StartAndExpand"/>
-                                        <Label Text="{ Binding Product_Title }" HorizontalOptions="StartAndExpand"/>
-                                        <Label Text="{ Binding Product_Description }" HorizontalOptions="StartAndExpand"/>
-                                        <Label Text="{ Binding Product_Make }" HorizontalOptions="StartAndExpand"/>
-                                        <Label Text="{ Binding Product_Model }" HorizontalOptions="StartAndExpand"/>
-                                        <Label Text="{ Binding Product_Year }" HorizontalOptions="StartAndExpand"/>
-                                        <Label Text="{ Binding Product_Price }" HorizontalOptions="StartAndExpand"/>
-                                    </StackLayout>
+                                    <ViewCell.View>
+                                        <Grid Padding="10,10">
+                                            <Label Text="{ Binding Product_Author }" 
+                                                   MinimumHeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Label Text="{ Binding Product_Title }"
+                                                   MinimumHeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Label Text="{ Binding Product_Description }"
+                                                   MinimumHeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Label Text="{ Binding Product_Make }"
+                                                   MinimumHeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Label Text="{ Binding Product_Model }"
+                                                   MinimumHeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Label Text="{ Binding Product_Year }" 
+                                                   MinimumHeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Label Text="{ Binding Product_Price }"
+                                                   MinimumHeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                        </Grid>
+                                    </ViewCell.View>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>

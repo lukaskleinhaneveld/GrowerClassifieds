@@ -16,7 +16,6 @@ namespace GrowersClassified.Views.Menu
     {
         public ListView ListView { get { return listview; } }
         public List<MasterMenuItem> items;
-        public string CU_Displayname = CurrentUser.Displayname;
         public MasterPage()
         {
             InitializeComponent();
