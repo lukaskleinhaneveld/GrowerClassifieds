@@ -138,8 +138,3 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\GrowersClassified.Android.dll
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\GrowersClassified.Android.dll.mdb
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Plugin.Connectivity.dll.mdb
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

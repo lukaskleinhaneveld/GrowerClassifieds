@@ -43,12 +43,3 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-System.Collections
-System.IO.FileSystem
-System.IO.FileSystem.Primitives
-System.Threading
-System.Security.Cryptography.Primitives
-System.Text.Encoding
-System.Diagnostics.Debug
-System.Reflection.Primitives
-System.Reflection.Extensions
