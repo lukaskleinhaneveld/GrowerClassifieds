@@ -20,6 +20,7 @@
                                     <ViewCell.View>
                                         <Grid Padding="10,10">
                                             <Label Text="{ Binding Product_Author }" 
+                                                   x:Name="Product_Author"
                                                    MinimumHeightRequest="20"
                                                    HorizontalOptions="StartAndExpand"/>
                                             <Label Text="{ Binding Product_Title }"

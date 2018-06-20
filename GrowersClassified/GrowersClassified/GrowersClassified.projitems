@@ -34,6 +34,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Token.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UserData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WP_Extract_Info.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
       <SubType>Code</SubType>
