@@ -19,8 +19,7 @@ namespace GrowersClassified.Views.Login
         {
             InitializeComponent();
         }
-
-        async Task LoginProcess_Clicked()
+        async Task LoginProcess_Clicked(object sender, EventArgs e)
         {
             if (CheckNetwork.IsInternet())
             {
@@ -29,45 +28,30 @@ namespace GrowersClassified.Views.Login
                     Username = Entry_Username.Text,
                     Password = Entry_Pass.Text
                 };
-
-                if (user.Username == null || user.Password == null)
+                if (user.Username == "" || user.Password == "")
                 {
                     LoginMessage.TextColor = Color.Red;
-                    LoginMessage.Text = "Email or password field is empty";
+                    LoginMessage.Text = "Username or password field is empty";
                 }
                 else
                 {
                     LoginMessage.TextColor = Color.SpringGreen;
                     LoginMessage.Text = "Logging in! please wait.....";
                     var result = await App.LoginService.Login(user);
-                    Console.WriteLine("************    #RESULT    *************");
-                    Console.WriteLine("Access token = " + result.AccessToken);
-                    Console.WriteLine("************    /RESULT    *************");
                     var dbclear = new UserDatabase();
                     dbclear.Droptable();
                     if (result.AccessToken != null)
                     {
                         var userDatabase = new UserDatabase();
                         userDatabase.AddUser(result);
-
-                        var userdata = userDatabase.GetAllUsers();
-                        var displayname = userdata.First().Displayname;
-                        CurrentUser.Displayname = displayname;
-
-
-                        Entry_Username.Text = "";
-                        Entry_Pass.Text = "";
-                        LoginMessage.Text = "Logged in!";
-                        CurrentUser.IsUserLoggedIn = true;
-                        CurrentUser.Displayname = result.Displayname;
                         Navigation.InsertPageBefore(new Index(), this); await Navigation.PopAsync(true);
-
+                        LoginMessage.Text = "";
+                        Entry_Pass.Text = "";
                     }
                     else
                     {
                         LoginMessage.TextColor = Color.Red;
                         LoginMessage.Text = "Invalid login information... please try again!";
-
                     }
                 }
             }
@@ -76,7 +60,64 @@ namespace GrowersClassified.Views.Login
                 LoginMessage.TextColor = Color.Red;
                 LoginMessage.Text = "You're not connected to the internet!";
             }
+
         }
+
+
+        //async Task LoginProcess_Clicked()
+        //{
+        //    LoginMessage.TextColor = Color.Green;
+        //    LoginMessage.Text = "Logging in, please wait...";
+        //    if (CheckNetwork.IsInternet())
+        //    {
+        //        var user = new User
+        //        {
+        //            Username = Entry_Username.Text,
+        //            Password = Entry_Pass.Text
+        //        };
+
+        //        if (user.Username == null || user.Password == null)
+        //        {
+        //            LoginMessage.TextColor = Color.Red;
+        //            LoginMessage.Text = "Email or password field is empty";
+        //        }
+        //        else
+        //        {
+        //            var result = await App.LoginService.Login(user);
+        //            var dbclear = new UserDatabase();
+        //            dbclear.Droptable();
+        //            if (result.AccessToken != null)
+        //            {
+        //                var userDatabase = new UserDatabase();
+        //                userDatabase.AddUser(result);
+
+        //                var userdata = userDatabase.GetAllUsers();
+        //                var displayname = userdata.First().Displayname;
+        //                CurrentUser.Displayname = displayname;
+
+
+        //                Entry_Username.Text = "";
+        //                Entry_Pass.Text = "";
+        //                LoginMessage.Text = "Logged in!";
+        //                CurrentUser.IsUserLoggedIn = true;
+        //                CurrentUser.Displayname = result.Displayname;
+        //                Navigation.InsertPageBefore(new Index(), this); await Navigation.PopAsync(true);
+
+        //            }
+        //            else
+        //            {
+        //                LoginMessage.TextColor = Color.Red;
+        //                LoginMessage.Text = "Invalid login information... please try again!";
+
+        //            }
+        //        }
+        //    }
+        //    else
+        //    {
+        //        LoginMessage.TextColor = Color.Red;
+        //        LoginMessage.Text = "You're not connected to the internet!";
+        //    }
+        //}
 
         public async void ToRegister_Clicked(object sender, EventArgs e)
         {

@@ -18,29 +18,43 @@
                             <DataTemplate>
                                 <ViewCell>
                                     <ViewCell.View>
-                                        <Grid Padding="10,10">
+                                        <Grid Padding="10,10" HeightRequest="500">
                                             <Label Text="{ Binding Product_Author }" 
                                                    x:Name="Product_Author"
                                                    MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"/>
+                                                   HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Green"
+                                                   Grid.Row="0"/>
                                             <Label Text="{ Binding Product_Title }"
-                                                   MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"/>
+                                                   MinimumHeightRequest="40"
+                                                   HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Red"
+                                                   Grid.Row="1"/>
                                             <Label Text="{ Binding Product_Description }"
                                                    MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"/>
+                                                   HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Green"
+                                                   Grid.Row="2"/>
                                             <Label Text="{ Binding Product_Make }"
-                                                   MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"/>
+                                                   MinimumHeightRequest="40"
+                                                   HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Red"
+                                                   Grid.Row="3"/>
                                             <Label Text="{ Binding Product_Model }"
                                                    MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"/>
+                                                   HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Green"
+                                                   Grid.Row="4"/>
                                             <Label Text="{ Binding Product_Year }" 
-                                                   MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"/>
+                                                   MinimumHeightRequest="40"
+                                                   HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Red"
+                                                   Grid.Row="5"/>
                                             <Label Text="{ Binding Product_Price }"
                                                    MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"/>
+                                                   HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Green"
+                                                   Grid.Row="6"/>
                                         </Grid>
                                     </ViewCell.View>
                                 </ViewCell>

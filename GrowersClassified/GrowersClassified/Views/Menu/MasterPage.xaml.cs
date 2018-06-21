@@ -30,7 +30,7 @@ namespace GrowersClassified.Views.Menu
             //else 
             //{
             //    Console.WriteLine("***************************");
-            //    Console.WriteLine(Displayname);
+            //    Console.WriteLine("*** " + Displayname);
             //    Console.WriteLine("***************************");
             //    BtnLoginProcess.IsVisible = false;
             //    LblUserName.Text = "Welcome " + Displayname;

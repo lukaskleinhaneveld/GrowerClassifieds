@@ -42,6 +42,9 @@ namespace GrowersClassified.Models
         [JsonProperty("user_activation_key")] public string ActivationKey { get; set; }
         [JsonProperty("user_status")] public string Status { get; set; }
         [JsonProperty("user_displayname")] public string Displayname { get; set; }
+        public string ErrorDescription { get; set; }
+        public DateTime ExpireDate { get; set; }
+        public double ExpireIn { get; set; }
     }
 
 }

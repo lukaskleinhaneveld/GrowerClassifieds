@@ -108,6 +108,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "GrowersClassified.Android.dll" comes first in this list. */
 		"GrowersClassified.Android.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.IdentityModel.Logging.dll",
+		"Microsoft.IdentityModel.Tokens.dll",
 		"Mono.Cecil.dll",
 		"Mono.Cecil.Mdb.dll",
 		"Mono.Cecil.Pdb.dll",
@@ -125,6 +127,7 @@ class MonoPackageManager_Resources {
 		"SQLitePCLRaw.core.dll",
 		"SQLitePCLRaw.lib.e_sqlite3.dll",
 		"SQLitePCLRaw.provider.e_sqlite3.dll",
+		"System.IdentityModel.Tokens.Jwt.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",
