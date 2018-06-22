@@ -16,6 +16,7 @@ namespace GrowersClassified.Data
             _database = DependencyService.Get<ISqLite>().GetConnection();
             _database.CreateTable<Token>();
         }
+        // All the locks below prevent other processes to use the same thread as the one used for the processes within the 'lock' block
 
         public Token GetToken()
         {

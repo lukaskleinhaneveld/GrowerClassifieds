@@ -11,58 +11,63 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Start"
                    Margin="0,20,0,0"/>
-            <ScrollView HorizontalOptions="CenterAndExpand">
-                <StackLayout Orientation="Vertical" Padding="10,5,10,0">
-                    <ListView x:Name="ProductList" SeparatorVisibility="None">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <ViewCell.View>
-                                        <Grid Padding="10,10" HeightRequest="500">
-                                            <Label Text="{ Binding Product_Author }" 
-                                                   x:Name="Product_Author"
-                                                   MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Green"
-                                                   Grid.Row="0"/>
-                                            <Label Text="{ Binding Product_Title }"
-                                                   MinimumHeightRequest="40"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Red"
-                                                   Grid.Row="1"/>
-                                            <Label Text="{ Binding Product_Description }"
-                                                   MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Green"
-                                                   Grid.Row="2"/>
-                                            <Label Text="{ Binding Product_Make }"
-                                                   MinimumHeightRequest="40"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Red"
-                                                   Grid.Row="3"/>
-                                            <Label Text="{ Binding Product_Model }"
-                                                   MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Green"
-                                                   Grid.Row="4"/>
-                                            <Label Text="{ Binding Product_Year }" 
-                                                   MinimumHeightRequest="40"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Red"
-                                                   Grid.Row="5"/>
-                                            <Label Text="{ Binding Product_Price }"
-                                                   MinimumHeightRequest="20"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Green"
-                                                   Grid.Row="6"/>
-                                        </Grid>
-                                    </ViewCell.View>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </StackLayout>
-            </ScrollView>
+            <StackLayout Orientation="Vertical" Padding="10,5,10,0">
+                <ListView x:Name="ProductList" RowHeight="125">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="5" Orientation="Vertical" BackgroundColor="Green">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="Orange" HorizontalOptions="StartAndExpand">
+                                        <Image Source="Background.jpg"
+                                               WidthRequest="100"
+                                               Aspect="AspectFit"
+                                               VerticalOptions="Start"/>
+                                        <StackLayout Orientation="Vertical" BackgroundColor="Blue">
+                                            <StackLayout Orientation="Horizontal"
+                                                         HorizontalOptions="End"
+                                                         Padding="0,0,0,0">
+                                                <Label Text="{ Binding Product_Author }" 
+                                                       FontSize="15"
+                                                       HorizontalTextAlignment="End"/>
+                                                <Label Text="{ Binding Product_Title }"
+                                                       FontSize="15"
+                                                       HorizontalTextAlignment="End"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal"
+                                                         HorizontalOptions="End"
+                                                         Padding="0,0,0,0">
+                                                <Label Text="{ Binding Product_Description }"
+                                                       FontSize="15"
+                                                       HorizontalTextAlignment="End"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal"
+                                                         HorizontalOptions="End"
+                                                         Padding="0,0,0,0">
+                                                <Label Text="{ Binding Product_Make }"
+                                                       FontSize="15"
+                                                       HorizontalTextAlignment="End"/>
+                                                <Label Text="{ Binding Product_Model }"
+                                                       FontSize="15"
+                                                       HorizontalTextAlignment="End"/>
+                                                <Label Text="{ Binding Product_Year }"
+                                                       FontSize="15"
+                                                       HorizontalTextAlignment="End"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal"
+                                                         HorizontalOptions="End"
+                                                         Padding="0,0,0,0">
+                                                <Label Text="{ Binding Product_Price }"
+                                                       FontSize="15"
+                                                       HorizontalTextAlignment="End"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

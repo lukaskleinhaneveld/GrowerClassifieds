@@ -5,6 +5,7 @@
              xmlns:detail="clr-namespace:GrowersClassified"
              xmlns:master="clr-namespace:GrowersClassified.Views.Menu"
              Title="MainPage">
+    <!--Setting detail and master to the corresponding pages being the index page (home) and MasterPage (Menu)-->
     <MasterDetailPage.Master>
         <master:MasterPage x:Name="masterpage"/>
     </MasterDetailPage.Master>

@@ -4,6 +4,7 @@ using System.Text;
 
 namespace GrowersClassified.Models
 {
+    // Setting product specifics
     class Product
     {
         public int Id { get; set; }
@@ -14,8 +15,8 @@ namespace GrowersClassified.Models
         public string Product_Model { get; set; }
         public string Product_Year { get; set; }
         public string Product_Price { get; set; }
-        public List<ProductData> Data { get; set; }
 
+        // Context in which you create a new productin ProductPage.xaml.cs
         public Product(string Product_Author, string Product_Title, string Product_Description, string Product_Make, string Product_Model, string Product_Year, string Product_Price)
         {
             this.Product_Author = Product_Author;
@@ -25,11 +26,6 @@ namespace GrowersClassified.Models
             this.Product_Model = Product_Model;
             this.Product_Year = Product_Year;
             this.Product_Price = Product_Price;
-    }
-        public class ProductData
-        {
-            public string name { get; set; }
-            public string value{ get; set; }
         }
     }
 }

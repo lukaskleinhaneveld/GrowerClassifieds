@@ -5,6 +5,7 @@ using Xamarin.Forms;
 
 namespace GrowersClassified.Models
 {
+    // Specifying User info fields
     public class User
     {
         public int Id { get; set; }

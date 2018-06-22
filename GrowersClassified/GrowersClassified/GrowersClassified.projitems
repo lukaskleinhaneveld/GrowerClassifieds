@@ -28,7 +28,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Data\TokenDbController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\UserDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Constants.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\CurrentUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\MasterMenuItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Token.cs" />
