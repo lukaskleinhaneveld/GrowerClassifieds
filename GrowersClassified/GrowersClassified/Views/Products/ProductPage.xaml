@@ -4,21 +4,15 @@
              x:Class="GrowersClassified.Views.Products.ProductPage"
              Title="Products">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="WhiteSmoke">
-            <!--<Label Text="All products will be shown here in a list"
-                   FontSize="40"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Start"
-                   Margin="0,20,0,0"/>-->
-            <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="#eaebed">
-                <ListView x:Name="ProductList" RowHeight="200">
+        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="#d8d8d8">
+            <StackLayout Orientation="Vertical" Padding="10">
+                <ListView x:Name="ProductList" RowHeight="200" SeparatorVisibility="None">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
+                                <!-- Container stacklayout -->
                                 <StackLayout Padding="5" Orientation="Vertical">
-
+                                    <!-- Stacklayout for Title and Price -->
                                     <StackLayout Orientation="Horizontal" Padding="20,5,20,5" HorizontalOptions="FillAndExpand">
                                         <Label Text="{ Binding Product_Title }"
                                                FontSize="15"
@@ -30,17 +24,18 @@
                                                HorizontalTextAlignment="End"
                                                HorizontalOptions="EndAndExpand"
                                                VerticalTextAlignment="Center"/>
+                                        <!-- End Stacklayout for Title and Price -->
                                     </StackLayout>
-
+                                    <!-- Stacklayout for Image and Description -->
                                     <StackLayout Orientation="Horizontal" WidthRequest="350" HorizontalOptions="CenterAndExpand" Padding="20,5,20,5" BackgroundColor="WhiteSmoke">
                                         <Image Source="Background.jpg"
                                                WidthRequest="100"
                                                HeightRequest="100"
                                                Aspect="AspectFill"
                                                VerticalOptions="Start"/>
-
+                                        <!-- Turn the content of the Description page vertical -->
                                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-
+                                            <!-- Stacklayout for Description -->
                                             <StackLayout Orientation="Horizontal"
                                                          HorizontalOptions="End"
                                                          Padding="10,0,0,0">
@@ -48,9 +43,16 @@
                                                        FontSize="15"
                                                        HorizontalTextAlignment="End"/>
 
+                                                <!-- End of Stacklayout for Description -->
                                             </StackLayout>
+
+                                            <!-- End of turning Description stacklayout -->
                                         </StackLayout>
+
+                                        <!-- End Stacklayout for Image and Description -->
                                     </StackLayout>
+
+                                    <!-- End Container stacklayout -->
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

@@ -35,6 +35,9 @@
     <MtouchSdkVersion>11.4</MtouchSdkVersion>
     <OptimizePNGs>false</OptimizePNGs>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+    <CodesignEntitlements />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -108,6 +111,9 @@
   <PropertyGroup>
     <StartupObject>
     </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>appicon180x180_rgE_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Data\SQLite_IOS.cs" />

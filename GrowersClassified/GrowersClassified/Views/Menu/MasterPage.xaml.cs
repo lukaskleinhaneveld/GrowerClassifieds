@@ -52,8 +52,8 @@ namespace GrowersClassified.Views.Menu
         {
             items = new List<MasterMenuItem>
             {
-                new MasterMenuItem("Home", "house.png", Color.FromHex("#b8b8b8"), typeof(Index)),
-                new MasterMenuItem("Products", "shoppingbag.png", Color.FromHex("#b8b8b8"), typeof(ProductPage))
+                new MasterMenuItem("Home", "house.png", Color.WhiteSmoke, typeof(Index)),
+                new MasterMenuItem("Products", "shoppingbag.png", Color.WhiteSmoke, typeof(ProductPage))
             };
             ListView.ItemsSource = items;
 

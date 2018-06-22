@@ -13,7 +13,7 @@
                 <Label x:Name="LblUserName" FontSize="18" TextColor="Black" BackgroundColor="#BDD73C" Margin="20,0,20,0" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             </StackLayout>
             <StackLayout x:Name="MidStack" VerticalOptions="CenterAndExpand">
-                <ListView x:Name="listview" SeparatorVisibility="None">
+                <ListView x:Name="listview">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

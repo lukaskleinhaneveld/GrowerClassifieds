@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Views.Login.RegisterPage"
              Title="Register">
-    <StackLayout x:Name="Container"   BackgroundColor="#eaebed">
+    <StackLayout x:Name="Container" BackgroundColor="WhiteSmoke" VerticalOptions="FillAndExpand">
         <StackLayout x:Name="RegisterForm" Padding="40, 20, 40, 0">
             <!--Creating a header for the register page-->
             <StackLayout x:Name="Header" Padding="0,0,0,20">
