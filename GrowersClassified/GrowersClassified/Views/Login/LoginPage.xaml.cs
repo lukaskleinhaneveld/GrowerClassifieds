@@ -98,14 +98,11 @@ namespace GrowersClassified.Views.Login
 
         //                var userdata = userDatabase.GetAllUsers();
         //                var displayname = userdata.First().Displayname;
-        //                CurrentUser.Displayname = displayname;
 
 
         //                Entry_Username.Text = "";
         //                Entry_Pass.Text = "";
         //                LoginMessage.Text = "Logged in!";
-        //                CurrentUser.IsUserLoggedIn = true;
-        //                CurrentUser.Displayname = result.Displayname;
         //                Navigation.InsertPageBefore(new Index(), this); await Navigation.PopAsync(true);
 
         //            }
