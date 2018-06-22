@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Index"
              Title="Home"
-             BackgroundColor="#eee">
+             BackgroundColor="WhiteSmoke">
 
     <ContentPage.Content Padding="0,20,0,0" Title="Index">
         <StackLayout VerticalOptions="FillAndExpand"
                      HorizontalOptions="FillAndExpand"
-                     BackgroundColor="#d3d6db">
+                     BackgroundColor="WhiteSmoke">
             <Grid Padding="0,5,0,0" 
                   Margin="0,0,0,0" 
                   RowSpacing="0"
@@ -108,63 +108,63 @@
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Pot &amp; Tray handling"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="1"
                            Grid.Row="4"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Nursery Solutions"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="2"
                            Grid.Row="4"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Nursery Forklifts"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="1"
                            Grid.Row="5"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Shipping Systems"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="2"
                            Grid.Row="5"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Soil Handling"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="1"
                            Grid.Row="6"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Coir Processing"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="2"
                            Grid.Row="6"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Rockwool Automation"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="1"
                            Grid.Row="7"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Greenhouse Humidity Control"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="2"
                            Grid.Row="7"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
                     <Label Text="Irrigation Washing"
-                           BackgroundColor="#b8b8b8"
+                           BackgroundColor="#eaebed"
                            Grid.Column="1"
                            Grid.Row="8"
                            HorizontalTextAlignment="Center"

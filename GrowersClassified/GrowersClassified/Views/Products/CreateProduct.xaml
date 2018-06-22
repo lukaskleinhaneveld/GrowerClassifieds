@@ -4,14 +4,14 @@
              x:Class="GrowersClassified.Views.Products.CreateProduct"
              Title="Enlist item">
     <ContentPage.Content>
-            <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical" BackgroundColor="WhiteSmoke">
                 <Label Text="Enlist Product"
                        FontSize="Large"
                        HorizontalOptions="Center"
                        VerticalOptions="Start"
                        Margin="0,20,0,20"/>
             <ScrollView>
-                <StackLayout>
+                <StackLayout BackgroundColor="#eaebed">
                     <Entry Placeholder="Title..."
                            x:Name="Product_Title"
                            WidthRequest="300"

@@ -4,61 +4,50 @@
              x:Class="GrowersClassified.Views.Products.ProductPage"
              Title="Products">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand">
-            <Label Text="All products will be shown here in a list"
+        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="WhiteSmoke">
+            <!--<Label Text="All products will be shown here in a list"
                    FontSize="40"
+                   TextColor="Black"
                    HorizontalTextAlignment="Center"
                    HorizontalOptions="Center"
                    VerticalOptions="Start"
-                   Margin="0,20,0,0"/>
-            <StackLayout Orientation="Vertical" Padding="10,5,10,0">
-                <ListView x:Name="ProductList" RowHeight="125">
+                   Margin="0,20,0,0"/>-->
+            <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="#eaebed">
+                <ListView x:Name="ProductList" RowHeight="200">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout Padding="5" Orientation="Vertical" BackgroundColor="Green">
-                                    <StackLayout Orientation="Horizontal" BackgroundColor="Orange" HorizontalOptions="StartAndExpand">
+                                <StackLayout Padding="5" Orientation="Vertical">
+
+                                    <StackLayout Orientation="Horizontal" Padding="20,5,20,5" HorizontalOptions="FillAndExpand">
+                                        <Label Text="{ Binding Product_Title }"
+                                               FontSize="15"
+                                               HorizontalTextAlignment="Start"
+                                               HorizontalOptions="StartAndExpand"
+                                               VerticalTextAlignment="Center"/>
+                                        <Label Text="{ Binding Product_Price }"
+                                               FontSize="Medium"
+                                               HorizontalTextAlignment="End"
+                                               HorizontalOptions="EndAndExpand"
+                                               VerticalTextAlignment="Center"/>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Horizontal" WidthRequest="350" HorizontalOptions="CenterAndExpand" Padding="20,5,20,5" BackgroundColor="WhiteSmoke">
                                         <Image Source="Background.jpg"
                                                WidthRequest="100"
-                                               Aspect="AspectFit"
+                                               HeightRequest="100"
+                                               Aspect="AspectFill"
                                                VerticalOptions="Start"/>
-                                        <StackLayout Orientation="Vertical" BackgroundColor="Blue">
+
+                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
                                             <StackLayout Orientation="Horizontal"
                                                          HorizontalOptions="End"
-                                                         Padding="0,0,0,0">
-                                                <Label Text="{ Binding Product_Author }" 
-                                                       FontSize="15"
-                                                       HorizontalTextAlignment="End"/>
-                                                <Label Text="{ Binding Product_Title }"
-                                                       FontSize="15"
-                                                       HorizontalTextAlignment="End"/>
-                                            </StackLayout>
-                                            <StackLayout Orientation="Horizontal"
-                                                         HorizontalOptions="End"
-                                                         Padding="0,0,0,0">
+                                                         Padding="10,0,0,0">
                                                 <Label Text="{ Binding Product_Description }"
                                                        FontSize="15"
                                                        HorizontalTextAlignment="End"/>
-                                            </StackLayout>
-                                            <StackLayout Orientation="Horizontal"
-                                                         HorizontalOptions="End"
-                                                         Padding="0,0,0,0">
-                                                <Label Text="{ Binding Product_Make }"
-                                                       FontSize="15"
-                                                       HorizontalTextAlignment="End"/>
-                                                <Label Text="{ Binding Product_Model }"
-                                                       FontSize="15"
-                                                       HorizontalTextAlignment="End"/>
-                                                <Label Text="{ Binding Product_Year }"
-                                                       FontSize="15"
-                                                       HorizontalTextAlignment="End"/>
-                                            </StackLayout>
-                                            <StackLayout Orientation="Horizontal"
-                                                         HorizontalOptions="End"
-                                                         Padding="0,0,0,0">
-                                                <Label Text="{ Binding Product_Price }"
-                                                       FontSize="15"
-                                                       HorizontalTextAlignment="End"/>
+
                                             </StackLayout>
                                         </StackLayout>
                                     </StackLayout>

@@ -30,7 +30,7 @@ namespace GrowersClassified.Views.Products
             for (int i = 0; i < 10; i++)
             {
                 user.Username = "Test user " + i;
-                products.Add(new Product(user.Username + ",", "Test Title" + ",", "This is a test description" + ",", "Test make" + ",", "Test model" + ",", "2018" + ",", "2000"));
+                products.Add(new Product(user.Username, "Test Title" + ",", "This is a test description" + ",", "Test make" + ",", "Test model" + ",", "2018" + ",", "2000"));
             }
             // Setting ListView items source to othe 'products' List
             ListView.ItemsSource = products;
