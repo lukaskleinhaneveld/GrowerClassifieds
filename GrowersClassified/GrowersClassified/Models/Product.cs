@@ -4,16 +4,31 @@ using System.Text;
 
 namespace GrowersClassified.Models
 {
+    // Setting product specifics
     class Product
     {
         public int Id { get; set; }
         public string Product_Author { get; set; }
         public string Product_Title { get; set; }
         public string Product_Description { get; set; }
+        public string Product_City { get; set; }
+        public string Product_State { get; set; }
         public string Product_Make { get; set; }
         public string Product_Model { get; set; }
         public string Product_Year { get; set; }
         public string Product_Price { get; set; }
-        //public string ContactInfo { get; set; }
+
+        // Context in which you create a new productin ProductPage.xaml.cs
+        public Product(string Product_Author, string Product_Title, string Product_Description, string Product_City, string Product_State, string Product_Make, string Product_Model, string Product_Year, string Product_Price)
+        {
+            this.Product_Author = Product_Author;
+            this.Product_Title = Product_Title;
+            this.Product_Description = Product_Description;
+            this.Product_City = Product_City;
+            this.Product_State = Product_State;
+            this.Product_Model = Product_Model;
+            this.Product_Year = Product_Year;
+            this.Product_Price = Product_Price;
+        }
     }
 }

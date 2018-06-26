@@ -14,7 +14,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<<<<<<< HEAD:GrowersClassified/GrowersClassified.Android/obj/Debug/lp/26/jl/bin/AndroidManifest.xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android.support.coreui">
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android.support.v7.cardview">
+>>>>>>> Login:GrowersClassified/GrowersClassified.Android/obj/Debug/lp/39/jl/AndroidManifest.xml
 
     <uses-sdk android:minSdkVersion="14" />
 

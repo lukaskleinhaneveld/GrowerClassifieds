@@ -18,16 +18,12 @@ namespace GrowersClassified.Data
             _conn.CreateTable<UserData>();
         }
 
+        // Clear table
         public void Droptable()
         {
             _conn.Execute("delete from UserData");
         }
 
-        public IEnumerable<UserData> GetUsers()
-        {
-            var users = (from mem in _conn.Table<UserData>() select mem);
-            return users.ToList();
-        }
         //INSERT
         public string AddUser(Token token)
         {
@@ -49,6 +45,7 @@ namespace GrowersClassified.Data
             return "success";
         }
 
+        // Get all users
         public List<UserData> GetAllUsers()
         {
             return _conn.Query<UserData>("SELECT * FROM UserData");

@@ -7,7 +7,7 @@ namespace GrowersClassified.Data
 {
     public interface ISqLite
     {
-        //Makes connection with local database (OS based code)
+        // Creates connection with local database on users device
         SQLiteConnection GetConnection();
     }
 }

@@ -14,8 +14,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<<<<<<< HEAD
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.support.v4" >
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android.support.coreutils">
+>>>>>>> Login
 
     <uses-sdk android:minSdkVersion="14" />
 
