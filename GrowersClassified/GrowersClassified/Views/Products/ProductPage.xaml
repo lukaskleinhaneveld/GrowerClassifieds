@@ -1,60 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GrowersClassified"
+             xmlns:controls="clr-namespace:GrowersClassified.Models"
              x:Class="GrowersClassified.Views.Products.ProductPage"
              Title="Products">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="#d8d8d8">
+        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+            <!--BackgroundColor="#d8d8d8"-->
             <StackLayout Orientation="Vertical" Padding="10">
                 <ListView x:Name="ProductList" RowHeight="200" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" SelectionMode="Single">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <!-- Container stacklayout -->
-                                <StackLayout Padding="5" Orientation="Vertical">
-                                    <!-- Stacklayout for Title and Price -->
-                                    <StackLayout Orientation="Horizontal" Padding="20,5,20,5" HorizontalOptions="FillAndExpand">
-                                        <Label Text="{ Binding Product_Title }"
-                                               FontSize="15"
-                                               HorizontalTextAlignment="Start"
-                                               HorizontalOptions="StartAndExpand"
-                                               VerticalTextAlignment="Center"/>
-                                        <Label Text="{ Binding Product_Price }"
-                                               FontSize="Medium"
-                                               HorizontalTextAlignment="End"
-                                               HorizontalOptions="EndAndExpand"
-                                               VerticalTextAlignment="Center"/>
-                                        <!-- End Stacklayout for Title and Price -->
-                                    </StackLayout>
-                                    <!-- Stacklayout for Image and Description -->
-                                    <StackLayout Orientation="Horizontal" WidthRequest="350" HorizontalOptions="CenterAndExpand" Padding="20,5,20,5" BackgroundColor="WhiteSmoke">
-                                        <Image Source="Background.jpg"
-                                               WidthRequest="100"
-                                               HeightRequest="100"
-                                               Aspect="AspectFill"
-                                               VerticalOptions="Start"/>
-                                        <!-- Turn the content of the Description page vertical -->
-                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                            <!-- Stacklayout for Description -->
-                                            <StackLayout Orientation="Horizontal"
-                                                         HorizontalOptions="End"
-                                                         Padding="10,0,0,0">
-                                                <Label Text="{ Binding Product_Description }"
-                                                       FontSize="15"
-                                                       HeightRequest="100" 
-                                                       HorizontalTextAlignment="End"
-                                                       LineBreakMode="TailTruncation"/>
+                                <StackLayout Margin="5" Orientation="Vertical">
+                                    <!--Set border to a light green color-->
+                                    <StackLayout BackgroundColor="#BDD73C" Padding="1">
+                                        <!--Set background color to white so we can create the border in an easier way-->
+                                        <StackLayout BackgroundColor="White">
+                                            <StackLayout Orientation="Horizontal" Padding="20,5,20,5" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                                <Label Text="{ Binding Product_Title }"
+                                                       FontSize="Medium"
+                                                       TextColor="#BDD73C"
+                                                       HorizontalTextAlignment="Start"
+                                                       HorizontalOptions="StartAndExpand"
+                                                       VerticalTextAlignment="Center"/>
 
-                                                <!-- End of Stacklayout for Description -->
+                                                <Label Text="{ Binding Product_Price }"
+                                                   FontSize="Medium"
+                                                   HorizontalTextAlignment="End"
+                                                   HorizontalOptions="EndAndExpand"
+                                                   VerticalTextAlignment="Center"/>
+                                                <!-- End Stacklayout for Title and Price -->
                                             </StackLayout>
+                                            <!-- Stacklayout for Image and Description -->
+                                            <StackLayout Orientation="Horizontal" WidthRequest="350" HorizontalOptions="CenterAndExpand" Padding="10" BackgroundColor="White" HeightRequest="100">
+                                                <Image Source="Background.jpg"
+                                                   WidthRequest="100"
+                                                   HeightRequest="100"
+                                                   Aspect="AspectFill"
+                                                   VerticalOptions="Start"/>
+                                                <!-- Turn the content of the Description page vertical -->
+                                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                                    <!-- Stacklayout for Description -->
+                                                    <StackLayout Orientation="Horizontal"
+                                                             HorizontalOptions="End"
+                                                             Padding="10,0,0,0">
+                                                        <controls:MultiLineLabel Text="{ Binding Product_Description }"
+                                                                             FontSize="15"
+                                                                             HorizontalTextAlignment="Start"
+                                                                             HeightRequest="100"
+                                                                             LineBreakMode="TailTruncation"
+                                                                             Lines="5"/>
 
-                                            <!-- End of turning Description stacklayout -->
+                                                        <!-- End of Stacklayout for Description -->
+                                                    </StackLayout>
+
+                                                    <!-- End of turning Description stacklayout -->
+                                                </StackLayout>
+
+                                            </StackLayout>
+                                            <!-- End Stacklayout for Image and Description -->
                                         </StackLayout>
-
-                                        <!-- End Stacklayout for Image and Description -->
                                     </StackLayout>
-
-                                    <!-- End Container stacklayout -->
+                                <!-- End Container stacklayout -->
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

@@ -29,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Data\UserDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\MasterMenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MultiLineLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Token.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />

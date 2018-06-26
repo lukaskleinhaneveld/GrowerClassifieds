@@ -5,7 +5,7 @@
              Title="Home"
              BackgroundColor="WhiteSmoke">
 
-    <ContentPage.Content Padding="0,20,0,0" Title="Index">
+    <ContentPage.Content Padding="20,20,20,0" Title="Index">
         <StackLayout VerticalOptions="FillAndExpand"
                      HorizontalOptions="FillAndExpand"
                      BackgroundColor="WhiteSmoke"
@@ -23,9 +23,10 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>-->
-            <StackLayout Orientation="Horizontal" Padding="0,5,0,0">
+            <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
                 <Image Source="grower_classifieds.png"
-                       Margin="20, 0, 10 ,0"
+                       WidthRequest="275"
+                       Margin="0, 0, 10 ,0"
                        HorizontalOptions="Start"
                        VerticalOptions="Center"/>
 
@@ -34,7 +35,6 @@
                         TextColor="Black"
                         BackgroundColor="#BDD73C"
                         Clicked="ToCreateProduct"
-                        Margin="0,0,20,0"
                         VerticalOptions="Center"
                         HorizontalOptions="End"/>
             </StackLayout>

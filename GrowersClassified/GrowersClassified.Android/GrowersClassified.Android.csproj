@@ -127,6 +127,7 @@
     <Compile Include="Data\SQLite_Android.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Models\CustomMultiLineLabelRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashActivity.cs" />
