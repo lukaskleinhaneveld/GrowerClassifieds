@@ -10,10 +10,11 @@
                      HorizontalOptions="FillAndExpand"
                      BackgroundColor="WhiteSmoke"
                      Padding="0,0,0,10">
-            <Grid Padding="0,5,0,0" 
+            <!--<Grid Padding="0,5,0,0" 
                   Margin="0,0,0,0" 
                   RowSpacing="0"
-                  ColumnSpacing="0">
+                  ColumnSpacing="0"
+                  BackgroundColor="Brown">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -21,27 +22,31 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
+                </Grid.RowDefinitions>-->
+            <StackLayout Orientation="Horizontal" Padding="0,5,0,0">
                 <Image Source="grower_classifieds.png"
-                       Grid.Column="0"
-                       Grid.ColumnSpan="2"
-                       Grid.Row="0"
-                       Margin="20, 0, 0 ,0"
+                       Margin="20, 0, 10 ,0"
+                       HorizontalOptions="Start"
                        VerticalOptions="Center"/>
 
                 <Button Text="Post"
-                        Grid.Column="3"
-                        Grid.ColumnSpan="2"
                         FontSize="14"
                         TextColor="Black"
                         BackgroundColor="#BDD73C"
                         Clicked="ToCreateProduct"
                         Margin="0,0,20,0"
-                        VerticalOptions="Center"/>
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"/>
+            </StackLayout>
+            <!--</Grid>-->
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <SearchBar Placeholder="Search..."
+                           Margin="10,0,10,0"
+                           HorizontalOptions="FillAndExpand"/>
             </Grid>
-            <Entry Placeholder="Search..."
-                   HorizontalOptions="FillAndExpand"
-                   Margin="10,5,10,5"/>
             <ScrollView x:Name="MainSection" 
                         Orientation="Vertical" 
                         VerticalOptions="FillAndExpand">
@@ -176,6 +181,13 @@
                         <Label Text="Irrigation Washing"
                            BackgroundColor="#d8d8d8"
                            Grid.Column="1"
+                           Grid.Row="7"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+
+                        <Label Text="Other"
+                           BackgroundColor="#d8d8d8"
+                           Grid.Column="2"
                            Grid.Row="7"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>

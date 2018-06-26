@@ -169,6 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="appicon180x180_rgE_icon.ico" />
+    <BundleResource Include="Resources\MagGlass.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Background.jpg">

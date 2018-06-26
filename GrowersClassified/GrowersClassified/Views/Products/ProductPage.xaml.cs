@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xamarin.Forms;
 using GrowersClassified.Models;
+using System;
 
 namespace GrowersClassified.Views.Products
 {
@@ -18,22 +19,34 @@ namespace GrowersClassified.Views.Products
 
         void SetProducts()
         {
-            List<Product> products = new List<Product>
-            {
-                // Product(     Product_Author,           Product_Title,  Product_Description,                 Product_Make,  Product_Model,  Product_Year, Product_Price)
-                //new Product (   "Lukas" + ",",   "Test Title" + ",",   "This is a test description" + ",",        "Test make" + ",",   "Test model" + ",",   "2018" + ",",       "2000"),
-                //new Product (   "Lukas Klein Haneveld" + ",",   "Test Title2" + ",",   "This is a test description2" + ",",        "Test make2" + ",",   "Test model2" + ",",   "2018" + ",",       "2000"),
-                //new Product (   "Lukas Klein Haneveld" + ",",   "Test Title3" + ",",   "This is a test description3" + ",",        "Test make3" + ",",   "Test model3" + ",",   "2018" + ",",       "2000"),
-                //new Product (   "Lukas Klein Haneveld" + ",",   "Test Title4" + ",",   "This is a test description4" + ",",        "Test make4" + ",",   "Test model4" + ",",   "2018" + ",",       "2000"),
-                //new Product (   "Lukas Klein Haneveld" + ",",   "Test Title5" + ",",   "This is a test description5" + ",",        "Test make5" + ",",   "Test model5" + ",",   "2018" + ",",       "2000"),
-            };
+            // Creating list 'products'
+            List<Product> products = new List<Product>{};
             for (int i = 0; i < 10; i++)
             {
                 user.Username = "Test user " + i;
-                products.Add(new Product(user.Username, "Test Title" + ",", "This is a test description" + ",", "Test make" + ",", "Test model" + ",", "2018" + ",", "CAD $" + "2000"));
+                products.Add(new Product(user.Username,         // Username
+                    "Test Title" + ",",                         // Title
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." + ",",         // Description
+                    "Test City" + ",",                          // City
+                    "Test State" + ",",                         // State
+                    "Test make" + ",",                          // Make
+                    "Test model" + ",",                         // Model
+                    "2018" + ",",                               // Year
+                    "CAD $" + "2000"));                         //Price
             }
             // Setting ListView items source to othe 'products' List
             ListView.ItemsSource = products;
+        }
+
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if(e.SelectedItem == null)
+            {
+                return;
+            }
+            DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
+            ((ListView)sender).SelectedItem = null;
+
         }
     }
 }

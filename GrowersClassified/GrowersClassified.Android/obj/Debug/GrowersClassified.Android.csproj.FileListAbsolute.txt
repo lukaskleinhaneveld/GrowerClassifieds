@@ -32,6 +32,7 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-xhdpi\avatar.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-xhdpi\house.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-hdpi\grower_classifieds.png
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable\magglass.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable\icon.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-xhdpi\icon.png

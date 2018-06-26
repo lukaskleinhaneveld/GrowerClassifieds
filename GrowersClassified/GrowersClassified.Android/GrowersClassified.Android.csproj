@@ -184,7 +184,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\grower_classifieds.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MagGlass.png" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>

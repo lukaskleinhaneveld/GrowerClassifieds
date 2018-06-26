@@ -4,8 +4,8 @@
              x:Class="GrowersClassified.Views.Products.CreateProduct"
              Title="Enlist item">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" BackgroundColor="WhiteSmoke">
-                <Label Text="Enlist Product"
+        <StackLayout Orientation="Vertical" BackgroundColor="WhiteSmoke" Padding="0,0,0,10">
+                <Label Text="Create Ad"
                        FontSize="Large"
                        HorizontalOptions="Center"
                        VerticalOptions="Start"
@@ -18,18 +18,24 @@
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
-                    <Entry Placeholder="Description..."
-                           x:Name="Product_Description"
+                    <Entry Placeholder="City..."
+                           x:Name="Product_City"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
-                    
+
+                    <Entry Placeholder="State..."
+                           x:Name="Product_State"
+                           WidthRequest="300"
+                           HorizontalOptions="Center"
+                           VerticalOptions="StartAndExpand"/>
+
                     <Entry Placeholder="Model..."
                            x:Name="Product_Model"
                            WidthRequest="300"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
-                    
+
                     <Entry Placeholder="Make..."
                            x:Name="Product_Make"
                            WidthRequest="300"
@@ -48,7 +54,23 @@
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
-                    <Button Text="Submit" 
+                    <Label Text="Please enter discription below:"
+                           WidthRequest="300"
+                           HorizontalTextAlignment="Center"
+                           FontSize="18"
+                           HorizontalOptions="Center" />
+
+                    <Editor x:Name="Product_Description"
+                            WidthRequest="300"
+                            HorizontalOptions="Center"
+                            VerticalOptions="StartAndExpand"
+                            IsSpellCheckEnabled="True"
+                            MaxLength="500"
+                            HeightRequest="150"
+                            AutoSize="TextChanges"
+                            BackgroundColor="#e8e8e8"/>
+                    
+                    <Button Text="Submit"
                             HorizontalOptions="Center" 
                             FontSize="Medium"
                             WidthRequest="250" 
