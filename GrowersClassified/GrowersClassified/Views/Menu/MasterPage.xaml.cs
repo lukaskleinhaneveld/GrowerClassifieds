@@ -53,7 +53,8 @@ namespace GrowersClassified.Views.Menu
             items = new List<MasterMenuItem>
             {
                 new MasterMenuItem("Home", "house.png", Color.WhiteSmoke, typeof(Index)),
-                new MasterMenuItem("Products", "shoppingbag.png", Color.WhiteSmoke, typeof(ProductPage))
+                new MasterMenuItem("Products", "shoppingbag.png", Color.WhiteSmoke, typeof(ProductPage)),
+                new MasterMenuItem("WebView", "icon.png", Color.WhiteSmoke, typeof(WebViewTest))
             };
             ListView.ItemsSource = items;
 

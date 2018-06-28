@@ -12,7 +12,7 @@ namespace GrowersClassified.Data
         // Setting private variables that will be used more often. This makes it easier to use and easier to alter if needed
         private HttpClient _client;
         private string grant_type = "password";
-        private string contentType = "application/json";
+        //private string contentType = "application/json";
 
         public LoginService()
         {

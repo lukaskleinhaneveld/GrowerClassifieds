@@ -7,9 +7,10 @@
              Title="Products">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+            <ActivityIndicator x:Name="loadingProducts" Color="Red" IsRunning="True"/>
             <!--BackgroundColor="#d8d8d8"-->
             <StackLayout Orientation="Vertical" Padding="10">
-                <ListView x:Name="ProductList" RowHeight="200" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" SelectionMode="Single">
+                <ListView x:Name="ProductList" RowHeight="200" SeparatorVisibility="None" ItemSelected="OnItemSelected" SelectionMode="Single">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -52,7 +53,7 @@
                                                                              HorizontalTextAlignment="Start"
                                                                              HeightRequest="100"
                                                                              LineBreakMode="TailTruncation"
-                                                                             Lines="5"/>
+                                                                             Lines="25"/>
 
                                                         <!-- End of Stacklayout for Description -->
                                                     </StackLayout>
@@ -64,7 +65,7 @@
                                             <!-- End Stacklayout for Image and Description -->
                                         </StackLayout>
                                     </StackLayout>
-                                <!-- End Container stacklayout -->
+                                    <!-- End Container stacklayout -->
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

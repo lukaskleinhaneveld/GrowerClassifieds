@@ -14,10 +14,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<<<<<<< HEAD
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android.support.v7.recyclerview">
-=======
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android.support.v4">
->>>>>>> Login
   <uses-sdk android:minSdkVersion="14" />
 </manifest>
