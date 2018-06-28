@@ -2435,9 +2435,6 @@ namespace GrowersClassified.Droid
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7F010002
-			public const int 9509-200 = 2130771970;
-			
 			// aapt resource value: 0x7F090001
 			public const int abc_ab_share_pack_mtrl_alpha = 2131296257;
 			
@@ -2717,17 +2714,17 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
+			// aapt resource value: 0x7F010002
+			public const int grower_classifieds = 2130771970;
+			
 			// aapt resource value: 0x7F010003
-			public const int grower_classifieds = 2130771971;
+			public const int grower_classifieds_mobile = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int grower_classifieds_mobile = 2130771972;
+			public const int house = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int house = 2130771973;
-			
-			// aapt resource value: 0x7F010006
-			public const int icon = 2130771974;
+			public const int icon = 2130771973;
 			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
@@ -3259,6 +3256,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
+			
+			// aapt resource value: 0x7F010006
+			public const int MagGlass = 2130771974;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;

@@ -46,8 +46,6 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-<<<<<<< HEAD
-=======
 System.Collections
 System.Globalization
 System.IO.FileSystem
@@ -63,4 +61,3 @@ System.Diagnostics.Debug
 System.Reflection.Primitives
 System.Reflection.Extensions
 System.Security.Principal
->>>>>>> Login
