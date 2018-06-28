@@ -45,11 +45,11 @@ namespace GrowersClassified.Views.Products
                 }
 
                 var contentOutput = obj["content"]["rendered"].ToString();
-                var excerptOutput = obj["excerpt"]["rendered"].ToString();
-                var titleOutput   = obj["title"]["rendered"].ToString();
+                //var excerptOutput = obj["excerpt"]["rendered"].ToString();
+                //var titleOutput   = obj["title"]["rendered"].ToString();
 
                 string oldText = textTotal;
-                string newText = excerptOutput;
+                string newText = contentOutput;
                 textTotal = oldText + newText;
                 Console.WriteLine("textTotal: " + textTotal);
             }
@@ -60,28 +60,34 @@ namespace GrowersClassified.Views.Products
             indicator.IsVisible = false;
         }
 
-        //private void backClicked(object sender, EventArgs e)
-        //{
-        //    // Check to see if there is anywhere to go back to
-        //    if (webView.CanGoBack)
-        //    {
-        //        webView.GoBack();
-        //    }
-        //    else
-        //    { // If not, leave the view
-        //        Navigation.PopAsync();
-        //    }
-        //    Console.WriteLine(webView.CanGoBack);
-        //}
+        private void backClicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoBack)
+            {
+                webView.GoBack();
+            }
+            else
+            {
+                Navigation.PopAsync();
+            }
+        }
 
-        //private void forwardClicked(object sender, EventArgs e)
-        //{
-        //    if (webView.CanGoForward)
-        //    {
-        //        webView.GoForward();
+        private void forwardClicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoForward)
+            {
+                webView.GoForward();
+            }
+        }
 
-        //    }
-        //    Console.WriteLine(webView.CanGoForward);
-        //}
+        void webOnNavigating(object sender, WebNavigatingEventArgs e)
+        {
+            indicator.IsVisible = true;
+        }
+
+        void webOnEndNavigating(object sender, WebNavigatedEventArgs e)
+        {
+            indicator.IsVisible = false;
+        }
     }
 }

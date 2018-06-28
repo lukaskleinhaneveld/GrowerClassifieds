@@ -58,28 +58,35 @@ namespace GrowersClassified.Views.Products
             indicator.IsVisible = false;
         }
 
-        //private void backClicked(object sender, EventArgs e)
-        //{
-        //    // Check to see if there is anywhere to go back to
-        //    if (webView.CanGoBack)
-        //    {
-        //        webView.GoBack();
-        //    }
-        //    else
-        //    { // If not, leave the view
-        //        Navigation.PopAsync();
-        //    }
-        //    Console.WriteLine(webView.CanGoBack);
-        //}
 
-        //private void forwardClicked(object sender, EventArgs e)
-        //{
-        //    if (webView.CanGoForward)
-        //    {
-        //        webView.GoForward();
+        private void backClicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoBack)
+            {
+                webView.GoBack();
+            }
+            else
+            {
+                Navigation.PopAsync();
+            }
+        }
 
-        //    }
-        //    Console.WriteLine(webView.CanGoForward);
-        //}
+        private void forwardClicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoForward)
+            {
+                webView.GoForward();
+            }
+        }
+
+        void webOnNavigating(object sender, WebNavigatingEventArgs e)
+        {
+            indicator.IsVisible = true;
+        }
+
+        void webOnEndNavigating(object sender, WebNavigatedEventArgs e)
+        {
+            indicator.IsVisible = false;
+        }
     }
 }

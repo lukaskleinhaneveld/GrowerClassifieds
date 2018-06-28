@@ -10,15 +10,14 @@
                                IsRunning="True"
                                VerticalOptions="Center"
                                HorizontalOptions="Center"/>
-            <StackLayout Orientation="Horizontal" Padding="10,10">
-                <!-- Back Button -->
-                <Button x:Name="webView_back" Text="&lt;" FontSize="Large" HorizontalOptions="StartAndExpand"/>
-                <!-- Forward Buttom-->
-                <Button x:Name="webView_forward" Text="&gt;" FontSize="Large" HorizontalOptions="End"/>
-            </StackLayout>
             <WebView x:Name="webView" 
                      VerticalOptions="FillAndExpand" 
                      HorizontalOptions="FillAndExpand"/>
+
+            <StackLayout Orientation="Horizontal" Padding="10,10">
+                <Button Text="Back" HorizontalOptions="StartAndExpand" Clicked="backClicked" />
+                <Button Text="Forward" HorizontalOptions="End" Clicked="forwardClicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
