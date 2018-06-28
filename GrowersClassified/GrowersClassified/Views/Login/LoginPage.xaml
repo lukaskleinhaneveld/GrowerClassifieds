@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Views.Login.LoginPage"
              Title="Login">
-    <StackLayout x:Name="container">
+    <StackLayout x:Name="container" BackgroundColor="WhiteSmoke" VerticalOptions="FillAndExpand">
         <StackLayout x:Name="LoginForm" Padding="40, 20, 40, 0">
+            <!-- Creating header for login page -->
             <StackLayout x:Name="Header" Padding="0,0,0,20">
                 <Label Text="Login"
                        VerticalOptions="CenterAndExpand" 
@@ -12,16 +13,20 @@
                        FontSize="40"/>
             </StackLayout>
 
-            <Entry x:Name="Entry_Email"
-                   Placeholder="Email"/>
+            <!-- Username input field -->
+            <Entry x:Name="Entry_Username"
+                   Placeholder="Username"/>
 
+            <!-- Password input field -->
             <Entry x:Name="Entry_Pass"
                    Placeholder="Password"
-                   IsPassword="True"/>
-            
+                   IsPassword="True"/><!-- Setting input field to "IsPassword" so you won't see the text but black dots instead -->
+
+            <!-- Creating empty lable that will display information given about the login process -->
             <Label x:Name="LoginMessage"
                    HorizontalOptions="Center"/>
 
+            <!-- Button to start login process -->
             <Button Text="Login"
                     x:Name="BtnLogin"
                     HorizontalOptions="Center" 
@@ -32,7 +37,10 @@
                     VerticalOptions="End"
                     BackgroundColor="#BDD73C"
                     Clicked="LoginProcess_Clicked"/>
+            
             <Label Text="Don't have an account yet? Register here." HorizontalOptions="Center"/>
+            
+            <!-- Button to redirect to registerpage -->
             <Button Text="Register here"
                 Clicked="ToRegister_Clicked"/>
         </StackLayout>

@@ -17,6 +17,7 @@ namespace GrowersClassified.Views.Login
 			InitializeComponent ();
 		}
 
+        // Redirect to LoginPage
         private async void ToLogin_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();

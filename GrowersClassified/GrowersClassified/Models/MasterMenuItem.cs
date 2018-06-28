@@ -5,6 +5,7 @@ using Xamarin.Forms;
 
 namespace GrowersClassified.Models
 {
+    // Setting specifics for menu items
     public class MasterMenuItem
     {
         public string Title { get; set; }
@@ -12,7 +13,7 @@ namespace GrowersClassified.Models
         public Color BackgroundColor { get; set; }
         public Type TargetType { get; set; }
 
-
+        // Context in which you create a new menu item in MasterPage.xaml.cs
        public MasterMenuItem(string Title, string IconSource, Color color, Type target)
        {
             this.Title = Title;

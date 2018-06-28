@@ -2,7 +2,6 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\GrowersClassified.Android.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\com.GrowersClassified.app.apk
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\com.GrowersClassified.app-Signed.apk
-C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.csprojAssemblyReference.cache
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\App.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Index.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Products\ProductPage.xaml.g.cs
@@ -11,6 +10,8 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Products\CreateProduct.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Login\LoginPage.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Login\RegisterPage.xaml.g.cs
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Products\WebViewTest.xaml.g.cs
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\Views\Products\ProductDetail.xaml.g.cs
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.csproj.CoreCompileInputs.cache
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\XamlC.stamp
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.dll
@@ -32,6 +33,7 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-xhdpi\avatar.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-xhdpi\house.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-hdpi\grower_classifieds.png
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable\magglass.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable\icon.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\res\drawable-xhdpi\icon.png
@@ -43,6 +45,8 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\R.txt
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\uploadflags.txt
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\Microsoft.CSharp.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\Mono.Android.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\Mono.Android.Export.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\Mono.Btls.Interface.pdb
@@ -57,6 +61,7 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.Core.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.Data.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.IO.Compression.FileSystem.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.Net.Http.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.Xml.pdb
@@ -71,6 +76,8 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.Transactions.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\System.Web.Services.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Microsoft.CSharp.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Microsoft.IdentityModel.Logging.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Microsoft.IdentityModel.Tokens.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Mono.Android.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Mono.Android.Export.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Mono.Btls.Interface.pdb
@@ -85,6 +92,7 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\System.Core.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\System.Data.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\System.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\System.IdentityModel.Tokens.Jwt.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\System.IO.Compression.FileSystem.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\System.Net.Http.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\System.Xml.pdb
@@ -111,6 +119,8 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.CSharp.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.IdentityModel.Logging.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.IdentityModel.Tokens.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Mono.Android.Export.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Mono.Android.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Mono.Btls.Interface.pdb
@@ -125,6 +135,7 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.Core.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.Data.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.IdentityModel.Tokens.Jwt.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.IO.Compression.FileSystem.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.IO.Compression.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.Net.Http.pdb
@@ -138,3 +149,9 @@ C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.And
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\GrowersClassified.Android.csprojAssemblyReference.cache
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\bin\Debug\GrowersClassified.Android.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\GrowersClassified.Android.dll.mdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Plugin.Connectivity.dll.mdb
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

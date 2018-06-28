@@ -3,16 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Index"
              Title="Home"
-             BackgroundColor="#eee">
+             BackgroundColor="WhiteSmoke">
 
-    <ContentPage.Content Padding="0,20,0,0" Title="Index">
+    <ContentPage.Content Padding="20,20,20,0" Title="Index">
         <StackLayout VerticalOptions="FillAndExpand"
                      HorizontalOptions="FillAndExpand"
-                     BackgroundColor="#d3d6db">
-            <Grid Padding="0,5,0,0" 
+                     BackgroundColor="WhiteSmoke"
+                     Padding="0,0,0,10">
+            <!--<Grid Padding="0,5,0,0" 
                   Margin="0,0,0,0" 
                   RowSpacing="0"
-                  ColumnSpacing="0">
+                  ColumnSpacing="0"
+                  BackgroundColor="Brown">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -20,156 +22,177 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
+                </Grid.RowDefinitions>-->
+            <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
                 <Image Source="grower_classifieds.png"
-                       Grid.Column="0"
-                       Grid.ColumnSpan="2"
-                       Grid.Row="0"
-                       Margin="20, 0, 0 ,0"
+                       WidthRequest="275"
+                       Margin="0, 0, 10 ,0"
+                       HorizontalOptions="Start"
                        VerticalOptions="Center"/>
 
                 <Button Text="Post"
-                        Grid.Column="3"
-                        Grid.ColumnSpan="2"
                         FontSize="14"
                         TextColor="Black"
                         BackgroundColor="#BDD73C"
                         Clicked="ToCreateProduct"
-                        Margin="0,0,20,0"
-                        VerticalOptions="Center"/>
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"/>
+            </StackLayout>
+            <!--</Grid>-->
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <SearchBar Placeholder="Search..."
+                           Margin="10,0,10,0"
+                           HorizontalOptions="FillAndExpand"/>
             </Grid>
             <ScrollView x:Name="MainSection" 
                         Orientation="Vertical" 
                         VerticalOptions="FillAndExpand">
+                <StackLayout Padding="10,0,10,0">
+                    <Grid x:Name="CategoryGrid"
+                          Padding="0,10,0,10"
+                          VerticalOptions="StartAndExpand">
 
-                <Grid x:Name="CategoryGrid"
-                      Padding="0,0,0,20"
-                      BackgroundColor="#e8e8e8"
-                      VerticalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="20"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <!-- Define row height for every row in this grid -->
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="20"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="20"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-
-                    </Grid.RowDefinitions>
-
-                    <Image Source="Background.jpg"
+                        <Image Source="Background.jpg"
                            Grid.Column="1"
-                           Grid.Row="1"
-                           HeightRequest="100"
+                           Grid.Row="0"
                            Aspect="AspectFill"/>
 
-                    <Label Text="Filling"
+                        <Label Text="Filling"
                            Grid.Column="1"
-                           Grid.Row="1"
+                           Grid.Row="0"
                            VerticalTextAlignment="Center"
                            HorizontalTextAlignment="Center"
                            TextColor="White"
                            BackgroundColor="#60000000"/>
-                    <!--The line above is to set the background color with an opacity (in %) as follows: #aarrggbb-->
+                        <!--The line above is to set the background color with an opacity (in %) as follows: #aa(Alpha)rr(Red)gg(Green)bb(Bluw)-->
 
-                    <Label Text="Transplanting"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Transplanting"
+                           BackgroundColor="#d8d8d8"
+                           Grid.Column="2"
+                           Grid.Row="0"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+
+                        <Label Text="Seeding"
+                           BackgroundColor="#d8d8d8"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+
+                        <Label Text="Grading &amp; Sorting"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="2"
                            Grid.Row="1"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Seeding"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Destacking"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="1"
                            Grid.Row="2"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Grading &amp; Sorting"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Dibbling"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="2"
                            Grid.Row="2"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Destacking"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Pot &amp; Tray handling"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="1"
                            Grid.Row="3"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Dibbling"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Nursery Solutions"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="2"
                            Grid.Row="3"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Pot &amp; Tray handling"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Nursery Forklifts"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="1"
                            Grid.Row="4"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Nursery Solutions"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Shipping Systems"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="2"
                            Grid.Row="4"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Nursery Forklifts"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Soil Handling"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="1"
                            Grid.Row="5"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Shipping Systems"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Coir Processing"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="2"
                            Grid.Row="5"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Soil Handling"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Rockwool Automation"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="1"
                            Grid.Row="6"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Coir Processing"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Greenhouse Humidity Control"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="2"
                            Grid.Row="6"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Rockwool Automation"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Irrigation Washing"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="1"
                            Grid.Row="7"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
 
-                    <Label Text="Greenhouse Humidity Control"
-                           BackgroundColor="#b8b8b8"
+                        <Label Text="Other"
+                           BackgroundColor="#d8d8d8"
                            Grid.Column="2"
                            Grid.Row="7"
                            HorizontalTextAlignment="Center"
                            VerticalTextAlignment="Center"/>
-
-                    <Label Text="Irrigation Washing"
-                           BackgroundColor="#b8b8b8"
-                           Grid.Column="1"
-                           Grid.Row="8"
-                           HorizontalTextAlignment="Center"
-                           VerticalTextAlignment="Center"/>
-                </Grid>
+                    </Grid>
+                </StackLayout>
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>

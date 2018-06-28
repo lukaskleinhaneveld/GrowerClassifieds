@@ -1,27 +1,111 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using Newtonsoft.Json;
 using GrowersClassified.Models;
+using System;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Threading.Tasks;
+using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace GrowersClassified.Views.Products
 {
 	public partial class ProductPage : ContentPage
 	{
-		public ProductPage ()
-		{
-			InitializeComponent ();
+        HttpClient _client = new HttpClient();
+        public ActivityIndicator indicator { get { return loadingProducts; } }
+        // Setting ListView to the x:Name of the listview in the xaml page
+        public ListView ListView { get { return ProductList; } }
+        public WebView webView { get { return webView; } }
+        // Creating list 'products'
+        public List<Product> products = new List<Product> { };
+
+        public string textTotal = "";
+
+        public User user = new User();
+        public string htmlOutput;
+        public ProductPage ()
+        {
+            InitializeComponent();
+            //HtmlToContent();
+            SetProducts();
         }
 
-        public void LoadAllProducts()
+        void SetProducts()
         {
+            indicator.IsVisible = true;
+            // Set product list with new products
+            for (int i = 0; i < 10; i++)
+            {
+                user.Username = "Test user " + i;
+                products.Add(new Product(user.Username,   // Username
+                    "Test Title",                         // Title
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",         // Description
+                    "Test City",                          // City
+                    "Test State",                         // State
+                    "Test make",                          // Make
+                    "Test model",                         // Model
+                    "2018",                               // Year
+                    "CAD $" + "2000"                      //Price
+                ));                         
+            }
 
+            // Setting ListView items source to othe 'products' List
+            ListView.ItemsSource = products;
+            indicator.IsVisible = false;
+        }
+
+        //async void HtmlToContent()
+        //{
+
+        //    var response = await _client.GetAsync(Constants.GetPostsUrl);
+        //    var content = await response.Content.ReadAsStringAsync();
+        //    var json = response.Content.ReadAsStringAsync().Result;
+
+        //    JArray a = JArray.Parse(json);
+        //    foreach (JObject o in a.Children<JObject>())
+        //    {
+        //        foreach (JProperty p in o.Properties())
+        //        {
+        //            // Getting JSON Name Property
+        //            var name = p.Name;
+
+        //            // Getting JSON Value Property
+        //            var value = (object)p.Value;
+        //        }
+
+        //        htmlOutput = o["content"]["rendered"].ToString();
+
+        //        string oldText = textTotal;
+        //        Console.WriteLine("oldText: " + oldText);
+        //        string newText = htmlOutput;
+        //        Console.WriteLine("newText: " + newText);
+
+        //        textTotal = oldText + newText;
+        //        Console.WriteLine("textTotal: " + textTotal);
+        //    }
+
+        //    products.Add(new Product(
+        //            "Freek",
+        //            "Test title",
+        //            textTotal,
+        //            "Test city",
+        //            "Test state",
+        //            "Test make",
+        //            "Test model",
+        //            "2018",
+        //            "CAD $" + "2000"
+        //        ));
+        //}
+
+        async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if(e.SelectedItem == null)
+            {
+                return;
+            }
+            await Navigation.PushAsync(new ProductDetail());
+            ((ListView)sender).SelectedItem = null;
         }
     }
 }

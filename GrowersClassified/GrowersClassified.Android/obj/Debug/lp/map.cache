@@ -1,4 +1,6 @@
 FormsViewGroup
+Microsoft.IdentityModel.Logging
+Microsoft.IdentityModel.Tokens
 Mono.Cecil
 Mono.Cecil.Mdb
 Mono.Cecil.Pdb
@@ -17,6 +19,7 @@ SQLitePCLRaw.batteries_v2
 SQLitePCLRaw.core
 SQLitePCLRaw.lib.e_sqlite3
 SQLitePCLRaw.provider.e_sqlite3
+System.IdentityModel.Tokens.Jwt
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -43,3 +46,18 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+System.Collections
+System.Globalization
+System.IO.FileSystem
+System.IO.FileSystem.Primitives
+System.Security.Cryptography.Primitives
+System.Collections.Concurrent
+System.Security.Claims
+System.Xml.ReaderWriter
+System.Security.Cryptography.X509Certificates
+System.Text.Encoding
+System.Threading
+System.Diagnostics.Debug
+System.Reflection.Primitives
+System.Reflection.Extensions
+System.Security.Principal

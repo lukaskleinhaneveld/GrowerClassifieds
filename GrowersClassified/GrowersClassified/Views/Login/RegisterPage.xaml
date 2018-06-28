@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Views.Login.RegisterPage"
              Title="Register">
-    <StackLayout x:Name="Container">
+    <StackLayout x:Name="Container" BackgroundColor="WhiteSmoke" VerticalOptions="FillAndExpand">
         <StackLayout x:Name="RegisterForm" Padding="40, 20, 40, 0">
+            <!--Creating a header for the register page-->
             <StackLayout x:Name="Header" Padding="0,0,0,20">
                 <Label Text="Register"
                    HorizontalOptions="Center"
@@ -12,24 +13,34 @@
                    FontSize="40"
                    TextColor="Black"/>
             </StackLayout>
-            <Entry Placeholder="Display name"
+            <StackLayout BackgroundColor="WhiteSmoke">
+                
+                <!--displayname input field-->
+                <Entry Placeholder="Display name"
                x:Name="Entry_Displayname"/>
 
-            <Entry Placeholder="Email"
+                <!-- Email input field -->
+                <Entry Placeholder="Email"
                x:Name="Entry_Email"/>
 
-            <Entry Placeholder="Password"
+                <!-- Password input field -->
+                <Entry Placeholder="Password"
                x:Name="Entry_Pass"
                IsPassword="True"/>
-            
-            <Entry Placeholder="Confirm Password"
+                <!-- Setting input type to password so you can't see the input -->
+
+                <!-- Password confirmation input field -->
+                <Entry Placeholder="Confirm Password"
                x:Name="Entry_ConfirmPass"
                IsPassword="True"/>
-            
-            <Label x:Name="RegisterMessage"
+                <!-- Setting input type to password so you can't see the input -->
+
+                <!-- Creating empty lable that will display information given about the registration process -->
+                <Label x:Name="RegisterMessage"
                    HorizontalOptions="Center"/>
-            
-            <Button Text="Register"
+
+                <!-- Button to start registration process -->
+                <Button Text="Register"
                     HorizontalOptions="Center" 
                     FontSize="Medium"
                     WidthRequest="250" 
@@ -37,8 +48,12 @@
                     TextColor="Black" 
                     VerticalOptions="End"
                     BackgroundColor="#BDD73C"/>
+
+            </StackLayout>
             
             <Label Text="Already have an account? Login here." HorizontalOptions="Center"/>
+            
+            <!-- Button to redirect to loginpage -->
             <Button Text="Login here" Clicked="ToLogin_Clicked"/>
         </StackLayout>
     </StackLayout>
