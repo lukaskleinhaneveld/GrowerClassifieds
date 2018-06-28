@@ -48,12 +48,14 @@
                                                     <StackLayout Orientation="Horizontal"
                                                              HorizontalOptions="End"
                                                              Padding="10,0,0,0">
+                                                        <WebView x:Name="webView"
+                                                                 HeightRequest="100"/>
                                                         <controls:MultiLineLabel Text="{ Binding Product_Description }"
                                                                              FontSize="15"
                                                                              HorizontalTextAlignment="Start"
                                                                              HeightRequest="100"
                                                                              LineBreakMode="TailTruncation"
-                                                                             Lines="25"/>
+                                                                             Lines="5"/>
 
                                                         <!-- End of Stacklayout for Description -->
                                                     </StackLayout>

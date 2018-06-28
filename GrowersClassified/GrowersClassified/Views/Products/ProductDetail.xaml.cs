@@ -66,10 +66,6 @@ namespace GrowersClassified.Views.Products
             {
                 webView.GoBack();
             }
-            else
-            {
-                Navigation.PopAsync();
-            }
         }
 
         private void forwardClicked(object sender, EventArgs e)

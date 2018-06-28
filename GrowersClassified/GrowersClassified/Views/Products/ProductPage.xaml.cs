@@ -20,12 +20,14 @@ namespace GrowersClassified.Views.Products
         // Creating list 'products'
         public List<Product> products = new List<Product> { };
 
+        public string textTotal = "";
+
         public User user = new User();
         public string htmlOutput;
         public ProductPage ()
         {
             InitializeComponent();
-            HtmlToContent();
+            //HtmlToContent();
             SetProducts();
         }
 
@@ -47,63 +49,54 @@ namespace GrowersClassified.Views.Products
                     "CAD $" + "2000"                      //Price
                 ));                         
             }
-            
+
             // Setting ListView items source to othe 'products' List
             ListView.ItemsSource = products;
-        }
-
-        async void HtmlToContent()
-        {
-
-            var response = await _client.GetAsync(Constants.GetPostsUrl);
-            var content = await response.Content.ReadAsStringAsync();
-            var json = response.Content.ReadAsStringAsync().Result;
-
-            JArray a = JArray.Parse(json);
-            foreach (JObject o in a.Children<JObject>())
-            {
-                foreach (JProperty p in o.Properties())
-                {
-                    // Getting JSON Name Property
-                    var name = p.Name;
-
-                    // Getting JSON Value Property
-                    var value = (object)p.Value;
-                }
-
-                htmlOutput = o["content"]["rendered"].ToString();
-                var htmlSource = new HtmlWebViewSource { Html = '"' + htmlOutput + '"' };
-                //if (htmlSource != null)
-                //    webView.Source = htmlSource;
-
-                Console.WriteLine("Html Output: " + htmlOutput);
-
-                products.Add(new Product(
-                    "Freek",
-                    "Ur mom",
-                    htmlOutput,
-                    "Test City",
-                    "Test State",
-                    "Test make",
-                    "Test model",
-                    "2018",
-                    "CAD $" + "2000"
-                ));
-
-                string textTotal = "";
-                //Console.WriteLine("Initiate textTotal: " + textTotal);
-
-                string oldText = textTotal;
-                //Console.WriteLine("oldText: " + oldText);
-
-                string newText = htmlOutput;
-                //Console.WriteLine("newText: " + newText);
-
-                textTotal = oldText + newText;
-                Console.WriteLine("textTotal: " + textTotal);
-            }
             indicator.IsVisible = false;
         }
+
+        //async void HtmlToContent()
+        //{
+
+        //    var response = await _client.GetAsync(Constants.GetPostsUrl);
+        //    var content = await response.Content.ReadAsStringAsync();
+        //    var json = response.Content.ReadAsStringAsync().Result;
+
+        //    JArray a = JArray.Parse(json);
+        //    foreach (JObject o in a.Children<JObject>())
+        //    {
+        //        foreach (JProperty p in o.Properties())
+        //        {
+        //            // Getting JSON Name Property
+        //            var name = p.Name;
+
+        //            // Getting JSON Value Property
+        //            var value = (object)p.Value;
+        //        }
+
+        //        htmlOutput = o["content"]["rendered"].ToString();
+
+        //        string oldText = textTotal;
+        //        Console.WriteLine("oldText: " + oldText);
+        //        string newText = htmlOutput;
+        //        Console.WriteLine("newText: " + newText);
+
+        //        textTotal = oldText + newText;
+        //        Console.WriteLine("textTotal: " + textTotal);
+        //    }
+
+        //    products.Add(new Product(
+        //            "Freek",
+        //            "Test title",
+        //            textTotal,
+        //            "Test city",
+        //            "Test state",
+        //            "Test make",
+        //            "Test model",
+        //            "2018",
+        //            "CAD $" + "2000"
+        //        ));
+        //}
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -112,7 +105,6 @@ namespace GrowersClassified.Views.Products
                 return;
             }
             await Navigation.PushAsync(new ProductDetail());
-            //await DisplayAlert("Item Selected", htmlOutput, "Ok");
             ((ListView)sender).SelectedItem = null;
         }
     }
