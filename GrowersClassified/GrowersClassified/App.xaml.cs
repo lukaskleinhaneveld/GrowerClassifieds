@@ -11,7 +11,7 @@ namespace GrowersClassified
     public partial class App : Application
     {
         static TokenDbController _tokenDatabase;
-        private static LoginService _restServiceLogin;
+        private static RestService _restServiceLogin;
 
         public App()
         {
@@ -48,13 +48,13 @@ namespace GrowersClassified
             }
         }
 
-        public static LoginService LoginService
+        public static RestService RestService
         {
             get
             {
                 if (_restServiceLogin == null)
                 {
-                    _restServiceLogin = new LoginService();
+                    _restServiceLogin = new RestService();
                 }
                 return _restServiceLogin;
             }

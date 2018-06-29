@@ -24,7 +24,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Data\CheckNetwork.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\ISQLite.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\LoginService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\RestService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\TokenDbController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\UserDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Constants.cs" />

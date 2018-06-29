@@ -47,12 +47,12 @@ namespace GrowersClassified.Views.Products
                     "Test model",                         // Model
                     "2018",                               // Year
                     "CAD $" + "2000"                      //Price
-                ));                         
+                ));
             }
+            indicator.IsVisible = false;
 
             // Setting ListView items source to othe 'products' List
             ListView.ItemsSource = products;
-            indicator.IsVisible = false;
         }
 
         //async void HtmlToContent()

@@ -108,6 +108,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "GrowersClassified.Android.dll" comes first in this list. */
 		"GrowersClassified.Android.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.IdentityModel.JsonWebTokens.dll",
 		"Microsoft.IdentityModel.Logging.dll",
 		"Microsoft.IdentityModel.Tokens.dll",
 		"Mono.Cecil.dll",

@@ -61,3 +61,4 @@ System.Diagnostics.Debug
 System.Reflection.Primitives
 System.Reflection.Extensions
 System.Security.Principal
+Microsoft.IdentityModel.JsonWebTokens
