@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using GrowersClassified.Data;
 using GrowersClassified.Models;
+using GrowersClassified.Views.Account;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -40,20 +41,20 @@ namespace GrowersClassified.Views.Login
                     LoginMessage.TextColor = Color.SpringGreen;
                     LoginMessage.Text = "Logging in! Please wait...";
                     var result = await App.RestService.Login(user);
-                    Console.WriteLine("User: " + user);
                     var dbclear = new UserDatabase();
                     dbclear.Droptable();
                     // Check if you get an AccessToken from the local database. (One will be stored there with the user if login is successful)
                     // If an accesstoken exists in the local database, continue with the login
-                    if (result.Email != null)
+                    if (result.AccessToken != null)
                     {
-                        Console.WriteLine("Result.Username: " + result.Username);
                         var userDatabase = new UserDatabase();
                         userDatabase.AddUser(result);
-                        Console.WriteLine("Result: " + result);
-                        await Navigation.PopAsync(true);
                         LoginMessage.Text = "";
                         Entry_Pass.Text = "";
+                        LoginMessage.Text = "Logged in!";
+                        await Task.Delay(1000);
+                        Navigation.InsertPageBefore(new Index(), this);
+                        await Navigation.PopAsync();
                     }
                     // If no accesstoken was found, the user wasn't logged in due to invalid login info and an error is returned to the loginpage
                     else
@@ -75,7 +76,8 @@ namespace GrowersClassified.Views.Login
         // Redirect to RegisterPage modal
         public async void ToRegister_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new RegisterPage());
+            Navigation.InsertPageBefore(new RegisterPage(), this);
+            await Navigation.PopAsync();
         }
     }
 }

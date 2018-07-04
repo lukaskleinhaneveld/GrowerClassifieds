@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrowersClassified.Views.Contact.ContactPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="You'll be able to create a post here with a categorie as 'support' or something." VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

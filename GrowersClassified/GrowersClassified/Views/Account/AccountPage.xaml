@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrowersClassified.Views.Account.AccountPage"
+             Title="Account">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <StackLayout x:Name="TopStack" VerticalOptions="Start">
+            </StackLayout>
+            <StackLayout x:Name="MidStack" VerticalOptions="StartAndExpand">
+                <Label x:Name="LblUserName" BackgroundColor="#BDD73C" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" HeightRequest="35"/>
+                <Label x:Name="LblAccountText" Text="Please login in to use all feautures." FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout x:Name="BottomStack" VerticalOptions="EndAndExpand" Padding="0,0,0,20">
+                <Button Text="Logout" x:Name="BtnLogoutProcess" FontSize="20" TextColor="White" BackgroundColor="#C2C4C6" Clicked="BtnLogoutProcess_Clicked" Margin="20,0,20,0" VerticalOptions="Center"/>
+                <Button Text="Login" x:Name="BtnLoginProcess" FontSize="18" TextColor="Black" BackgroundColor="#BDD73C" Clicked="ToLoginPage_Clicked" Margin="20,0,20,0" VerticalOptions="Center"/>
+                <Button Text="Register" x:Name="BtnRegisterProcess" FontSize="18" TextColor="Black" BackgroundColor="#C2C4C6" Clicked="ToRegisterPage_Clicked" Margin="20,0,20,0" VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

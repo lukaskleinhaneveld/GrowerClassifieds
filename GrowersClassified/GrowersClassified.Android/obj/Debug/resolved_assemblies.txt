@@ -1,6 +1,14 @@
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\GrowersClassified.Android.dll
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\FormsViewGroup.dll
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Java.Interop.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.Analytics.Android.Bindings.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.Analytics.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.Android.Bindings.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.Crashes.Android.Bindings.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.Crashes.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.Push.Android.Bindings.dll
+C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.AppCenter.Push.dll
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\android\assets\Microsoft.IdentityModel.Logging.dll

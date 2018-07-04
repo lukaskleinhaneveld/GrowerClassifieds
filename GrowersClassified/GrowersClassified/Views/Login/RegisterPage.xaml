@@ -16,39 +16,43 @@
             <StackLayout BackgroundColor="WhiteSmoke">
                 
                 <!--displayname input field-->
-                <Entry Placeholder="Display name"
-               x:Name="Entry_Displayname"/>
+                <Entry Placeholder="Username"
+                       x:Name="Entry_Username"/>
 
                 <!-- Email input field -->
                 <Entry Placeholder="Email"
-               x:Name="Entry_Email"/>
+                       x:Name="Entry_Email"/>
+
+                <!-- Email input field -->
+                <Entry Placeholder="Full name"
+                       x:Name="Entry_Nicename"/>
 
                 <!-- Password input field -->
                 <Entry Placeholder="Password"
-               x:Name="Entry_Pass"
-               IsPassword="True"/>
+                       x:Name="Entry_Pass"
+                       IsPassword="True"/>
                 <!-- Setting input type to password so you can't see the input -->
 
                 <!-- Password confirmation input field -->
                 <Entry Placeholder="Confirm Password"
-               x:Name="Entry_ConfirmPass"
-               IsPassword="True"/>
+                       x:Name="Entry_ConfirmPass"
+                       IsPassword="True"/>
                 <!-- Setting input type to password so you can't see the input -->
 
                 <!-- Creating empty lable that will display information given about the registration process -->
                 <Label x:Name="RegisterMessage"
-                   HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"/>
 
                 <!-- Button to start registration process -->
                 <Button Text="Register"
-                    HorizontalOptions="Center" 
-                    FontSize="Medium"
-                    WidthRequest="250" 
-                    HeightRequest="60"  
-                    TextColor="Black" 
-                    VerticalOptions="End"
-                    BackgroundColor="#BDD73C"/>
-
+                        HorizontalOptions="Center" 
+                        FontSize="Medium"
+                        WidthRequest="250" 
+                        HeightRequest="60"  
+                        TextColor="Black"
+                        VerticalOptions="End"
+                        BackgroundColor="#BDD73C"
+                        Clicked="RegisterProcess_Clicked"/>
             </StackLayout>
             
             <Label Text="Already have an account? Login here." HorizontalOptions="Center"/>

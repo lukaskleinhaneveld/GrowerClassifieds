@@ -9,12 +9,10 @@ namespace GrowersClassified.Models
     public class UserData
     {
         [PrimaryKey, AutoIncrement, NotNull]
-        public int Id { get; set; }
+        [JsonProperty("ID")] public int Id { get; set; }
         [Unique]
-        [JsonProperty("token")]
-        public string AccessToken { get; set; }
+        [JsonProperty("token")]public string AccessToken { get; set; }
         [JsonProperty("user_login")] public string Username { get; set; }
-        [JsonProperty("user_pass")] public string Password { get; set; }
         [JsonProperty("user_nicename")] public string Nickname { get; set; }
         [JsonProperty("user_email")] public string Email { get; set; }
         [JsonProperty("user_url")] public string Website { get; set; }
@@ -22,5 +20,8 @@ namespace GrowersClassified.Models
         [JsonProperty("user_activation_key")] public string ActivationKey { get; set; }
         [JsonProperty("user_status")] public string Status { get; set; }
         [JsonProperty("user_display_name")] public string Displayname { get; set; }
+        public string ErrorDescription { get; set; }
+        public DateTime ExpireDate { get; set; }
+        public double ExpireIn { get; set; }
     }
 }

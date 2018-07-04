@@ -3,6 +3,7 @@ using System.Linq;
 using SQLite;
 using Xamarin.Forms;
 using GrowersClassified.Models;
+using System;
 
 namespace GrowersClassified.Data
 {
@@ -41,7 +42,7 @@ namespace GrowersClassified.Data
         // Logs the user out by clearing the local database AKA the only user in that table
         public string LogoutUser()
         {
-            _conn.DropTable<UserData>();
+            _conn.Execute("delete from UserData");
             return "success";
         }
 

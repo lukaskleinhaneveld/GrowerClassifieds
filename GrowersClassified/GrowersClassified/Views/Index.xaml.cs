@@ -22,7 +22,19 @@ namespace GrowersClassified
 
         private async void ToCreateProduct(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CreateProduct());
+            var userDatabase = new UserDatabase();
+            var userdata = userDatabase.GetAllUsers();
+            if(userdata.Count == 1)
+            {
+                Navigation.InsertPageBefore(new CreateProduct(), this);
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                await DisplayAlert("Error", "You must be logged in to create an ad.", "Ok");
+                Navigation.InsertPageBefore(new LoginPage(), this);
+                await Navigation.PopAsync();
+            }
         }
     }
 }
