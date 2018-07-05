@@ -20,7 +20,6 @@ namespace GrowersClassified.Views.Account
             InitializeComponent();
             var userDatabase = new UserDatabase();
             var userdata = userDatabase.GetAllUsers();
-            Console.WriteLine("Userdata: " + userdata);
             if (userdata.Count < 1)
             {
                 BtnLoginProcess.IsVisible = true;

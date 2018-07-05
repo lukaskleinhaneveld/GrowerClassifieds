@@ -49,7 +49,6 @@ namespace GrowersClassified.Views.Products
                 string oldText = textTotal;
                 string newText = htmlOutput;
                 textTotal = oldText + newText;
-                Console.WriteLine("textTotal: " + textTotal);
             }
 
             var htmlSource = new HtmlWebViewSource { Html = textTotal };

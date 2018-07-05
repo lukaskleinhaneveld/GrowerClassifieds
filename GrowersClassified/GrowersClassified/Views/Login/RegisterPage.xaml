@@ -41,7 +41,8 @@
 
                 <!-- Creating empty lable that will display information given about the registration process -->
                 <Label x:Name="RegisterMessage"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"/>
 
                 <!-- Button to start registration process -->
                 <Button Text="Register"

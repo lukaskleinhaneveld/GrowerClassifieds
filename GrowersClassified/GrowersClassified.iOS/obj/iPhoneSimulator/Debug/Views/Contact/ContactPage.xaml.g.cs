@@ -8,18 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("GrowersClassified.iOS.Views.Contact.ContactPage.xaml", "Views/Contact/ContactPage.xaml", typeof(global::GrowersClassified.Views.Contact.Contact))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("GrowersClassified.iOS.Views.Contact.ContactPage.xaml", "Views/Contact/ContactPage.xaml", typeof(global::GrowersClassified.Views.Contact.ContactPage))]
 
 namespace GrowersClassified.Views.Contact {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified\\View" +
         "s\\Contact\\ContactPage.xaml")]
-    public partial class Contact : global::Xamarin.Forms.ContentPage {
+    public partial class ContactPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Contact));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ContactPage));
         }
     }
 }

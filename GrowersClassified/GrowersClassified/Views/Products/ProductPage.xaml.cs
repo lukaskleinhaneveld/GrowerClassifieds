@@ -55,49 +55,6 @@ namespace GrowersClassified.Views.Products
             ListView.ItemsSource = products;
         }
 
-        //async void HtmlToContent()
-        //{
-
-        //    var response = await _client.GetAsync(Constants.GetPostsUrl);
-        //    var content = await response.Content.ReadAsStringAsync();
-        //    var json = response.Content.ReadAsStringAsync().Result;
-
-        //    JArray a = JArray.Parse(json);
-        //    foreach (JObject o in a.Children<JObject>())
-        //    {
-        //        foreach (JProperty p in o.Properties())
-        //        {
-        //            // Getting JSON Name Property
-        //            var name = p.Name;
-
-        //            // Getting JSON Value Property
-        //            var value = (object)p.Value;
-        //        }
-
-        //        htmlOutput = o["content"]["rendered"].ToString();
-
-        //        string oldText = textTotal;
-        //        Console.WriteLine("oldText: " + oldText);
-        //        string newText = htmlOutput;
-        //        Console.WriteLine("newText: " + newText);
-
-        //        textTotal = oldText + newText;
-        //        Console.WriteLine("textTotal: " + textTotal);
-        //    }
-
-        //    products.Add(new Product(
-        //            "Freek",
-        //            "Test title",
-        //            textTotal,
-        //            "Test city",
-        //            "Test state",
-        //            "Test make",
-        //            "Test model",
-        //            "2018",
-        //            "CAD $" + "2000"
-        //        ));
-        //}
-
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if(e.SelectedItem == null)
