@@ -60,6 +60,11 @@
             
             <!-- Button to redirect to loginpage -->
             <Button Text="Login here" Clicked="ToLogin_Clicked"/>
+            <ActivityIndicator x:Name="registering" 
+                               Color="Red" 
+                               IsRunning="False"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

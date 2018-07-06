@@ -43,6 +43,11 @@
             <!-- Button to redirect to registerpage -->
             <Button Text="Register here"
                 Clicked="ToRegister_Clicked"/>
+            <ActivityIndicator x:Name="loggingIn" 
+                               Color="Red" 
+                               IsRunning="False"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

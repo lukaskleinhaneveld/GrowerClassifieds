@@ -1,9 +1,11 @@
 ﻿using GrowersClassified.Data;
 using GrowersClassified.Models;
+using GrowersClassified.Views.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -14,6 +16,7 @@ namespace GrowersClassified.Views.Login
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPage : ContentPage
     {
+        public ActivityIndicator indicator { get { return registering; } }
         public RegisterPage()
         {
             InitializeComponent();
@@ -28,6 +31,8 @@ namespace GrowersClassified.Views.Login
 
         async Task RegisterProcess_Clicked(object sender, EventArgs e)
         {
+            RegisterMessage.TextColor = Color.LightGreen;
+            RegisterMessage.Text = "Registration in progress...";
             // Check if user has an internet connection. If there IS a connection, continue with the login process
             if (CheckNetwork.IsInternet())
             {
@@ -42,8 +47,13 @@ namespace GrowersClassified.Views.Login
 
                 if (Entry_Username.Text != null && Entry_Pass.Text != null && Entry_ConfirmPass.Text != null && Entry_Email.Text != null && Entry_Nicename.Text != null)
                 {
+                    indicator.IsVisible = true;
                     if (Entry_Pass.Text == Entry_ConfirmPass.Text)
                     {
+
+                        Console.WriteLine("**********");
+                        Console.WriteLine("Entry_Pass: " + Entry_Pass.Text + " Entry_ConfirmPass: " + Entry_ConfirmPass.Text);
+                        Console.WriteLine("**********");
                         // Using hard coded admin to use it's bearer so we can register a user as this requires administrator access
                         var userRegister = new User
                         {
@@ -57,33 +67,77 @@ namespace GrowersClassified.Views.Login
                         var bearer = registerUser.AccessToken;
                         Constants.CreateUserToken = bearer;
 
-
-                        // Check if user already exist by searing for it's username
-                        var doesUserExist = await App.RestService.DoesUserExist(user);
-                        Console.WriteLine("doesUserExist: " + doesUserExist);
-                        if (doesUserExist)
+                        if (user.Username.Length > 5)
                         {
-                            RegisterMessage.TextColor = Color.Red;
-                            RegisterMessage.Text = "This username already exists. Please revise and try again.";
-                        }
+                            if (Regex.Match(user.Username, @"^[a-zA-Z]+$").Success)
+                            {
+                                if (user.Nicename.Length > 5) 
+                                {
+                                    if (Regex.Match(user.Nicename, @"^[a-zA-Z]+$").Success)
+                                    {
+                                        // Check if user already exist by searing for it's username
+                                        var doesUserExist = await App.RestService.DoesUserExist(user);
+                                        if (doesUserExist)
+                                        {
+                                            RegisterMessage.TextColor = Color.Red;
+                                            RegisterMessage.Text = "This username already exists. Please revise and try again.";
+                                        }
+                                        else
+                                        {
+                                            var userEmail = user.Email;
+                                            var email = userEmail.ToLower();
+
+                                            var emailPattern = "^(?(\")(\".+?(?<!\\\\)\"@)|(([0-9a-z]((\\.(?!\\.))|[-!#\\$%&'\\*\\+/=\\?\\^`\\{\\}\\|~\\w])*)(?<=[0-9a-z])@))(?(\\[)(\\[(\\d{1,3}\\.){3}\\d{1,3}\\])|(([0-9a-z][-\\w]*[0-9a-z]*\\.)+[a-z0-9][\\-a-z0-9]{0,22}[a-z0-9]))$";
+                                            if (Regex.Match(email, emailPattern).Success)
+                                            {
+                                                // Sending the user's input to the register logic
+                                                var registerResult = await App.RestService.Register(user);
+                                                if (registerResult.Id != 0)
+                                                {
+                                                    RegisterMessage.TextColor = Color.LightGreen;
+                                                    RegisterMessage.Text = "Registration successfull. Logging you in.";
+                                                    var loginResult = await App.RestService.Login(user);
+
+                                                    var userDatabase = new UserDatabase();
+                                                    userDatabase.Droptable();
+                                                    userDatabase.AddUser(loginResult);
+
+                                                    await Task.Delay(1000);
+                                                    Navigation.InsertPageBefore(new Index(), this);
+                                                    await Navigation.PopAsync();
+                                                }
+                                            }
+                                            else
+                                            {
+                                                RegisterMessage.TextColor = Color.Red;
+                                                RegisterMessage.Text = "Email is not in correct format. Please revise and try agian.";
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        RegisterMessage.TextColor = Color.Red;
+                                        RegisterMessage.Text = "Full name must only contain letters. Please revise and try again.";
+                                    }
+                                }
+                                else
+                                {
+                                    RegisterMessage.TextColor = Color.Red;
+                                    RegisterMessage.Text = "Full name must be at least 6 characters long. Please revise and try again.";
+                                }
+                            }
+                            else
+                            {
+                                RegisterMessage.TextColor = Color.Red;
+                                RegisterMessage.Text = "Username must only contain letters. Please revise and try again.";
+                            }
+                            }
                         else
                         {
-                            RegisterMessage.TextColor = Color.LightGreen;
-                            RegisterMessage.Text = "Registration in progress...";
-                            // Sending the user's input to the register logic
-                            var registerResult = await App.RestService.Register(user);
-                            Console.WriteLine("registerResult" + registerResult);
+                            RegisterMessage.TextColor = Color.Red;
+                            RegisterMessage.Text = "Username must be at least 6 characters long. Please revise and try again.";
 
-                            if (registerResult.AccessToken != null)
-                            {
-                                RegisterMessage.TextColor = Color.LightGreen;
-                                RegisterMessage.Text = "Registration successfull. Logging you in.";
-                                var loginResult = await App.RestService.Login(user);
-                                Console.WriteLine("loginResult" + loginResult);
-
-                            }
                         }
-
                     }
                     else
                     {
@@ -103,7 +157,7 @@ namespace GrowersClassified.Views.Login
                 RegisterMessage.TextColor = Color.Red;
                 RegisterMessage.Text = "You're not connected to the internet!";
             }
-
+            indicator.IsVisible = false;
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using System.Net.Http.Headers;
 
 namespace GrowersClassified.Data
 {
@@ -88,7 +89,6 @@ namespace GrowersClassified.Data
             // Sending register request
             var response = await _client.PostAsync(weburl, content);
             var JsonResult = response.Content.ReadAsStringAsync().Result;
-            Console.WriteLine("JsonResult: " + JsonResult);
             var responseObject = JsonConvert.DeserializeObject<T>(JsonResult);
             return responseObject;
         }
@@ -120,12 +120,15 @@ namespace GrowersClassified.Data
         {
             var param = user.Username;
             string weburl = "http://www.growerclassifieds.com/wp-json/wp/v2/users?search=" + param;
-            _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Constants.CreateUserToken);
+
+
+            _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            // Adding admin token to request since this has to be an authorized request
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Constants.CreateUserToken);
             var response = await _client.GetAsync(weburl);
-            Console.WriteLine("Response: " + response);
-            var JsonResult = response.Content.ReadAsStringAsync().Result;
-            Console.WriteLine("JsonResult: " + JsonResult);
-            if (JsonResult.Length > 2)
+            var result = response.Content.ReadAsStringAsync().Result;
+
+            if (result.Length > 2)
             {
                 return true;
             }

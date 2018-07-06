@@ -12,6 +12,7 @@ namespace GrowersClassified.Views.Login
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        public ActivityIndicator indicator { get { return loggingIn; } }
         public LoginPage()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace GrowersClassified.Views.Login
         // LoginProcess, this is being called from the Login button on the login page
         async Task LoginProcess_Clicked(object sender, EventArgs e)
         {
+            indicator.IsVisible = true;
             // Check if user has an internet connection. If there IS a connection, continue with the login process
             if (CheckNetwork.IsInternet())
             {
@@ -70,7 +72,7 @@ namespace GrowersClassified.Views.Login
                 LoginMessage.TextColor = Color.Red;
                 LoginMessage.Text = "You're not connected to the internet!";
             }
-
+            indicator.IsVisible = false;
         }
 
         // Redirect to RegisterPage modal
