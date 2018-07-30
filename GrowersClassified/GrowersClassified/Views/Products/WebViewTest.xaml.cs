@@ -21,16 +21,18 @@ namespace GrowersClassified.Views.Products
         public WebViewTest ()
         {
             InitializeComponent ();
-            CreateProduct();
+            LoadProducts();
         }
 
-        async void CreateProduct()
+        async void LoadProducts()
         {
             indicator.IsVisible = true;
+            var Token = App.TokenDatabase.GetToken();
+            _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Token.AccessToken);
             var response = await _client.GetAsync(Constants.GetPostsUrl);
             var content = await response.Content.ReadAsStringAsync();
             var json = response.Content.ReadAsStringAsync().Result;
-            string textTotal = "";
+            //string textTotal = "";
 
             JArray a = JArray.Parse(json);
             foreach (JObject o in a.Children<JObject>())
@@ -44,17 +46,23 @@ namespace GrowersClassified.Views.Products
                     var value = (object)p.Value;
                 }
 
-                var htmlOutput = o["content"]["rendered"].ToString();
+                //var htmlOutput = o["content"]["rendered"].ToString();
 
-                string oldText = textTotal;
-                string newText = htmlOutput;
-                textTotal = oldText + newText;
+                //string oldText = textTotal;
+                //string newText = htmlOutput;
+                //textTotal = oldText + newText;
+                var description = o["description"].ToString();
+                Console.WriteLine("description: " + description);
+                var price = o["price"].ToString();
+                Console.WriteLine("price: " + price);
+                var title = o["name"].ToString();
+                Console.WriteLine("title: " + title);
             }
 
-            var htmlSource = new HtmlWebViewSource { Html = textTotal };
-            if (textTotal != null)
-                webView.Source = htmlSource;
-            indicator.IsVisible = false;
+            //var htmlSource = new HtmlWebViewSource { Html = textTotal };
+            //if (textTotal != null)
+            //    webView.Source = htmlSource;
+            //indicator.IsVisible = false;
         }
 
 

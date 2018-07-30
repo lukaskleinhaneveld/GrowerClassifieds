@@ -4,6 +4,7 @@ using SQLite;
 using Xamarin.Forms;
 using GrowersClassified.Models;
 using System;
+using System.Data;
 
 namespace GrowersClassified.Data
 {
@@ -29,6 +30,15 @@ namespace GrowersClassified.Data
         public string AddUser(Token token)
         {
             _conn.Insert(token);
+            return "success";
+        }
+        
+        //UPDATE
+        public string UpdateUser(Token token)
+        {
+            var users = GetAllUsers();
+            Console.WriteLine(users[0]);
+            _conn.Execute($"UPDATE UserData SET [AccessToken] = '{token.AccessToken}', [Username] = '{token.Username}', [Password] = '{token.Password}', [Email] = '{token.Email}', [Id] = '{token.UserApp_Id}' WHERE [UserApp_Id] = '{token.Id}'");
             return "success";
         }
 

@@ -1,20 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GrowersClassified"
+             xmlns:controls="clr-namespace:GrowersClassified.Models"
              x:Class="GrowersClassified.Views.Products.ProductDetail">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <ActivityIndicator x:Name="loadingWebView" 
-                               Color="Red" 
-                               IsRunning="True"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"/>
-            <WebView x:Name="webView" 
-                     VerticalOptions="FillAndExpand" 
-                     HorizontalOptions="FillAndExpand"/>
-            <StackLayout Orientation="Horizontal" Padding="10,10">
-                <Button Text="Back" HorizontalOptions="StartAndExpand" Clicked="backClicked" />
-                <Button Text="Forward" HorizontalOptions="End" Clicked="forwardClicked" />
+            <StackLayout Orientation="Vertical" Padding="10">
+                <ListView x:Name="ProductList" RowHeight="200" SeparatorVisibility="None" SelectionMode="Single">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <!-- Container stacklayout -->
+                                <StackLayout Margin="5" Orientation="Vertical">
+                                    <!--Set border to a light green color-->
+                                    <StackLayout BackgroundColor="#BDD73C" Padding="1">
+                                        <!--Set background color to white so we can create the border in an easier way-->
+                                        <StackLayout BackgroundColor="White">
+                                            <StackLayout Orientation="Horizontal" Padding="20,5,20,5" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                                <Label Text="{ Binding Name }"
+                                                       FontSize="Medium"
+                                                       TextColor="#BDD73C"
+                                                       HorizontalTextAlignment="Start"
+                                                       HorizontalOptions="StartAndExpand"
+                                                       VerticalTextAlignment="Center"
+                                                       LineBreakMode="TailTruncation"
+                                                       WidthRequest="300"/>
+
+                                                <Label Text="{ Binding Price }"
+                                                   FontSize="Medium"
+                                                   HorizontalTextAlignment="End"
+                                                   HorizontalOptions="EndAndExpand"
+                                                   VerticalTextAlignment="Center"
+                                                       WidthRequest="100"/>
+                                                <!-- End Stacklayout for Title and Price -->
+                                            </StackLayout>
+                                            <!-- Stacklayout for Image and Description -->
+                                            <StackLayout Orientation="Horizontal" WidthRequest="350" HorizontalOptions="CenterAndExpand" Padding="10" BackgroundColor="White" HeightRequest="100">
+                                                <Image Source="{ Binding Images }"
+                                                   WidthRequest="100"
+                                                   HeightRequest="100"
+                                                   Aspect="AspectFill"
+                                                   VerticalOptions="Start"/>
+                                                <!-- Turn the content of the Description page vertical -->
+                                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                                    <ActivityIndicator x:Name="loadingWebView"
+                                                                       IsRunning="True"
+                                                                       VerticalOptions="Center"
+                                                                       HorizontalOptions="Center"/>
+                                                    <!-- Stacklayout for Description -->
+                                                    <StackLayout Orientation="Horizontal"
+                                                             HorizontalOptions="End"
+                                                             Padding="10,0,0,0">
+                                                        <WebView x:Name="webView"
+                                                                 HeightRequest="100"/>
+                                                        <controls:MultiLineLabel Text="{ Binding Description }"
+                                                                             FontSize="15"
+                                                                             HorizontalTextAlignment="Start"
+                                                                             HeightRequest="100"
+                                                                             LineBreakMode="TailTruncation"
+                                                                             Lines="5"/>
+
+                                                        <!-- End of Stacklayout for Description -->
+                                                    </StackLayout>
+
+                                                    <!-- End of turning Description stacklayout -->
+                                                </StackLayout>
+
+                                            </StackLayout>
+                                            <!-- End Stacklayout for Image and Description -->
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <!-- End Container stacklayout -->
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

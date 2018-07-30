@@ -30,6 +30,7 @@ SQLitePCLRaw.lib.e_sqlite3
 SQLitePCLRaw.provider.e_sqlite3
 System.IdentityModel.Tokens.Jwt
 System.Runtime
+WordPressPCL
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime

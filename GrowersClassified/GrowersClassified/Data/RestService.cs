@@ -12,6 +12,7 @@ namespace GrowersClassified.Data
 {
     public class RestService
     {
+        #region RestService Setup
         // Setting private variables that will be used more often. This makes it easier to use and easier to alter if needed
         private HttpClient _client;
         private string grant_type = "password";
@@ -24,9 +25,11 @@ namespace GrowersClassified.Data
             // Specify request type
             _client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
         }
+        #endregion
 
+        #region Login System
         // Login System
-        public async Task<Token> Login(User user)
+        public async Task<Token> Login(User LoginUser)
         {
             // Setting url of which to send the request to
             string weburl = Constants.UrlLogin;
@@ -34,13 +37,13 @@ namespace GrowersClassified.Data
             var postData = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("grant_type", grant_type),
-                new KeyValuePair<string, string>("username", user.Username),
-                new KeyValuePair<string, string>("password", user.Password)
+                new KeyValuePair<string, string>("username", LoginUser.Username),
+                new KeyValuePair<string, string>("password", LoginUser.Password)
             };
             // Encoding list so the API can use it
             var content = new FormUrlEncodedContent(postData);
             var response = await PostResponseLogin<Token>(weburl, content);
-            // Get current time
+           // Get current time
             var dt = DateTime.Today;
             response.ExpireDate = dt.AddSeconds(response.ExpireIn);
             return response;
@@ -54,21 +57,24 @@ namespace GrowersClassified.Data
             var jsonResult = response.Content.ReadAsStringAsync().Result;
             // Deserializing the JSON object
             var responseObject = JsonConvert.DeserializeObject<T>(jsonResult);
+            // Add this ID to the user
             return responseObject;
         }
+        #endregion
 
+        #region Register System
         // Register System
-        public async Task<Token> Register(User user)
+        public async Task<Token> Register(User RegisterUser)
         {
             // Setting url of which to send the request to
             string weburl = Constants.UrlRegister;
             // Creating a list of data to send to the API to log a user in
             var postData = new List<KeyValuePair<string, string>>
             {
-                new KeyValuePair<string, string>("username", user.Username),
-                new KeyValuePair<string, string>("password", user.Password),
-                new KeyValuePair<string, string>("name", user.Nicename),
-                new KeyValuePair<string, string>("email", user.Email)
+                new KeyValuePair<string, string>("username", RegisterUser.Username),
+                new KeyValuePair<string, string>("password", RegisterUser.Password),
+                new KeyValuePair<string, string>("name", RegisterUser.Nicename),
+                new KeyValuePair<string, string>("email", RegisterUser.Email)
             };
             
             // Encoding list so the API can use it
@@ -81,7 +87,6 @@ namespace GrowersClassified.Data
             return response;
         }
 
-
         public async Task<T> PostResponseRegister<T>(string weburl, FormUrlEncodedContent content) where T : class
         {
             // Adding Bearer with administrator accesstoken
@@ -89,11 +94,12 @@ namespace GrowersClassified.Data
             // Sending register request
             var response = await _client.PostAsync(weburl, content);
             var JsonResult = response.Content.ReadAsStringAsync().Result;
-            var responseObject = JsonConvert.DeserializeObject<T>(JsonResult);
+            var responseObject = JsonConvert.DeserializeObject<dynamic>(JsonResult);
             return responseObject;
         }
+        #endregion
 
-
+        #region Post Response
         public async Task<T> PostResponse<T>(string weburl, string jsonstring) where T : class
         {
             var Token = App.TokenDatabase.GetToken();
@@ -104,7 +110,9 @@ namespace GrowersClassified.Data
             var contentResp = JsonConvert.DeserializeObject<T>(JsonResult);
             return contentResp;
         }
+        #endregion
 
+        #region GetResponse
         // Gets all responses
         public async Task<T> GetResponse<T>(string weburl) where T : class
         {
@@ -115,7 +123,18 @@ namespace GrowersClassified.Data
             var ContentResp = JsonConvert.DeserializeObject<T>(JsonResult);
             return ContentResp;
         }
+        #endregion
 
+        #region Logout
+        public void Logout()
+        {
+            UserDatabase uDB = new UserDatabase();
+            var loggingOut = uDB.LogoutUser();
+            Console.WriteLine($" Logging out: {loggingOut}");
+        }
+        #endregion
+
+        #region Check if user exists
         public async Task<bool> DoesUserExist(User user)
         {
             var param = user.Username;
@@ -137,5 +156,6 @@ namespace GrowersClassified.Data
                 return false;
             }
         }
+        #endregion
     }
 }

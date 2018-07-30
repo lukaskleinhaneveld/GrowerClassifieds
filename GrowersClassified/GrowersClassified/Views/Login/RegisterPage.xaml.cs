@@ -29,7 +29,7 @@ namespace GrowersClassified.Views.Login
             await Navigation.PopAsync();
         }
 
-        async Task RegisterProcess_Clicked(object sender, EventArgs e)
+        private async void RegisterProcess_Clicked(object sender, EventArgs e)
         {
             RegisterMessage.TextColor = Color.LightGreen;
             RegisterMessage.Text = "Registration in progress...";
@@ -55,25 +55,25 @@ namespace GrowersClassified.Views.Login
                         Console.WriteLine("Entry_Pass: " + Entry_Pass.Text + " Entry_ConfirmPass: " + Entry_ConfirmPass.Text);
                         Console.WriteLine("**********");
                         // Using hard coded admin to use it's bearer so we can register a user as this requires administrator access
-                        var userRegister = new User
+                        var userAuth = new User
                         {
-                            Username = "RegisterUser",
+                            Username = "AuthorizedUserForApp",
                             Password = "Bellp@rk2018"
                         };
 
                         // Login the administrator
-                        var registerUser = await App.RestService.Login(userRegister);
+                        var authUser = await App.RestService.Login(userAuth);
                         // Setting bearer to the accesstoken we received from the admin (Can't hardcode the token as it refreshes every so often)
-                        var bearer = registerUser.AccessToken;
+                        var bearer = authUser.AccessToken;
                         Constants.CreateUserToken = bearer;
 
                         if (user.Username.Length > 5)
                         {
-                            if (Regex.Match(user.Username, @"^[a-zA-Z]+$").Success)
+                            if (Regex.Match(user.Username, @"^[a-zA-Z ]+$").Success)
                             {
                                 if (user.Nicename.Length > 5) 
                                 {
-                                    if (Regex.Match(user.Nicename, @"^[a-zA-Z]+$").Success)
+                                    if (Regex.Match(user.Nicename, @"^[a-zA-Z ]+$").Success)
                                     {
                                         // Check if user already exist by searing for it's username
                                         var doesUserExist = await App.RestService.DoesUserExist(user);

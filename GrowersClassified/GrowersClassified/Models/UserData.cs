@@ -9,10 +9,12 @@ namespace GrowersClassified.Models
     public class UserData
     {
         [PrimaryKey, AutoIncrement, NotNull]
-        [JsonProperty("ID")] public int Id { get; set; }
+        [JsonProperty("id")] public int UserApp_Id { get; set; }
         [Unique]
-        [JsonProperty("token")]public string AccessToken { get; set; }
+        public int Id { get; set; }
+        [JsonProperty("token")] public string AccessToken { get; set; }
         [JsonProperty("user_login")] public string Username { get; set; }
+        public string Password { get; set; }
         [JsonProperty("user_nicename")] public string Nickname { get; set; }
         [JsonProperty("user_email")] public string Email { get; set; }
         [JsonProperty("user_url")] public string Website { get; set; }

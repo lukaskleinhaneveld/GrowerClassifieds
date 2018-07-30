@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>GrowersClassified</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.GrowersClassified</string>
+	<string>com.Bellpark.GrowersClassified</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -56,5 +56,22 @@
 	<string>Resources/Media.xcassets/LaunchImages.launchimage</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
+	<key>UIMainStoryboardFile</key>
+	<string>LaunchScreen</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Document Type 1</string>
+		</dict>
+	</array>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>We need access to your media library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photos</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera</string>
+	<key>NSLocationUsageDescription</key>
+	<string>We need access to your location</string>
 </dict>
 </plist>

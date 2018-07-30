@@ -19,8 +19,7 @@ namespace GrowersClassified.Views.Login
         }
 
         // LoginProcess, this is being called from the Login button on the login page
-        async Task LoginProcess_Clicked(object sender, EventArgs e)
-        {
+        private async void LoginProcess_Clicked(object sender, EventArgs e) {
             indicator.IsVisible = true;
             // Check if user has an internet connection. If there IS a connection, continue with the login process
             if (CheckNetwork.IsInternet())
@@ -42,6 +41,7 @@ namespace GrowersClassified.Views.Login
                 {
                     LoginMessage.TextColor = Color.SpringGreen;
                     LoginMessage.Text = "Logging in! Please wait...";
+
                     var result = await App.RestService.Login(user);
                     var dbclear = new UserDatabase();
                     dbclear.Droptable();
@@ -49,8 +49,25 @@ namespace GrowersClassified.Views.Login
                     // If an accesstoken exists in the local database, continue with the login
                     if (result.AccessToken != null)
                     {
+                        // Setting user info to result info from login
+                        user.Id = result.Id;
+                        result.Username = user.Username;
+                        result.Password = user.Password;
+                        user.Nicename = result.Displayname;
+                        user.Email = result.Email;
+
+                        // Setting Global user info to current user info
+                        // Globals.AppUserData uData = new Globals.AppUserData(user.Id, user.Username, user.Password, user.Nicename, user.Email);
                         var userDatabase = new UserDatabase();
                         userDatabase.AddUser(result);
+                        var userData = userDatabase.GetAllUsers();
+
+                        Console.WriteLine($"{user.Id}, {user.Username}, {user.Password}, {user.Nicename}, {user.Email}");
+                        var data = userDatabase.GetAllUsers();
+                        Console.WriteLine(data);
+
+                        //userDatabase.UpdateUser(result);
+
                         LoginMessage.Text = "";
                         Entry_Pass.Text = "";
                         LoginMessage.Text = "Logged in!";

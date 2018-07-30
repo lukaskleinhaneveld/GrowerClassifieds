@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.GrowersClassified.app" android:installLocation="auto" android:versionName="1">
-	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.GrowerClassifieds.app" android:installLocation="auto" android:versionName="1">
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="27" />
 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+	<permission android:protectionLevel="signature" android:name="${applicationId}.permission.C2D_MESSAGE" />
+	<uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.CAMERA" />
-  <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
-  <permission android:protectionLevel="signature" android:name="${applicationId}.permission.C2D_MESSAGE" />
-  <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
-	<application android:icon="@drawable/grower_classifieds_mobile" android:label="Grower Classifieds"></application>
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<application android:icon="@drawable/grower_classifieds_mobile" android:label="Grower Classifieds">
+		<provider android:name="android.support.v4.content.FileProvider"
+              android:authorities="com.GrowerClassifieds.app.fileprovider"
+              android:exported="false"
+              android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" 
+                 android:resource="@xml/file_paths"/>
+		</provider>
+	</application>
 </manifest>
