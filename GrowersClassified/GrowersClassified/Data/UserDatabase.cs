@@ -15,7 +15,6 @@ namespace GrowersClassified.Data
         //Create
         public UserDatabase()
         {
-
             _conn = DependencyService.Get<ISqLite>().GetConnection();
             _conn.CreateTable<UserData>();
         }
@@ -36,16 +35,14 @@ namespace GrowersClassified.Data
         //UPDATE
         public string UpdateUser(Token token)
         {
-            var users = GetAllUsers();
-            Console.WriteLine(users[0]);
-            _conn.Execute($"UPDATE UserData SET [AccessToken] = '{token.AccessToken}', [Username] = '{token.Username}', [Password] = '{token.Password}', [Email] = '{token.Email}', [Id] = '{token.UserApp_Id}' WHERE [UserApp_Id] = '{token.Id}'");
+            _conn.Execute($"UPDATE UserData SET [AccessToken] = '{token.AccessToken}', [Email] = '{token.Email}', [Id] = '{token.WP_Id}' WHERE [WP_Id] = '{token.Id}'");
             return "success";
         }
 
         //DELETE
-        public string DeleteUser(int id)
+        public string DeleteUser(int WP_Id)
         {
-            _conn.Delete<UserData>(id);
+            _conn.Delete<UserData>(WP_Id);
             return "success";
         }
 

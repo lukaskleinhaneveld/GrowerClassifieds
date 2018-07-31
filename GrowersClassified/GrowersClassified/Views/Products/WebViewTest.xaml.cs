@@ -52,11 +52,8 @@ namespace GrowersClassified.Views.Products
                 //string newText = htmlOutput;
                 //textTotal = oldText + newText;
                 var description = o["description"].ToString();
-                Console.WriteLine("description: " + description);
                 var price = o["price"].ToString();
-                Console.WriteLine("price: " + price);
                 var title = o["name"].ToString();
-                Console.WriteLine("title: " + title);
             }
 
             //var htmlSource = new HtmlWebViewSource { Html = textTotal };

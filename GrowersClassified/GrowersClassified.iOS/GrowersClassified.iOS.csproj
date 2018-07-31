@@ -31,7 +31,8 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <CodesignProvision />
+    <CodesignProvision>
+    </CodesignProvision>
     <MtouchSdkVersion>11.4</MtouchSdkVersion>
     <OptimizePNGs>false</OptimizePNGs>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -59,13 +60,13 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Derek McLaughlin (P9R8AVHNCL)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>
     </CodesignEntitlements>
     <MtouchFastDev>false</MtouchFastDev>
     <OptimizePNGs>false</OptimizePNGs>
-    <CodesignProvision />
+    <CodesignProvision>GrowerClassifieds_Development</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
   </PropertyGroup>

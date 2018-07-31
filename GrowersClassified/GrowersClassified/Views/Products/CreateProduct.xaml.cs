@@ -49,7 +49,6 @@ namespace GrowersClassified.Views.Products
 
                     });
                 await CreateProductProgress.ProgressTo(0.3, 600, Easing.Linear);
-                Console.WriteLine("File path:" + file.Path);
                 MainImage.IsVisible = true;
                 Loading_Indicator.IsVisible = false;
                 if (file == null)
@@ -116,7 +115,6 @@ namespace GrowersClassified.Views.Products
                 {
                     CreateProductProgress.IsVisible = true;
                     await CreateProductProgress.ProgressTo(0.3, 700, Easing.Linear);
-                    Console.WriteLine("file.Path:" + file.Path);
                     UploadImage(file);
                     await CreateProductProgress.ProgressTo(1, 600, Easing.Linear);
                 }
@@ -160,9 +158,8 @@ namespace GrowersClassified.Views.Products
         #region UploadImage
         public async void UploadImage(MediaFile file)
         {
-        var Token = App.TokenDatabase.GetToken();
-        byte[] byteData = System.Text.Encoding.UTF8.GetBytes(file.Path);
-
+            var Token = App.TokenDatabase.GetToken();
+            byte[] byteData = System.Text.Encoding.UTF8.GetBytes(file.Path);
             var postData = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("date", DateTime.Now.ToString()),
@@ -182,14 +179,14 @@ namespace GrowersClassified.Views.Products
             };
 
             var uploadable = new FormUrlEncodedContent(postData);
-            Console.WriteLine("uploadable: " + uploadable.ReadAsStringAsync().Result);
 
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("multipart/form-data"));
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.AccessToken);
 
-            var postResult = _client.PostAsync(Constants.PostImage, uploadable).Result;
-
-            Console.WriteLine("postResult: " + postResult);
+            await Task.Run(() =>
+            {
+                var postResult = _client.PostAsync(Constants.PostImage, uploadable).Result;
+            });
         }
         #endregion
     }

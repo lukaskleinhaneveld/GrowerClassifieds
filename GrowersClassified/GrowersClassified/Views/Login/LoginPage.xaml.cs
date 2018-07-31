@@ -56,15 +56,8 @@ namespace GrowersClassified.Views.Login
                         user.Nicename = result.Displayname;
                         user.Email = result.Email;
 
-                        // Setting Global user info to current user info
-                        // Globals.AppUserData uData = new Globals.AppUserData(user.Id, user.Username, user.Password, user.Nicename, user.Email);
                         var userDatabase = new UserDatabase();
                         userDatabase.AddUser(result);
-                        var userData = userDatabase.GetAllUsers();
-
-                        Console.WriteLine($"{user.Id}, {user.Username}, {user.Password}, {user.Nicename}, {user.Email}");
-                        var data = userDatabase.GetAllUsers();
-                        Console.WriteLine(data);
 
                         //userDatabase.UpdateUser(result);
 

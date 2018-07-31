@@ -20,7 +20,6 @@ namespace GrowersClassified.Views.Account
             InitializeComponent();
             var userDatabase = new UserDatabase();
             var userdata = userDatabase.GetAllUsers();
-            Console.WriteLine($"{userdata[0].Id}, {userdata[0].Username}, {userdata[0].Password}, {userdata[0].Email}, {userdata[0].Displayname}, {userdata[0].AccessToken},");
             if (userdata.Count < 1)
             {
                 BtnLoginProcess.IsVisible = true;
@@ -57,8 +56,10 @@ namespace GrowersClassified.Views.Account
         private async void BtnLogoutProcess_Clicked(object sender, EventArgs e)
         {
             var userDatabase = new UserDatabase();
-            var id = userDatabase.GetAllUsers().First().Id;
-            var userdata = userDatabase.DeleteUser(id);
+            var WP_Id = userDatabase.GetAllUsers().First().WP_Id;
+            var userdata = userDatabase.DeleteUser(WP_Id);
+            //var userDatabase = new UserDatabase();
+            //userDatabase.LogoutUser();
             Navigation.InsertPageBefore(new AccountPage(), this);
             await Navigation.PopAsync();
         }

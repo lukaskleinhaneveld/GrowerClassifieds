@@ -31,6 +31,7 @@ namespace GrowersClassified.Data
         // Login System
         public async Task<Token> Login(User LoginUser)
         {
+            Console.WriteLine($"LoginUser {LoginUser}");
             // Setting url of which to send the request to
             string weburl = Constants.UrlLogin;
             // Creating a list of data to send to the API to log a user in
@@ -66,6 +67,7 @@ namespace GrowersClassified.Data
         // Register System
         public async Task<Token> Register(User RegisterUser)
         {
+            Console.WriteLine($"RegisterUser {RegisterUser}");
             // Setting url of which to send the request to
             string weburl = Constants.UrlRegister;
             // Creating a list of data to send to the API to log a user in
@@ -91,10 +93,11 @@ namespace GrowersClassified.Data
         {
             // Adding Bearer with administrator accesstoken
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Constants.CreateUserToken);
+            Console.WriteLine($"_client.DefaultRequestHeaders.Authorization: {_client.DefaultRequestHeaders.Authorization}");
             // Sending register request
             var response = await _client.PostAsync(weburl, content);
             var JsonResult = response.Content.ReadAsStringAsync().Result;
-            var responseObject = JsonConvert.DeserializeObject<dynamic>(JsonResult);
+            var responseObject = JsonConvert.DeserializeObject<T>(JsonResult);
             return responseObject;
         }
         #endregion
@@ -130,7 +133,6 @@ namespace GrowersClassified.Data
         {
             UserDatabase uDB = new UserDatabase();
             var loggingOut = uDB.LogoutUser();
-            Console.WriteLine($" Logging out: {loggingOut}");
         }
         #endregion
 

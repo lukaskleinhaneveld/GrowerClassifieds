@@ -50,10 +50,6 @@ namespace GrowersClassified.Views.Login
                     indicator.IsVisible = true;
                     if (Entry_Pass.Text == Entry_ConfirmPass.Text)
                     {
-
-                        Console.WriteLine("**********");
-                        Console.WriteLine("Entry_Pass: " + Entry_Pass.Text + " Entry_ConfirmPass: " + Entry_ConfirmPass.Text);
-                        Console.WriteLine("**********");
                         // Using hard coded admin to use it's bearer so we can register a user as this requires administrator access
                         var userAuth = new User
                         {
@@ -92,15 +88,18 @@ namespace GrowersClassified.Views.Login
                                             {
                                                 // Sending the user's input to the register logic
                                                 var registerResult = await App.RestService.Register(user);
-                                                if (registerResult.Id != 0)
+                                                if (registerResult.WP_Id != 0)
                                                 {
                                                     RegisterMessage.TextColor = Color.LightGreen;
                                                     RegisterMessage.Text = "Registration successfull. Logging you in.";
                                                     var loginResult = await App.RestService.Login(user);
-
-                                                    var userDatabase = new UserDatabase();
-                                                    userDatabase.Droptable();
-                                                    userDatabase.AddUser(loginResult);
+                                                    UserDatabase uDB = new UserDatabase(); loginResult.Username = user.Username;
+                                                    loginResult.Password = user.Password;
+                                                    loginResult.Nickname = user.Nicename;
+                                                    loginResult.Email = user.Email;
+                                                    uDB.AddUser(loginResult);
+                                                    var AppUserData = uDB.GetAllUsers();
+                                                    Console.WriteLine(AppUserData);
 
                                                     await Task.Delay(1000);
                                                     Navigation.InsertPageBefore(new Index(), this);

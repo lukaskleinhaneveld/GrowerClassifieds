@@ -75,7 +75,6 @@ namespace GrowersClassified.Models
             sb.Replace("\\\n", "\n");
             sb.Replace("\\\r", "\r");
             sb.Replace("<.*?>", String.Empty); // Removing HTML tags so the JSON will me pure text
-            Console.WriteLine("uglyJson: " + uglyJson);
             return sb.ToString();
         }
     }

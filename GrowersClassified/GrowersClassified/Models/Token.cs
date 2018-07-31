@@ -9,7 +9,7 @@ namespace GrowersClassified.Models
     public class Token
     {
         [PrimaryKey, AutoIncrement, NotNull]
-        [JsonProperty("id")] public int UserApp_Id { get; set; }
+        [JsonProperty("id")] public int WP_Id { get; set; }
         [Unique]
         public int Id { get; set; }
         [JsonProperty("token")]public string AccessToken { get; set; }

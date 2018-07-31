@@ -32,7 +32,6 @@ namespace GrowersClassified
             #region Update user to refresh auth token
             UserDatabase uDB = new UserDatabase();
             var AppUserData = uDB.GetAllUsers();
-            Console.WriteLine($"AppUserData: {AppUserData}");
 
             // Check if a user already exists:
             if (AppUserData.Count != 0)
@@ -42,20 +41,14 @@ namespace GrowersClassified
                     Username = AppUserData[0].Username,
                     Password = AppUserData[0].Password,
                 };
-                Console.WriteLine($"User details: {AppUser.Username}, {AppUser.Password}");
-
-                await Task.Run(async () => {
-                    var result = await RestService.Login(AppUser);
-
-                    result.Username = AppUserData[0].Username;
-                    result.Password = AppUserData[0].Password;
-                    AppUserData[0].UserApp_Id = result.Id;
-                    AppUserData[0].Nickname = result.Displayname;
-                    AppUserData[0].Email = result.Email;
-                    uDB.UpdateUser(result);
-                });
-
                 
+                var result = await RestService.Login(AppUser);
+                //result.Username = AppUserData[0].Username;
+                //result.Password = AppUserData[0].Password;
+                //AppUserData[0].WP_Id = result.WP_Id;
+                //AppUserData[0].Nickname = result.Displayname;
+                //AppUserData[0].Email = result.Email;
+                uDB.UpdateUser(result);   
             }
             #endregion
 
