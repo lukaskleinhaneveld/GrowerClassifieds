@@ -31,9 +31,8 @@ namespace GrowersClassified.Views.Menu
                 new MasterMenuItem("Home", "house.png", Color.WhiteSmoke, typeof(Index)),
                 new MasterMenuItem("Products", "shoppingbag.png", Color.WhiteSmoke, typeof(ProductPage)),
                 new MasterMenuItem("Account", "icon.png", Color.WhiteSmoke, typeof(AccountPage)),
-                new MasterMenuItem("WebView", "icon.png", Color.WhiteSmoke, typeof(WebViewTest)),
                 new MasterMenuItem("Contact", "icon.png", Color.WhiteSmoke, typeof(ContactPage)),
-                new MasterMenuItem("Page1", "icon.png", Color.WhiteSmoke, typeof(Page1)),
+                new MasterMenuItem("Testing Page", "icon.png", Color.WhiteSmoke, typeof(Page1)),
             };
             ListView.ItemsSource = items;
         }

@@ -37,7 +37,6 @@ namespace GrowersClassified.Views.Products
             {
                 return;
             }
-            //await Navigation.PushAsync(new ProductDetail(e.SelectedItem));
             await Navigation.PushAsync(new ProductDetail(e.SelectedItem));
             ((ListView)sender).SelectedItem = null;
         }

@@ -45,7 +45,7 @@ namespace GrowersClassified.Data
             // Encoding list so the API can use it
             var content = new FormUrlEncodedContent(postData);
             var response = await PostResponseLogin<Token>(weburl, content);
-           // Get current time
+            // Get current time
             var dt = DateTime.Today;
             response.ExpireDate = dt.AddSeconds(response.ExpireIn);
             return response;
@@ -79,7 +79,7 @@ namespace GrowersClassified.Data
                 new KeyValuePair<string, string>("name", RegisterUser.Nicename),
                 new KeyValuePair<string, string>("email", RegisterUser.Email)
             };
-            
+
             // Encoding list so the API can use it
             var content = new FormUrlEncodedContent(postData);
             // Encoding list so the API can use it

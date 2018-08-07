@@ -22,7 +22,8 @@ namespace GrowersClassified
         async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
         {
             var imageSender = (Xamarin.Forms.Image)sender;
-            await Navigation.PushAsync(new ProductPage());
+            Navigation.InsertPageBefore(new ProductPage(), this);
+            await Navigation.PopAsync();
         }
 
         private async void ToCreateProduct(object sender, EventArgs e)

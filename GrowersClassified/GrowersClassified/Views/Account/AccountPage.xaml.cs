@@ -71,11 +71,9 @@ namespace GrowersClassified.Views.Account
         private async void BtnLogoutProcess_Clicked(object sender, EventArgs e)
         {
             var userDatabase = new UserDatabase();
-            var WP_Id = userDatabase.GetAllUsers().First().WP_Id;
-            var userdata = userDatabase.DeleteUser(WP_Id);
-            //var userDatabase = new UserDatabase();
-            //userDatabase.LogoutUser();
-            await Navigation.PushAsync(new AccountPage());
+            userDatabase.Droptable();
+            Navigation.InsertPageBefore(new AccountPage(), this);
+            await Navigation.PopAsync();
         }
     }
 }
