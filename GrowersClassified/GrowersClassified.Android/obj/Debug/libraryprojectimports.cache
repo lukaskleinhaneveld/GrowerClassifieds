@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj\Debug\lp\0\jl\formsviewgroup.jar</Jar>
-    <Jar>obj\Debug\lp\33\jl\arch-core-common.jar</Jar>
-    <Jar>obj\Debug\lp\34\jl\arch-lifecycle-common.jar</Jar>
-    <Jar>obj\Debug\lp\39\jl\support-annotations.jar</Jar>
     <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\0\jl\formsviewgroup.jar</Jar>
     <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\1\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\3\jl\bin\classes.jar</Jar>
@@ -28,6 +24,11 @@
     <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\51\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\52\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\53\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\54\jl\classes.jar</Jar>
+    <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\55\jl\classes.jar</Jar>
+    <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\56\jl\classes.jar</Jar>
+    <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\61\jl\classes.jar</Jar>
+    <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\62\jl\classes.jar</Jar>
     <Jar>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\7\jl\bin\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
@@ -51,6 +52,8 @@
     <ResolvedResourceDirectory>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\49\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\50\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\52\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\56\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\61\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\lp\2\jl\assets</ResolvedAssetDirectory>
@@ -87,5 +90,7 @@
     <ResolvedResourceDirectoryStamp>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\49.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\50.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\52.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\56.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Lukas\Desktop\GrowersClassified\GrowersClassified\GrowersClassified.Android\obj\Debug\lp\61.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

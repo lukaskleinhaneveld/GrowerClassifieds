@@ -19,21 +19,33 @@ namespace GrowersClassified
         {
             InitializeComponent();
         }
+        async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+        {
+            var imageSender = (Xamarin.Forms.Image)sender;
+            await Navigation.PushAsync(new ProductPage());
+        }
 
         private async void ToCreateProduct(object sender, EventArgs e)
         {
-            var userDatabase = new UserDatabase();
-            var userdata = userDatabase.GetAllUsers();
-            if(userdata.Count == 1)
+            if (CheckNetwork.IsInternet())
             {
-                Navigation.InsertPageBefore(new CreateProduct(), this);
-                await Navigation.PopAsync();
+                var userDatabase = new UserDatabase();
+                var userdata = userDatabase.GetAllUsers();
+                if (userdata.Count == 1)
+                {
+                    await Navigation.PushAsync(new CreateProduct());
+                }
+                else
+                {
+                    await DisplayAlert("Error", "You must be logged in to create an ad.", "Ok");
+                    await Navigation.PushAsync(new LoginPage());
+                }
             }
             else
             {
-                await DisplayAlert("Error", "You must be logged in to create an ad.", "Ok");
-                Navigation.InsertPageBefore(new LoginPage(), this);
-                await Navigation.PopAsync();
+                ErrMessage.IsVisible = true;
+                ErrMessage.TextColor = Color.Red;
+                ErrMessage.Text = "You're not connected to the internet. Please make sure you are connected to use the app.";
             }
         }
     }

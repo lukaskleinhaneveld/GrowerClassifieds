@@ -98,38 +98,61 @@ namespace GrowersClassified.Views.Products
 
             #region clicking button to post item
             createProductProcess.Clicked += async (sender, args) =>
-            {
-                createProductProcess.Text = "Submitting";
-                createProductProcess.IsEnabled = false;
-
-                // Check if all fields are filled
-                if (Product_Title.Text != "" &&
-                   Product_City.Text != "" &&
-                   Product_State.Text != "" &&
-                   Product_Model.Text != "" &&
-                   Product_Make.Text != "" &&
-                   Product_Year.Text != "" &&
-                   Product_Price.Text != "" &&
-                   MainImage.Source != null &&
-                   Product_Description.Text != "")
+            { // Check if user is connected to internet, if not, skip this
+                if (CheckNetwork.IsInternet())
                 {
-                    CreateProductProgress.IsVisible = true;
-                    await CreateProductProgress.ProgressTo(0.3, 700, Easing.Linear);
-                    UploadImage(file);
-                    await CreateProductProgress.ProgressTo(1, 600, Easing.Linear);
+                    createProductProcess.Text = "Submitting";
+                    createProductProcess.IsEnabled = false;
+
+                    // Check if all fields are filled
+                    if (Product_Title.Text != "" &&
+                       Product_City.Text != "" &&
+                       Product_State.Text != "" &&
+                       Product_Model.Text != "" &&
+                       Product_Make.Text != "" &&
+                       Product_Year.Text != "" &&
+                       Product_Price.Text != "" &&
+                       MainImage.Source != null &&
+                       Product_Description.Text != "")
+                    {
+                        CreateProductProgress.IsVisible = true;
+                        await CreateProductProgress.ProgressTo(0.3, 700, Easing.Linear);
+                        string priceDouble = string.Format("{0:C}", Product_Price.Text);
+
+                        List<Category> Categories = new List<Category>();
+
+                        Product product = new Product(
+                            Product_Title.Text,
+                            Product_Price.Text,
+                            //priceDouble,
+                            Product_Description.Text, 
+                            $"{Product_City.Text}, {Product_State.Text}, {Product_Model.Text}, {Product_Make.Text}, {Product_Year.Text}", 
+                            Categories
+                        );
+
+                        //UploadProduct(product, file);
+
+                        await CreateProductProgress.ProgressTo(1, 600, Easing.Linear);
+                    }
+                    else
+                    {
+                        createProductProcess.Text = "Submit";
+                        Message.TextColor = Color.Red;
+                        Message.Text = "Not all fields were filled. Please revise and try again.";
+                        createProductProcess.IsEnabled = true;
+                    }
+                    Navigation.InsertPageBefore(new Index(), this);
+                    await Navigation.PopAsync();
                 }
                 else
                 {
-                    createProductProcess.Text = "Submit";
-                    Message.TextColor = Color.Red;
-                    Message.Text = "Not all fields were filled. Please revise and try again.";
-                    createProductProcess.IsEnabled = true;
+                    ErrMessage.IsVisible = true;
+                    ErrMessage.TextColor = Color.Red;
+                    ErrMessage.Text = "You're not connected to the internet. Please make sure you are connected to use the app.";
                 }
-                Navigation.InsertPageBefore(new Index(), this);
-                await Navigation.PopAsync();
             };
-            #endregion
         }
+        #endregion
 
         #region upload to FTP
         public async void uploadToFTP(MediaFile file)

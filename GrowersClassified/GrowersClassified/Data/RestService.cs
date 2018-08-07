@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
+using Plugin.Media.Abstractions;
 
 namespace GrowersClassified.Data
 {
@@ -157,6 +158,25 @@ namespace GrowersClassified.Data
             {
                 return false;
             }
+        }
+        #endregion
+
+        #region Upload Product to API
+        public async void UploadProduct(Product product, MediaFile image)
+        {
+            var imageBase64 = "";
+
+            var postData = new List<KeyValuePair<string, string>>
+            {
+                new KeyValuePair<string, string>("name", product.name),
+                new KeyValuePair<string, string>("price", product.price.ToString()),
+                new KeyValuePair<string, string>("description", product.description),
+                new KeyValuePair<string, string>("short_description", product.short_description),
+                new KeyValuePair<string, string>("images", imageBase64),
+            };
+
+            var content = new FormUrlEncodedContent(postData);
+            var repsonse = await _client.PostAsync(Constants.PostsUrl, content);
         }
         #endregion
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GrowersClassified.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,17 @@ namespace GrowersClassified.Views.Contact
 	{
 		public ContactPage ()
 		{
-			InitializeComponent ();
-		}
+            InitializeComponent ();
+            if (CheckNetwork.IsInternet())
+            {
+                // Code
+            }
+            else
+            {
+                ErrMessage.IsVisible = true;
+                ErrMessage.TextColor = Color.Red;
+                ErrMessage.Text = "You're not connected to the internet. Please make sure you are connected to use the app.";
+            }
+        }
 	}
 }

@@ -40,7 +40,7 @@ namespace GrowersClassified.Models
                 Constants.CreateUserToken = bearer;
                 _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearer);
-                var response = _client.GetAsync(Constants.GetPostsUrl);
+                var response = _client.GetAsync(Constants.PostsUrl);
                 string jsonResponse = response.Result.Content.ReadAsStringAsync().Result;
                 var json = SanitizeReceivedJson(jsonResponse);
 
@@ -52,6 +52,8 @@ namespace GrowersClassified.Models
                         var ser = JsonConvert.SerializeObject(item);
                         var res = JToken.Parse(ser);
                         var product = JsonConvert.DeserializeObject<Product>(ser);
+                        product.short_description = Sanitizer(product.short_description);
+                        product.regular_price = string.Format("{0:C}", product.regular_price);
                         Products.Add(product);
                     }
                     catch (Exception ex)
@@ -74,7 +76,16 @@ namespace GrowersClassified.Models
             sb.Replace("\\\t", "\t");
             sb.Replace("\\\n", "\n");
             sb.Replace("\\\r", "\r");
-            sb.Replace("<.*?>", String.Empty); // Removing HTML tags so the JSON will me pure text
+            sb.Replace("<p>", "");
+            sb.Replace("<\\/p>", "");
+            Console.WriteLine($"String: {sb}");
+            return sb.ToString();
+        }
+
+        private string Sanitizer(string short_description)
+        {
+            var sb = new StringBuilder(short_description);
+            sb.Replace(",", System.Environment.NewLine);
             return sb.ToString();
         }
     }

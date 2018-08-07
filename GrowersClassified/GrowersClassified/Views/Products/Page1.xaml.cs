@@ -1,5 +1,7 @@
-﻿using GrowersClassified.Models;
+﻿using GrowersClassified.Data;
+using GrowersClassified.Models;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,11 +19,16 @@ namespace GrowersClassified.Views.Products
         public Page1()
         {
             InitializeComponent();
-        }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            getProducts.LoadAllProducts(ListView, LoadingProducts, LoadingProductsLbl);
+            if (CheckNetwork.IsInternet())
+            {
+                getProducts.LoadAllProducts(ListView, LoadingProducts, loadingProductsLbl);
+            }
+            else
+            {
+                ErrMessage.IsVisible = true;
+                ErrMessage.TextColor = Color.Red;
+                ErrMessage.Text = "You're not connected to the internet. Please make sure you are connected to use the app.";
+            }
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -30,7 +37,8 @@ namespace GrowersClassified.Views.Products
             {
                 return;
             }
-            await Navigation.PushAsync(new ProductDetail());
+            //await Navigation.PushAsync(new ProductDetail(e.SelectedItem));
+            await Navigation.PushAsync(new ProductDetail(e.SelectedItem));
             ((ListView)sender).SelectedItem = null;
         }
     }

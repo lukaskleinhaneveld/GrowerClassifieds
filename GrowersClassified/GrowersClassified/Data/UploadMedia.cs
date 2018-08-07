@@ -13,6 +13,5 @@ namespace GrowersClassified.Data
 {
     class UploadMedia
     {
-
     }
 }

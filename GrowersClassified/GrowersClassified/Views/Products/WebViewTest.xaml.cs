@@ -1,4 +1,5 @@
-﻿using GrowersClassified.Models;
+﻿using GrowersClassified.Data;
+using GrowersClassified.Models;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,16 @@ namespace GrowersClassified.Views.Products
         public WebViewTest ()
         {
             InitializeComponent ();
-            LoadProducts();
+            if (CheckNetwork.IsInternet())
+            {
+                LoadProducts();
+            }
+            else
+            {
+                ErrMessage.IsVisible = true;
+                ErrMessage.TextColor = Color.Red;
+                ErrMessage.Text = "You're not connected to the internet. Please make sure you are connected to use the app.";
+            }
         }
 
         async void LoadProducts()
@@ -29,7 +39,7 @@ namespace GrowersClassified.Views.Products
             indicator.IsVisible = true;
             var Token = App.TokenDatabase.GetToken();
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Token.AccessToken);
-            var response = await _client.GetAsync(Constants.GetPostsUrl);
+            var response = await _client.GetAsync(Constants.PostsUrl);
             var content = await response.Content.ReadAsStringAsync();
             var json = response.Content.ReadAsStringAsync().Result;
             //string textTotal = "";

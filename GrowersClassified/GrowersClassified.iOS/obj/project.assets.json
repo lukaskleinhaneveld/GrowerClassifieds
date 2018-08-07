@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "Microsoft.AppCenter/1.7.0": {
+      "Microsoft.AppCenter/1.8.0": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
@@ -13,10 +13,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Analytics/1.7.0": {
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
@@ -27,10 +27,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Crashes/1.7.0": {
+      "Microsoft.AppCenter.Crashes/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
@@ -55,10 +55,10 @@
           }
         }
       },
-      "Microsoft.AppCenter.Push/1.7.0": {
+      "Microsoft.AppCenter.Push/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
@@ -550,7 +550,7 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.0.1.4-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
           "Plugin.Permissions": "3.0.0.12"
@@ -696,7 +696,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "Microsoft.AppCenter/1.7.0": {
+      "Microsoft.AppCenter/1.8.0": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
@@ -707,10 +707,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Analytics/1.7.0": {
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
@@ -721,10 +721,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Crashes/1.7.0": {
+      "Microsoft.AppCenter.Crashes/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
@@ -735,10 +735,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Push/1.7.0": {
+      "Microsoft.AppCenter.Push/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
@@ -1176,7 +1176,7 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.0.1.4-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
           "Plugin.Permissions": "3.0.0.12"
@@ -1322,7 +1322,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "Microsoft.AppCenter/1.7.0": {
+      "Microsoft.AppCenter/1.8.0": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
@@ -1333,10 +1333,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Analytics/1.7.0": {
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
@@ -1347,10 +1347,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Crashes/1.7.0": {
+      "Microsoft.AppCenter.Crashes/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
@@ -1361,10 +1361,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Push/1.7.0": {
+      "Microsoft.AppCenter.Push/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
@@ -1802,7 +1802,7 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.0.1.4-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
           "Plugin.Permissions": "3.0.0.12"
@@ -1948,7 +1948,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "Microsoft.AppCenter/1.7.0": {
+      "Microsoft.AppCenter/1.8.0": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
@@ -1959,10 +1959,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Analytics/1.7.0": {
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
@@ -1973,10 +1973,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Crashes/1.7.0": {
+      "Microsoft.AppCenter.Crashes/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
@@ -1987,10 +1987,10 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
         }
       },
-      "Microsoft.AppCenter.Push/1.7.0": {
+      "Microsoft.AppCenter.Push/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "1.7.0"
+          "Microsoft.AppCenter": "1.8.0"
         },
         "compile": {
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
@@ -2428,7 +2428,7 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.0.1.4-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
           "Plugin.Permissions": "3.0.0.12"
@@ -2575,10 +2575,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AppCenter/1.7.0": {
-      "sha512": "CZ3kCvTKTjh6W6oqbk6xKeXsJsNfYOHOhAkbE1CaFYBNfEv4OKjrpBtuam0CMHB6RJe62WGpfBt9uTup5nLQOw==",
+    "Microsoft.AppCenter/1.8.0": {
+      "sha512": "V9ZPAVnnv8gTSxp2N1Wb39pbd5nSSuCvjpruFq27r0azRkhqLhOu+2mNgGOoX9LP/UiOrtoy3PY/y4LNAoI76g==",
       "type": "package",
-      "path": "microsoft.appcenter/1.7.0",
+      "path": "microsoft.appcenter/1.8.0",
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid403/Microsoft.AppCenter.Android.Bindings.dll",
@@ -2588,14 +2588,14 @@
         "lib/netstandard1.0/Microsoft.AppCenter.dll",
         "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.dll",
         "lib/uap10.0/Microsoft.AppCenter.dll",
-        "microsoft.appcenter.1.7.0.nupkg.sha512",
+        "microsoft.appcenter.1.8.0.nupkg.sha512",
         "microsoft.appcenter.nuspec"
       ]
     },
-    "Microsoft.AppCenter.Analytics/1.7.0": {
-      "sha512": "Y89qvqhpiRZEJzg6lnkZmBSMa5Tzjy/xbHQWC26ThxITH6vUBvOyexjgzEtfRcFF8PwGMSfMOFv7+E55QTKhNg==",
+    "Microsoft.AppCenter.Analytics/1.8.0": {
+      "sha512": "uj6b7qxKyONSZmqjgryApE4Sq23DC1j8wPJc1QA7BF1Nfa/e92bnKP497bs31xugjBSGwtSMH8hUhi/vH+tukA==",
       "type": "package",
-      "path": "microsoft.appcenter.analytics/1.7.0",
+      "path": "microsoft.appcenter.analytics/1.8.0",
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.Android.Bindings.dll",
@@ -2605,14 +2605,14 @@
         "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll",
         "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Analytics.dll",
         "lib/uap10.0/Microsoft.AppCenter.Analytics.dll",
-        "microsoft.appcenter.analytics.1.7.0.nupkg.sha512",
+        "microsoft.appcenter.analytics.1.8.0.nupkg.sha512",
         "microsoft.appcenter.analytics.nuspec"
       ]
     },
-    "Microsoft.AppCenter.Crashes/1.7.0": {
-      "sha512": "N0eL4F5SKyvLc/s17/k/GHAtHhWHZSxcnN3Q9kdM47Imf0h/i2pWdhtQ0T3D2HssGWTXnektZUJDuKTrr5AsDA==",
+    "Microsoft.AppCenter.Crashes/1.8.0": {
+      "sha512": "paVrOYaErMz9+k6wQvW9m8TEauARlVW7iX9y/QGm1f6PIHiezPNWkzLhMsnpbbWZBk+wv/H296jW/BoAxOEbzg==",
       "type": "package",
-      "path": "microsoft.appcenter.crashes/1.7.0",
+      "path": "microsoft.appcenter.crashes/1.8.0",
       "files": [
         ".signature.p7s",
         "build/uap10.0/Microsoft.AppCenter.Crashes.targets",
@@ -2622,7 +2622,7 @@
         "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll",
         "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll",
         "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Crashes.dll",
-        "microsoft.appcenter.crashes.1.7.0.nupkg.sha512",
+        "microsoft.appcenter.crashes.1.8.0.nupkg.sha512",
         "microsoft.appcenter.crashes.nuspec",
         "ref/uap10.0/Microsoft.AppCenter.Crashes.dll",
         "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
@@ -2636,10 +2636,10 @@
         "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
       ]
     },
-    "Microsoft.AppCenter.Push/1.7.0": {
-      "sha512": "YR1oocOmhjdiWK+bxbyXjJNpI/0SeWVFzhu0P8xEPJHpv0YUogN8ML1kETcN7fUAtoy7whTJYHD10aEKLQtbPQ==",
+    "Microsoft.AppCenter.Push/1.8.0": {
+      "sha512": "a7OlQvEUx9ZalEmvOdYRAuCwUtQCWFPIYAdRD0WxSzMY91wlgTeG82PDlemtNS11UQIRxQ5oPb6POdVdsfyqeg==",
       "type": "package",
-      "path": "microsoft.appcenter.push/1.7.0",
+      "path": "microsoft.appcenter.push/1.8.0",
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid403/Microsoft.AppCenter.Push.Android.Bindings.dll",
@@ -2649,7 +2649,7 @@
         "lib/netstandard1.0/Microsoft.AppCenter.Push.dll",
         "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Push.dll",
         "lib/uap10.0/Microsoft.AppCenter.Push.dll",
-        "microsoft.appcenter.push.1.7.0.nupkg.sha512",
+        "microsoft.appcenter.push.1.8.0.nupkg.sha512",
         "microsoft.appcenter.push.nuspec"
       ]
     },
@@ -4501,10 +4501,10 @@
         "xam.plugin.connectivity.nuspec"
       ]
     },
-    "Xam.Plugin.Media/4.0.1.4-beta": {
-      "sha512": "ubvWtR+wUN67j8kpd7IYIVF9Vta5thJo6Aywhiwqpp8K0B8aLVU3WZgOifou8jSU8d56/BW4d2AE/GSHw8Q2UA==",
+    "Xam.Plugin.Media/4.0.1.5": {
+      "sha512": "a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
       "type": "package",
-      "path": "xam.plugin.media/4.0.1.4-beta",
+      "path": "xam.plugin.media/4.0.1.5",
       "files": [
         "lib/monoandroid71/Plugin.Media.dll",
         "lib/monoandroid71/Plugin.Media.xml",
@@ -4520,7 +4520,7 @@
         "lib/xamarinios10/Plugin.Media.dll",
         "lib/xamarinios10/Plugin.Media.xml",
         "readme.txt",
-        "xam.plugin.media.4.0.1.4-beta.nupkg.sha512",
+        "xam.plugin.media.4.0.1.5.nupkg.sha512",
         "xam.plugin.media.nuspec"
       ]
     },
@@ -4691,9 +4691,9 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "Microsoft.AppCenter.Analytics >= 1.7.0",
-      "Microsoft.AppCenter.Crashes >= 1.7.0",
-      "Microsoft.AppCenter.Push >= 1.7.0",
+      "Microsoft.AppCenter.Analytics >= 1.8.0",
+      "Microsoft.AppCenter.Crashes >= 1.8.0",
+      "Microsoft.AppCenter.Push >= 1.8.0",
       "Microsoft.CSharp >= 4.5.0",
       "Mono.Cecil >= 0.10.0",
       "NETStandard.Library >= 2.0.3",
@@ -4703,7 +4703,7 @@
       "System.Runtime.Serialization.Json >= 4.3.0",
       "WordPressPCL >= 1.4.5",
       "Xam.Plugin.Connectivity >= 4.0.0.190-beta",
-      "Xam.Plugin.Media >= 4.0.1.4-beta",
+      "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Forms >= 3.2.0.637442-pre1",
       "sqlite-net-pcl >= 1.5.166-beta"
     ]
@@ -4743,15 +4743,15 @@
         "dependencies": {
           "Microsoft.AppCenter.Analytics": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.8.0, )"
           },
           "Microsoft.AppCenter.Crashes": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.8.0, )"
           },
           "Microsoft.AppCenter.Push": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.8.0, )"
           },
           "Microsoft.CSharp": {
             "target": "Package",
@@ -4791,7 +4791,7 @@
           },
           "Xam.Plugin.Media": {
             "target": "Package",
-            "version": "[4.0.1.4-beta, )"
+            "version": "[4.0.1.5, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

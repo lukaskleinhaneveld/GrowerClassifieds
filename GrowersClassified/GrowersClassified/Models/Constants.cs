@@ -10,7 +10,7 @@ namespace GrowersClassified.Models
         public static string BaseUrl = "http://www.growerclassifieds.com/wp-json/";
         public static string UrlLogin = "http://www.growerclassifieds.com/wp-json/jwt-auth/v1/token";/*POST*/
         public static string UrlRegister = "http://www.growerclassifieds.com/wp-json/wp/v2/users";/*POST*/
-        public static string GetPostsUrl = "http://www.growerclassifieds.com/wp-json/wc/v2/products";/*GET*/
+        public static string PostsUrl = "http://www.growerclassifieds.com/wp-json/wc/v2/products";/*GET*/
         public static string PostImage = "http://www.growerclassifieds.com/wp-json/wp/v2/media";/*POST*/
         public static string CreateUserToken = "";/*Used to access outside loop*/
         #endregion

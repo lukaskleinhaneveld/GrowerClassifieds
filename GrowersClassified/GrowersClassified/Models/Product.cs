@@ -71,9 +71,9 @@ namespace GrowersClassified.Models
         public string description { get; set; }
         public string short_description { get; set; }
         public string sku { get; set; }
-        public double? price { get; set; }
-        public double? regular_price { get; set; }
-        public double? sale_price { get; set; }
+        public string price { get; set; }
+        public string regular_price { get; set; }
+        public string sale_price { get; set; }
         public object date_on_sale_from { get; set; }
         public object date_on_sale_from_gmt { get; set; }
         public object date_on_sale_to { get; set; }
@@ -123,7 +123,16 @@ namespace GrowersClassified.Models
         public List<MetaData> meta_data { get; set; }
         public Links _links { get; set; }
 
-        //public Product(int id, string name, string slug, string permalink, DateTime date_created, DateTime date_created_gmt, DateTime date_modified, DateTime date_modified_gmt, string type, string status, bool featured, string catalog_visibility, string description, string short_description, string sku, string price, string regular_price, string sale_price, object date_on_sale_from, object date_on_sale_from_gmt, object date_on_sale_to, object date_on_sale_to_gmt, string price_html, bool on_sale, bool purchasable, int total_sales, bool Virtual, bool downloadable, List<object> downloads, int download_limit, int download_expiry, string external_url, string button_text, string tax_status, string tax_class, bool manage_stock, string stock_quantity, bool in_stock, string backorders, bool backorders_allowed, bool backordered, bool sold_individually, string weight, Dimensions dimensions, bool shipping_required, bool shipping_taxable, string shipping_class, int shipping_class_id, bool reviews_allowed, string average_rating, int rating_count, List<int> related_ids, List<object> upsell_ids, List<object> cross_sell_ids, int parent_id, string purchase_note, List<Category> categories, List<object> tags, List<Image> images, List<object> attributes, List<object> default_attributes, List<object> variations, List<object> grouped_products, int menu_order, List<MetaData> meta_data, Links links)
+        public Product(string Title, string Price, string Description, string Short_Description, List<Category> Categories)
+        {
+            this.name = Title;
+            this.regular_price = Price;
+            this.description = Description;
+            this.short_description = Short_Description;
+            this.categories = Categories;
+        }
+
+        //public Product(int id, string name, string slug, string permalink, DateTime date_created, DateTime date_created_gmt, DateTime date_modified, DateTime date_modified_gmt, string type, string status, bool featured, string catalog_visibility, string description, string short_description, string sku, decimal? price, decimal? regular_price, double? sale_price, object date_on_sale_from, object date_on_sale_from_gmt, object date_on_sale_to, object date_on_sale_to_gmt, string price_html, bool on_sale, bool purchasable, int total_sales, bool Virtual, bool downloadable, List<object> downloads, int download_limit, int download_expiry, string external_url, string button_text, string tax_status, string tax_class, bool manage_stock, string stock_quantity, bool in_stock, string backorders, bool backorders_allowed, bool backordered, bool sold_individually, string weight, Dimensions dimensions, bool shipping_required, bool shipping_taxable, string shipping_class, int shipping_class_id, bool reviews_allowed, string average_rating, int rating_count, List<int> related_ids, List<object> upsell_ids, List<object> cross_sell_ids, int parent_id, string purchase_note, List<Category> categories, List<object> tags, List<Image> images, List<object> attributes, List<object> default_attributes, List<object> variations, List<object> grouped_products, int menu_order, List<MetaData> meta_data, Links links)
         //{
         //    this.id = id;
         //    this.name = name;
