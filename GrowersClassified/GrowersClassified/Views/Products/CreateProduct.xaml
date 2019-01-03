@@ -71,6 +71,8 @@
                             BackgroundColor="#e8e8e8"/>
                     
                     <Button Text="Submit"
+                            x:Name="Submit"
+                            Clicked="SubmitProduct_Clicked"
                             HorizontalOptions="Center" 
                             FontSize="Medium"
                             WidthRequest="250" 

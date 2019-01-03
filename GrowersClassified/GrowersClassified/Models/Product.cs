@@ -7,54 +7,65 @@ namespace GrowersClassified.Models
     // Setting product specifics
     public class Product
     {
-        private int Id { get; set; }
-        private string _product_Author { get; set; }
-        private string _product_Title { get; set; }
-        private string _product_Description { get; set; }
-        private string _product_City { get; set; }
-        private string _product_State { get; set; }
-        private string _product_Make { get; set; }
-        private string _product_Model { get; set; }
-        private string _product_Year { get; set; }
-        private string _product_Price { get; set; }
+        public int Id { get; set; }
+        public string ProductAuthor { get; set; }
+        public string ProductTitle { get; set; }
+        public string ProductDescription { get; set; }
+        public string ProductCity { get; set; }
+        public string ProductState { get; set; }
+        public string ProductMake { get; set; }
+        public string ProductModel { get; set; }
+        public string ProductYear { get; set; }
+        public string ProductPrice { get; set; }
 
-        // Context and order in which you create a new productin ProductPage.xaml.cs
-        public Product(string Product_Author, string Product_Title, string Product_Description, string Product_City, string Product_State, string Product_Make, string Product_Model, string Product_Year, string Product_Price)
-        {
-            this._product_Author = Product_Author;
-            this._product_Title = Product_Title;
-            this._product_Description = Product_Description;
-            this._product_City = Product_City;
-            this._product_State = Product_State;
-            this._product_Model = Product_Model;
-            this._product_Year = Product_Year;
-            this._product_Price = Product_Price;
-        }
+        //private string productAuthor;
+        //private string productTitle;
+        //private string productDescription;
+        //private string productCity;
+        //private string productState;
+        //private string productMake;
+        //private string productModel;
+        //private string productYear;
+        //private string productPrice;
 
-        public string Product_Author { get { return _product_Author; } }
-        public string Product_Title { get { return _product_Title; } }
-        public string Product_Description { get { return _product_Description; } }
-        public string Product_City { get { return _product_City; } }
-        public string Product_State { get { return _product_State; } }
-        public string Product_Make { get { return _product_Make; } }
-        public string Product_Model { get { return _product_Model; } }
-        public string Product_Year { get { return _product_Year; } }
-        public string Product_Price { get { return _product_Price; } }
+        //public int Id { get; set; }
+        //public string ProductAuthor { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductTitle { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductDescription { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductCity { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductState { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductMake { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductModel { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductYear { get { return productAuthor; } set { productAuthor = value; } }
+        //public string ProductPrice { get { return productAuthor; } set { productAuthor = value; } }
 
-        public String ToString(String fmt)
-        {
-            if (String.IsNullOrEmpty(fmt))
-                fmt = "G";
+        //public Product(string productAuthor, string productTitle, string productDescription, string productCity, string productState, string productMake, string productModel, string productYear, string productPrice)
+        //{
+        //    this.productAuthor = ProductAuthor;
+        //    this.productTitle = ProductTitle;
+        //    this.productDescription = ProductDescription;
+        //    this.productCity = ProductCity;
+        //    this.productState = ProductState;
+        //    this.productMake = ProductMake;
+        //    this.productModel = ProductModel;
+        //    this.productYear = ProductYear;
+        //    this.productPrice = ProductPrice;
+        //}
 
-            switch (fmt.ToUpperInvariant())
-            {
-                case "All":
-                    return String.Format("{0} {1}", _product_Author, _product_Title, _product_Description, _product_City, _product_State, _product_Make, _product_Model, _product_Year,_product_Price);
+        //public String ToString(String fmt)
+        //{
+        //    if (String.IsNullOrEmpty(fmt))
+        //        fmt = "G";
 
-                default:
-                    String msg = String.Format("'{0}' is an invalid format string", fmt);
-                    throw new ArgumentException(msg);
-            }
-        }
+        //    switch (fmt.ToUpperInvariant())
+        //    {
+        //        case "All":
+        //            return String.Format("{0} {1}", this.ProductAuthor, this.ProductTitle, ProductDescription, ProductCity, ProductState, ProductMake, ProductModel, ProductYear, ProductPrice);
+
+        //        default:
+        //            String msg = String.Format("'{0}' is an invalid format string", fmt);
+        //            throw new ArgumentException(msg);
+        //    }
+        //}
     }
 }

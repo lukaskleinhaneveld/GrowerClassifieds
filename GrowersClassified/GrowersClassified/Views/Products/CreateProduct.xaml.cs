@@ -1,15 +1,8 @@
 ﻿using GrowersClassified.Models;
-using Newtonsoft.Json;
-using Plugin.Media;
-using Plugin.Media.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using System.Net.Http;
+using System;
 
 namespace GrowersClassified.Views.Products
 {
@@ -17,23 +10,28 @@ namespace GrowersClassified.Views.Products
     {
         User user = new User();
         HttpClient _client = new HttpClient();
+        Product product = new Product();
         public CreateProduct()
         {
             InitializeComponent();
         }
 
-        //private void CreateProductProcess_Clicked()
+        public void CreateProductProcess_Clicked()
+        {
+            product.ProductAuthor = user.Username;
+            product.ProductDescription = Product_Description.Text;
+            product.ProductTitle = Product_Title.Text;
+            product.ProductCity = Product_City.Text;
+            product.ProductState = Product_State.Text;
+            product.ProductMake = Product_Make.Text;
+            product.ProductModel = Product_Model.Text;
+            product.ProductYear = Product_Year.Text;
+            product.ProductPrice = Product_Price.Text;
+        }
+
+        //async public SubmitProduct_Clicked(object sender, EventArgs e)
         //{
-        //    new Product
-        //    {
-        //        Product_Title = Product_Title.Text,
-        //        Product_Description = Product_Description.Text,
-        //        Product_Model = Product_Model.Text,
-        //        Product_Make = Product_Make.Text,
-        //        Product_Year = Product_Year.Text,
-        //        Product_Price = Product_Make.Text,
-        //        Product_Author = user.Displayname;
-        //    };
+        //    await ProductService.CreateProduct();
         //}
     }
 }

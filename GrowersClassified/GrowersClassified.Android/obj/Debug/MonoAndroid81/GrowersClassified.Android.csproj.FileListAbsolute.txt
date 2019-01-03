@@ -1,0 +1,13 @@
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\res.flag
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\GrowersClassified.Android.csprojAssemblyReference.cache
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\App.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Index.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Products\ProductPage.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Menu\MasterDetail.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Menu\MasterPage.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Products\CreateProduct.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Login\LoginPage.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Login\RegisterPage.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Products\WebViewTest.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\Views\Products\ProductDetail.xaml.g.cs
+D:\GrowerClassifieds-master\GrowersClassified\GrowersClassified.Android\obj\Debug\MonoAndroid81\GrowersClassified.Android.csproj.CoreCompileInputs.cache
