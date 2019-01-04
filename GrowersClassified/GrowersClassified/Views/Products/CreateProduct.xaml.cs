@@ -10,28 +10,25 @@ namespace GrowersClassified.Views.Products
     {
         User user = new User();
         HttpClient _client = new HttpClient();
-        Product product = new Product();
         public CreateProduct()
         {
             InitializeComponent();
         }
 
-        public void CreateProductProcess_Clicked()
+        public void CreateProduct_Clicked(object sender, EventArgs e)
         {
-            product.ProductAuthor = user.Username;
-            product.ProductDescription = Product_Description.Text;
-            product.ProductTitle = Product_Title.Text;
-            product.ProductCity = Product_City.Text;
-            product.ProductState = Product_State.Text;
-            product.ProductMake = Product_Make.Text;
-            product.ProductModel = Product_Model.Text;
-            product.ProductYear = Product_Year.Text;
-            product.ProductPrice = Product_Price.Text;
+            Product product = new Product(
+                user.Username, 
+                Product_Description.Text, 
+                Product_Title.Text, 
+                Product_City.Text, 
+                Product_State.Text, 
+                Product_Make.Text, 
+                Product_Model.Text, 
+                Product_Year.Text, 
+                Product_Price.Text
+            );
+            Console.WriteLine(product);
         }
-
-        //async public SubmitProduct_Clicked(object sender, EventArgs e)
-        //{
-        //    await ProductService.CreateProduct();
-        //}
     }
 }

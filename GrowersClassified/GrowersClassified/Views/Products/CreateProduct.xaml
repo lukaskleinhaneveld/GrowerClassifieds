@@ -72,7 +72,7 @@
                     
                     <Button Text="Submit"
                             x:Name="Submit"
-                            Clicked="SubmitProduct_Clicked"
+                            Clicked="CreateProduct_Clicked"
                             HorizontalOptions="Center" 
                             FontSize="Medium"
                             WidthRequest="250" 

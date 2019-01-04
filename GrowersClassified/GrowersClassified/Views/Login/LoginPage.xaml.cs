@@ -16,7 +16,7 @@ namespace GrowersClassified.Views.Login
         }
 
         // LoginProcess, this is being called from the Login button on the login page
-        async Task LoginProcess_Clicked(object sender, EventArgs e)
+        async void LoginProcess_Clicked(object sender, EventArgs e)
         {
             // Check if user has an internet connection. If there IS a connection, continue with the login process
             if (CheckNetwork.IsInternet())
@@ -67,59 +67,6 @@ namespace GrowersClassified.Views.Login
             }
 
         }
-
-
-        //async Task LoginProcess_Clicked()
-        //{
-        //    LoginMessage.TextColor = Color.Green;
-        //    LoginMessage.Text = "Logging in, please wait...";
-        //    if (CheckNetwork.IsInternet())
-        //    {
-        //        var user = new User
-        //        {
-        //            Username = Entry_Username.Text,
-        //            Password = Entry_Pass.Text
-        //        };
-
-        //        if (user.Username == null || user.Password == null)
-        //        {
-        //            LoginMessage.TextColor = Color.Red;
-        //            LoginMessage.Text = "Email or password field is empty";
-        //        }
-        //        else
-        //        {
-        //            var result = await App.LoginService.Login(user);
-        //            var dbclear = new UserDatabase();
-        //            dbclear.Droptable();
-        //            if (result.AccessToken != null)
-        //            {
-        //                var userDatabase = new UserDatabase();
-        //                userDatabase.AddUser(result);
-
-        //                var userdata = userDatabase.GetAllUsers();
-        //                var displayname = userdata.First().Displayname;
-
-
-        //                Entry_Username.Text = "";
-        //                Entry_Pass.Text = "";
-        //                LoginMessage.Text = "Logged in!";
-        //                Navigation.InsertPageBefore(new Index(), this); await Navigation.PopAsync(true);
-
-        //            }
-        //            else
-        //            {
-        //                LoginMessage.TextColor = Color.Red;
-        //                LoginMessage.Text = "Invalid login information... please try again!";
-
-        //            }
-        //        }
-        //    }
-        //    else
-        //    {
-        //        LoginMessage.TextColor = Color.Red;
-        //        LoginMessage.Text = "You're not connected to the internet!";
-        //    }
-        //}
 
         // Redirect to RegisterPage modal
         public async void ToRegister_Clicked(object sender, EventArgs e)

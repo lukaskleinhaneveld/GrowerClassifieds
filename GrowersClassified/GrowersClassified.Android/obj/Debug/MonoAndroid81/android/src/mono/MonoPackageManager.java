@@ -106,6 +106,7 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "GrowersClassified.Android.dll" comes first in this list. */
+		"GrowersClassified.Android.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.IdentityModel.JsonWebTokens.dll",
 		"Microsoft.IdentityModel.Logging.dll",
