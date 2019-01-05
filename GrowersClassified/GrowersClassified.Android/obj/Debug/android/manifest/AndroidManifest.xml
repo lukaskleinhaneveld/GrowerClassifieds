@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.GrowersClassified.app" android:installLocation="auto" android:versionName="1">
-  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.GrowerClassifieds.app" android:installLocation="auto" android:versionName="1">
+  <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="27" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+  <permission android:protectionLevel="signature" android:name="com.GrowerClassifieds.app.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.GrowerClassifieds.app.permission.C2D_MESSAGE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-feature android:name="android.hardware.camera" android:required="false" />
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
   <application android:icon="@drawable/grower_classifieds_mobile" android:label="Grower Classifieds" android:debuggable="true" android:name="android.app.Application" android:allowBackup="true">
+    <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.GrowerClassifieds.app.fileprovider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+    </provider>
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/grower_classifieds_mobile" android:label="GrowerClassifieds" android:theme="@style/MainTheme" android:name="md5ab7fa1ffb6af8201eca2eb8ae18fe174.MainActivity" />
     <activity android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5ab7fa1ffb6af8201eca2eb8ae18fe174.SplashActivity">
       <intent-filter>
@@ -17,15 +26,39 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md59628c2715c1bb8febcc7ae8402df0582.ConnectivityChangeBroadcastReceiver" />
+    <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="md50d7658ca0fc01b95086956189e698682.PushReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="com.GrowerClassifieds.app" />
+      </intent-filter>
+    </receiver>
+    <receiver android:enabled="true" android:exported="false" android:label="Connectivity Plugin Broadcast Receiver" android:name="md59628c2715c1bb8febcc7ae8402df0582.ConnectivityChangeBroadcastReceiver" />
     <activity android:configChanges="orientation|screenSize" android:name="md54cd65ac53ae710bff80022afc423e0f3.MediaPickerActivity" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.GrowersClassified.app.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:enabled="true" android:exported="false" android:name="md51558244f76c53b6aeda52c8a337f2c37.PowerSaveModeBroadcastReceiver" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.GrowerClassifieds.app.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.com.GrowersClassified.app" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.GrowerClassifieds.app" />
       </intent-filter>
     </receiver>
+    <provider android:authorities="com.GrowerClassifieds.app.firebaseinitprovider" android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:initOrder="100" />
+    <!-- FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true" -->
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <service android:name="com.microsoft.appcenter.push.TokenService" p6:ignore="ExportedService" xmlns:p6="http://schemas.android.com/tools">
+      <intent-filter>
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+      </intent-filter>
+    </service>
   </application>
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 </manifest>

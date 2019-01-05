@@ -1,21 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GrowersClassified.Views.Products.ProductDetail">
+             xmlns:local="clr-namespace:GrowersClassified"
+             xmlns:controls="clr-namespace:GrowersClassified.Models"
+             x:Class="GrowersClassified.Views.Products.ProductDetail"
+             Title="{Binding name}">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <ActivityIndicator x:Name="loadingWebView" 
-                               Color="Red" 
-                               IsRunning="True"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"/>
-            <WebView x:Name="webView" 
-                     VerticalOptions="FillAndExpand" 
-                     HorizontalOptions="FillAndExpand"/>
-            <StackLayout Orientation="Horizontal" Padding="10,10">
-                <Button Text="Back" HorizontalOptions="StartAndExpand" Clicked="backClicked" />
-                <Button Text="Forward" HorizontalOptions="End" Clicked="forwardClicked" />
-            </StackLayout>
+            <Label x:Name="ErrMessage" HorizontalOptions="Center" HorizontalTextAlignment="Center" IsVisible="False" WidthRequest="300"/>
+            <ScrollView>
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        
+                        <Label Text="{ Binding name }"
+                       FontSize="Medium"
+                       TextColor="#BDD73C"
+                       HorizontalTextAlignment="Start"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalTextAlignment="Center"
+                       LineBreakMode="TailTruncation"
+                       WidthRequest="300"/>
+
+                        <Label Text="{ Binding regular_price}"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="End"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalTextAlignment="Start"
+                       WidthRequest="100"/>
+                        
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{ Binding images[0].src }"
+                           WidthRequest="200"
+                           HeightRequest="200"
+                           Aspect="AspectFill"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+
+                        <Label Text="{ Binding short_description }"
+                               FontSize="15"
+                               HorizontalTextAlignment="End"
+                               VerticalOptions="Start"
+                               WidthRequest="200"
+                               HeightRequest="200"/>
+
+                    </StackLayout>
+
+                    <Label Text="{ Binding description }"
+                                         FontSize="15"
+                                         HorizontalTextAlignment="Start"/>
+
+                    <Label Text="{ Binding author }"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="End"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalTextAlignment="Center"
+                       WidthRequest="100"/>
+
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

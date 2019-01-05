@@ -17,10 +17,10 @@ namespace GrowersClassified.Views.Menu {
         "s\\Menu\\MasterDetail.xaml")]
     public partial class MasterDetail : global::Xamarin.Forms.MasterDetailPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::GrowersClassified.Views.Menu.MasterPage masterpage;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MasterDetail));
             masterpage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::GrowersClassified.Views.Menu.MasterPage>(this, "masterpage");

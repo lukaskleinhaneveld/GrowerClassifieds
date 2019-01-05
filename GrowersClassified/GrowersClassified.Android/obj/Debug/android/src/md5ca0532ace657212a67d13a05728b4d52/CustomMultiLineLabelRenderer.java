@@ -23,19 +23,19 @@ public class CustomMultiLineLabelRenderer
 	}
 
 
-	public CustomMultiLineLabelRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
-	{
-		super (p0, p1, p2);
-		if (getClass () == CustomMultiLineLabelRenderer.class)
-			mono.android.TypeManager.Activate ("GrowersClassified.Droid.Models.CustomMultiLineLabelRenderer, GrowersClassified.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
-	}
-
-
 	public CustomMultiLineLabelRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
 		if (getClass () == CustomMultiLineLabelRenderer.class)
 			mono.android.TypeManager.Activate ("GrowersClassified.Droid.Models.CustomMultiLineLabelRenderer, GrowersClassified.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+	}
+
+
+	public CustomMultiLineLabelRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
+	{
+		super (p0, p1, p2);
+		if (getClass () == CustomMultiLineLabelRenderer.class)
+			mono.android.TypeManager.Activate ("GrowersClassified.Droid.Models.CustomMultiLineLabelRenderer, GrowersClassified.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
 	}
 
 	private java.util.ArrayList refList;

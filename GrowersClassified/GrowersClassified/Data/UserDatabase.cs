@@ -3,6 +3,8 @@ using System.Linq;
 using SQLite;
 using Xamarin.Forms;
 using GrowersClassified.Models;
+using System;
+using System.Data;
 
 namespace GrowersClassified.Data
 {
@@ -13,7 +15,6 @@ namespace GrowersClassified.Data
         //Create
         public UserDatabase()
         {
-
             _conn = DependencyService.Get<ISqLite>().GetConnection();
             _conn.CreateTable<UserData>();
         }
@@ -30,18 +31,25 @@ namespace GrowersClassified.Data
             _conn.Insert(token);
             return "success";
         }
+        
+        //UPDATE
+        public string UpdateUser(Token token)
+        {
+            _conn.Execute($"UPDATE UserData SET [AccessToken] = '{token.AccessToken}', [Email] = '{token.Email}', [Id] = '{token.WP_Id}' WHERE [WP_Id] = '{token.Id}'");
+            return "success";
+        }
 
         //DELETE
-        public string DeleteUser(int id)
+        public string DeleteUser(int WP_Id)
         {
-            _conn.Delete<UserData>(id);
+            _conn.Delete<UserData>(WP_Id);
             return "success";
         }
 
         // Logs the user out by clearing the local database AKA the only user in that table
         public string LogoutUser()
         {
-            _conn.DropTable<UserData>();
+            _conn.Execute("delete from UserData");
             return "success";
         }
 

@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GrowersClassified.Views.Products.CreateProduct"
-             Title="Enlist item">
+             Title="Create Ad">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" BackgroundColor="WhiteSmoke" Padding="0,0,0,10">
+        <StackLayout Orientation="Vertical" BackgroundColor="WhiteSmoke" Padding="10">
+            <Label x:Name="ErrMessage" HorizontalOptions="Center" HorizontalTextAlignment="Center" IsVisible="False" WidthRequest="300"/>
                 <Label Text="Create Ad"
                        FontSize="Large"
                        HorizontalOptions="Center"
@@ -18,43 +19,77 @@
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
-                    <Entry Placeholder="City..."
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Entry Placeholder="City..."
                            x:Name="Product_City"
-                           WidthRequest="300"
+                           WidthRequest="150"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
-                    <Entry Placeholder="State..."
+                        <Entry Placeholder="State..."
                            x:Name="Product_State"
-                           WidthRequest="300"
+                           WidthRequest="150"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
 
-                    <Entry Placeholder="Model..."
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Entry Placeholder="Model..."
                            x:Name="Product_Model"
-                           WidthRequest="300"
+                           WidthRequest="150"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
-                    <Entry Placeholder="Make..."
+                        <Entry Placeholder="Make..."
                            x:Name="Product_Make"
-                           WidthRequest="300"
+                           WidthRequest="150"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
-                    
-                    <Entry Placeholder="Year..."
+                    </StackLayout>
+
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Entry Placeholder="Year..."
                            x:Name="Product_Year"
-                           WidthRequest="300"
+                           WidthRequest="150"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
 
-                    <Entry Placeholder="Price..."
+                        <Entry Placeholder="Price..."
                            x:Name="Product_Price"
-                           WidthRequest="300"
+                           WidthRequest="150"
                            HorizontalOptions="Center"
                            VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
 
-                    <Label Text="Please enter discription below:"
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Center">
+                        <Button Text="Take a photo"
+                                TextColor="Black"
+                                FontSize="15"
+                                x:Name="takePhoto"
+                                BackgroundColor="#BDD73C"
+                                HorizontalOptions="Start"/>
+                        <Label Text="OR"
+                               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20"/>
+
+                        <Button Text="Pick a photo"
+                                TextColor="Black"
+                                FontSize="15"
+                                x:Name="pickPhoto"
+                                BackgroundColor="#BDD73C"
+                                HorizontalOptions="End"/>
+                    </StackLayout>
+                    
+                    <ActivityIndicator x:Name="loading" Color="Red" IsRunning="True" IsVisible="False"/>
+                    
+                    <Image x:Name="MainImage"
+                           HorizontalOptions="CenterAndExpand"
+                           Aspect="AspectFit"
+                           HeightRequest="300"
+                           WidthRequest="500"/>
+
+                    <Label Text="Please enter description below:"
                            WidthRequest="300"
                            HorizontalTextAlignment="Center"
                            FontSize="18"
@@ -69,10 +104,19 @@
                             HeightRequest="150"
                             AutoSize="TextChanges"
                             BackgroundColor="#e8e8e8"/>
-                    
+
+                    <!--<ActivityIndicator x:Name="submitting" Color="Red" IsRunning="True" IsVisible="False"/>-->
+                    <ProgressBar x:Name="CreateProductProgress"
+                                 Progress="0.1"
+                                 WidthRequest="300"
+                                 HeightRequest="20"
+                                 HorizontalOptions="Center"
+                                 IsVisible="false"/>
+                    <Label x:Name="Message"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
                     <Button Text="Submit"
-                            x:Name="Submit"
-                            Clicked="CreateProduct_Clicked"
+                            x:Name="createProductProcess"
                             HorizontalOptions="Center" 
                             FontSize="Medium"
                             WidthRequest="250" 

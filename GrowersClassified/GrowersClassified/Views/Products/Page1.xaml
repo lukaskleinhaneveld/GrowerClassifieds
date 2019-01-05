@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GrowersClassified"
+             xmlns:controls="clr-namespace:GrowersClassified.Models"
+             x:Class="GrowersClassified.Views.Products.Page1"
+             Title="Test Page">
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="FillAndExpand">
+            <Label x:Name="ErrMessage" HorizontalOptions="Center" HorizontalTextAlignment="Center" IsVisible="False" WidthRequest="300"/>
+            <ActivityIndicator x:Name="loadingProducts" Color="Red" IsRunning="True"/>
+            <Label Text="" HorizontalOptions="Center" x:Name="loadingProductsLbl" IsVisible="False"/>
+            <!--BackgroundColor="#d8d8d8"-->
+            <StackLayout Orientation="Vertical" Padding="10" VerticalOptions="FillAndExpand">
+                <ListView x:Name="ProductList" RowHeight="200" SeparatorVisibility="None" ItemSelected="OnItemSelected" SelectionMode="Single">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <!-- Container stacklayout -->
+                                <StackLayout Margin="5" Orientation="Vertical">
+                                    <!--Set border to a light green color-->
+                                    <StackLayout BackgroundColor="#BDD73C" Padding="1">
+                                        <!--Set background color to white so we can create the border in an easier way-->
+                                        <StackLayout BackgroundColor="White">
+                                            <StackLayout Orientation="Horizontal" Padding="20,5,20,5" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                                <Label Text="{ Binding name }"
+                                                       FontSize="Medium"
+                                                       TextColor="#BDD73C"
+                                                       HorizontalTextAlignment="Start"
+                                                       HorizontalOptions="StartAndExpand"
+                                                       VerticalTextAlignment="Center"
+                                                       LineBreakMode="TailTruncation"
+                                                       WidthRequest="200"/>
+
+                                                <Label Text="{ Binding  regular_price }"
+                                                       FontSize="Medium"
+                                                       HorizontalTextAlignment="End"
+                                                       HorizontalOptions="EndAndExpand"
+                                                       VerticalTextAlignment="Center"
+                                                       LineBreakMode="TailTruncation"
+                                                       WidthRequest="100"/>
+                                                <!-- End Stacklayout for Title and Price -->
+                                            </StackLayout>
+                                            <!-- Stacklayout for Image and Description -->
+                                            <StackLayout Orientation="Horizontal" WidthRequest="350" HorizontalOptions="CenterAndExpand" Padding="10" BackgroundColor="White" HeightRequest="100">
+                                                <Image Source="{ Binding images[0].src }"
+                                                   WidthRequest="100"
+                                                   HeightRequest="100"
+                                                   Aspect="AspectFill"
+                                                   VerticalOptions="Start"/>
+                                                <!-- Turn the content of the Description page vertical -->
+                                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                                    <!-- Stacklayout for Description -->
+                                                    <StackLayout Orientation="Horizontal"
+                                                             HorizontalOptions="End"
+                                                             Padding="10,0,0,0">
+                                                        <controls:MultiLineLabel Text="{ Binding description }"
+                                                                             FontSize="15"
+                                                                             HorizontalTextAlignment="Start"
+                                                                             HeightRequest="100"
+                                                                             LineBreakMode="TailTruncation"
+                                                                             Lines="5"/>
+
+                                                        <!-- End of Stacklayout for Description -->
+                                                    </StackLayout>
+
+                                                    <!-- End of turning Description stacklayout -->
+                                                </StackLayout>
+
+                                            </StackLayout>
+                                            <!-- End Stacklayout for Image and Description -->
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <!-- End Container stacklayout -->
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

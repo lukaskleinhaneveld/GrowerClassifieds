@@ -26,6 +26,8 @@ namespace GrowersClassified.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.AppCenter.Push.Android.Resource.Drawable.ic_stat_notify_dot = global::GrowersClassified.Droid.Resource.Drawable.ic_stat_notify_dot;
+			global::Microsoft.AppCenter.Push.Android.Resource.String.library_name = global::GrowersClassified.Droid.Resource.String.library_name;
 			global::MonoDroidToolkit.Resource.Attribute.circleColor = global::GrowersClassified.Droid.Resource.Attribute.circleColor;
 			global::MonoDroidToolkit.Resource.Attribute.circularProgressBarStyle = global::GrowersClassified.Droid.Resource.Attribute.circularProgressBarStyle;
 			global::MonoDroidToolkit.Resource.Attribute.circular_gravity = global::GrowersClassified.Droid.Resource.Attribute.circular_gravity;
@@ -412,6 +414,15 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F040022
 			public const int activityChooserViewStyle = 2130968610;
 			
+			// aapt resource value: 0x1
+			public const int adSize = 1;
+			
+			// aapt resource value: 0x1
+			public const int adSizes = 1;
+			
+			// aapt resource value: 0x1
+			public const int adUnitId = 1;
+			
 			// aapt resource value: 0x7F040023
 			public const int alertDialogButtonGroupStyle = 2130968611;
 			
@@ -424,6 +435,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F040026
 			public const int alertDialogTheme = 2130968614;
 			
+			// aapt resource value: 0x1
+			public const int allowShortcuts = 1;
+			
 			// aapt resource value: 0x7F040027
 			public const int allowStacking = 2130968615;
 			
@@ -432,6 +446,12 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F040029
 			public const int alphabeticModifiers = 2130968617;
+			
+			// aapt resource value: 0x1
+			public const int ambientEnabled = 1;
+			
+			// aapt resource value: 0x1
+			public const int appTheme = 1;
 			
 			// aapt resource value: 0x7F04002A
 			public const int arrowHeadLength = 2130968618;
@@ -523,6 +543,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F040047
 			public const int buttonPanelSideLayout = 2130968647;
 			
+			// aapt resource value: 0x7F040001
+			public const int buttonSize = 2130968577;
+			
 			// aapt resource value: 0x7F040048
 			public const int buttonStyle = 2130968648;
 			
@@ -534,6 +557,39 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F04004B
 			public const int buttonTintMode = 2130968651;
+			
+			// aapt resource value: 0x1
+			public const int buyButtonAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int buyButtonHeight = 1;
+			
+			// aapt resource value: 0x1
+			public const int buyButtonText = 1;
+			
+			// aapt resource value: 0x1
+			public const int buyButtonWidth = 1;
+			
+			// aapt resource value: 0x1
+			public const int cameraBearing = 1;
+			
+			// aapt resource value: 0x1
+			public const int cameraMaxZoomPreference = 1;
+			
+			// aapt resource value: 0x1
+			public const int cameraMinZoomPreference = 1;
+			
+			// aapt resource value: 0x1
+			public const int cameraTargetLat = 1;
+			
+			// aapt resource value: 0x1
+			public const int cameraTargetLng = 1;
+			
+			// aapt resource value: 0x1
+			public const int cameraTilt = 1;
+			
+			// aapt resource value: 0x1
+			public const int cameraZoom = 1;
 			
 			// aapt resource value: 0x7F040001
 			public const int cardBackgroundColor = 2130968577;
@@ -553,41 +609,134 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F040006
 			public const int cardUseCompatPadding = 2130968582;
 			
+			// aapt resource value: 0x1
+			public const int castBackground = 1;
+			
+			// aapt resource value: 0x1
+			public const int castBackgroundColor = 1;
+			
+			// aapt resource value: 0x1
+			public const int castButtonBackgroundColor = 1;
+			
+			// aapt resource value: 0x1
+			public const int castButtonColor = 1;
+			
+			// aapt resource value: 0x1
+			public const int castButtonText = 1;
+			
+			// aapt resource value: 0x1
+			public const int castButtonTextAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int castClosedCaptionsButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castControlButtons = 1;
+			
+			// aapt resource value: 0x1
+			public const int castExpandedControllerStyle = 1;
+			
+			// aapt resource value: 0x1
+			public const int castExpandedControllerToolbarStyle = 1;
+			
+			// aapt resource value: 0x1
+			public const int castFocusRadius = 1;
+			
+			// aapt resource value: 0x1
+			public const int castForward30ButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castIntroOverlayStyle = 1;
+			
+			// aapt resource value: 0x1
+			public const int castLargePauseButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castLargePlayButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castLargeStopButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castMiniControllerStyle = 1;
+			
+			// aapt resource value: 0x1
+			public const int castMuteToggleButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castPauseButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castPlayButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castProgressBarColor = 1;
+			
+			// aapt resource value: 0x1
+			public const int castRewind30ButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castSeekBarProgressDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castSeekBarThumbDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castShowImageThumbnail = 1;
+			
+			// aapt resource value: 0x1
+			public const int castSkipNextButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castSkipPreviousButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castStopButtonDrawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int castSubtitleTextAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int castTitleTextAppearance = 1;
+			
 			// aapt resource value: 0x7F04004C
 			public const int checkboxStyle = 2130968652;
 			
 			// aapt resource value: 0x7F04004D
 			public const int checkedTextViewStyle = 2130968653;
 			
-			// aapt resource value: 0x7F050005
-			public const int circleColor = 2131034117;
+			// aapt resource value: 0x7F070020
+			public const int circleColor = 2131165216;
 			
-			// aapt resource value: 0x7F050022
-			public const int circularProgressBarStyle = 2131034146;
+			// aapt resource value: 0x7F040002
+			public const int circleCrop = 2130968578;
 			
-			// aapt resource value: 0x7F050014
-			public const int circular_gravity = 2131034132;
+			// aapt resource value: 0x7F070037
+			public const int circularProgressBarStyle = 2131165239;
 			
-			// aapt resource value: 0x7F050020
-			public const int circular_indeterminate = 2131034144;
+			// aapt resource value: 0x7F070029
+			public const int circular_gravity = 2131165225;
 			
-			// aapt resource value: 0x7F050021
-			public const int circular_indeterminate_interval = 2131034145;
+			// aapt resource value: 0x7F070035
+			public const int circular_indeterminate = 2131165237;
 			
-			// aapt resource value: 0x7F050017
-			public const int circular_marker_progress = 2131034135;
+			// aapt resource value: 0x7F070036
+			public const int circular_indeterminate_interval = 2131165238;
 			
-			// aapt resource value: 0x7F050016
-			public const int circular_progress = 2131034134;
+			// aapt resource value: 0x7F070032
+			public const int circular_marker_progress = 2131165234;
 			
-			// aapt resource value: 0x7F050019
-			public const int circular_progress_background_color = 2131034137;
+			// aapt resource value: 0x7F070031
+			public const int circular_progress = 2131165233;
 			
-			// aapt resource value: 0x7F050018
-			public const int circular_progress_color = 2131034136;
+			// aapt resource value: 0x7F070034
+			public const int circular_progress_background_color = 2131165236;
 			
-			// aapt resource value: 0x7F050015
-			public const int circular_stroke_width = 2131034133;
+			// aapt resource value: 0x7F070033
+			public const int circular_progress_color = 2131165235;
+			
+			// aapt resource value: 0x7F070030
+			public const int circular_stroke_width = 2131165232;
 			
 			// aapt resource value: 0x7F04004E
 			public const int closeIcon = 2130968654;
@@ -637,6 +786,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F04005D
 			public const int colorPrimaryDark = 2130968669;
 			
+			// aapt resource value: 0x7F040003
+			public const int colorScheme = 2130968579;
+			
 			// aapt resource value: 0x7F04005E
 			public const int colorSwitchThumbNormal = 2130968670;
 			
@@ -679,11 +831,20 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F04000B
 			public const int contentPaddingTop = 2130968587;
 			
+			// aapt resource value: 0x1
+			public const int contentProviderUri = 1;
+			
 			// aapt resource value: 0x7F040067
 			public const int contentScrim = 2130968679;
 			
 			// aapt resource value: 0x7F040068
 			public const int controlBackground = 2130968680;
+			
+			// aapt resource value: 0x1
+			public const int corpusId = 1;
+			
+			// aapt resource value: 0x1
+			public const int corpusVersion = 1;
 			
 			// aapt resource value: 0x7F040069
 			public const int counterEnabled = 2130968681;
@@ -699,6 +860,15 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F04006D
 			public const int customNavigationLayout = 2130968685;
+			
+			// aapt resource value: 0x1
+			public const int defaultIntentAction = 1;
+			
+			// aapt resource value: 0x1
+			public const int defaultIntentActivity = 1;
+			
+			// aapt resource value: 0x1
+			public const int defaultIntentData = 1;
 			
 			// aapt resource value: 0x7F04006E
 			public const int defaultQueryHint = 2130968686;
@@ -724,6 +894,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F040075
 			public const int dividerVertical = 2130968693;
 			
+			// aapt resource value: 0x1
+			public const int documentMaxAgeSecs = 1;
+			
 			// aapt resource value: 0x7F040076
 			public const int drawableSize = 2130968694;
 			
@@ -747,6 +920,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F04007D
 			public const int elevation = 2130968701;
+			
+			// aapt resource value: 0x1
+			public const int environment = 1;
 			
 			// aapt resource value: 0x7F04007E
 			public const int errorEnabled = 2130968702;
@@ -802,38 +978,47 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F04008E
 			public const int fastScrollVerticalTrackDrawable = 2130968718;
 			
-			// aapt resource value: 0x7F040001
-			public const int font = 2130968577;
+			// aapt resource value: 0x1
+			public const int featureType = 1;
+			
+			// aapt resource value: 0x7F040004
+			public const int font = 2130968580;
 			
 			// aapt resource value: 0x7F040090
 			public const int fontFamily = 2130968720;
 			
-			// aapt resource value: 0x7F040002
-			public const int fontProviderAuthority = 2130968578;
-			
-			// aapt resource value: 0x7F040003
-			public const int fontProviderCerts = 2130968579;
-			
-			// aapt resource value: 0x7F040004
-			public const int fontProviderFetchStrategy = 2130968580;
-			
 			// aapt resource value: 0x7F040005
-			public const int fontProviderFetchTimeout = 2130968581;
+			public const int fontProviderAuthority = 2130968581;
 			
 			// aapt resource value: 0x7F040006
-			public const int fontProviderPackage = 2130968582;
+			public const int fontProviderCerts = 2130968582;
 			
 			// aapt resource value: 0x7F040007
-			public const int fontProviderQuery = 2130968583;
+			public const int fontProviderFetchStrategy = 2130968583;
 			
 			// aapt resource value: 0x7F040008
-			public const int fontStyle = 2130968584;
+			public const int fontProviderFetchTimeout = 2130968584;
 			
 			// aapt resource value: 0x7F040009
-			public const int fontWeight = 2130968585;
+			public const int fontProviderPackage = 2130968585;
+			
+			// aapt resource value: 0x7F04000A
+			public const int fontProviderQuery = 2130968586;
+			
+			// aapt resource value: 0x7F04000B
+			public const int fontStyle = 2130968587;
+			
+			// aapt resource value: 0x7F04000C
+			public const int fontWeight = 2130968588;
 			
 			// aapt resource value: 0x7F040099
 			public const int foregroundInsidePadding = 2130968729;
+			
+			// aapt resource value: 0x1
+			public const int fragmentMode = 1;
+			
+			// aapt resource value: 0x1
+			public const int fragmentStyle = 1;
 			
 			// aapt resource value: 0x7F04009A
 			public const int gapBetweenBars = 2130968730;
@@ -877,23 +1062,35 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400A6
 			public const int iconTintMode = 2130968742;
 			
+			// aapt resource value: 0x7F04000D
+			public const int imageAspectRatio = 2130968589;
+			
+			// aapt resource value: 0x7F04000E
+			public const int imageAspectRatioAdjust = 2130968590;
+			
 			// aapt resource value: 0x7F0400A8
 			public const int imageButtonStyle = 2130968744;
 			
-			// aapt resource value: 0x7F050012
-			public const int indeterminate = 2131034130;
+			// aapt resource value: 0x7F070027
+			public const int indeterminate = 2131165223;
 			
 			// aapt resource value: 0x7F0400A9
 			public const int indeterminateProgressStyle = 2130968745;
 			
-			// aapt resource value: 0x7F050013
-			public const int indeterminate_interval = 2131034131;
+			// aapt resource value: 0x7F070028
+			public const int indeterminate_interval = 2131165224;
+			
+			// aapt resource value: 0x1
+			public const int indexPrefixes = 1;
 			
 			// aapt resource value: 0x7F0400AA
 			public const int initialActivityCount = 2130968746;
 			
-			// aapt resource value: 0x7F050010
-			public const int innerSize = 2131034128;
+			// aapt resource value: 0x7F070025
+			public const int innerSize = 2131165221;
+			
+			// aapt resource value: 0x1
+			public const int inputEnabled = 1;
 			
 			// aapt resource value: 0x7F0400AB
 			public const int insetForeground = 2130968747;
@@ -918,6 +1115,18 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F0400B2
 			public const int keylines = 2130968754;
+			
+			// aapt resource value: 0x1
+			public const int latLngBoundsNorthEastLatitude = 1;
+			
+			// aapt resource value: 0x1
+			public const int latLngBoundsNorthEastLongitude = 1;
+			
+			// aapt resource value: 0x1
+			public const int latLngBoundsSouthWestLatitude = 1;
+			
+			// aapt resource value: 0x1
+			public const int latLngBoundsSouthWestLongitude = 1;
 			
 			// aapt resource value: 0x7F0400B3
 			public const int layout = 2130968755;
@@ -988,14 +1197,41 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400C9
 			public const int listPreferredItemPaddingRight = 2130968777;
 			
+			// aapt resource value: 0x1
+			public const int liteMode = 1;
+			
 			// aapt resource value: 0x7F0400CA
 			public const int logo = 2130968778;
 			
 			// aapt resource value: 0x7F0400CB
 			public const int logoDescription = 2130968779;
 			
-			// aapt resource value: 0x7F050004
-			public const int max = 2131034116;
+			// aapt resource value: 0x1
+			public const int mapType = 1;
+			
+			// aapt resource value: 0x1
+			public const int maskedWalletDetailsBackground = 1;
+			
+			// aapt resource value: 0x1
+			public const int maskedWalletDetailsButtonBackground = 1;
+			
+			// aapt resource value: 0x1
+			public const int maskedWalletDetailsButtonTextAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int maskedWalletDetailsHeaderTextAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int maskedWalletDetailsLogoImageType = 1;
+			
+			// aapt resource value: 0x1
+			public const int maskedWalletDetailsLogoTextColor = 1;
+			
+			// aapt resource value: 0x1
+			public const int maskedWalletDetailsTextAppearance = 1;
+			
+			// aapt resource value: 0x7F070019
+			public const int max = 2131165209;
 			
 			// aapt resource value: 0x7F0400CC
 			public const int maxActionInlineWidth = 2130968780;
@@ -1060,6 +1296,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400D3
 			public const int navigationMode = 2130968787;
 			
+			// aapt resource value: 0x1
+			public const int noIndex = 1;
+			
 			// aapt resource value: 0x7F0400D4
 			public const int numericModifiers = 2130968788;
 			
@@ -1087,6 +1326,12 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400DC
 			public const int panelMenuListWidth = 2130968796;
 			
+			// aapt resource value: 0x1
+			public const int paramName = 1;
+			
+			// aapt resource value: 0x1
+			public const int paramValue = 1;
+			
 			// aapt resource value: 0x7F0400DD
 			public const int passwordToggleContentDescription = 2130968797;
 			
@@ -1102,11 +1347,14 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400E1
 			public const int passwordToggleTintMode = 2130968801;
 			
-			// aapt resource value: 0x7F050011
-			public const int pinned = 2131034129;
+			// aapt resource value: 0x1
+			public const int perAccountTemplate = 1;
 			
-			// aapt resource value: 0x7F050007
-			public const int pinnedDrawable = 2131034119;
+			// aapt resource value: 0x7F070026
+			public const int pinned = 2131165222;
+			
+			// aapt resource value: 0x7F070022
+			public const int pinnedDrawable = 2131165218;
 			
 			// aapt resource value: 0x7F0400E2
 			public const int popupMenuStyle = 2130968802;
@@ -1123,8 +1371,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400E6
 			public const int pressedTranslationZ = 2130968806;
 			
-			// aapt resource value: 0x7F050003
-			public const int progress = 2131034115;
+			// aapt resource value: 0x7F070018
+			public const int progress = 2131165208;
 			
 			// aapt resource value: 0x7F0400E7
 			public const int progressBarPadding = 2130968807;
@@ -1132,11 +1380,11 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400E8
 			public const int progressBarStyle = 2130968808;
 			
-			// aapt resource value: 0x7F050002
-			public const int progressButtonStyle = 2131034114;
+			// aapt resource value: 0x7F070017
+			public const int progressButtonStyle = 2131165207;
 			
-			// aapt resource value: 0x7F050006
-			public const int progressColor = 2131034118;
+			// aapt resource value: 0x7F070021
+			public const int progressColor = 2131165217;
 			
 			// aapt resource value: 0x7F0400E9
 			public const int queryBackground = 2130968809;
@@ -1162,11 +1410,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400F0
 			public const int rippleColor = 2130968816;
 			
+			// aapt resource value: 0x1
+			public const int schemaOrgProperty = 1;
+			
+			// aapt resource value: 0x1
+			public const int schemaOrgType = 1;
+			
+			// aapt resource value: 0x7F04000F
+			public const int scopeUris = 2130968591;
+			
 			// aapt resource value: 0x7F0400F1
 			public const int scrimAnimationDuration = 2130968817;
 			
 			// aapt resource value: 0x7F0400F2
 			public const int scrimVisibleHeightTrigger = 2130968818;
+			
+			// aapt resource value: 0x1
+			public const int searchEnabled = 1;
 			
 			// aapt resource value: 0x7F0400F3
 			public const int searchHintIcon = 2130968819;
@@ -1174,8 +1434,26 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400F4
 			public const int searchIcon = 2130968820;
 			
+			// aapt resource value: 0x1
+			public const int searchLabel = 1;
+			
 			// aapt resource value: 0x7F0400F5
 			public const int searchViewStyle = 2130968821;
+			
+			// aapt resource value: 0x1
+			public const int sectionContent = 1;
+			
+			// aapt resource value: 0x1
+			public const int sectionFormat = 1;
+			
+			// aapt resource value: 0x1
+			public const int sectionId = 1;
+			
+			// aapt resource value: 0x1
+			public const int sectionType = 1;
+			
+			// aapt resource value: 0x1
+			public const int sectionWeight = 1;
 			
 			// aapt resource value: 0x7F0400F6
 			public const int seekBarStyle = 2130968822;
@@ -1186,8 +1464,14 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0400F8
 			public const int selectableItemBackgroundBorderless = 2130968824;
 			
-			// aapt resource value: 0x7F050009
-			public const int shadowDrawable = 2131034121;
+			// aapt resource value: 0x1
+			public const int semanticallySearchable = 1;
+			
+			// aapt resource value: 0x1
+			public const int settingsDescription = 1;
+			
+			// aapt resource value: 0x7F070024
+			public const int shadowDrawable = 2131165220;
 			
 			// aapt resource value: 0x7F0400F9
 			public const int showAsAction = 2130968825;
@@ -1203,6 +1487,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F0400FD
 			public const int singleChoiceItemLayout = 2130968829;
+			
+			// aapt resource value: 0x1
+			public const int sourceClass = 1;
 			
 			// aapt resource value: 0x7F0400FE
 			public const int spanCount = 2130968830;
@@ -1245,6 +1532,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F04010B
 			public const int submitBackground = 2130968843;
+			
+			// aapt resource value: 0x1
+			public const int subsectionSeparator = 1;
 			
 			// aapt resource value: 0x7F04010C
 			public const int subtitle = 2130968844;
@@ -1420,6 +1710,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F040145
 			public const int titleTextStyle = 2130968901;
 			
+			// aapt resource value: 0x1
+			public const int toAddressesSection = 1;
+			
 			// aapt resource value: 0x7F040146
 			public const int toolbarId = 2130968902;
 			
@@ -1428,6 +1721,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F040148
 			public const int toolbarStyle = 2130968904;
+			
+			// aapt resource value: 0x1
+			public const int toolbarTextColorStyle = 1;
 			
 			// aapt resource value: 0x7F040149
 			public const int tooltipForegroundColor = 2130968905;
@@ -1447,11 +1743,47 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F04014E
 			public const int trackTintMode = 2130968910;
 			
-			// aapt resource value: 0x7F050008
-			public const int unpinnedDrawable = 2131034120;
+			// aapt resource value: 0x1
+			public const int trimmable = 1;
+			
+			// aapt resource value: 0x1
+			public const int uiCompass = 1;
+			
+			// aapt resource value: 0x1
+			public const int uiMapToolbar = 1;
+			
+			// aapt resource value: 0x1
+			public const int uiRotateGestures = 1;
+			
+			// aapt resource value: 0x1
+			public const int uiScrollGestures = 1;
+			
+			// aapt resource value: 0x1
+			public const int uiTiltGestures = 1;
+			
+			// aapt resource value: 0x1
+			public const int uiZoomControls = 1;
+			
+			// aapt resource value: 0x1
+			public const int uiZoomGestures = 1;
+			
+			// aapt resource value: 0x7F070023
+			public const int unpinnedDrawable = 2131165219;
 			
 			// aapt resource value: 0x7F04014F
 			public const int useCompatPadding = 2130968911;
+			
+			// aapt resource value: 0x1
+			public const int userInputSection = 1;
+			
+			// aapt resource value: 0x1
+			public const int userInputTag = 1;
+			
+			// aapt resource value: 0x1
+			public const int userInputValue = 1;
+			
+			// aapt resource value: 0x1
+			public const int useViewLifecycle = 1;
 			
 			// aapt resource value: 0x7F040150
 			public const int voiceIcon = 2130968912;
@@ -1485,6 +1817,12 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F04015A
 			public const int windowNoTitle = 2130968922;
+			
+			// aapt resource value: 0x1
+			public const int windowTransitionStyle = 1;
+			
+			// aapt resource value: 0x1
+			public const int zOrderOnTop = 1;
 			
 			static Attribute()
 			{
@@ -1653,6 +1991,72 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F060004
 			public const int cardview_shadow_start_color = 2131099652;
 			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_container_white_stripe_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_label_background_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_background_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_progress_text_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_seek_bar_progress_background_tint_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_text_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_intro_overlay_background_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_intro_overlay_button_background_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_outer_highlight_default_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_body_color = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_header_color = 1;
+			
+			// aapt resource value: 0x7F060001
+			public const int common_google_signin_btn_text_dark = 2131099649;
+			
+			// aapt resource value: 0x7F060002
+			public const int common_google_signin_btn_text_dark_default = 2131099650;
+			
+			// aapt resource value: 0x7F060003
+			public const int common_google_signin_btn_text_dark_disabled = 2131099651;
+			
+			// aapt resource value: 0x7F060004
+			public const int common_google_signin_btn_text_dark_focused = 2131099652;
+			
+			// aapt resource value: 0x7F060005
+			public const int common_google_signin_btn_text_dark_pressed = 2131099653;
+			
+			// aapt resource value: 0x7F060006
+			public const int common_google_signin_btn_text_light = 2131099654;
+			
+			// aapt resource value: 0x7F060007
+			public const int common_google_signin_btn_text_light_default = 2131099655;
+			
+			// aapt resource value: 0x7F060008
+			public const int common_google_signin_btn_text_light_disabled = 2131099656;
+			
+			// aapt resource value: 0x7F060009
+			public const int common_google_signin_btn_text_light_focused = 2131099657;
+			
+			// aapt resource value: 0x7F06000A
+			public const int common_google_signin_btn_text_light_pressed = 2131099658;
+			
+			// aapt resource value: 0x7F06000B
+			public const int common_google_signin_btn_tint = 2131099659;
+			
 			// aapt resource value: 0x7F060027
 			public const int design_bottom_navigation_shadow_color = 2131099687;
 			
@@ -1749,14 +2153,32 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F060046
 			public const int material_grey_900 = 2131099718;
 			
-			// aapt resource value: 0x7F060001
-			public const int notification_action_color_filter = 2131099649;
+			// aapt resource value: 0x7F06000C
+			public const int notification_action_color_filter = 2131099660;
 			
-			// aapt resource value: 0x7F060002
-			public const int notification_icon_bg_color = 2131099650;
+			// aapt resource value: 0x7F06000D
+			public const int notification_icon_bg_color = 2131099661;
 			
-			// aapt resource value: 0x7F060049
-			public const int notification_material_background_media_default_color = 2131099721;
+			// aapt resource value: 0x7F06000E
+			public const int notification_material_background_media_default_color = 2131099662;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_primary_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_primary_text_highlight = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_secondary_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_search_hint = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_search_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_separator = 1;
 			
 			// aapt resource value: 0x7F06004A
 			public const int primary_dark_material_dark = 2131099722;
@@ -1770,8 +2192,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F06004D
 			public const int primary_material_light = 2131099725;
 			
-			// aapt resource value: 0x7F06004E
-			public const int primary_text_default_material_dark = 2131099726;
+			// aapt resource value: 0x7F06000F
+			public const int primary_text_default_material_dark = 2131099663;
 			
 			// aapt resource value: 0x7F06004F
 			public const int primary_text_default_material_light = 2131099727;
@@ -1782,110 +2204,110 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F060051
 			public const int primary_text_disabled_material_light = 2131099729;
 			
-			// aapt resource value: 0x7F070002
-			public const int progress_default_circle_color = 2131165186;
+			// aapt resource value: 0x7F080020
+			public const int progress_default_circle_color = 2131230752;
 			
-			// aapt resource value: 0x7F070003
-			public const int progress_default_progress_color = 2131165187;
+			// aapt resource value: 0x7F080021
+			public const int progress_default_progress_color = 2131230753;
 			
-			// aapt resource value: 0x7F070004
-			public const int refractored_background_dark = 2131165188;
+			// aapt resource value: 0x7F080022
+			public const int refractored_background_dark = 2131230754;
 			
-			// aapt resource value: 0x7F070009
-			public const int refractored_background_holo_dark = 2131165193;
+			// aapt resource value: 0x7F080027
+			public const int refractored_background_holo_dark = 2131230759;
 			
-			// aapt resource value: 0x7F070010
-			public const int refractored_background_holo_light = 2131165200;
+			// aapt resource value: 0x7F080028
+			public const int refractored_background_holo_light = 2131230760;
 			
-			// aapt resource value: 0x7F070005
-			public const int refractored_background_light = 2131165189;
+			// aapt resource value: 0x7F080023
+			public const int refractored_background_light = 2131230755;
 			
-			// aapt resource value: 0x7F070006
-			public const int refractored_bright_foreground_dark = 2131165190;
+			// aapt resource value: 0x7F080024
+			public const int refractored_bright_foreground_dark = 2131230756;
 			
-			// aapt resource value: 0x7F070008
-			public const int refractored_bright_foreground_dark_disabled = 2131165192;
+			// aapt resource value: 0x7F080026
+			public const int refractored_bright_foreground_dark_disabled = 2131230758;
 			
-			// aapt resource value: 0x7F070013
-			public const int refractored_bright_foreground_disabled_holo_dark = 2131165203;
+			// aapt resource value: 0x7F080031
+			public const int refractored_bright_foreground_disabled_holo_dark = 2131230769;
 			
-			// aapt resource value: 0x7F070014
-			public const int refractored_bright_foreground_disabled_holo_light = 2131165204;
+			// aapt resource value: 0x7F080032
+			public const int refractored_bright_foreground_disabled_holo_light = 2131230770;
 			
-			// aapt resource value: 0x7F070011
-			public const int refractored_bright_foreground_holo_dark = 2131165201;
+			// aapt resource value: 0x7F080029
+			public const int refractored_bright_foreground_holo_dark = 2131230761;
 			
-			// aapt resource value: 0x7F070012
-			public const int refractored_bright_foreground_holo_light = 2131165202;
+			// aapt resource value: 0x7F080030
+			public const int refractored_bright_foreground_holo_light = 2131230768;
 			
-			// aapt resource value: 0x7F070007
-			public const int refractored_bright_foreground_light = 2131165191;
+			// aapt resource value: 0x7F080025
+			public const int refractored_bright_foreground_light = 2131230757;
 			
-			// aapt resource value: 0x7F070016
-			public const int refractored_dim_foreground_disabled_holo_dark = 2131165206;
+			// aapt resource value: 0x7F080034
+			public const int refractored_dim_foreground_disabled_holo_dark = 2131230772;
 			
-			// aapt resource value: 0x7F070019
-			public const int refractored_dim_foreground_disabled_holo_light = 2131165209;
+			// aapt resource value: 0x7F080037
+			public const int refractored_dim_foreground_disabled_holo_light = 2131230775;
 			
-			// aapt resource value: 0x7F070015
-			public const int refractored_dim_foreground_holo_dark = 2131165205;
+			// aapt resource value: 0x7F080033
+			public const int refractored_dim_foreground_holo_dark = 2131230771;
 			
-			// aapt resource value: 0x7F070018
-			public const int refractored_dim_foreground_holo_light = 2131165208;
+			// aapt resource value: 0x7F080036
+			public const int refractored_dim_foreground_holo_light = 2131230774;
 			
-			// aapt resource value: 0x7F070021
-			public const int refractored_highlighted_text_holo_dark = 2131165217;
+			// aapt resource value: 0x7F080039
+			public const int refractored_highlighted_text_holo_dark = 2131230777;
 			
-			// aapt resource value: 0x7F070022
-			public const int refractored_highlighted_text_holo_light = 2131165218;
+			// aapt resource value: 0x7F080040
+			public const int refractored_highlighted_text_holo_light = 2131230784;
 			
-			// aapt resource value: 0x7F070017
-			public const int refractored_hint_foreground_holo_dark = 2131165207;
+			// aapt resource value: 0x7F080035
+			public const int refractored_hint_foreground_holo_dark = 2131230773;
 			
-			// aapt resource value: 0x7F070020
-			public const int refractored_hint_foreground_holo_light = 2131165216;
+			// aapt resource value: 0x7F080038
+			public const int refractored_hint_foreground_holo_light = 2131230776;
 			
-			// aapt resource value: 0x7F070032
-			public const int refractored_holo_blue_bright = 2131165234;
+			// aapt resource value: 0x7F080050
+			public const int refractored_holo_blue_bright = 2131230800;
 			
-			// aapt resource value: 0x7F070026
-			public const int refractored_holo_blue_dark = 2131165222;
+			// aapt resource value: 0x7F080044
+			public const int refractored_holo_blue_dark = 2131230788;
 			
-			// aapt resource value: 0x7F070023
-			public const int refractored_holo_blue_light = 2131165219;
+			// aapt resource value: 0x7F080041
+			public const int refractored_holo_blue_light = 2131230785;
 			
-			// aapt resource value: 0x7F070027
-			public const int refractored_holo_green_dark = 2131165223;
+			// aapt resource value: 0x7F080045
+			public const int refractored_holo_green_dark = 2131230789;
 			
-			// aapt resource value: 0x7F070024
-			public const int refractored_holo_green_light = 2131165220;
+			// aapt resource value: 0x7F080042
+			public const int refractored_holo_green_light = 2131230786;
 			
-			// aapt resource value: 0x7F070031
-			public const int refractored_holo_orange_dark = 2131165233;
+			// aapt resource value: 0x7F080049
+			public const int refractored_holo_orange_dark = 2131230793;
 			
-			// aapt resource value: 0x7F070030
-			public const int refractored_holo_orange_light = 2131165232;
+			// aapt resource value: 0x7F080048
+			public const int refractored_holo_orange_light = 2131230792;
 			
-			// aapt resource value: 0x7F070029
-			public const int refractored_holo_purple = 2131165225;
+			// aapt resource value: 0x7F080047
+			public const int refractored_holo_purple = 2131230791;
 			
-			// aapt resource value: 0x7F070028
-			public const int refractored_holo_red_dark = 2131165224;
+			// aapt resource value: 0x7F080046
+			public const int refractored_holo_red_dark = 2131230790;
 			
-			// aapt resource value: 0x7F070025
-			public const int refractored_holo_red_light = 2131165221;
+			// aapt resource value: 0x7F080043
+			public const int refractored_holo_red_light = 2131230787;
 			
 			// aapt resource value: 0x7F060052
 			public const int ripple_material_dark = 2131099730;
 			
-			// aapt resource value: 0x7F060003
-			public const int ripple_material_light = 2131099651;
+			// aapt resource value: 0x7F060010
+			public const int ripple_material_light = 2131099664;
 			
-			// aapt resource value: 0x7F060054
-			public const int secondary_text_default_material_dark = 2131099732;
+			// aapt resource value: 0x7F060011
+			public const int secondary_text_default_material_dark = 2131099665;
 			
-			// aapt resource value: 0x7F060004
-			public const int secondary_text_default_material_light = 2131099652;
+			// aapt resource value: 0x7F060012
+			public const int secondary_text_default_material_light = 2131099666;
 			
 			// aapt resource value: 0x7F060056
 			public const int secondary_text_disabled_material_dark = 2131099734;
@@ -1916,6 +2338,45 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F06005F
 			public const int tooltip_background_light = 2131099743;
+			
+			// aapt resource value: 0x1
+			public const int wallet_bright_foreground_disabled_holo_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_bright_foreground_holo_dark = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_bright_foreground_holo_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_dim_foreground_disabled_holo_dark = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_dim_foreground_holo_dark = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_highlighted_text_holo_dark = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_highlighted_text_holo_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_hint_foreground_holo_dark = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_hint_foreground_holo_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_holo_blue_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_link_text_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_primary_text_holo_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_secondary_text_holo_dark = 1;
 			
 			static Color()
 			{
@@ -2161,6 +2622,93 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F080003
 			public const int cardview_default_radius = 2131230723;
 			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_background_layout_height = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_background_layout_width = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_layout_height = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_layout_width = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_control_button_margin = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_control_toolbar_min_height = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_margin_between_seek_bar_and_control_buttons = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_margin_between_status_text_and_seek_bar = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_seekbar_disabled_alpha = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_intro_overlay_button_margin_bottom = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_intro_overlay_focus_radius = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_intro_overlay_title_margin_top = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_center_horizontal_offset = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_center_threshold = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_inner_margin = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_inner_radius = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_outer_padding = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_body_size = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_header_size = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_horizontal_margin = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_horizontal_offset = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_max_width = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_text_vertical_space = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_mini_controller_control_button_margin = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_mini_controller_icon_height = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_mini_controller_icon_width = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_notification_image_size = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_no_message_text_size = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_row_text_size = 1;
+			
 			// aapt resource value: 0x7F080001
 			public const int compat_button_inset_horizontal_material = 2131230721;
 			
@@ -2397,6 +2945,36 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F080014
 			public const int notification_top_pad_large_text = 2131230740;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_button_padding = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_powered_by_google_height = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_powered_by_google_start = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_height = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_horizontal_margin = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_primary_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_secondary_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_progress_horizontal_margin = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_progress_size = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_separator_start = 1;
 			
 			// aapt resource value: 0x7F080094
 			public const int tooltip_corner_radius = 2131230868;
@@ -2696,6 +3274,225 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F010009
 			public const int Background = 2130771977;
 			
+			// aapt resource value: 0x1
+			public const int cast_abc_scrubber_control_off_mtrl_alpha = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_abc_scrubber_control_to_pressed_mtrl_000 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_abc_scrubber_control_to_pressed_mtrl_005 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_abc_scrubber_primary_mtrl_alpha = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_album_art_placeholder = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_album_art_placeholder_large = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_actionbar_bg_gradient_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_bg_gradient_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_seekbar_thumb = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_seekbar_track = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_closed_caption = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_forward30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_mute = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_pause = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_play = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_rewind30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_skip_next = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_skip_previous = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_expanded_controller_stop = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_closed_caption = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_forward30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_mute = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_pause = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_pause_large = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_play = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_play_large = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_rewind30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_skip_next = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_skip_prev = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_stop = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_mini_controller_stop_large = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_0 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_1 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_2 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_connecting = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_disconnect = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_forward = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_forward10 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_forward30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_on = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_pause = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_play = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_rewind = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_rewind10 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_rewind30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_skip_next = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_skip_prev = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_small_icon = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_notification_stop_live_stream = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_stop_circle_filled_grey600 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_ic_stop_circle_filled_white = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_mini_controller_gradient_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_mini_controller_progress_drawable = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_skip_ad_label_border = 1;
+			
+			// aapt resource value: 0x7F090001
+			public const int common_full_open_on_phone = 2131296257;
+			
+			// aapt resource value: 0x7F090002
+			public const int common_google_signin_btn_icon_dark = 2131296258;
+			
+			// aapt resource value: 0x7F090003
+			public const int common_google_signin_btn_icon_dark_focused = 2131296259;
+			
+			// aapt resource value: 0x7F090004
+			public const int common_google_signin_btn_icon_dark_normal = 2131296260;
+			
+			// aapt resource value: 0x7F090005
+			public const int common_google_signin_btn_icon_dark_normal_background = 2131296261;
+			
+			// aapt resource value: 0x7F090006
+			public const int common_google_signin_btn_icon_disabled = 2131296262;
+			
+			// aapt resource value: 0x7F090007
+			public const int common_google_signin_btn_icon_light = 2131296263;
+			
+			// aapt resource value: 0x7F090008
+			public const int common_google_signin_btn_icon_light_focused = 2131296264;
+			
+			// aapt resource value: 0x7F090009
+			public const int common_google_signin_btn_icon_light_normal = 2131296265;
+			
+			// aapt resource value: 0x7F09000A
+			public const int common_google_signin_btn_icon_light_normal_background = 2131296266;
+			
+			// aapt resource value: 0x7F09000B
+			public const int common_google_signin_btn_text_dark = 2131296267;
+			
+			// aapt resource value: 0x7F09000C
+			public const int common_google_signin_btn_text_dark_focused = 2131296268;
+			
+			// aapt resource value: 0x7F09000D
+			public const int common_google_signin_btn_text_dark_normal = 2131296269;
+			
+			// aapt resource value: 0x7F09000E
+			public const int common_google_signin_btn_text_dark_normal_background = 2131296270;
+			
+			// aapt resource value: 0x7F09000F
+			public const int common_google_signin_btn_text_disabled = 2131296271;
+			
+			// aapt resource value: 0x7F090010
+			public const int common_google_signin_btn_text_light = 2131296272;
+			
+			// aapt resource value: 0x7F090011
+			public const int common_google_signin_btn_text_light_focused = 2131296273;
+			
+			// aapt resource value: 0x7F090012
+			public const int common_google_signin_btn_text_light_normal = 2131296274;
+			
+			// aapt resource value: 0x7F090013
+			public const int common_google_signin_btn_text_light_normal_background = 2131296275;
+			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
 			
@@ -2713,6 +3510,12 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
+			
+			// aapt resource value: 0x7F090014
+			public const int googleg_disabled_color_18 = 2131296276;
+			
+			// aapt resource value: 0x7F090015
+			public const int googleg_standard_color_18 = 2131296277;
 			
 			// aapt resource value: 0x7F010002
 			public const int grower_classifieds = 2130771970;
@@ -3239,6 +4042,21 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0900FE
 			public const int ic_mr_button_grey = 2131296510;
 			
+			// aapt resource value: 0x1
+			public const int ic_plusone_medium_off_client = 1;
+			
+			// aapt resource value: 0x1
+			public const int ic_plusone_small_off_client = 1;
+			
+			// aapt resource value: 0x1
+			public const int ic_plusone_standard_off_client = 1;
+			
+			// aapt resource value: 0x1
+			public const int ic_plusone_tall_off_client = 1;
+			
+			// aapt resource value: 0x7F090016
+			public const int ic_stat_notify_dot = 2131296278;
+			
 			// aapt resource value: 0x7F0900FF
 			public const int ic_vol_type_speaker_dark = 2131296511;
 			
@@ -3323,56 +4141,191 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
 			
-			// aapt resource value: 0x7F090001
-			public const int notification_action_background = 2131296257;
+			// aapt resource value: 0x7F090017
+			public const int notification_action_background = 2131296279;
 			
-			// aapt resource value: 0x7F090002
-			public const int notification_bg = 2131296258;
+			// aapt resource value: 0x7F090018
+			public const int notification_bg = 2131296280;
 			
-			// aapt resource value: 0x7F090003
-			public const int notification_bg_low = 2131296259;
+			// aapt resource value: 0x7F090019
+			public const int notification_bg_low = 2131296281;
 			
-			// aapt resource value: 0x7F090004
-			public const int notification_bg_low_normal = 2131296260;
+			// aapt resource value: 0x7F09001A
+			public const int notification_bg_low_normal = 2131296282;
 			
-			// aapt resource value: 0x7F090005
-			public const int notification_bg_low_pressed = 2131296261;
+			// aapt resource value: 0x7F09001B
+			public const int notification_bg_low_pressed = 2131296283;
 			
-			// aapt resource value: 0x7F090006
-			public const int notification_bg_normal = 2131296262;
+			// aapt resource value: 0x7F09001C
+			public const int notification_bg_normal = 2131296284;
 			
-			// aapt resource value: 0x7F090007
-			public const int notification_bg_normal_pressed = 2131296263;
+			// aapt resource value: 0x7F09001D
+			public const int notification_bg_normal_pressed = 2131296285;
 			
-			// aapt resource value: 0x7F090008
-			public const int notification_icon_background = 2131296264;
+			// aapt resource value: 0x7F09001E
+			public const int notification_icon_background = 2131296286;
 			
-			// aapt resource value: 0x7F090009
-			public const int notification_template_icon_bg = 2131296265;
+			// aapt resource value: 0x7F09001F
+			public const int notification_template_icon_bg = 2131296287;
 			
-			// aapt resource value: 0x7F09000A
-			public const int notification_template_icon_low_bg = 2131296266;
+			// aapt resource value: 0x7F090020
+			public const int notification_template_icon_low_bg = 2131296288;
 			
-			// aapt resource value: 0x7F09000B
-			public const int notification_tile_bg = 2131296267;
+			// aapt resource value: 0x7F090021
+			public const int notification_tile_bg = 2131296289;
 			
-			// aapt resource value: 0x7F09000C
-			public const int notify_panel_notification_icon_bg = 2131296268;
+			// aapt resource value: 0x7F090022
+			public const int notify_panel_notification_icon_bg = 2131296290;
 			
-			// aapt resource value: 0x7F010011
-			public const int pin_progress_pinned = 2130771985;
+			// aapt resource value: 0x7F010045
+			public const int pin_progress_pinned = 2130772037;
 			
-			// aapt resource value: 0x7F010012
-			public const int pin_progress_shadow = 2130771986;
+			// aapt resource value: 0x7F010046
+			public const int pin_progress_shadow = 2130772038;
 			
-			// aapt resource value: 0x7F010013
-			public const int pin_progress_unpinned = 2130771987;
+			// aapt resource value: 0x7F010047
+			public const int pin_progress_unpinned = 2130772039;
 			
-			// aapt resource value: 0x7F010014
-			public const int scrubber_control_normal_holo = 2130771988;
+			// aapt resource value: 0x1
+			public const int places_ic_clear = 1;
 			
-			// aapt resource value: 0x7F010015
-			public const int scrubber_control_pressed_holo = 2130771989;
+			// aapt resource value: 0x1
+			public const int places_ic_search = 1;
+			
+			// aapt resource value: 0x1
+			public const int powered_by_google_dark = 1;
+			
+			// aapt resource value: 0x1
+			public const int powered_by_google_light = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_art_track_grey600_48 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_bigtop_updates_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_cast_connected_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_cast_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_clear_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_closed_caption_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_closed_caption_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_forward_10_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_forward_30_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_forward_30_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_forward_30_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_keyboard_arrow_down_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_pause_circle_filled_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_pause_circle_filled_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_pause_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_pause_grey600_48 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_pause_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_play_arrow_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_play_arrow_grey600_48 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_play_arrow_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_play_circle_filled_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_play_circle_filled_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_refresh_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_replay_10_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_replay_30_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_replay_30_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_replay_30_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_replay_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_skip_next_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_skip_next_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_skip_next_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_skip_previous_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_skip_previous_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_skip_previous_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_stop_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_stop_grey600_48 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_stop_white_24 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_volume_off_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_volume_off_white_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_volume_up_grey600_36 = 1;
+			
+			// aapt resource value: 0x1
+			public const int quantum_ic_volume_up_white_36 = 1;
+			
+			// aapt resource value: 0x7F010048
+			public const int scrubber_control_normal_holo = 2130772040;
+			
+			// aapt resource value: 0x7F010049
+			public const int scrubber_control_pressed_holo = 2130772041;
 			
 			// aapt resource value: 0x7F010007
 			public const int shoppingbag = 2130771975;
@@ -3399,8 +4352,8 @@ namespace GrowersClassified.Droid
 		public partial class Font
 		{
 			
-			// aapt resource value: 0x7F080002
-			public const int progress_inner_size = 2131230722;
+			// aapt resource value: 0x7F090002
+			public const int progress_inner_size = 2131296258;
 			
 			static Font()
 			{
@@ -3418,8 +4371,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0001
 			public const int action0 = 2131492865;
 			
-			// aapt resource value: 0x7F0C0005
-			public const int actions = 2131492869;
+			// aapt resource value: 0x7F0C0006
+			public const int actions = 2131492870;
 			
 			// aapt resource value: 0x7F0C0002
 			public const int action_bar = 2131492866;
@@ -3442,17 +4395,17 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0008
 			public const int action_bar_title = 2131492872;
 			
-			// aapt resource value: 0x7F0C0001
-			public const int action_container = 2131492865;
+			// aapt resource value: 0x7F0C0002
+			public const int action_container = 2131492866;
 			
 			// aapt resource value: 0x7F0C000A
 			public const int action_context_bar = 2131492874;
 			
-			// aapt resource value: 0x7F0C0002
-			public const int action_divider = 2131492866;
-			
 			// aapt resource value: 0x7F0C0003
-			public const int action_image = 2131492867;
+			public const int action_divider = 2131492867;
+			
+			// aapt resource value: 0x7F0C0004
+			public const int action_image = 2131492868;
 			
 			// aapt resource value: 0x7F0C000D
 			public const int action_menu_divider = 2131492877;
@@ -3469,8 +4422,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F0C0004
-			public const int action_text = 2131492868;
+			// aapt resource value: 0x7F0C0005
+			public const int action_text = 2131492869;
 			
 			// aapt resource value: 0x7F0C0014
 			public const int activity_chooser_view_content = 2131492884;
@@ -3478,59 +4431,191 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0015
 			public const int add = 2131492885;
 			
+			// aapt resource value: 0x7F0C0007
+			public const int adjust_height = 2131492871;
+			
+			// aapt resource value: 0x7F0C0008
+			public const int adjust_width = 2131492872;
+			
+			// aapt resource value: 0x1
+			public const int ad_container = 1;
+			
+			// aapt resource value: 0x1
+			public const int ad_image_view = 1;
+			
+			// aapt resource value: 0x1
+			public const int ad_in_progress_label = 1;
+			
+			// aapt resource value: 0x1
+			public const int ad_label = 1;
+			
 			// aapt resource value: 0x7F0C0016
 			public const int alertTitle = 2131492886;
 			
-			// aapt resource value: 0x7F0C0006
-			public const int async = 2131492870;
+			// aapt resource value: 0x1
+			public const int android_pay = 1;
 			
-			// aapt resource value: 0x7F0C0018
-			public const int auto = 2131492888;
+			// aapt resource value: 0x1
+			public const int android_pay_dark = 1;
 			
-			// aapt resource value: 0x7F0C0007
-			public const int blocking = 2131492871;
+			// aapt resource value: 0x1
+			public const int android_pay_light = 1;
 			
-			// aapt resource value: 0x7F020004
-			public const int bottom = 2130837508;
+			// aapt resource value: 0x1
+			public const int android_pay_light_with_border = 1;
+			
+			// aapt resource value: 0x7F0C0009
+			public const int async = 2131492873;
+			
+			// aapt resource value: 0x1
+			public const int audio_list_view = 1;
+			
+			// aapt resource value: 0x7F0C000A
+			public const int auto = 2131492874;
+			
+			// aapt resource value: 0x1
+			public const int background_image_view = 1;
+			
+			// aapt resource value: 0x1
+			public const int background_place_holder_image_view = 1;
+			
+			// aapt resource value: 0x7F0C000B
+			public const int blocking = 2131492875;
+			
+			// aapt resource value: 0x1
+			public const int blurred_background_image_view = 1;
+			
+			// aapt resource value: 0x1
+			public const int book_now = 1;
+			
+			// aapt resource value: 0x7F020043
+			public const int bottom = 2130837571;
+			
+			// aapt resource value: 0x1
+			public const int button = 1;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
 			
-			// aapt resource value: 0x7F0C001C
-			public const int cancel_action = 2131492892;
+			// aapt resource value: 0x1
+			public const int button_0 = 1;
 			
-			// aapt resource value: 0x7F020005
-			public const int center = 2130837509;
+			// aapt resource value: 0x1
+			public const int button_1 = 1;
 			
-			// aapt resource value: 0x7F020006
-			public const int center_horizontal = 2130837510;
+			// aapt resource value: 0x1
+			public const int button_2 = 1;
 			
-			// aapt resource value: 0x7F020007
-			public const int center_vertical = 2130837511;
+			// aapt resource value: 0x1
+			public const int button_3 = 1;
+			
+			// aapt resource value: 0x1
+			public const int button_play_pause_toggle = 1;
+			
+			// aapt resource value: 0x1
+			public const int buyButton = 1;
+			
+			// aapt resource value: 0x1
+			public const int buy_now = 1;
+			
+			// aapt resource value: 0x1
+			public const int buy_with = 1;
+			
+			// aapt resource value: 0x1
+			public const int buy_with_google = 1;
+			
+			// aapt resource value: 0x7F0C000C
+			public const int cancel_action = 2131492876;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_closed_caption = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_custom = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_empty = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_forward_30_seconds = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_mute_toggle = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_play_pause_toggle = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_rewind_30_seconds = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_skip_next = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_button_type_skip_previous = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_featurehighlight_help_text_body_view = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_featurehighlight_help_text_header_view = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_featurehighlight_view = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_notification_id = 1;
+			
+			// aapt resource value: 0x7F020044
+			public const int center = 2130837572;
+			
+			// aapt resource value: 0x7F020045
+			public const int center_horizontal = 2130837573;
+			
+			// aapt resource value: 0x7F020046
+			public const int center_vertical = 2130837574;
 			
 			// aapt resource value: 0x7F0C001E
 			public const int checkbox = 2131492894;
 			
-			// aapt resource value: 0x7F0C0008
-			public const int chronometer = 2131492872;
+			// aapt resource value: 0x7F0C000D
+			public const int chronometer = 2131492877;
 			
-			// aapt resource value: 0x7F020008
-			public const int clip = 2130837512;
+			// aapt resource value: 0x1
+			public const int classic = 1;
 			
-			// aapt resource value: 0x7F020009
-			public const int clip_horizontal = 2130837513;
+			// aapt resource value: 0x7F020047
+			public const int clip = 2130837575;
 			
-			// aapt resource value: 0x7F020010
-			public const int clip_vertical = 2130837520;
+			// aapt resource value: 0x7F020048
+			public const int clip_horizontal = 2130837576;
+			
+			// aapt resource value: 0x7F020049
+			public const int clip_vertical = 2130837577;
+			
+			// aapt resource value: 0x1
+			public const int contact = 1;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
 			
+			// aapt resource value: 0x1
+			public const int container_all = 1;
+			
+			// aapt resource value: 0x1
+			public const int container_current = 1;
+			
 			// aapt resource value: 0x7F0C0021
 			public const int contentPanel = 2131492897;
 			
+			// aapt resource value: 0x1
+			public const int controllers = 1;
+			
 			// aapt resource value: 0x7F0C0022
 			public const int coordinator = 2131492898;
+			
+			// aapt resource value: 0x1
+			public const int crash_reporting_present = 1;
 			
 			// aapt resource value: 0x7F0C0023
 			public const int custom = 2131492899;
@@ -3538,11 +4623,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0024
 			public const int customPanel = 2131492900;
 			
+			// aapt resource value: 0x7F0C000E
+			public const int dark = 2131492878;
+			
+			// aapt resource value: 0x1
+			public const int date = 1;
+			
 			// aapt resource value: 0x7F0C0025
 			public const int decor_content_parent = 2131492901;
 			
 			// aapt resource value: 0x7F0C0026
 			public const int default_activity_button = 2131492902;
+			
+			// aapt resource value: 0x1
+			public const int demote_common_words = 1;
+			
+			// aapt resource value: 0x1
+			public const int demote_rfc822_hostnames = 1;
 			
 			// aapt resource value: 0x7F0C0027
 			public const int design_bottom_sheet = 2131492903;
@@ -3559,14 +4656,29 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
 			
+			// aapt resource value: 0x1
+			public const int donate_with = 1;
+			
+			// aapt resource value: 0x1
+			public const int donate_with_google = 1;
+			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
 			
-			// aapt resource value: 0x7F020011
-			public const int end = 2130837521;
+			// aapt resource value: 0x1
+			public const int email = 1;
 			
-			// aapt resource value: 0x7F0C002E
-			public const int end_padder = 2131492910;
+			// aapt resource value: 0x7F020050
+			public const int end = 2130837584;
+			
+			// aapt resource value: 0x7F0C000F
+			public const int end_padder = 2131492879;
+			
+			// aapt resource value: 0x1
+			public const int end_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int expanded_controller_layout = 1;
 			
 			// aapt resource value: 0x7F0C0030
 			public const int expanded_menu = 2131492912;
@@ -3574,41 +4686,95 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C002F
 			public const int expand_activities_button = 2131492911;
 			
-			// aapt resource value: 0x7F020012
-			public const int fill = 2130837522;
+			// aapt resource value: 0x7F020051
+			public const int fill = 2130837585;
 			
-			// aapt resource value: 0x7F020013
-			public const int fill_horizontal = 2130837523;
+			// aapt resource value: 0x7F020052
+			public const int fill_horizontal = 2130837586;
 			
-			// aapt resource value: 0x7F020014
-			public const int fill_vertical = 2130837524;
+			// aapt resource value: 0x7F020053
+			public const int fill_vertical = 2130837587;
 			
 			// aapt resource value: 0x7F0C0032
 			public const int @fixed = 2131492914;
 			
-			// aapt resource value: 0x7F0C0009
-			public const int forever = 2131492873;
+			// aapt resource value: 0x7F0C0010
+			public const int forever = 2131492880;
 			
 			// aapt resource value: 0x7F0C0034
 			public const int ghost_view = 2131492916;
 			
+			// aapt resource value: 0x1
+			public const int google_wallet_classic = 1;
+			
+			// aapt resource value: 0x1
+			public const int google_wallet_grayscale = 1;
+			
+			// aapt resource value: 0x1
+			public const int google_wallet_monochrome = 1;
+			
+			// aapt resource value: 0x1
+			public const int grayscale = 1;
+			
+			// aapt resource value: 0x1
+			public const int holo_dark = 1;
+			
+			// aapt resource value: 0x1
+			public const int holo_light = 1;
+			
 			// aapt resource value: 0x7F0C0035
 			public const int home = 2131492917;
 			
-			// aapt resource value: 0x7F0C000A
-			public const int icon = 2131492874;
+			// aapt resource value: 0x1
+			public const int html = 1;
 			
-			// aapt resource value: 0x7F0C000B
-			public const int icon_group = 2131492875;
+			// aapt resource value: 0x1
+			public const int hybrid = 1;
+			
+			// aapt resource value: 0x7F0C0011
+			public const int icon = 2131492881;
+			
+			// aapt resource value: 0x7F0C0012
+			public const int icon_group = 2131492882;
+			
+			// aapt resource value: 0x7F0C0013
+			public const int icon_only = 2131492883;
+			
+			// aapt resource value: 0x1
+			public const int icon_uri = 1;
+			
+			// aapt resource value: 0x1
+			public const int icon_view = 1;
 			
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F0C000C
-			public const int info = 2131492876;
+			// aapt resource value: 0x1
+			public const int index_entity_types = 1;
 			
-			// aapt resource value: 0x7F0C000D
-			public const int italic = 2131492877;
+			// aapt resource value: 0x7F0C0014
+			public const int info = 2131492884;
+			
+			// aapt resource value: 0x1
+			public const int instant_message = 1;
+			
+			// aapt resource value: 0x1
+			public const int intent_action = 1;
+			
+			// aapt resource value: 0x1
+			public const int intent_activity = 1;
+			
+			// aapt resource value: 0x1
+			public const int intent_data = 1;
+			
+			// aapt resource value: 0x1
+			public const int intent_data_id = 1;
+			
+			// aapt resource value: 0x1
+			public const int intent_extra_data = 1;
+			
+			// aapt resource value: 0x7F0C0015
+			public const int italic = 2131492885;
 			
 			// aapt resource value: 0x7F0C003B
 			public const int item_touch_helper_previous_elevation = 2131492923;
@@ -3616,14 +4782,32 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C003C
 			public const int largeLabel = 2131492924;
 			
-			// aapt resource value: 0x7F020015
-			public const int left = 2130837525;
+			// aapt resource value: 0x1
+			public const int large_icon_uri = 1;
 			
-			// aapt resource value: 0x7F0C000E
-			public const int line1 = 2131492878;
+			// aapt resource value: 0x7F020054
+			public const int left = 2130837588;
 			
-			// aapt resource value: 0x7F0C000F
-			public const int line3 = 2131492879;
+			// aapt resource value: 0x1
+			public const int license = 1;
+			
+			// aapt resource value: 0x1
+			public const int license_activity_scrollview = 1;
+			
+			// aapt resource value: 0x1
+			public const int license_activity_textview = 1;
+			
+			// aapt resource value: 0x1
+			public const int license_list = 1;
+			
+			// aapt resource value: 0x7F0C0016
+			public const int light = 2131492886;
+			
+			// aapt resource value: 0x7F0C0017
+			public const int line1 = 2131492887;
+			
+			// aapt resource value: 0x7F0C0018
+			public const int line3 = 2131492888;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -3631,17 +4815,38 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
+			// aapt resource value: 0x1
+			public const int live_stream_indicator = 1;
+			
+			// aapt resource value: 0x1
+			public const int live_stream_seek_bar = 1;
+			
+			// aapt resource value: 0x1
+			public const int loading_indicator = 1;
+			
+			// aapt resource value: 0x1
+			public const int logo_only = 1;
+			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
 			
-			// aapt resource value: 0x7F0C0043
-			public const int media_actions = 2131492931;
+			// aapt resource value: 0x1
+			public const int match_global_nicknames = 1;
+			
+			// aapt resource value: 0x1
+			public const int match_parent = 1;
+			
+			// aapt resource value: 0x7F0C0019
+			public const int media_actions = 2131492889;
 			
 			// aapt resource value: 0x7F0C0044
 			public const int message = 2131492932;
 			
 			// aapt resource value: 0x7F0C0045
 			public const int mini = 2131492933;
+			
+			// aapt resource value: 0x1
+			public const int monochrome = 1;
 			
 			// aapt resource value: 0x7F0C0033
 			public const int mr_art = 2131492915;
@@ -3724,20 +4929,29 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F0C0048
-			public const int none = 2131492936;
+			// aapt resource value: 0x7F0C001A
+			public const int none = 2131492890;
 			
-			// aapt resource value: 0x7F0C0010
-			public const int normal = 2131492880;
+			// aapt resource value: 0x7F0C001B
+			public const int normal = 2131492891;
 			
-			// aapt resource value: 0x7F0C0011
-			public const int notification_background = 2131492881;
+			// aapt resource value: 0x7F0C001C
+			public const int notification_background = 2131492892;
 			
-			// aapt resource value: 0x7F0C0012
-			public const int notification_main_column = 2131492882;
+			// aapt resource value: 0x7F0C001D
+			public const int notification_main_column = 2131492893;
 			
-			// aapt resource value: 0x7F0C0013
-			public const int notification_main_column_container = 2131492883;
+			// aapt resource value: 0x7F0C001E
+			public const int notification_main_column_container = 2131492894;
+			
+			// aapt resource value: 0x1
+			public const int no_licenses_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int omnibox_title_section = 1;
+			
+			// aapt resource value: 0x1
+			public const int omnibox_url_section = 1;
 			
 			// aapt resource value: 0x7F0C004D
 			public const int parallax = 2131492941;
@@ -3751,6 +4965,39 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
 			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_clear_button = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_powered_by_google = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_primary_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_prediction_secondary_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_progress = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_search_button = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_search_input = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_separator = 1;
+			
+			// aapt resource value: 0x1
+			public const int plain = 1;
+			
+			// aapt resource value: 0x1
+			public const int production = 1;
+			
+			// aapt resource value: 0x1
+			public const int progressBar = 1;
+			
 			// aapt resource value: 0x7F0C0051
 			public const int progress_circular = 2131492945;
 			
@@ -3760,14 +5007,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0053
 			public const int radio = 2131492947;
 			
-			// aapt resource value: 0x7F020016
-			public const int right = 2130837526;
+			// aapt resource value: 0x1
+			public const int rfc822 = 1;
 			
-			// aapt resource value: 0x7F0C0014
-			public const int right_icon = 2131492884;
+			// aapt resource value: 0x7F020055
+			public const int right = 2130837589;
 			
-			// aapt resource value: 0x7F0C0015
-			public const int right_side = 2131492885;
+			// aapt resource value: 0x7F0C001F
+			public const int right_icon = 2131492895;
+			
+			// aapt resource value: 0x7F0C0020
+			public const int right_side = 2131492896;
+			
+			// aapt resource value: 0x1
+			public const int sandbox = 1;
+			
+			// aapt resource value: 0x1
+			public const int satellite = 1;
 			
 			// aapt resource value: 0x7F0C0057
 			public const int save_image_matrix = 2131492951;
@@ -3823,11 +5079,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0068
 			public const int search_voice_btn = 2131492968;
 			
+			// aapt resource value: 0x1
+			public const int seek_bar = 1;
+			
+			// aapt resource value: 0x1
+			public const int seek_bar_controls = 1;
+			
+			// aapt resource value: 0x1
+			public const int selectionDetails = 1;
+			
 			// aapt resource value: 0x7F0C0069
 			public const int select_dialog_listview = 2131492969;
 			
 			// aapt resource value: 0x7F0C006A
 			public const int shortcut = 2131492970;
+			
+			// aapt resource value: 0x1
+			public const int slide = 1;
 			
 			// aapt resource value: 0x7F020002
 			public const int sliding_tabs = 2130837506;
@@ -3856,11 +5124,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0072
 			public const int src_over = 2131492978;
 			
-			// aapt resource value: 0x7F020017
-			public const int start = 2130837527;
+			// aapt resource value: 0x7F0C0021
+			public const int standard = 2131492897;
 			
-			// aapt resource value: 0x7F0C0074
-			public const int status_bar_latest_event_content = 2131492980;
+			// aapt resource value: 0x7F020056
+			public const int start = 2130837590;
+			
+			// aapt resource value: 0x1
+			public const int start_text = 1;
+			
+			// aapt resource value: 0x7F0C0022
+			public const int status_bar_latest_event_content = 2131492898;
+			
+			// aapt resource value: 0x1
+			public const int status_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int strict_sandbox = 1;
 			
 			// aapt resource value: 0x7F0C0075
 			public const int submenuarrow = 2131492981;
@@ -3868,17 +5148,32 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0076
 			public const int submit_area = 2131492982;
 			
+			// aapt resource value: 0x1
+			public const int subtitle_view = 1;
+			
 			// aapt resource value: 0x7F0C0077
 			public const int tabMode = 2131492983;
+			
+			// aapt resource value: 0x1
+			public const int tab_host = 1;
 			
 			// aapt resource value: 0x7F0C0016
 			public const int tag_transition_group = 2131492886;
 			
-			// aapt resource value: 0x7F0C0017
-			public const int text = 2131492887;
+			// aapt resource value: 0x1
+			public const int terrain = 1;
 			
-			// aapt resource value: 0x7F0C0018
-			public const int text2 = 2131492888;
+			// aapt resource value: 0x1
+			public const int test = 1;
+			
+			// aapt resource value: 0x7F0C0023
+			public const int text = 2131492899;
+			
+			// aapt resource value: 0x1
+			public const int text1 = 1;
+			
+			// aapt resource value: 0x7F0C0024
+			public const int text2 = 2131492900;
 			
 			// aapt resource value: 0x7F0C007E
 			public const int textinput_counter = 2131492990;
@@ -3892,14 +5187,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
 			
+			// aapt resource value: 0x1
+			public const int textTitle = 1;
+			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
 			
-			// aapt resource value: 0x7F0C0019
-			public const int time = 2131492889;
+			// aapt resource value: 0x1
+			public const int text_list_view = 1;
 			
-			// aapt resource value: 0x7F0C001A
-			public const int title = 2131492890;
+			// aapt resource value: 0x1
+			public const int thing_proto = 1;
+			
+			// aapt resource value: 0x7F0C0025
+			public const int time = 2131492901;
+			
+			// aapt resource value: 0x7F0C0026
+			public const int title = 2131492902;
 			
 			// aapt resource value: 0x7F0C0082
 			public const int titleDividerNoCustom = 2131492994;
@@ -3907,11 +5211,14 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
 			
+			// aapt resource value: 0x1
+			public const int title_view = 1;
+			
 			// aapt resource value: 0x7F020003
 			public const int toolbar = 2130837507;
 			
-			// aapt resource value: 0x7F020018
-			public const int top = 2130837528;
+			// aapt resource value: 0x7F020057
+			public const int top = 2130837591;
 			
 			// aapt resource value: 0x7F0C0085
 			public const int topPanel = 2131492997;
@@ -3940,6 +5247,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0C008D
 			public const int up = 2131493005;
 			
+			// aapt resource value: 0x1
+			public const int url = 1;
+			
 			// aapt resource value: 0x7F0C008E
 			public const int view_offset_helper = 2131493006;
 			
@@ -3948,6 +5258,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F0C007D
 			public const int volume_item_container = 2131492989;
+			
+			// aapt resource value: 0x7F0C0027
+			public const int wide = 2131492903;
 			
 			// aapt resource value: 0x7F0C0090
 			public const int wrap_content = 2131493008;
@@ -3977,17 +5290,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0D0004
 			public const int bottom_sheet_slide_duration = 2131558404;
 			
-			// aapt resource value: 0x7F0D0005
-			public const int cancel_button_image_alpha = 2131558405;
+			// aapt resource value: 0x7F0D0001
+			public const int cancel_button_image_alpha = 2131558401;
 			
-			// aapt resource value: 0x7F090003
-			public const int circular_indeterminent_interval = 2131296259;
+			// aapt resource value: 0x1
+			public const int cast_libraries_material_featurehighlight_pulse_base_alpha = 1;
+			
+			// aapt resource value: 0x7F100006
+			public const int circular_indeterminent_interval = 2131755014;
 			
 			// aapt resource value: 0x7F0D0006
 			public const int config_tooltipAnimTime = 2131558406;
 			
 			// aapt resource value: 0x7F0D0007
 			public const int design_snackbar_text_max_lines = 2131558407;
+			
+			// aapt resource value: 0x7F0D0002
+			public const int google_play_services_version = 2131558402;
 			
 			// aapt resource value: 0x7F0D0008
 			public const int hide_password_duration = 2131558408;
@@ -4001,14 +5320,14 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0D0007
 			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131558407;
 			
-			// aapt resource value: 0x7F090002
-			public const int progressbutton_indeterminent_interval = 2131296258;
+			// aapt resource value: 0x7F100005
+			public const int progressbutton_indeterminent_interval = 2131755013;
 			
 			// aapt resource value: 0x7F0D0009
 			public const int show_password_duration = 2131558409;
 			
-			// aapt resource value: 0x7F0D0001
-			public const int status_bar_notification_info_maxnum = 2131558401;
+			// aapt resource value: 0x7F0D0003
+			public const int status_bar_notification_info_maxnum = 2131558403;
 			
 			static Integer()
 			{
@@ -4120,6 +5439,24 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0F001A
 			public const int abc_select_dialog_material = 2131689498;
 			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_activity = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_help_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_intro_overlay = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_mini_controller = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_layout = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_row_layout = 1;
+			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
 			
@@ -4162,6 +5499,18 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
+			// aapt resource value: 0x1
+			public const int libraries_social_licenses_license = 1;
+			
+			// aapt resource value: 0x1
+			public const int libraries_social_licenses_license_activity = 1;
+			
+			// aapt resource value: 0x1
+			public const int libraries_social_licenses_license_menu_activity = 1;
+			
+			// aapt resource value: 0x1
+			public const int license_menu_activity_no_licenses = 1;
+			
 			// aapt resource value: 0x7F0F001B
 			public const int mr_chooser_dialog = 2131689499;
 			
@@ -4186,44 +5535,56 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F0F0002
 			public const int notification_action_tombstone = 2131689474;
 			
-			// aapt resource value: 0x7F0F002B
-			public const int notification_media_action = 2131689515;
-			
-			// aapt resource value: 0x7F0F002C
-			public const int notification_media_cancel_action = 2131689516;
-			
-			// aapt resource value: 0x7F0F002D
-			public const int notification_template_big_media = 2131689517;
-			
-			// aapt resource value: 0x7F0F002E
-			public const int notification_template_big_media_custom = 2131689518;
-			
-			// aapt resource value: 0x7F0F002F
-			public const int notification_template_big_media_narrow = 2131689519;
-			
-			// aapt resource value: 0x7F0F0030
-			public const int notification_template_big_media_narrow_custom = 2131689520;
-			
 			// aapt resource value: 0x7F0F0003
-			public const int notification_template_custom_big = 2131689475;
+			public const int notification_media_action = 2131689475;
 			
 			// aapt resource value: 0x7F0F0004
-			public const int notification_template_icon_group = 2131689476;
-			
-			// aapt resource value: 0x7F0F0033
-			public const int notification_template_lines_media = 2131689523;
-			
-			// aapt resource value: 0x7F0F0034
-			public const int notification_template_media = 2131689524;
-			
-			// aapt resource value: 0x7F0F0035
-			public const int notification_template_media_custom = 2131689525;
+			public const int notification_media_cancel_action = 2131689476;
 			
 			// aapt resource value: 0x7F0F0005
-			public const int notification_template_part_chronometer = 2131689477;
+			public const int notification_template_big_media = 2131689477;
 			
 			// aapt resource value: 0x7F0F0006
-			public const int notification_template_part_time = 2131689478;
+			public const int notification_template_big_media_custom = 2131689478;
+			
+			// aapt resource value: 0x7F0F0007
+			public const int notification_template_big_media_narrow = 2131689479;
+			
+			// aapt resource value: 0x7F0F0008
+			public const int notification_template_big_media_narrow_custom = 2131689480;
+			
+			// aapt resource value: 0x7F0F0009
+			public const int notification_template_custom_big = 2131689481;
+			
+			// aapt resource value: 0x7F0F000A
+			public const int notification_template_icon_group = 2131689482;
+			
+			// aapt resource value: 0x7F0F000B
+			public const int notification_template_lines_media = 2131689483;
+			
+			// aapt resource value: 0x7F0F000C
+			public const int notification_template_media = 2131689484;
+			
+			// aapt resource value: 0x7F0F000D
+			public const int notification_template_media_custom = 2131689485;
+			
+			// aapt resource value: 0x7F0F000E
+			public const int notification_template_part_chronometer = 2131689486;
+			
+			// aapt resource value: 0x7F0F000F
+			public const int notification_template_part_time = 2131689487;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_fragment = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_item_powered_by_google = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_item_prediction = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_progress = 1;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
@@ -4245,6 +5606,9 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F0F003C
 			public const int tooltip = 2131689532;
+			
+			// aapt resource value: 0x1
+			public const int wallet_test_layout = 1;
 			
 			static Layout()
 			{
@@ -4352,8 +5716,194 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F15001F
 			public const int bottom_sheet_behavior = 2132082719;
 			
+			// aapt resource value: 0x1
+			public const int cast_ad_label = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_casting_to_device = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_closed_captions = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_closed_captions_unavailable = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_connecting_to_device = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_disconnect = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_image_description = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_ad_in_progress = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_background_image = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_live_stream_indicator = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_loading = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_expanded_controller_skip_ad_label = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_forward = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_forward_10 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_forward_30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_intro_overlay_button_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_invalid_stream_duration_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_invalid_stream_position_text = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_mute = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_notification_connected_message = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_notification_connecting_message = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_notification_disconnect = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_pause = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_play = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_rewind = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_rewind_10 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_rewind_30 = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_seek_bar = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_skip_next = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_skip_prev = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_stop = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_stop_live_stream = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_audio = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_cancel = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_closed_captions = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_default_track_name = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_none = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_ok = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_tracks_chooser_dialog_subtitles = 1;
+			
+			// aapt resource value: 0x1
+			public const int cast_unmute = 1;
+			
 			// aapt resource value: 0x7F150020
 			public const int character_counter_pattern = 2132082720;
+			
+			// aapt resource value: 0x7F150001
+			public const int common_google_play_services_enable_button = 2132082689;
+			
+			// aapt resource value: 0x7F150002
+			public const int common_google_play_services_enable_text = 2132082690;
+			
+			// aapt resource value: 0x7F150003
+			public const int common_google_play_services_enable_title = 2132082691;
+			
+			// aapt resource value: 0x7F150004
+			public const int common_google_play_services_install_button = 2132082692;
+			
+			// aapt resource value: 0x7F150005
+			public const int common_google_play_services_install_text = 2132082693;
+			
+			// aapt resource value: 0x7F150006
+			public const int common_google_play_services_install_title = 2132082694;
+			
+			// aapt resource value: 0x7F150007
+			public const int common_google_play_services_notification_channel_name = 2132082695;
+			
+			// aapt resource value: 0x7F150008
+			public const int common_google_play_services_notification_ticker = 2132082696;
+			
+			// aapt resource value: 0x7F150009
+			public const int common_google_play_services_unknown_issue = 2132082697;
+			
+			// aapt resource value: 0x7F15000A
+			public const int common_google_play_services_unsupported_text = 2132082698;
+			
+			// aapt resource value: 0x7F15000B
+			public const int common_google_play_services_update_button = 2132082699;
+			
+			// aapt resource value: 0x7F15000C
+			public const int common_google_play_services_update_text = 2132082700;
+			
+			// aapt resource value: 0x7F15000D
+			public const int common_google_play_services_update_title = 2132082701;
+			
+			// aapt resource value: 0x7F15000E
+			public const int common_google_play_services_updating_text = 2132082702;
+			
+			// aapt resource value: 0x7F15000F
+			public const int common_google_play_services_wear_update_text = 2132082703;
+			
+			// aapt resource value: 0x7F150010
+			public const int common_open_on_phone = 2132082704;
+			
+			// aapt resource value: 0x7F150011
+			public const int common_signin_button_text = 2132082705;
+			
+			// aapt resource value: 0x7F150012
+			public const int common_signin_button_text_long = 2132082706;
+			
+			// aapt resource value: 0x7F150013
+			public const int fcm_fallback_notification_channel_label = 2132082707;
+			
+			// aapt resource value: 0x1
+			public const int gcm_fallback_notification_channel_label = 1;
+			
+			// aapt resource value: 0x7F060022
+			public const int library_name = 2131099682;
+			
+			// aapt resource value: 0x1
+			public const int license_content_error = 1;
 			
 			// aapt resource value: 0x7F15001E
 			public const int mr_button_content_description = 2132082718;
@@ -4418,6 +5968,12 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F150032
 			public const int mr_user_route_category_name = 2132082738;
 			
+			// aapt resource value: 0x1
+			public const int no_licenses_available = 1;
+			
+			// aapt resource value: 0x1
+			public const int oss_license_title = 1;
+			
 			// aapt resource value: 0x7F150021
 			public const int password_toggle_content_description = 2132082721;
 			
@@ -4433,11 +5989,50 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F150025
 			public const int path_password_strike_through = 2132082725;
 			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_clear_button = 1;
+			
+			// aapt resource value: 0x1
+			public const int place_autocomplete_search_hint = 1;
+			
+			// aapt resource value: 0x1
+			public const int preferences_license_summary = 1;
+			
+			// aapt resource value: 0x1
+			public const int s1 = 1;
+			
+			// aapt resource value: 0x1
+			public const int s2 = 1;
+			
+			// aapt resource value: 0x1
+			public const int s3 = 1;
+			
+			// aapt resource value: 0x1
+			public const int s4 = 1;
+			
+			// aapt resource value: 0x1
+			public const int s5 = 1;
+			
+			// aapt resource value: 0x1
+			public const int s6 = 1;
+			
 			// aapt resource value: 0x7F150026
 			public const int search_menu_title = 2132082726;
 			
-			// aapt resource value: 0x7F150001
-			public const int status_bar_notification_info_overflow = 2132082689;
+			// aapt resource value: 0x7F150014
+			public const int status_bar_notification_info_overflow = 2132082708;
+			
+			// aapt resource value: 0x1
+			public const int tagmanager_preview_dialog_button = 1;
+			
+			// aapt resource value: 0x1
+			public const int tagmanager_preview_dialog_message = 1;
+			
+			// aapt resource value: 0x1
+			public const int tagmanager_preview_dialog_title = 1;
+			
+			// aapt resource value: 0x1
+			public const int wallet_buy_button_place_holder = 1;
 			
 			static String()
 			{
@@ -4977,11 +6572,23 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F160004
 			public const int CardView_Light = 2132148228;
 			
-			// aapt resource value: 0x7F040009
-			public const int CircularProgressBar = 2130968585;
+			// aapt resource value: 0x1
+			public const int CastExpandedController = 1;
 			
-			// aapt resource value: 0x7F040010
-			public const int CircularProgressBarLight = 2130968592;
+			// aapt resource value: 0x1
+			public const int CastIntroOverlay = 1;
+			
+			// aapt resource value: 0x1
+			public const int CastMiniController = 1;
+			
+			// aapt resource value: 0x7F040021
+			public const int CircularProgressBar = 2130968609;
+			
+			// aapt resource value: 0x7F040022
+			public const int CircularProgressBarLight = 2130968610;
+			
+			// aapt resource value: 0x1
+			public const int CustomCastTheme = 1;
 			
 			// aapt resource value: 0x7F040003
 			public const int MainTheme = 2130968579;
@@ -5031,11 +6638,11 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F1600B7
 			public const int Platform_Widget_AppCompat_Spinner = 2132148407;
 			
-			// aapt resource value: 0x7F040007
-			public const int ProgressButton = 2130968583;
+			// aapt resource value: 0x7F040019
+			public const int ProgressButton = 2130968601;
 			
-			// aapt resource value: 0x7F040008
-			public const int ProgressButton_Pin = 2130968584;
+			// aapt resource value: 0x7F040020
+			public const int ProgressButton_Pin = 2130968608;
 			
 			// aapt resource value: 0x7F1600B8
 			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2132148408;
@@ -5223,35 +6830,47 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F1600F5
 			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2132148469;
 			
+			// aapt resource value: 0x1
+			public const int TextAppearance_CastIntroOverlay_Button = 1;
+			
+			// aapt resource value: 0x1
+			public const int TextAppearance_CastIntroOverlay_Title = 1;
+			
+			// aapt resource value: 0x1
+			public const int TextAppearance_CastMiniController_Subtitle = 1;
+			
+			// aapt resource value: 0x1
+			public const int TextAppearance_CastMiniController_Title = 1;
+			
 			// aapt resource value: 0x7F160001
 			public const int TextAppearance_Compat_Notification = 2132148225;
 			
 			// aapt resource value: 0x7F160002
 			public const int TextAppearance_Compat_Notification_Info = 2132148226;
 			
-			// aapt resource value: 0x7F1600F8
-			public const int TextAppearance_Compat_Notification_Info_Media = 2132148472;
-			
 			// aapt resource value: 0x7F160003
-			public const int TextAppearance_Compat_Notification_Line2 = 2132148227;
-			
-			// aapt resource value: 0x7F1600FA
-			public const int TextAppearance_Compat_Notification_Line2_Media = 2132148474;
-			
-			// aapt resource value: 0x7F1600FB
-			public const int TextAppearance_Compat_Notification_Media = 2132148475;
+			public const int TextAppearance_Compat_Notification_Info_Media = 2132148227;
 			
 			// aapt resource value: 0x7F160004
-			public const int TextAppearance_Compat_Notification_Time = 2132148228;
-			
-			// aapt resource value: 0x7F1600FD
-			public const int TextAppearance_Compat_Notification_Time_Media = 2132148477;
+			public const int TextAppearance_Compat_Notification_Line2 = 2132148228;
 			
 			// aapt resource value: 0x7F160005
-			public const int TextAppearance_Compat_Notification_Title = 2132148229;
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2132148229;
 			
-			// aapt resource value: 0x7F1600FF
-			public const int TextAppearance_Compat_Notification_Title_Media = 2132148479;
+			// aapt resource value: 0x7F160006
+			public const int TextAppearance_Compat_Notification_Media = 2132148230;
+			
+			// aapt resource value: 0x7F160007
+			public const int TextAppearance_Compat_Notification_Time = 2132148231;
+			
+			// aapt resource value: 0x7F160008
+			public const int TextAppearance_Compat_Notification_Time_Media = 2132148232;
+			
+			// aapt resource value: 0x7F160009
+			public const int TextAppearance_Compat_Notification_Title = 2132148233;
+			
+			// aapt resource value: 0x7F16000A
+			public const int TextAppearance_Compat_Notification_Title_Media = 2132148234;
 			
 			// aapt resource value: 0x7F160100
 			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2132148480;
@@ -5382,6 +7001,12 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F160125
 			public const int Theme_AppCompat_NoActionBar = 2132148517;
 			
+			// aapt resource value: 0x1
+			public const int Theme_AppInvite_Preview = 1;
+			
+			// aapt resource value: 0x1
+			public const int Theme_AppInvite_Preview_Base = 1;
+			
 			// aapt resource value: 0x7F160126
 			public const int Theme_Design = 2132148518;
 			
@@ -5400,6 +7025,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F16012B
 			public const int Theme_Design_NoActionBar = 2132148523;
 			
+			// aapt resource value: 0x1
+			public const int Theme_IAPTheme = 1;
+			
 			// aapt resource value: 0x7F16011E
 			public const int Theme_MediaRouter = 2132148510;
 			
@@ -5414,6 +7042,18 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x7F040002
 			public const int Theme_Splash = 2130968578;
+			
+			// aapt resource value: 0x1
+			public const int WalletFragmentDefaultButtonTextAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int WalletFragmentDefaultDetailsHeaderTextAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int WalletFragmentDefaultDetailsTextAppearance = 1;
+			
+			// aapt resource value: 0x1
+			public const int WalletFragmentDefaultStyle = 1;
 			
 			// aapt resource value: 0x7F16012C
 			public const int Widget_AppCompat_ActionBar = 2132148524;
@@ -5631,11 +7271,11 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7F160173
 			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2132148595;
 			
-			// aapt resource value: 0x7F160006
-			public const int Widget_Compat_NotificationActionContainer = 2132148230;
+			// aapt resource value: 0x7F16000B
+			public const int Widget_Compat_NotificationActionContainer = 2132148235;
 			
-			// aapt resource value: 0x7F160007
-			public const int Widget_Compat_NotificationActionText = 2132148231;
+			// aapt resource value: 0x7F16000C
+			public const int Widget_Compat_NotificationActionText = 2132148236;
 			
 			// aapt resource value: 0x7F160176
 			public const int Widget_Design_AppBarLayout = 2132148598;
@@ -5723,11 +7363,11 @@ namespace GrowersClassified.Droid
 			public static int[] ActionBarLayout = new int[] {
 					16842931};
 			
-			// aapt resource value: 0x7F060073
-			public const int ActionBarLayout_android_layout_gravity = 2131099763;
+			// aapt resource value: 0x7F050081
+			public const int ActionBarLayout_android_layout_gravity = 2131034241;
 			
-			// aapt resource value: 0x7F060043
-			public const int ActionBar_background = 2131099715;
+			// aapt resource value: 0x7F050051
+			public const int ActionBar_background = 2131034193;
 			
 			// aapt resource value: 0x1
 			public const int ActionBar_backgroundSplit = 1;
@@ -5816,8 +7456,8 @@ namespace GrowersClassified.Droid
 			public static int[] ActionMenuItemView = new int[] {
 					16843071};
 			
-			// aapt resource value: 0x7F060075
-			public const int ActionMenuItemView_android_minWidth = 2131099765;
+			// aapt resource value: 0x7F050083
+			public const int ActionMenuItemView_android_minWidth = 2131034243;
 			
 			public static int[] ActionMode = new int[] {
 					2130968626,
@@ -5827,8 +7467,8 @@ namespace GrowersClassified.Droid
 					2130968847,
 					2130968901};
 			
-			// aapt resource value: 0x7F060077
-			public const int ActionMode_background = 2131099767;
+			// aapt resource value: 0x7F050085
+			public const int ActionMode_background = 2131034245;
 			
 			// aapt resource value: 0x1
 			public const int ActionMode_backgroundSplit = 1;
@@ -5849,11 +7489,25 @@ namespace GrowersClassified.Droid
 					2130968704,
 					2130968746};
 			
-			// aapt resource value: 0x7F060084
-			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131099780;
+			// aapt resource value: 0x7F050092
+			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131034258;
 			
 			// aapt resource value: 0x1
 			public const int ActivityChooserView_initialActivityCount = 1;
+			
+			public static int[] AdsAttrs = new int[] {
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x7F050594
+			public const int AdsAttrs_adSize = 2131035540;
+			
+			// aapt resource value: 0x1
+			public const int AdsAttrs_adSizes = 1;
+			
+			// aapt resource value: 0x2
+			public const int AdsAttrs_adUnitId = 2;
 			
 			public static int[] AlertDialog = new int[] {
 					16842994,
@@ -5864,8 +7518,8 @@ namespace GrowersClassified.Droid
 					2130968828,
 					2130968829};
 			
-			// aapt resource value: 0x7F060087
-			public const int AlertDialog_android_layout = 2131099783;
+			// aapt resource value: 0x7F050095
+			public const int AlertDialog_android_layout = 2131034261;
 			
 			// aapt resource value: 0x1
 			public const int AlertDialog_buttonPanelSideLayout = 1;
@@ -5896,14 +7550,14 @@ namespace GrowersClassified.Droid
 					2130968838,
 					2130968839};
 			
-			// aapt resource value: 0x7F060101
-			public const int AppBarLayoutStates_state_collapsed = 2131099905;
+			// aapt resource value: 0x7F050109
+			public const int AppBarLayoutStates_state_collapsed = 2131034377;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayoutStates_state_collapsible = 1;
 			
-			// aapt resource value: 0x7F060095
-			public const int AppBarLayout_android_background = 2131099797;
+			// aapt resource value: 0x7F050103
+			public const int AppBarLayout_android_background = 2131034371;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_android_keyboardNavigationCluster = 1;
@@ -5921,8 +7575,8 @@ namespace GrowersClassified.Droid
 					2130968765,
 					2130968766};
 			
-			// aapt resource value: 0x7F060104
-			public const int AppBarLayout_Layout_layout_scrollFlags = 2131099908;
+			// aapt resource value: 0x7F050112
+			public const int AppBarLayout_Layout_layout_scrollFlags = 2131034386;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
@@ -5933,8 +7587,8 @@ namespace GrowersClassified.Droid
 					2130968889,
 					2130968890};
 			
-			// aapt resource value: 0x7F060107
-			public const int AppCompatImageView_android_src = 2131099911;
+			// aapt resource value: 0x7F050115
+			public const int AppCompatImageView_android_src = 2131034389;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatImageView_srcCompat = 1;
@@ -5951,8 +7605,8 @@ namespace GrowersClassified.Droid
 					2130968887,
 					2130968888};
 			
-			// aapt resource value: 0x7F060112
-			public const int AppCompatSeekBar_android_thumb = 2131099922;
+			// aapt resource value: 0x7F050120
+			public const int AppCompatSeekBar_android_thumb = 2131034400;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatSeekBar_tickMark = 1;
@@ -5972,8 +7626,8 @@ namespace GrowersClassified.Droid
 					16843117,
 					16842804};
 			
-			// aapt resource value: 0x7F060117
-			public const int AppCompatTextHelper_android_drawableBottom = 2131099927;
+			// aapt resource value: 0x7F050125
+			public const int AppCompatTextHelper_android_drawableBottom = 2131034405;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextHelper_android_drawableEnd = 1;
@@ -6003,8 +7657,8 @@ namespace GrowersClassified.Droid
 					2130968720,
 					2130968869};
 			
-			// aapt resource value: 0x7F060125
-			public const int AppCompatTextView_android_textAppearance = 2131099941;
+			// aapt resource value: 0x7F050133
+			public const int AppCompatTextView_android_textAppearance = 2131034419;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextView_autoSizeMaxTextSize = 1;
@@ -6148,8 +7802,8 @@ namespace GrowersClassified.Droid
 					2130968921,
 					2130968922};
 			
-			// aapt resource value: 0x7F060134
-			public const int AppCompatTheme_actionBarDivider = 2131099956;
+			// aapt resource value: 0x7F050142
+			public const int AppCompatTheme_actionBarDivider = 2131034434;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTheme_actionBarItemBackground = 1;
@@ -6505,6 +8159,9 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x118
 			public const int AppCompatTheme_windowNoTitle = 280;
 			
+			public static int[] AppDataSearch = new int[] {
+					0};
+			
 			public static int[] BottomNavigationView = new int[] {
 					2130968701,
 					2130968749,
@@ -6512,8 +8169,8 @@ namespace GrowersClassified.Droid
 					2130968753,
 					2130968783};
 			
-			// aapt resource value: 0x7F060254
-			public const int BottomNavigationView_elevation = 2131100244;
+			// aapt resource value: 0x7F050262
+			public const int BottomNavigationView_elevation = 2131034722;
 			
 			// aapt resource value: 0x1
 			public const int BottomNavigationView_itemBackground = 1;
@@ -6532,8 +8189,8 @@ namespace GrowersClassified.Droid
 					2130968635,
 					2130968636};
 			
-			// aapt resource value: 0x7F060260
-			public const int BottomSheetBehavior_Layout_behavior_hideable = 2131100256;
+			// aapt resource value: 0x7F050268
+			public const int BottomSheetBehavior_Layout_behavior_hideable = 2131034728;
 			
 			// aapt resource value: 0x1
 			public const int BottomSheetBehavior_Layout_behavior_peekHeight = 1;
@@ -6544,8 +8201,8 @@ namespace GrowersClassified.Droid
 			public static int[] ButtonBarLayout = new int[] {
 					2130968615};
 			
-			// aapt resource value: 0x7F060264
-			public const int ButtonBarLayout_allowStacking = 2131100260;
+			// aapt resource value: 0x7F050272
+			public const int ButtonBarLayout_allowStacking = 2131034738;
 			
 			public static int[] CardView = new int[] {
 					16843072,
@@ -6562,8 +8219,8 @@ namespace GrowersClassified.Droid
 					2130968586,
 					2130968587};
 			
-			// aapt resource value: 0x7F060567
-			public const int CardView_android_minHeight = 2131101031;
+			// aapt resource value: 0x7F050575
+			public const int CardView_android_minHeight = 2131035509;
 			
 			// aapt resource value: 0x1
 			public const int CardView_android_minWidth = 1;
@@ -6601,6 +8258,164 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x12
 			public const int CardView_contentPaddingTop = 18;
 			
+			public static int[] CastExpandedController = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x3
+			public const int CastExpandedController_castButtonColor = 3;
+			
+			// aapt resource value: 0x12
+			public const int CastExpandedController_castClosedCaptionsButtonDrawable = 18;
+			
+			// aapt resource value: 0x2
+			public const int CastExpandedController_castControlButtons = 2;
+			
+			// aapt resource value: 0x10
+			public const int CastExpandedController_castForward30ButtonDrawable = 16;
+			
+			// aapt resource value: 0x11
+			public const int CastExpandedController_castMuteToggleButtonDrawable = 17;
+			
+			// aapt resource value: 0x5
+			public const int CastExpandedController_castPauseButtonDrawable = 5;
+			
+			// aapt resource value: 0x4
+			public const int CastExpandedController_castPlayButtonDrawable = 4;
+			
+			// aapt resource value: 0x9
+			public const int CastExpandedController_castRewind30ButtonDrawable = 9;
+			
+			// aapt resource value: 0x7F050607
+			public const int CastExpandedController_castSeekBarProgressDrawable = 2131035655;
+			
+			// aapt resource value: 0x1
+			public const int CastExpandedController_castSeekBarThumbDrawable = 1;
+			
+			// aapt resource value: 0x8
+			public const int CastExpandedController_castSkipNextButtonDrawable = 8;
+			
+			// aapt resource value: 0x7
+			public const int CastExpandedController_castSkipPreviousButtonDrawable = 7;
+			
+			// aapt resource value: 0x6
+			public const int CastExpandedController_castStopButtonDrawable = 6;
+			
+			public static int[] CastIntroOverlay = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x7F050613
+			public const int CastIntroOverlay_castBackgroundColor = 2131035667;
+			
+			// aapt resource value: 0x1
+			public const int CastIntroOverlay_castButtonBackgroundColor = 1;
+			
+			// aapt resource value: 0x3
+			public const int CastIntroOverlay_castButtonText = 3;
+			
+			// aapt resource value: 0x2
+			public const int CastIntroOverlay_castButtonTextAppearance = 2;
+			
+			// aapt resource value: 0x5
+			public const int CastIntroOverlay_castFocusRadius = 5;
+			
+			// aapt resource value: 0x4
+			public const int CastIntroOverlay_castTitleTextAppearance = 4;
+			
+			public static int[] CastMiniController = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x4
+			public const int CastMiniController_castBackground = 4;
+			
+			// aapt resource value: 0x6
+			public const int CastMiniController_castButtonColor = 6;
+			
+			// aapt resource value: 0x18
+			public const int CastMiniController_castClosedCaptionsButtonDrawable = 24;
+			
+			// aapt resource value: 0x3
+			public const int CastMiniController_castControlButtons = 3;
+			
+			// aapt resource value: 0x16
+			public const int CastMiniController_castForward30ButtonDrawable = 22;
+			
+			// aapt resource value: 0x11
+			public const int CastMiniController_castLargePauseButtonDrawable = 17;
+			
+			// aapt resource value: 0x10
+			public const int CastMiniController_castLargePlayButtonDrawable = 16;
+			
+			// aapt resource value: 0x12
+			public const int CastMiniController_castLargeStopButtonDrawable = 18;
+			
+			// aapt resource value: 0x17
+			public const int CastMiniController_castMuteToggleButtonDrawable = 23;
+			
+			// aapt resource value: 0x8
+			public const int CastMiniController_castPauseButtonDrawable = 8;
+			
+			// aapt resource value: 0x7
+			public const int CastMiniController_castPlayButtonDrawable = 7;
+			
+			// aapt resource value: 0x5
+			public const int CastMiniController_castProgressBarColor = 5;
+			
+			// aapt resource value: 0x15
+			public const int CastMiniController_castRewind30ButtonDrawable = 21;
+			
+			// aapt resource value: 0x1
+			public const int CastMiniController_castShowImageThumbnail = 1;
+			
+			// aapt resource value: 0x14
+			public const int CastMiniController_castSkipNextButtonDrawable = 20;
+			
+			// aapt resource value: 0x13
+			public const int CastMiniController_castSkipPreviousButtonDrawable = 19;
+			
+			// aapt resource value: 0x9
+			public const int CastMiniController_castStopButtonDrawable = 9;
+			
+			// aapt resource value: 0x2
+			public const int CastMiniController_castSubtitleTextAppearance = 2;
+			
+			// aapt resource value: 0x7F050638
+			public const int CastMiniController_castTitleTextAppearance = 2131035704;
+			
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130968658,
 					2130968659,
@@ -6619,8 +8434,8 @@ namespace GrowersClassified.Droid
 					2130968892,
 					2130968902};
 			
-			// aapt resource value: 0x7F060266
-			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131100262;
+			// aapt resource value: 0x7F050274
+			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131034740;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_collapsedTitleTextAppearance = 1;
@@ -6653,8 +8468,8 @@ namespace GrowersClassified.Droid
 					2130968760,
 					2130968761};
 			
-			// aapt resource value: 0x7F060283
-			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131100291;
+			// aapt resource value: 0x7F050291
+			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131034769;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
@@ -6682,8 +8497,8 @@ namespace GrowersClassified.Droid
 					16843551,
 					16843173};
 			
-			// aapt resource value: 0x7F060286
-			public const int ColorStateListItem_alpha = 2131100294;
+			// aapt resource value: 0x7F050294
+			public const int ColorStateListItem_alpha = 2131034772;
 			
 			// aapt resource value: 0x1
 			public const int ColorStateListItem_android_alpha = 1;
@@ -6696,8 +8511,8 @@ namespace GrowersClassified.Droid
 					2130968650,
 					2130968651};
 			
-			// aapt resource value: 0x7F060290
-			public const int CompoundButton_android_button = 2131100304;
+			// aapt resource value: 0x7F050298
+			public const int CompoundButton_android_button = 2131034776;
 			
 			// aapt resource value: 0x1
 			public const int CompoundButton_buttonTint = 1;
@@ -6709,8 +8524,8 @@ namespace GrowersClassified.Droid
 					2130968754,
 					2130968840};
 			
-			// aapt resource value: 0x7F060294
-			public const int CoordinatorLayout_keylines = 2131100308;
+			// aapt resource value: 0x7F050302
+			public const int CoordinatorLayout_keylines = 2131034882;
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
@@ -6721,8 +8536,8 @@ namespace GrowersClassified.Droid
 					2130968763,
 					2130968764};
 			
-			// aapt resource value: 0x7F060297
-			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131100311;
+			// aapt resource value: 0x7F050305
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131034885;
 			
 			// aapt resource value: 0x1
 			public const int CoordinatorLayout_Layout_layout_anchor = 1;
@@ -6745,13 +8560,71 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x1
 			public const int CoordinatorLayout_statusBarBackground = 1;
 			
+			public static int[] Corpus = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x2
+			public const int Corpus_contentProviderUri = 2;
+			
+			// aapt resource value: 0x7F050641
+			public const int Corpus_corpusId = 2131035713;
+			
+			// aapt resource value: 0x1
+			public const int Corpus_corpusVersion = 1;
+			
+			// aapt resource value: 0x6
+			public const int Corpus_documentMaxAgeSecs = 6;
+			
+			// aapt resource value: 0x7
+			public const int Corpus_perAccountTemplate = 7;
+			
+			// aapt resource value: 0x4
+			public const int Corpus_schemaOrgType = 4;
+			
+			// aapt resource value: 0x5
+			public const int Corpus_semanticallySearchable = 5;
+			
+			// aapt resource value: 0x3
+			public const int Corpus_trimmable = 3;
+			
+			public static int[] CustomCastTheme = new int[] {
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x2
+			public const int CustomCastTheme_castExpandedControllerStyle = 2;
+			
+			// aapt resource value: 0x7F050650
+			public const int CustomCastTheme_castIntroOverlayStyle = 2131035728;
+			
+			// aapt resource value: 0x1
+			public const int CustomCastTheme_castMiniControllerStyle = 1;
+			
+			public static int[] CustomWalletTheme = new int[] {
+					1,
+					1};
+			
+			// aapt resource value: 0x1
+			public const int CustomWalletTheme_toolbarTextColorStyle = 1;
+			
+			// aapt resource value: 0x7F050654
+			public const int CustomWalletTheme_windowTransitionStyle = 2131035732;
+			
 			public static int[] DesignTheme = new int[] {
 					2130968639,
 					2130968640,
 					2130968879};
 			
-			// aapt resource value: 0x7F060305
-			public const int DesignTheme_bottomSheetDialogTheme = 2131100421;
+			// aapt resource value: 0x7F050313
+			public const int DesignTheme_bottomSheetDialogTheme = 2131034899;
 			
 			// aapt resource value: 0x1
 			public const int DesignTheme_bottomSheetStyle = 1;
@@ -6769,8 +8642,8 @@ namespace GrowersClassified.Droid
 					2130968831,
 					2130968882};
 			
-			// aapt resource value: 0x7F060309
-			public const int DrawerArrowToggle_arrowHeadLength = 2131100425;
+			// aapt resource value: 0x7F050317
+			public const int DrawerArrowToggle_arrowHeadLength = 2131034903;
 			
 			// aapt resource value: 0x1
 			public const int DrawerArrowToggle_arrowShaftLength = 1;
@@ -6793,6 +8666,16 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x7
 			public const int DrawerArrowToggle_thickness = 7;
 			
+			public static int[] FeatureParam = new int[] {
+					1,
+					1};
+			
+			// aapt resource value: 0x7F050656
+			public const int FeatureParam_paramName = 2131035734;
+			
+			// aapt resource value: 0x1
+			public const int FeatureParam_paramValue = 1;
+			
 			public static int[] FloatingActionButton = new int[] {
 					2130968629,
 					2130968630,
@@ -6803,8 +8686,8 @@ namespace GrowersClassified.Droid
 					2130968816,
 					2130968911};
 			
-			// aapt resource value: 0x7F060318
-			public const int FloatingActionButton_backgroundTint = 2131100440;
+			// aapt resource value: 0x7F050326
+			public const int FloatingActionButton_backgroundTint = 2131034918;
 			
 			// aapt resource value: 0x1
 			public const int FloatingActionButton_backgroundTintMode = 1;
@@ -6812,8 +8695,8 @@ namespace GrowersClassified.Droid
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
 					2130968632};
 			
-			// aapt resource value: 0x7F060327
-			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131100455;
+			// aapt resource value: 0x7F050335
+			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131034933;
 			
 			// aapt resource value: 0x2
 			public const int FloatingActionButton_borderWidth = 2;
@@ -6834,23 +8717,20 @@ namespace GrowersClassified.Droid
 			public const int FloatingActionButton_useCompatPadding = 7;
 			
 			public static int[] FontFamily = new int[] {
-					2130968578,
-					2130968579,
-					2130968580,
 					2130968581,
 					2130968582,
-					2130968583};
+					2130968583,
+					2130968584,
+					2130968585,
+					2130968586};
 			
 			public static int[] FontFamilyFont = new int[] {
-					16844082,
-					16844095,
-					16844083,
-					2130968577,
-					2130968584,
-					2130968585};
+					2130968580,
+					2130968587,
+					2130968588};
 			
-			// aapt resource value: 0x7F060036
-			public const int FontFamilyFont_android_font = 2131099702;
+			// aapt resource value: 0x7F050047
+			public const int FontFamilyFont_android_font = 2131034183;
 			
 			// aapt resource value: 0x1
 			public const int FontFamilyFont_android_fontStyle = 1;
@@ -6858,17 +8738,17 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x2
 			public const int FontFamilyFont_android_fontWeight = 2;
 			
-			// aapt resource value: 0x3
-			public const int FontFamilyFont_font = 3;
+			// aapt resource value: 0x7F050010
+			public const int FontFamilyFont_font = 2131034128;
 			
-			// aapt resource value: 0x4
-			public const int FontFamilyFont_fontStyle = 4;
+			// aapt resource value: 0x1
+			public const int FontFamilyFont_fontStyle = 1;
 			
-			// aapt resource value: 0x5
-			public const int FontFamilyFont_fontWeight = 5;
+			// aapt resource value: 0x2
+			public const int FontFamilyFont_fontWeight = 2;
 			
-			// aapt resource value: 0x7F060029
-			public const int FontFamily_fontProviderAuthority = 2131099689;
+			// aapt resource value: 0x7F050003
+			public const int FontFamily_fontProviderAuthority = 2131034115;
 			
 			// aapt resource value: 0x1
 			public const int FontFamily_fontProviderCerts = 1;
@@ -6890,14 +8770,56 @@ namespace GrowersClassified.Droid
 					16843264,
 					2130968729};
 			
-			// aapt resource value: 0x7F060329
-			public const int ForegroundLinearLayout_android_foreground = 2131100457;
+			// aapt resource value: 0x7F050337
+			public const int ForegroundLinearLayout_android_foreground = 2131034935;
 			
 			// aapt resource value: 0x1
 			public const int ForegroundLinearLayout_android_foregroundGravity = 1;
 			
 			// aapt resource value: 0x2
 			public const int ForegroundLinearLayout_foregroundInsidePadding = 2;
+			
+			public static int[] GlobalSearch = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			public static int[] GlobalSearchCorpus = new int[] {
+					1};
+			
+			// aapt resource value: 0x7F050666
+			public const int GlobalSearchCorpus_allowShortcuts = 2131035750;
+			
+			public static int[] GlobalSearchSection = new int[] {
+					1,
+					1};
+			
+			// aapt resource value: 0x1
+			public const int GlobalSearchSection_sectionContent = 1;
+			
+			// aapt resource value: 0x7F050669
+			public const int GlobalSearchSection_sectionType = 2131035753;
+			
+			// aapt resource value: 0x3
+			public const int GlobalSearch_defaultIntentAction = 3;
+			
+			// aapt resource value: 0x5
+			public const int GlobalSearch_defaultIntentActivity = 5;
+			
+			// aapt resource value: 0x4
+			public const int GlobalSearch_defaultIntentData = 4;
+			
+			// aapt resource value: 0x7F050662
+			public const int GlobalSearch_searchEnabled = 2131035746;
+			
+			// aapt resource value: 0x1
+			public const int GlobalSearch_searchLabel = 1;
+			
+			// aapt resource value: 0x2
+			public const int GlobalSearch_settingsDescription = 2;
 			
 			public static int[] HoloCircularProgressBar = new int[] {
 					0,
@@ -6909,29 +8831,55 @@ namespace GrowersClassified.Droid
 					0,
 					0};
 			
-			// aapt resource value: 0x7F060022
-			public const int HoloCircularProgressBar_circular_gravity = 2131099682;
+			// aapt resource value: 0x7F050041
+			public const int HoloCircularProgressBar_circular_gravity = 2131034177;
 			
-			// aapt resource value: 0x7F060023
-			public const int HoloCircularProgressBar_circular_indeterminate = 2131099683;
+			// aapt resource value: 0x7F050042
+			public const int HoloCircularProgressBar_circular_indeterminate = 2131034178;
 			
-			// aapt resource value: 0x7F060024
-			public const int HoloCircularProgressBar_circular_indeterminate_interval = 2131099684;
+			// aapt resource value: 0x7F050043
+			public const int HoloCircularProgressBar_circular_indeterminate_interval = 2131034179;
 			
-			// aapt resource value: 0x7F060019
-			public const int HoloCircularProgressBar_circular_marker_progress = 2131099673;
+			// aapt resource value: 0x7F050038
+			public const int HoloCircularProgressBar_circular_marker_progress = 2131034168;
 			
-			// aapt resource value: 0x7F060018
-			public const int HoloCircularProgressBar_circular_progress = 2131099672;
+			// aapt resource value: 0x7F050037
+			public const int HoloCircularProgressBar_circular_progress = 2131034167;
 			
-			// aapt resource value: 0x7F060021
-			public const int HoloCircularProgressBar_circular_progress_background_color = 2131099681;
+			// aapt resource value: 0x7F050040
+			public const int HoloCircularProgressBar_circular_progress_background_color = 2131034176;
 			
-			// aapt resource value: 0x7F060020
-			public const int HoloCircularProgressBar_circular_progress_color = 2131099680;
+			// aapt resource value: 0x7F050039
+			public const int HoloCircularProgressBar_circular_progress_color = 2131034169;
 			
-			// aapt resource value: 0x7F060017
-			public const int HoloCircularProgressBar_circular_stroke_width = 2131099671;
+			// aapt resource value: 0x7F050036
+			public const int HoloCircularProgressBar_circular_stroke_width = 2131034166;
+			
+			public static int[] IMECorpus = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x7F050671
+			public const int IMECorpus_inputEnabled = 2131035761;
+			
+			// aapt resource value: 0x1
+			public const int IMECorpus_sourceClass = 1;
+			
+			// aapt resource value: 0x5
+			public const int IMECorpus_toAddressesSection = 5;
+			
+			// aapt resource value: 0x3
+			public const int IMECorpus_userInputSection = 3;
+			
+			// aapt resource value: 0x2
+			public const int IMECorpus_userInputTag = 2;
+			
+			// aapt resource value: 0x4
+			public const int IMECorpus_userInputValue = 4;
 			
 			public static int[] LinearLayoutCompat = new int[] {
 					16843046,
@@ -6944,8 +8892,8 @@ namespace GrowersClassified.Droid
 					2130968782,
 					2130968826};
 			
-			// aapt resource value: 0x7F060333
-			public const int LinearLayoutCompat_android_baselineAligned = 2131100467;
+			// aapt resource value: 0x7F050341
+			public const int LinearLayoutCompat_android_baselineAligned = 2131034945;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_android_baselineAlignedChildIndex = 1;
@@ -6971,8 +8919,8 @@ namespace GrowersClassified.Droid
 					16843137,
 					16842996};
 			
-			// aapt resource value: 0x7F060343
-			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131100483;
+			// aapt resource value: 0x7F050351
+			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131034961;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_Layout_android_layout_height = 1;
@@ -6993,11 +8941,119 @@ namespace GrowersClassified.Droid
 					16843436,
 					16843437};
 			
-			// aapt resource value: 0x7F060348
-			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131100488;
+			// aapt resource value: 0x7F050356
+			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131034966;
 			
 			// aapt resource value: 0x1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
+			
+			public static int[] LoadingImageView = new int[] {
+					2130968578,
+					2130968589,
+					2130968590};
+			
+			// aapt resource value: 0x7F050014
+			public const int LoadingImageView_circleCrop = 2131034132;
+			
+			// aapt resource value: 0x1
+			public const int LoadingImageView_imageAspectRatio = 1;
+			
+			// aapt resource value: 0x2
+			public const int LoadingImageView_imageAspectRatioAdjust = 2;
+			
+			public static int[] MapAttrs = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x16
+			public const int MapAttrs_ambientEnabled = 22;
+			
+			// aapt resource value: 0x1
+			public const int MapAttrs_cameraBearing = 1;
+			
+			// aapt resource value: 0x18
+			public const int MapAttrs_cameraMaxZoomPreference = 24;
+			
+			// aapt resource value: 0x17
+			public const int MapAttrs_cameraMinZoomPreference = 23;
+			
+			// aapt resource value: 0x2
+			public const int MapAttrs_cameraTargetLat = 2;
+			
+			// aapt resource value: 0x3
+			public const int MapAttrs_cameraTargetLng = 3;
+			
+			// aapt resource value: 0x4
+			public const int MapAttrs_cameraTilt = 4;
+			
+			// aapt resource value: 0x5
+			public const int MapAttrs_cameraZoom = 5;
+			
+			// aapt resource value: 0x21
+			public const int MapAttrs_latLngBoundsNorthEastLatitude = 33;
+			
+			// aapt resource value: 0x22
+			public const int MapAttrs_latLngBoundsNorthEastLongitude = 34;
+			
+			// aapt resource value: 0x19
+			public const int MapAttrs_latLngBoundsSouthWestLatitude = 25;
+			
+			// aapt resource value: 0x20
+			public const int MapAttrs_latLngBoundsSouthWestLongitude = 32;
+			
+			// aapt resource value: 0x6
+			public const int MapAttrs_liteMode = 6;
+			
+			// aapt resource value: 0x7F050691
+			public const int MapAttrs_mapType = 2131035793;
+			
+			// aapt resource value: 0x7
+			public const int MapAttrs_uiCompass = 7;
+			
+			// aapt resource value: 0x15
+			public const int MapAttrs_uiMapToolbar = 21;
+			
+			// aapt resource value: 0x8
+			public const int MapAttrs_uiRotateGestures = 8;
+			
+			// aapt resource value: 0x9
+			public const int MapAttrs_uiScrollGestures = 9;
+			
+			// aapt resource value: 0x10
+			public const int MapAttrs_uiTiltGestures = 16;
+			
+			// aapt resource value: 0x11
+			public const int MapAttrs_uiZoomControls = 17;
+			
+			// aapt resource value: 0x12
+			public const int MapAttrs_uiZoomGestures = 18;
+			
+			// aapt resource value: 0x13
+			public const int MapAttrs_useViewLifecycle = 19;
+			
+			// aapt resource value: 0x14
+			public const int MapAttrs_zOrderOnTop = 20;
 			
 			public static int[] MediaRouteButton = new int[] {
 					16843072,
@@ -7005,8 +9061,8 @@ namespace GrowersClassified.Droid
 					2130968688,
 					2130968732};
 			
-			// aapt resource value: 0x7F060581
-			public const int MediaRouteButton_android_minHeight = 2131101057;
+			// aapt resource value: 0x7F050589
+			public const int MediaRouteButton_android_minHeight = 2131035529;
 			
 			// aapt resource value: 0x1
 			public const int MediaRouteButton_android_minWidth = 1;
@@ -7025,8 +9081,8 @@ namespace GrowersClassified.Droid
 					16843231,
 					16843156};
 			
-			// aapt resource value: 0x7F060351
-			public const int MenuGroup_android_checkableBehavior = 2131100497;
+			// aapt resource value: 0x7F050359
+			public const int MenuGroup_android_checkableBehavior = 2131034969;
 			
 			// aapt resource value: 0x1
 			public const int MenuGroup_android_enabled = 1;
@@ -7068,8 +9124,8 @@ namespace GrowersClassified.Droid
 					2130968825,
 					2130968907};
 			
-			// aapt resource value: 0x7F060358
-			public const int MenuItem_actionLayout = 2131100504;
+			// aapt resource value: 0x7F050366
+			public const int MenuItem_actionLayout = 2131034982;
 			
 			// aapt resource value: 0x1
 			public const int MenuItem_actionProviderClass = 1;
@@ -7148,8 +9204,8 @@ namespace GrowersClassified.Droid
 					2130968805,
 					2130968842};
 			
-			// aapt resource value: 0x7F060382
-			public const int MenuView_android_headerBackground = 2131100546;
+			// aapt resource value: 0x7F050390
+			public const int MenuView_android_headerBackground = 2131035024;
 			
 			// aapt resource value: 0x1
 			public const int MenuView_android_horizontalDivider = 1;
@@ -7187,8 +9243,8 @@ namespace GrowersClassified.Droid
 					2130968753,
 					2130968783};
 			
-			// aapt resource value: 0x7F060392
-			public const int NavigationView_android_background = 2131100562;
+			// aapt resource value: 0x7F050400
+			public const int NavigationView_android_background = 2131035136;
 			
 			// aapt resource value: 0x1
 			public const int NavigationView_android_fitsSystemWindows = 1;
@@ -7225,11 +9281,11 @@ namespace GrowersClassified.Droid
 			public static int[] PopupWindowBackgroundState = new int[] {
 					2130968837};
 			
-			// aapt resource value: 0x7F060407
-			public const int PopupWindowBackgroundState_state_above_anchor = 2131100679;
+			// aapt resource value: 0x7F050415
+			public const int PopupWindowBackgroundState_state_above_anchor = 2131035157;
 			
-			// aapt resource value: 0x7F060403
-			public const int PopupWindow_android_popupAnimationStyle = 2131100675;
+			// aapt resource value: 0x7F050411
+			public const int PopupWindow_android_popupAnimationStyle = 2131035153;
 			
 			// aapt resource value: 0x1
 			public const int PopupWindow_android_popupBackground = 1;
@@ -7253,54 +9309,54 @@ namespace GrowersClassified.Droid
 					0,
 					0};
 			
-			// aapt resource value: 0x7F060014
-			public const int ProgressButton_android_clickable = 2131099668;
+			// aapt resource value: 0x7F050033
+			public const int ProgressButton_android_clickable = 2131034163;
 			
-			// aapt resource value: 0x7F060015
-			public const int ProgressButton_android_focusable = 2131099669;
+			// aapt resource value: 0x7F050034
+			public const int ProgressButton_android_focusable = 2131034164;
 			
-			// aapt resource value: 0x7F060013
-			public const int ProgressButton_android_selectableItemBackground = 2131099667;
+			// aapt resource value: 0x7F050032
+			public const int ProgressButton_android_selectableItemBackground = 2131034162;
 			
-			// aapt resource value: 0x7F060004
-			public const int ProgressButton_circleColor = 2131099652;
+			// aapt resource value: 0x7F050023
+			public const int ProgressButton_circleColor = 2131034147;
 			
-			// aapt resource value: 0x7F060011
-			public const int ProgressButton_indeterminate = 2131099665;
+			// aapt resource value: 0x7F050030
+			public const int ProgressButton_indeterminate = 2131034160;
 			
-			// aapt resource value: 0x7F060012
-			public const int ProgressButton_indeterminate_interval = 2131099666;
+			// aapt resource value: 0x7F050031
+			public const int ProgressButton_indeterminate_interval = 2131034161;
 			
-			// aapt resource value: 0x7F060009
-			public const int ProgressButton_innerSize = 2131099657;
+			// aapt resource value: 0x7F050028
+			public const int ProgressButton_innerSize = 2131034152;
 			
-			// aapt resource value: 0x7F060003
-			public const int ProgressButton_max = 2131099651;
+			// aapt resource value: 0x7F050022
+			public const int ProgressButton_max = 2131034146;
 			
-			// aapt resource value: 0x7F060010
-			public const int ProgressButton_pinned = 2131099664;
+			// aapt resource value: 0x7F050029
+			public const int ProgressButton_pinned = 2131034153;
 			
-			// aapt resource value: 0x7F060006
-			public const int ProgressButton_pinnedDrawable = 2131099654;
+			// aapt resource value: 0x7F050025
+			public const int ProgressButton_pinnedDrawable = 2131034149;
 			
-			// aapt resource value: 0x7F060002
-			public const int ProgressButton_progress = 2131099650;
+			// aapt resource value: 0x7F050021
+			public const int ProgressButton_progress = 2131034145;
 			
-			// aapt resource value: 0x7F060005
-			public const int ProgressButton_progressColor = 2131099653;
+			// aapt resource value: 0x7F050024
+			public const int ProgressButton_progressColor = 2131034148;
 			
-			// aapt resource value: 0x7F060008
-			public const int ProgressButton_shadowDrawable = 2131099656;
+			// aapt resource value: 0x7F050027
+			public const int ProgressButton_shadowDrawable = 2131034151;
 			
-			// aapt resource value: 0x7F060007
-			public const int ProgressButton_unpinnedDrawable = 2131099655;
+			// aapt resource value: 0x7F050026
+			public const int ProgressButton_unpinnedDrawable = 2131034150;
 			
 			public static int[] RecycleListView = new int[] {
 					2130968790,
 					2130968793};
 			
-			// aapt resource value: 0x7F060409
-			public const int RecycleListView_paddingBottomNoButtons = 2131100681;
+			// aapt resource value: 0x7F050417
+			public const int RecycleListView_paddingBottomNoButtons = 2131035159;
 			
 			// aapt resource value: 0x1
 			public const int RecycleListView_paddingTopNoTitle = 1;
@@ -7318,8 +9374,8 @@ namespace GrowersClassified.Droid
 					2130968830,
 					2130968836};
 			
-			// aapt resource value: 0x7F060412
-			public const int RecyclerView_android_descendantFocusability = 2131100690;
+			// aapt resource value: 0x7F050420
+			public const int RecyclerView_android_descendantFocusability = 2131035168;
 			
 			// aapt resource value: 0x1
 			public const int RecyclerView_android_orientation = 1;
@@ -7354,14 +9410,14 @@ namespace GrowersClassified.Droid
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130968747};
 			
-			// aapt resource value: 0x7F060424
-			public const int ScrimInsetsFrameLayout_insetForeground = 2131100708;
+			// aapt resource value: 0x7F050432
+			public const int ScrimInsetsFrameLayout_insetForeground = 2131035186;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
 					2130968634};
 			
-			// aapt resource value: 0x7F060426
-			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131100710;
+			// aapt resource value: 0x7F050434
+			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131035188;
 			
 			public static int[] SearchView = new int[] {
 					16842970,
@@ -7382,8 +9438,8 @@ namespace GrowersClassified.Droid
 					2130968848,
 					2130968912};
 			
-			// aapt resource value: 0x7F060428
-			public const int SearchView_android_focusable = 2131100712;
+			// aapt resource value: 0x7F050436
+			public const int SearchView_android_focusable = 2131035190;
 			
 			// aapt resource value: 0x1
 			public const int SearchView_android_imeOptions = 1;
@@ -7433,13 +9489,63 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x16
 			public const int SearchView_voiceIcon = 22;
 			
+			public static int[] Section = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			public static int[] SectionFeature = new int[] {
+					1};
+			
+			// aapt resource value: 0x7F050710
+			public const int SectionFeature_featureType = 2131035920;
+			
+			// aapt resource value: 0x4
+			public const int Section_indexPrefixes = 4;
+			
+			// aapt resource value: 0x2
+			public const int Section_noIndex = 2;
+			
+			// aapt resource value: 0x6
+			public const int Section_schemaOrgProperty = 6;
+			
+			// aapt resource value: 0x1
+			public const int Section_sectionFormat = 1;
+			
+			// aapt resource value: 0x7F050706
+			public const int Section_sectionId = 2131035910;
+			
+			// aapt resource value: 0x3
+			public const int Section_sectionWeight = 3;
+			
+			// aapt resource value: 0x5
+			public const int Section_subsectionSeparator = 5;
+			
+			public static int[] SignInButton = new int[] {
+					2130968577,
+					2130968579,
+					2130968591};
+			
+			// aapt resource value: 0x7F050018
+			public const int SignInButton_buttonSize = 2131034136;
+			
+			// aapt resource value: 0x1
+			public const int SignInButton_colorScheme = 1;
+			
+			// aapt resource value: 0x2
+			public const int SignInButton_scopeUris = 2;
+			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
 					2130968701,
 					2130968780};
 			
-			// aapt resource value: 0x7F060446
-			public const int SnackbarLayout_android_maxWidth = 2131100742;
+			// aapt resource value: 0x7F050454
+			public const int SnackbarLayout_android_maxWidth = 2131035220;
 			
 			// aapt resource value: 0x1
 			public const int SnackbarLayout_elevation = 1;
@@ -7454,8 +9560,8 @@ namespace GrowersClassified.Droid
 					16843131,
 					2130968803};
 			
-			// aapt resource value: 0x7F060450
-			public const int Spinner_android_dropDownWidth = 2131100752;
+			// aapt resource value: 0x7F050458
+			public const int Spinner_android_dropDownWidth = 2131035224;
 			
 			// aapt resource value: 0x1
 			public const int Spinner_android_entries = 1;
@@ -7485,8 +9591,8 @@ namespace GrowersClassified.Droid
 					2130968909,
 					2130968910};
 			
-			// aapt resource value: 0x7F060456
-			public const int SwitchCompat_android_textOff = 2131100758;
+			// aapt resource value: 0x7F050464
+			public const int SwitchCompat_android_textOff = 2131035236;
 			
 			// aapt resource value: 0x1
 			public const int SwitchCompat_android_textOn = 1;
@@ -7532,8 +9638,8 @@ namespace GrowersClassified.Droid
 					16842994,
 					16843087};
 			
-			// aapt resource value: 0x7F060471
-			public const int TabItem_android_icon = 2131100785;
+			// aapt resource value: 0x7F050479
+			public const int TabItem_android_icon = 2131035257;
 			
 			// aapt resource value: 0x1
 			public const int TabItem_android_layout = 1;
@@ -7559,8 +9665,8 @@ namespace GrowersClassified.Droid
 					2130968867,
 					2130968868};
 			
-			// aapt resource value: 0x7F060475
-			public const int TabLayout_tabBackground = 2131100789;
+			// aapt resource value: 0x7F050483
+			public const int TabLayout_tabBackground = 2131035267;
 			
 			// aapt resource value: 0x1
 			public const int TabLayout_tabContentStart = 1;
@@ -7622,8 +9728,8 @@ namespace GrowersClassified.Droid
 					2130968720,
 					2130968869};
 			
-			// aapt resource value: 0x7F060492
-			public const int TextAppearance_android_fontFamily = 2131100818;
+			// aapt resource value: 0x7F050500
+			public const int TextAppearance_android_fontFamily = 2131035392;
 			
 			// aapt resource value: 0x1
 			public const int TextAppearance_android_shadowColor = 1;
@@ -7679,8 +9785,8 @@ namespace GrowersClassified.Droid
 					2130968800,
 					2130968801};
 			
-			// aapt resource value: 0x7F060506
-			public const int TextInputLayout_android_hint = 2131100934;
+			// aapt resource value: 0x7F050514
+			public const int TextInputLayout_android_hint = 2131035412;
 			
 			// aapt resource value: 0x1
 			public const int TextInputLayout_android_textColorHint = 1;
@@ -7730,8 +9836,8 @@ namespace GrowersClassified.Droid
 			public static int[] Theme = new int[] {
 					0};
 			
-			// aapt resource value: 0x7F060026
-			public const int Theme_circularProgressBarStyle = 2131099686;
+			// aapt resource value: 0x7F050045
+			public const int Theme_circularProgressBarStyle = 2131034181;
 			
 			public static int[] Toolbar = new int[] {
 					16842927,
@@ -7764,8 +9870,8 @@ namespace GrowersClassified.Droid
 					2130968899,
 					2130968900};
 			
-			// aapt resource value: 0x7F060523
-			public const int Toolbar_android_gravity = 2131100963;
+			// aapt resource value: 0x7F050531
+			public const int Toolbar_android_gravity = 2131035441;
 			
 			// aapt resource value: 0x1
 			public const int Toolbar_android_minHeight = 1;
@@ -7863,8 +9969,8 @@ namespace GrowersClassified.Droid
 					2130968629,
 					2130968630};
 			
-			// aapt resource value: 0x7F060559
-			public const int ViewBackgroundHelper_android_background = 2131101017;
+			// aapt resource value: 0x7F050567
+			public const int ViewBackgroundHelper_android_background = 2131035495;
 			
 			// aapt resource value: 0x1
 			public const int ViewBackgroundHelper_backgroundTint = 1;
@@ -7877,8 +9983,8 @@ namespace GrowersClassified.Droid
 					16842995,
 					16842994};
 			
-			// aapt resource value: 0x7F060563
-			public const int ViewStubCompat_android_id = 2131101027;
+			// aapt resource value: 0x7F050571
+			public const int ViewStubCompat_android_id = 2131035505;
 			
 			// aapt resource value: 0x1
 			public const int ViewStubCompat_android_inflatedId = 1;
@@ -7886,8 +9992,8 @@ namespace GrowersClassified.Droid
 			// aapt resource value: 0x2
 			public const int ViewStubCompat_android_layout = 2;
 			
-			// aapt resource value: 0x7F060553
-			public const int View_android_focusable = 2131101011;
+			// aapt resource value: 0x7F050561
+			public const int View_android_focusable = 2131035489;
 			
 			// aapt resource value: 0x1
 			public const int View_android_theme = 1;
@@ -7900,6 +10006,70 @@ namespace GrowersClassified.Droid
 			
 			// aapt resource value: 0x4
 			public const int View_theme = 4;
+			
+			public static int[] WalletFragmentOptions = new int[] {
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x7F050712
+			public const int WalletFragmentOptions_appTheme = 2131035922;
+			
+			// aapt resource value: 0x1
+			public const int WalletFragmentOptions_environment = 1;
+			
+			// aapt resource value: 0x3
+			public const int WalletFragmentOptions_fragmentMode = 3;
+			
+			// aapt resource value: 0x2
+			public const int WalletFragmentOptions_fragmentStyle = 2;
+			
+			public static int[] WalletFragmentStyle = new int[] {
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1};
+			
+			// aapt resource value: 0x3
+			public const int WalletFragmentStyle_buyButtonAppearance = 3;
+			
+			// aapt resource value: 0x7F050718
+			public const int WalletFragmentStyle_buyButtonHeight = 2131035928;
+			
+			// aapt resource value: 0x2
+			public const int WalletFragmentStyle_buyButtonText = 2;
+			
+			// aapt resource value: 0x1
+			public const int WalletFragmentStyle_buyButtonWidth = 1;
+			
+			// aapt resource value: 0x6
+			public const int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
+			
+			// aapt resource value: 0x8
+			public const int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
+			
+			// aapt resource value: 0x7
+			public const int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
+			
+			// aapt resource value: 0x5
+			public const int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
+			
+			// aapt resource value: 0x10
+			public const int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 16;
+			
+			// aapt resource value: 0x9
+			public const int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
+			
+			// aapt resource value: 0x4
+			public const int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
 			
 			static Styleable()
 			{

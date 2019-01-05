@@ -2,38 +2,120 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
+      "Microsoft.AppCenter/1.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Push/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/5.3.0": {
+      "Microsoft.IdentityModel.Logging/5.2.4": {
         "type": "package",
         "dependencies": {
+          "NETStandard.Library": "1.6.1",
           "System.Diagnostics.Tracing": "4.3.0",
           "System.Globalization": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/5.3.0": {
+      "Microsoft.IdentityModel.Tokens/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "5.3.0",
+          "Microsoft.IdentityModel.Logging": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -50,10 +132,10 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -65,7 +147,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Mono.Cecil/0.10.1": {
+      "Mono.Cecil/0.10.0": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -105,7 +187,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -114,7 +196,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Permissions/4.0.2-beta": {
+      "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.Permissions.dll": {}
@@ -123,10 +205,10 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "sqlite-net-pcl/1.5.231": {
+      "sqlite-net-pcl/1.5.166-beta": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.bundle_green": "1.1.11"
+          "SQLitePCLRaw.bundle_green": "1.1.8"
         },
         "compile": {
           "lib/netstandard1.1/SQLite-net.dll": {}
@@ -135,11 +217,11 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.1.11": {
+      "SQLitePCLRaw.bundle_green/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11",
-          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
@@ -150,7 +232,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.1.11": {
+      "SQLitePCLRaw.core/1.1.8": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
@@ -159,10 +241,10 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
@@ -207,18 +289,19 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.IdentityModel.Tokens.Jwt/5.3.0": {
+      "System.IdentityModel.Tokens.Jwt/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "5.3.0",
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.2.4",
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.IO/4.3.0": {
@@ -248,7 +331,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Net.Http/4.3.4": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -431,6 +514,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "WordPressPCL/1.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        }
+      },
       "Xam.Plugin.Connectivity/4.0.0.190-beta": {
         "type": "package",
         "dependencies": {
@@ -445,10 +550,10 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.1.1-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
-          "Plugin.Permissions": "4.0.2-beta"
+          "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
           "lib/xamarinios10/Plugin.Media.dll": {}
@@ -457,11 +562,8 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/4.0.0.8055-pre1": {
+      "Xamarin.Forms/3.2.0.637442-pre1": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.iOS.MaterialComponents": "60.1.0"
-        },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
@@ -579,17 +681,8 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
-        }
-      },
-      "Xamarin.iOS.MaterialComponents/60.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+          "build/netstandard2.0/Xamarin.Forms.props": {},
+          "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
       "Xamarin.SimplePing/1.4.0": {
@@ -603,38 +696,106 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
+      "Microsoft.AppCenter/1.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/5.3.0": {
+      "Microsoft.IdentityModel.Logging/5.2.4": {
         "type": "package",
         "dependencies": {
+          "NETStandard.Library": "1.6.1",
           "System.Diagnostics.Tracing": "4.3.0",
           "System.Globalization": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/5.3.0": {
+      "Microsoft.IdentityModel.Tokens/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "5.3.0",
+          "Microsoft.IdentityModel.Logging": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -651,10 +812,10 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -666,7 +827,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Mono.Cecil/0.10.1": {
+      "Mono.Cecil/0.10.0": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -706,7 +867,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -715,7 +876,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Permissions/4.0.2-beta": {
+      "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.Permissions.dll": {}
@@ -724,10 +885,10 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "sqlite-net-pcl/1.5.231": {
+      "sqlite-net-pcl/1.5.166-beta": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.bundle_green": "1.1.11"
+          "SQLitePCLRaw.bundle_green": "1.1.8"
         },
         "compile": {
           "lib/netstandard1.1/SQLite-net.dll": {}
@@ -736,11 +897,11 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.1.11": {
+      "SQLitePCLRaw.bundle_green/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11",
-          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
@@ -751,7 +912,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.1.11": {
+      "SQLitePCLRaw.core/1.1.8": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
@@ -760,10 +921,10 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
@@ -808,18 +969,19 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.IdentityModel.Tokens.Jwt/5.3.0": {
+      "System.IdentityModel.Tokens.Jwt/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "5.3.0",
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.2.4",
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.IO/4.3.0": {
@@ -849,7 +1011,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Net.Http/4.3.4": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -978,6 +1140,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "WordPressPCL/1.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        }
+      },
       "Xam.Plugin.Connectivity/4.0.0.190-beta": {
         "type": "package",
         "dependencies": {
@@ -992,10 +1176,10 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.1.1-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
-          "Plugin.Permissions": "4.0.2-beta"
+          "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
           "lib/xamarinios10/Plugin.Media.dll": {}
@@ -1004,11 +1188,8 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/4.0.0.8055-pre1": {
+      "Xamarin.Forms/3.2.0.637442-pre1": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.iOS.MaterialComponents": "60.1.0"
-        },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
@@ -1126,17 +1307,8 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
-        }
-      },
-      "Xamarin.iOS.MaterialComponents/60.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+          "build/netstandard2.0/Xamarin.Forms.props": {},
+          "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
       "Xamarin.SimplePing/1.4.0": {
@@ -1150,38 +1322,106 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
+      "Microsoft.AppCenter/1.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/5.3.0": {
+      "Microsoft.IdentityModel.Logging/5.2.4": {
         "type": "package",
         "dependencies": {
+          "NETStandard.Library": "1.6.1",
           "System.Diagnostics.Tracing": "4.3.0",
           "System.Globalization": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/5.3.0": {
+      "Microsoft.IdentityModel.Tokens/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "5.3.0",
+          "Microsoft.IdentityModel.Logging": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -1198,10 +1438,10 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1213,7 +1453,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Mono.Cecil/0.10.1": {
+      "Mono.Cecil/0.10.0": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -1253,7 +1493,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -1262,7 +1502,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Permissions/4.0.2-beta": {
+      "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.Permissions.dll": {}
@@ -1271,10 +1511,10 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "sqlite-net-pcl/1.5.231": {
+      "sqlite-net-pcl/1.5.166-beta": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.bundle_green": "1.1.11"
+          "SQLitePCLRaw.bundle_green": "1.1.8"
         },
         "compile": {
           "lib/netstandard1.1/SQLite-net.dll": {}
@@ -1283,11 +1523,11 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.1.11": {
+      "SQLitePCLRaw.bundle_green/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11",
-          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
@@ -1298,7 +1538,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.1.11": {
+      "SQLitePCLRaw.core/1.1.8": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
@@ -1307,10 +1547,10 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
@@ -1355,18 +1595,19 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.IdentityModel.Tokens.Jwt/5.3.0": {
+      "System.IdentityModel.Tokens.Jwt/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "5.3.0",
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.2.4",
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.IO/4.3.0": {
@@ -1396,7 +1637,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Net.Http/4.3.4": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -1525,6 +1766,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "WordPressPCL/1.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        }
+      },
       "Xam.Plugin.Connectivity/4.0.0.190-beta": {
         "type": "package",
         "dependencies": {
@@ -1539,10 +1802,10 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.1.1-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
-          "Plugin.Permissions": "4.0.2-beta"
+          "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
           "lib/xamarinios10/Plugin.Media.dll": {}
@@ -1551,11 +1814,8 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/4.0.0.8055-pre1": {
+      "Xamarin.Forms/3.2.0.637442-pre1": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.iOS.MaterialComponents": "60.1.0"
-        },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
@@ -1673,17 +1933,8 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
-        }
-      },
-      "Xamarin.iOS.MaterialComponents/60.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+          "build/netstandard2.0/Xamarin.Forms.props": {},
+          "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
       "Xamarin.SimplePing/1.4.0": {
@@ -1697,38 +1948,106 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
+      "Microsoft.AppCenter/1.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.8.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.8.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll": {},
+          "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/5.3.0": {
+      "Microsoft.IdentityModel.Logging/5.2.4": {
         "type": "package",
         "dependencies": {
+          "NETStandard.Library": "1.6.1",
           "System.Diagnostics.Tracing": "4.3.0",
           "System.Globalization": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/5.3.0": {
+      "Microsoft.IdentityModel.Tokens/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "5.3.0",
+          "Microsoft.IdentityModel.Logging": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -1745,10 +2064,10 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1760,7 +2079,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Mono.Cecil/0.10.1": {
+      "Mono.Cecil/0.10.0": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -1800,7 +2119,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -1809,7 +2128,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Permissions/4.0.2-beta": {
+      "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.Permissions.dll": {}
@@ -1818,10 +2137,10 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "sqlite-net-pcl/1.5.231": {
+      "sqlite-net-pcl/1.5.166-beta": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.bundle_green": "1.1.11"
+          "SQLitePCLRaw.bundle_green": "1.1.8"
         },
         "compile": {
           "lib/netstandard1.1/SQLite-net.dll": {}
@@ -1830,11 +2149,11 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.1.11": {
+      "SQLitePCLRaw.bundle_green/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11",
-          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
@@ -1845,7 +2164,7 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.1.11": {
+      "SQLitePCLRaw.core/1.1.8": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
@@ -1854,10 +2173,10 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.8": {
         "type": "package",
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.11"
+          "SQLitePCLRaw.core": "1.1.8"
         },
         "compile": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
@@ -1902,18 +2221,19 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.IdentityModel.Tokens.Jwt/5.3.0": {
+      "System.IdentityModel.Tokens.Jwt/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "5.3.0",
-          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.2.4",
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.IO/4.3.0": {
@@ -1943,7 +2263,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Net.Http/4.3.4": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -2072,6 +2392,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "WordPressPCL/1.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WordPressPCL.dll": {}
+        }
+      },
       "Xam.Plugin.Connectivity/4.0.0.190-beta": {
         "type": "package",
         "dependencies": {
@@ -2086,10 +2428,10 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
-      "Xam.Plugin.Media/4.1.1-beta": {
+      "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
-          "Plugin.Permissions": "4.0.2-beta"
+          "Plugin.Permissions": "3.0.0.12"
         },
         "compile": {
           "lib/xamarinios10/Plugin.Media.dll": {}
@@ -2098,11 +2440,8 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
-      "Xamarin.Forms/4.0.0.8055-pre1": {
+      "Xamarin.Forms/3.2.0.637442-pre1": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.iOS.MaterialComponents": "60.1.0"
-        },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
@@ -2220,17 +2559,8 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
-        }
-      },
-      "Xamarin.iOS.MaterialComponents/60.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+          "build/netstandard2.0/Xamarin.Forms.props": {},
+          "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
       "Xamarin.SimplePing/1.4.0": {
@@ -2245,10 +2575,155 @@
     }
   },
   "libraries": {
-    "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
-      "sha512": "GmiwCJPEe+V8+2GO3kD8K0IeqNHlTL0xZcHePIjyJveRn7OderxdT32aCZeJZEvz5w2Jlyag3zdyu1zkdTJo2A==",
+    "Microsoft.AppCenter/1.8.0": {
+      "sha512": "V9ZPAVnnv8gTSxp2N1Wb39pbd5nSSuCvjpruFq27r0azRkhqLhOu+2mNgGOoX9LP/UiOrtoy3PY/y4LNAoI76g==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/5.3.0",
+      "path": "microsoft.appcenter/1.8.0",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.dll",
+        "lib/uap10.0/Microsoft.AppCenter.dll",
+        "microsoft.appcenter.1.8.0.nupkg.sha512",
+        "microsoft.appcenter.nuspec"
+      ]
+    },
+    "Microsoft.AppCenter.Analytics/1.8.0": {
+      "sha512": "uj6b7qxKyONSZmqjgryApE4Sq23DC1j8wPJc1QA7BF1Nfa/e92bnKP497bs31xugjBSGwtSMH8hUhi/vH+tukA==",
+      "type": "package",
+      "path": "microsoft.appcenter.analytics/1.8.0",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Analytics.dll",
+        "lib/uap10.0/Microsoft.AppCenter.Analytics.dll",
+        "microsoft.appcenter.analytics.1.8.0.nupkg.sha512",
+        "microsoft.appcenter.analytics.nuspec"
+      ]
+    },
+    "Microsoft.AppCenter.Crashes/1.8.0": {
+      "sha512": "paVrOYaErMz9+k6wQvW9m8TEauARlVW7iX9y/QGm1f6PIHiezPNWkzLhMsnpbbWZBk+wv/H296jW/BoAxOEbzg==",
+      "type": "package",
+      "path": "microsoft.appcenter.crashes/1.8.0",
+      "files": [
+        ".signature.p7s",
+        "build/uap10.0/Microsoft.AppCenter.Crashes.targets",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Crashes.dll",
+        "microsoft.appcenter.crashes.1.8.0.nupkg.sha512",
+        "microsoft.appcenter.crashes.nuspec",
+        "ref/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-arm/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x64/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
+      ]
+    },
+    "Microsoft.AppCenter.Push/1.8.0": {
+      "sha512": "a7OlQvEUx9ZalEmvOdYRAuCwUtQCWFPIYAdRD0WxSzMY91wlgTeG82PDlemtNS11UQIRxQ5oPb6POdVdsfyqeg==",
+      "type": "package",
+      "path": "microsoft.appcenter.push/1.8.0",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Push.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Push.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Push.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Push.dll",
+        "lib/uap10.0/Microsoft.AppCenter.Push.dll",
+        "microsoft.appcenter.push.1.8.0.nupkg.sha512",
+        "microsoft.appcenter.push.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/5.2.4": {
+      "sha512": "dz0b6+wYxvWeTj5jIBrNM7PqyPMxws5kBjnbacpRySePD6pEBxikGK9qblGgOzWsahlnpKDjoiunlqSFmXFLNQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.jsonwebtokens/5.2.4",
       "files": [
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
@@ -2257,23 +2732,17 @@
         "lib/net451/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net451/Microsoft.IdentityModel.JsonWebTokens.pdb",
         "lib/net451/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.pdb",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.pdb",
         "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.pdb",
-        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.5.3.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.5.2.4.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/5.3.0": {
-      "sha512": "y2Hu8ypzoZbyxJiU2LQHkkCUjl5H1oAVapRbEQBbhrUe7hG2g8t+1Hb3NAhmM1SqStd71+rZR27TWv2mc6Isfw==",
+    "Microsoft.IdentityModel.Logging/5.2.4": {
+      "sha512": "ftwC4hEI/LpKxgyXPvwWMSbd/GbhliWDIA90niq8SY8RtFw1hnJJ9f/7YiMQ96c0ibwGT2WEbS4IzvVFmhaiwA==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/5.3.0",
+      "path": "microsoft.identitymodel.logging/5.2.4",
       "files": [
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Logging.dll",
@@ -2282,23 +2751,17 @@
         "lib/net451/Microsoft.IdentityModel.Logging.dll",
         "lib/net451/Microsoft.IdentityModel.Logging.pdb",
         "lib/net451/Microsoft.IdentityModel.Logging.xml",
-        "lib/net461/Microsoft.IdentityModel.Logging.dll",
-        "lib/net461/Microsoft.IdentityModel.Logging.pdb",
-        "lib/net461/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard1.4/Microsoft.IdentityModel.Logging.pdb",
         "lib/netstandard1.4/Microsoft.IdentityModel.Logging.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.pdb",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.5.3.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.5.2.4.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/5.3.0": {
-      "sha512": "g+JFqRJcMv8gRdyIgaloL9Rk8iLJLGdCuLVcg84/W5vfGq9WWHF9DHmcyxO7Ac1fdm2Q3PmY/nvUhsOhB3TwXA==",
+    "Microsoft.IdentityModel.Tokens/5.2.4": {
+      "sha512": "rM/youDq83z+n1M4EojYLt++yZ4eOgs0vbkpZTufi+xNS0PS78SIyYve3KJq2++p9BLDFSx7zRr6/qsvI+gEjw==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/5.3.0",
+      "path": "microsoft.identitymodel.tokens/5.2.4",
       "files": [
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Tokens.dll",
@@ -2307,16 +2770,10 @@
         "lib/net451/Microsoft.IdentityModel.Tokens.dll",
         "lib/net451/Microsoft.IdentityModel.Tokens.pdb",
         "lib/net451/Microsoft.IdentityModel.Tokens.xml",
-        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
-        "lib/net461/Microsoft.IdentityModel.Tokens.pdb",
-        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.pdb",
         "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.pdb",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.5.3.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.5.2.4.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -2333,12 +2790,11 @@
         "runtime.json"
       ]
     },
-    "Mono.Cecil/0.10.1": {
-      "sha512": "ZpklVgBklS7Rq3UQUzFZZvEpljrdyXxIbHKiZQJ4IMt4CAGYp7Z3mh5hNV4lT2e0CyTJ1Qb5ldNds0HzgYPlGw==",
+    "Mono.Cecil/0.10.0": {
+      "sha512": "nHSF7wvyZRPAGXl49zgULPFubXHpsXlOH9RXFRUKb0TX0/tKkKljci6yBszVNI09PIDNQ8IP9WJTYvmBkMbbHw==",
       "type": "package",
-      "path": "mono.cecil/0.10.1",
+      "path": "mono.cecil/0.10.0",
       "files": [
-        ".signature.p7s",
         "lib/net35/Mono.Cecil.Mdb.dll",
         "lib/net35/Mono.Cecil.Pdb.dll",
         "lib/net35/Mono.Cecil.Rocks.dll",
@@ -2351,7 +2807,7 @@
         "lib/netstandard1.3/Mono.Cecil.Pdb.dll",
         "lib/netstandard1.3/Mono.Cecil.Rocks.dll",
         "lib/netstandard1.3/Mono.Cecil.dll",
-        "mono.cecil.0.10.1.nupkg.sha512",
+        "mono.cecil.0.10.0.nupkg.sha512",
         "mono.cecil.nuspec"
       ]
     },
@@ -2482,89 +2938,75 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.1": {
-      "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.1",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
-        ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.pdb",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.pdb",
         "lib/net35/Newtonsoft.Json.xml",
         "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.pdb",
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.pdb",
         "lib/net45/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.pdb",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.pdb",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.pdb",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.1.nupkg.sha512",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
     },
-    "Plugin.Permissions/4.0.2-beta": {
-      "sha512": "3gts+qgfPNj+JLiYQ3CKjOhW9YgdY2EcHVPHyg+bc8dCJ7XF+6WxDItRbYGjOt4gTvSKwQKQLtzAzuAr3mqwlg==",
+    "Plugin.Permissions/3.0.0.12": {
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
       "type": "package",
-      "path": "plugin.permissions/4.0.2-beta",
+      "path": "plugin.permissions/3.0.0.12",
       "files": [
-        ".signature.p7s",
         "lib/monoandroid71/Plugin.Permissions.dll",
-        "lib/monoandroid71/Plugin.Permissions.pdb",
-        "lib/monoandroid80/Plugin.Permissions.dll",
-        "lib/monoandroid80/Plugin.Permissions.pdb",
-        "lib/monoandroid81/Plugin.Permissions.dll",
-        "lib/monoandroid81/Plugin.Permissions.pdb",
+        "lib/monoandroid71/Plugin.Permissions.xml",
         "lib/netstandard1.0/Plugin.Permissions.dll",
-        "lib/netstandard1.0/Plugin.Permissions.pdb",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
         "lib/netstandard2.0/Plugin.Permissions.dll",
-        "lib/netstandard2.0/Plugin.Permissions.pdb",
-        "lib/uap10.0.16299/Plugin.Permissions.dll",
-        "lib/uap10.0.16299/Plugin.Permissions.pdb",
-        "lib/uap10.0.16299/Plugin.Permissions.pri",
+        "lib/netstandard2.0/Plugin.Permissions.xml",
+        "lib/uap10.0.10240/Plugin.Permissions.dll",
+        "lib/uap10.0.10240/Plugin.Permissions.pri",
+        "lib/uap10.0.10240/Plugin.Permissions.xml",
         "lib/xamarinios10/Plugin.Permissions.dll",
-        "lib/xamarinios10/Plugin.Permissions.pdb",
-        "plugin.permissions.4.0.2-beta.nupkg.sha512",
+        "lib/xamarinios10/Plugin.Permissions.xml",
+        "plugin.permissions.3.0.0.12.nupkg.sha512",
         "plugin.permissions.nuspec",
         "readme.txt"
       ]
     },
-    "sqlite-net-pcl/1.5.231": {
-      "sha512": "Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
+    "sqlite-net-pcl/1.5.166-beta": {
+      "sha512": "a7VbroGBauEKY+UJeP1Z5UyrSHagigKgJGa5pVOyKDOI5/cPuCN2YUP4lhLReZdn73CrPqz2U7jsmZBoyZ0kXA==",
       "type": "package",
-      "path": "sqlite-net-pcl/1.5.231",
+      "path": "sqlite-net-pcl/1.5.166-beta",
       "files": [
-        ".signature.p7s",
         "lib/netstandard1.1/SQLite-net.deps.json",
         "lib/netstandard1.1/SQLite-net.dll",
+        "lib/netstandard1.1/SQLite-net.pdb",
         "lib/netstandard1.1/SQLite-net.xml",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.pdb",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.xml",
-        "sqlite-net-pcl.1.5.231.nupkg.sha512",
+        "sqlite-net-pcl.1.5.166-beta.nupkg.sha512",
         "sqlite-net-pcl.nuspec"
       ]
     },
-    "SQLitePCLRaw.bundle_green/1.1.11": {
-      "sha512": "Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
+    "SQLitePCLRaw.bundle_green/1.1.8": {
+      "sha512": "He+XMpqLXzpvZtjVfeaqxXXQzq5H4OuDEdUYwXXOJ7rQHQiF8b8BQzS+kuxCdsaDnMsrksdFVmAeXx2nNcAsjw==",
       "type": "package",
-      "path": "sqlitepclraw.bundle_green/1.1.11",
+      "path": "sqlitepclraw.bundle_green/1.1.8",
       "files": [
         "build/wp8/SQLitePCLRaw.bundle_green.targets",
         "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
@@ -2602,14 +3044,14 @@
         "lib/wp8/_._",
         "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
         "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
-        "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
+        "sqlitepclraw.bundle_green.1.1.8.nupkg.sha512",
         "sqlitepclraw.bundle_green.nuspec"
       ]
     },
-    "SQLitePCLRaw.core/1.1.11": {
-      "sha512": "QT17CyQAQIbTCu6pW5+uVA8BXqRzquiDI1tr5Un6c1YZcQydPmGPuYYng9xMs2UHUDYHbTu+JDkp55WR+qo9bQ==",
+    "SQLitePCLRaw.core/1.1.8": {
+      "sha512": "JTvlAlVHeMW9QaTcu+3iLB9ZEGtceb+uM1MOlfyAnEocShSacHEzwPNsden7MlWb0QjPX3Y3sDMW0ymGhH8Jtg==",
       "type": "package",
-      "path": "sqlitepclraw.core/1.1.11",
+      "path": "sqlitepclraw.core/1.1.8",
       "files": [
         "lib/MonoAndroid/SQLitePCLRaw.core.dll",
         "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
@@ -2626,17 +3068,17 @@
         "lib/win8/SQLitePCLRaw.core.dll",
         "lib/win81/SQLitePCLRaw.core.dll",
         "lib/wpa81/SQLitePCLRaw.core.dll",
-        "sqlitepclraw.core.1.1.11.nupkg.sha512",
+        "sqlitepclraw.core.1.1.8.nupkg.sha512",
         "sqlitepclraw.core.nuspec"
       ]
     },
-    "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
-      "sha512": "hWk/vgFthsTedjorVFNErd5xk0x0UtlYr/ndmDUYhAcA9Y9g0IJXBMn1Z2QYsLMlvE6Qj5yVvjfkUOARhXezQw==",
+    "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.8": {
+      "sha512": "DCjvMCRcltZHtH3fnOpJBJWyDstyPora10VaU6WAw51ZpLcwhII1ahQvMGfemAyeokajLxIDCEm/VM0Prn1bPw==",
       "type": "package",
-      "path": "sqlitepclraw.provider.sqlite3.ios_unified/1.1.11",
+      "path": "sqlitepclraw.provider.sqlite3.ios_unified/1.1.8",
       "files": [
         "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll",
-        "sqlitepclraw.provider.sqlite3.ios_unified.1.1.11.nupkg.sha512",
+        "sqlitepclraw.provider.sqlite3.ios_unified.1.1.8.nupkg.sha512",
         "sqlitepclraw.provider.sqlite3.ios_unified.nuspec"
       ]
     },
@@ -2915,10 +3357,10 @@
         "system.globalization.nuspec"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/5.3.0": {
-      "sha512": "PZT7Vf5b3jlwFgQnTV93tKeoLQj/Qfo/tKWHZXCprUj2ZNeyPxp47IhwCqqFcuAtuTX5FOk3dRHk8gC+KjpmGA==",
+    "System.IdentityModel.Tokens.Jwt/5.2.4": {
+      "sha512": "pZ9xqpsL5yT5Yl+rBj9iHm2K++gKEqsQ+1vLQU9aFKDIc9ELZsaxApVqkujH62TG0oFLt8gFPH12n/zjaVWgYA==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/5.3.0",
+      "path": "system.identitymodel.tokens.jwt/5.2.4",
       "files": [
         ".signature.p7s",
         "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
@@ -2927,16 +3369,10 @@
         "lib/net451/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net451/System.IdentityModel.Tokens.Jwt.pdb",
         "lib/net451/System.IdentityModel.Tokens.Jwt.xml",
-        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
-        "lib/net461/System.IdentityModel.Tokens.Jwt.pdb",
-        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll",
         "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.pdb",
         "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.xml",
-        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
-        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.pdb",
-        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.5.3.0.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.5.2.4.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -3092,12 +3528,11 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.Net.Http/4.3.4": {
-      "sha512": "Fj7e73NNHwof97gFPTJuq8gv6G895yxkZt14DVnZdEh4gvKl8WrksCwNjIp/JeYX/yu/qxM/iOv9ai+ZY3Fp7Q==",
+    "System.Net.Http/4.3.3": {
+      "sha512": "7rCqIbkC/P2+A00NoDH5gnvFhADmX7Dc4INvsOajbU1MVhktE9vZNrjPtF82N6Uo7obK+yzlrPUv/M+snnN/9w==",
       "type": "package",
-      "path": "system.net.http/4.3.4",
+      "path": "system.net.http/4.3.3",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/Xamarinmac20/_._",
@@ -3129,7 +3564,7 @@
         "runtimes/win/lib/net46/System.Net.Http.dll",
         "runtimes/win/lib/netcore50/System.Net.Http.dll",
         "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
-        "system.net.http.4.3.4.nupkg.sha512",
+        "system.net.http.4.3.3.nupkg.sha512",
         "system.net.http.nuspec"
       ]
     },
@@ -3943,6 +4378,62 @@
         "system.threading.nuspec"
       ]
     },
+    "System.ValueTuple/4.4.0": {
+      "sha512": "BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.4.0",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net461/System.ValueTuple.xml",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.4.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "WordPressPCL/1.4.5": {
+      "sha512": "nODAdbQVTgXct1fqIJZlnzyk4/CpAoE02zIVBNvoQ+PfDV27ZC7MAM0qdn3aJI4Ql7xR8mW7ncFtfJxBOAE/bw==",
+      "type": "package",
+      "path": "wordpresspcl/1.4.5",
+      "files": [
+        "lib/netstandard1.1/WordPressPCL.dll",
+        "lib/netstandard1.1/WordPressPCL.xml",
+        "lib/netstandard2.0/WordPressPCL.dll",
+        "lib/netstandard2.0/WordPressPCL.xml",
+        "wordpresspcl.1.4.5.nupkg.sha512",
+        "wordpresspcl.nuspec"
+      ]
+    },
     "Xam.Plugin.Connectivity/4.0.0.190-beta": {
       "sha512": "p9PofTKArw6wHg45GpRRE+xDioJGOSAgA+X+E+vUf1CFZmTzeOO3YCmFdP7/W8x6f85Z50zugXGoszEGJx4QSg==",
       "type": "package",
@@ -3973,6 +4464,7 @@
         "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
         "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
         "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.dll.mdb",
         "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
         "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
         "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
@@ -4009,60 +4501,47 @@
         "xam.plugin.connectivity.nuspec"
       ]
     },
-    "Xam.Plugin.Media/4.1.1-beta": {
-      "sha512": "PJK1Llmzii+12JO07ICMtkxv5lJ18ARpKSFjuPjhSthhGSADbXSl80fiBU7oCw+siKY+3VbKiXg2p7P/jE3z0w==",
+    "Xam.Plugin.Media/4.0.1.5": {
+      "sha512": "a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
       "type": "package",
-      "path": "xam.plugin.media/4.1.1-beta",
+      "path": "xam.plugin.media/4.0.1.5",
       "files": [
-        ".signature.p7s",
         "lib/monoandroid71/Plugin.Media.dll",
-        "lib/monoandroid71/Plugin.Media.pdb",
         "lib/monoandroid71/Plugin.Media.xml",
-        "lib/monoandroid80/Plugin.Media.dll",
-        "lib/monoandroid80/Plugin.Media.pdb",
-        "lib/monoandroid80/Plugin.Media.xml",
-        "lib/monoandroid81/Plugin.Media.dll",
-        "lib/monoandroid81/Plugin.Media.pdb",
-        "lib/monoandroid81/Plugin.Media.xml",
         "lib/netstandard1.0/Plugin.Media.dll",
-        "lib/netstandard1.0/Plugin.Media.pdb",
         "lib/netstandard1.0/Plugin.Media.xml",
         "lib/netstandard2.0/Plugin.Media.dll",
-        "lib/netstandard2.0/Plugin.Media.pdb",
         "lib/netstandard2.0/Plugin.Media.xml",
         "lib/tizen40/Plugin.Media.dll",
-        "lib/tizen40/Plugin.Media.pdb",
         "lib/tizen40/Plugin.Media.xml",
-        "lib/uap10.0.16299/Plugin.Media.dll",
-        "lib/uap10.0.16299/Plugin.Media.pdb",
-        "lib/uap10.0.16299/Plugin.Media.pri",
-        "lib/uap10.0.16299/Plugin.Media.xml",
+        "lib/uap10.0.10240/Plugin.Media.dll",
+        "lib/uap10.0.10240/Plugin.Media.pri",
+        "lib/uap10.0.10240/Plugin.Media.xml",
         "lib/xamarinios10/Plugin.Media.dll",
-        "lib/xamarinios10/Plugin.Media.pdb",
         "lib/xamarinios10/Plugin.Media.xml",
         "readme.txt",
-        "xam.plugin.media.4.1.1-beta.nupkg.sha512",
+        "xam.plugin.media.4.0.1.5.nupkg.sha512",
         "xam.plugin.media.nuspec"
       ]
     },
-    "Xamarin.Forms/4.0.0.8055-pre1": {
-      "sha512": "qpG3VScl/47kYVXQ6pLvH45ScOiISU45g9lkPm8pNFdyZBqiu8pmVUEK7Q+AisEuLSz7Xx4MC8g+q0yQUHqcjA==",
+    "Xamarin.Forms/3.2.0.637442-pre1": {
+      "sha512": "V3fuFk/8pDjfDa+yRgf8TsiRIu7N1fzzuaJ5+qNPOwlYvIWCtFGCuxL6KIPx/jwA1VX4O85o0EKgAB7oNzJy1A==",
       "type": "package",
-      "path": "xamarin.forms/4.0.0.8055-pre1",
+      "path": "xamarin.forms/3.2.0.637442-pre1",
       "files": [
         ".signature.p7s",
-        "build/Xamarin.Forms.DefaultItems.props",
-        "build/Xamarin.Forms.DefaultItems.targets",
-        "build/Xamarin.Forms.props",
-        "build/Xamarin.Forms.targets",
-        "build/net461/Mono.Cecil.Mdb.dll",
-        "build/net461/Mono.Cecil.Pdb.dll",
-        "build/net461/Mono.Cecil.Rocks.dll",
-        "build/net461/Mono.Cecil.dll",
-        "build/net461/System.CodeDom.dll",
-        "build/net461/Xamarin.Forms.Build.Tasks.dll",
-        "build/net461/Xamarin.Forms.Core.dll",
-        "build/net461/Xamarin.Forms.Xaml.dll",
+        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/System.CodeDom.dll",
+        "build/netstandard1.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard1.0/Xamarin.Forms.Core.dll",
+        "build/netstandard1.0/Xamarin.Forms.DefaultItems.props",
+        "build/netstandard1.0/Xamarin.Forms.DefaultItems.targets",
+        "build/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "build/netstandard1.0/Xamarin.Forms.props",
+        "build/netstandard1.0/Xamarin.Forms.targets",
         "build/netstandard2.0/Mono.Cecil.Mdb.dll",
         "build/netstandard2.0/Mono.Cecil.Pdb.dll",
         "build/netstandard2.0/Mono.Cecil.Rocks.dll",
@@ -4070,33 +4549,26 @@
         "build/netstandard2.0/System.CodeDom.dll",
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
+        "build/netstandard2.0/Xamarin.Forms.DefaultItems.props",
+        "build/netstandard2.0/Xamarin.Forms.DefaultItems.targets",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/MonoAndroid81/FormsViewGroup.dll",
-        "lib/MonoAndroid81/FormsViewGroup.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid90/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/MonoAndroid90/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/MonoAndroid90/FormsViewGroup.dll",
-        "lib/MonoAndroid90/FormsViewGroup.pdb",
-        "lib/MonoAndroid90/Xamarin.Forms.Core.dll",
-        "lib/MonoAndroid90/Xamarin.Forms.Core.pdb",
-        "lib/MonoAndroid90/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.pdb",
-        "lib/MonoAndroid90/Xamarin.Forms.Platform.dll",
-        "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid90/Xamarin.Forms.Xaml.pdb",
-        "lib/MonoAndroid90/Xamarin.Forms.Xaml.xml",
+        "build/netstandard2.0/Xamarin.Forms.props",
+        "build/netstandard2.0/Xamarin.Forms.targets",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
+        "lib/MonoAndroid10/FormsViewGroup.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
@@ -4110,6 +4582,7 @@
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll.mdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
@@ -4180,7 +4653,6 @@
         "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
         "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/uap10.0/Xamarin.Forms.Core.dll",
-        "lib/uap10.0/Xamarin.Forms.Core.pdb",
         "lib/uap10.0/Xamarin.Forms.Core.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
@@ -4190,33 +4662,18 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Items/ItemsViewStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
-        "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.0.0.8055-pre1.nupkg.sha512",
+        "xamarin.forms.3.2.0.637442-pre1.nupkg.sha512",
         "xamarin.forms.nuspec"
-      ]
-    },
-    "Xamarin.iOS.MaterialComponents/60.1.0": {
-      "sha512": "9DWXqdpC7PrkiYoo2d4I6erFpzI1Xjfv/D9CUv/RaqJb8xEu5o/XFbIFrf7jYZVWpL8O0yQgRsIe8t8GC+umEQ==",
-      "type": "package",
-      "path": "xamarin.ios.materialcomponents/60.1.0",
-      "files": [
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
-        "lib/Xamarin.iOS/MaterialComponents.dll",
-        "xamarin.ios.materialcomponents.60.1.0.nupkg.sha512",
-        "xamarin.ios.materialcomponents.nuspec"
       ]
     },
     "Xamarin.SimplePing/1.4.0": {
@@ -4234,33 +4691,38 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "Mono.Cecil >= 0.10.1",
+      "Microsoft.AppCenter.Analytics >= 1.8.0",
+      "Microsoft.AppCenter.Crashes >= 1.8.0",
+      "Microsoft.AppCenter.Push >= 1.8.0",
+      "Microsoft.CSharp >= 4.5.0",
+      "Mono.Cecil >= 0.10.0",
       "NETStandard.Library >= 2.0.3",
-      "Newtonsoft.Json >= 12.0.1",
-      "System.IdentityModel.Tokens.Jwt >= 5.3.0",
-      "System.Net.Http >= 4.3.4",
+      "Newtonsoft.Json >= 11.0.2",
+      "System.IdentityModel.Tokens.Jwt >= 5.2.4",
+      "System.Net.Http >= 4.3.3",
       "System.Runtime.Serialization.Json >= 4.3.0",
+      "WordPressPCL >= 1.4.5",
       "Xam.Plugin.Connectivity >= 4.0.0.190-beta",
-      "Xam.Plugin.Media >= 4.1.1-beta",
-      "Xamarin.Forms >= 4.0.0.8055-pre1",
-      "sqlite-net-pcl >= 1.5.231"
+      "Xam.Plugin.Media >= 4.0.1.5",
+      "Xamarin.Forms >= 3.2.0.637442-pre1",
+      "sqlite-net-pcl >= 1.5.166-beta"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zatho\\.nuget\\packages\\": {}
+    "C:\\Users\\Lukas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GrowerClassifieds-master\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
       "projectName": "GrowersClassified.iOS",
-      "projectPath": "D:\\GrowerClassifieds-master\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
-      "packagesPath": "C:\\Users\\zatho\\.nuget\\packages\\",
-      "outputPath": "D:\\GrowerClassifieds-master\\GrowersClassified\\GrowersClassified.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified.iOS\\GrowersClassified.iOS.csproj",
+      "packagesPath": "C:\\Users\\Lukas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lukas\\Desktop\\GrowersClassified\\GrowersClassified\\GrowersClassified.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\zatho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4279,9 +4741,25 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Microsoft.AppCenter.Analytics": {
+            "target": "Package",
+            "version": "[1.8.0, )"
+          },
+          "Microsoft.AppCenter.Crashes": {
+            "target": "Package",
+            "version": "[1.8.0, )"
+          },
+          "Microsoft.AppCenter.Push": {
+            "target": "Package",
+            "version": "[1.8.0, )"
+          },
+          "Microsoft.CSharp": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
           "Mono.Cecil": {
             "target": "Package",
-            "version": "[0.10.1, )"
+            "version": "[0.10.0, )"
           },
           "NETStandard.Library": {
             "target": "Package",
@@ -4289,19 +4767,23 @@
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[12.0.1, )"
+            "version": "[11.0.2, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[5.2.4, )"
           },
           "System.Net.Http": {
             "target": "Package",
-            "version": "[4.3.4, )"
+            "version": "[4.3.3, )"
           },
           "System.Runtime.Serialization.Json": {
             "target": "Package",
             "version": "[4.3.0, )"
+          },
+          "WordPressPCL": {
+            "target": "Package",
+            "version": "[1.4.5, )"
           },
           "Xam.Plugin.Connectivity": {
             "target": "Package",
@@ -4309,15 +4791,15 @@
           },
           "Xam.Plugin.Media": {
             "target": "Package",
-            "version": "[4.1.1-beta, )"
+            "version": "[4.0.1.5, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.0.0.8055-pre1, )"
+            "version": "[3.2.0.637442-pre1, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
-            "version": "[1.5.231, )"
+            "version": "[1.5.166-beta, )"
           }
         }
       }
